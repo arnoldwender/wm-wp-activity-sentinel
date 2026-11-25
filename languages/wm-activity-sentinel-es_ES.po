@@ -1,0 +1,1739 @@
+# Translation of wm-activity-sentinel in es_ES
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-activity-sentinel 1.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-activity-"
+"sentinel\n"
+"POT-Creation-Date: 2026-11-21T12:27:41+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:27+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-activity-sentinel\n"
+
+#. Plugin Name of the plugin
+#: wm-activity-sentinel.php includes/class-sentinel-admin.php:228
+#: includes/class-sentinel-admin.php:1495
+msgid "WM Activity Sentinel"
+msgstr "WM Activity Sentinel"
+
+#. Plugin URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+
+#. Description of the plugin
+#: wm-activity-sentinel.php
+msgid ""
+"Aktivitätsprotokoll mit HMAC-SHA256-Hashkette: Anmeldungen, Benutzer und "
+"Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-Routen, "
+"Seitenaufrufe und Klicks angemeldeter Benutzer; Prüfung der Kette, E-Mail- "
+"und Webhook-Alarme, CSV- und JSON-Export. Manipulation wird nachweisbar, "
+"nicht verhindert."
+msgstr ""
+"Registro de actividad con cadena HMAC-SHA256: inicios de sesión, usuarios y "
+"roles, plugins y temas, exportaciones, editor de archivos, rutas REST "
+"seleccionadas, vistas de página y clics de usuarios conectados; verificación "
+"de cadena, alertas por correo y webhook, exportación CSV y JSON. La "
+"manipulación se vuelve detectable, no se impide."
+
+#. Author of the plugin
+#: wm-activity-sentinel.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-sentinel-admin.php:126
+msgid "Part of the WM Suite plugin family"
+msgstr "Parte de la familia de plugins de WM Suite"
+
+#: includes/class-sentinel-admin.php:128
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Hub"
+msgstr "Modo Hub"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Standalone"
+msgstr "Autónomo"
+
+#: includes/class-sentinel-admin.php:146 includes/class-sentinel-admin.php:147
+msgid "WM Sentinel"
+msgstr "WM Sentinel"
+
+#: includes/class-sentinel-admin.php:157 includes/class-sentinel-admin.php:158
+#: includes/class-sentinel-admin.php:448
+msgid "Aktivitäts-Stream"
+msgstr "Flujo de actividad"
+
+#: includes/class-sentinel-admin.php:166 includes/class-sentinel-admin.php:449
+msgid "Integritäts-Audit (Hash-Kette)"
+msgstr "Auditoría de integridad (cadena hash)"
+
+#: includes/class-sentinel-admin.php:167 includes/class-sentinel-admin.php:308
+#: wm-activity-sentinel.php:138
+msgid "Integritäts-Audit"
+msgstr "Auditoría de integridad"
+
+#: includes/class-sentinel-admin.php:175
+msgid "Dateiintegrität (Kern & Plugins)"
+msgstr "Integridad de archivos (núcleo y plugins)"
+
+#: includes/class-sentinel-admin.php:176 includes/class-sentinel-admin.php:450
+#: includes/class-sentinel-admin.php:781
+msgid "Dateiintegrität"
+msgstr "Integridad de archivos"
+
+#: includes/class-sentinel-admin.php:184 includes/class-sentinel-admin.php:185
+#: includes/class-sentinel-admin.php:451 includes/class-sentinel-admin.php:951
+#: wm-activity-sentinel.php:156
+msgid "Export"
+msgstr "Exportación"
+
+#: includes/class-sentinel-admin.php:193 includes/class-sentinel-admin.php:194
+#: includes/class-sentinel-admin.php:1018 wm-activity-sentinel.php:128
+msgid "Einstellungen"
+msgstr "Ajustes"
+
+#: includes/class-sentinel-admin.php:202
+msgid "Handbuch & Dokumentation"
+msgstr "Manual y documentación"
+
+#: includes/class-sentinel-admin.php:203 includes/class-sentinel-admin.php:453
+#: includes/class-sentinel-admin.php:1529 wm-activity-sentinel.php:133
+#: wm-activity-sentinel.php:151
+msgid "Handbuch"
+msgstr "Manual"
+
+#. translators: %d: number of verified chain entries
+#: includes/class-sentinel-admin.php:252
+#, php-format
+msgid "Kette intakt: %d Einträge geprüft"
+msgstr "Cadena intacta: %d entradas verificadas"
+
+#: includes/class-sentinel-admin.php:255
+msgid "Kettenprüfung fehlgeschlagen"
+msgstr "Verificación de la cadena fallida"
+
+#: includes/class-sentinel-admin.php:259
+msgid "Jeder Eintrag ist mit HMAC-SHA256 an den vorherigen gebunden."
+msgstr "Cada entrada está vinculada a la anterior con HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:268 includes/class-sentinel-admin.php:508
+msgid "Einträge"
+msgstr "Entradas"
+
+#: includes/class-sentinel-admin.php:272
+msgid "Kritisch (24h)"
+msgstr "Críticos (24h)"
+
+#: includes/class-sentinel-admin.php:276 includes/class-sentinel-admin.php:558
+msgid "Warnungen (24h)"
+msgstr "Advertencias (24h)"
+
+#: includes/class-sentinel-admin.php:281
+msgid "Letzte Systemereignisse"
+msgstr "Eventos recientes del sistema"
+
+#: includes/class-sentinel-admin.php:298
+msgid "Noch keine Ereignisse erfasst."
+msgstr "Aún no se han registrado eventos."
+
+#: includes/class-sentinel-admin.php:305
+msgid "Aktivitäts-Stream öffnen"
+msgstr "Abrir el flujo de actividad"
+
+#: includes/class-sentinel-admin.php:452
+msgid "Einstellungen & Alarme"
+msgstr "Ajustes y alertas"
+
+#: includes/class-sentinel-admin.php:456
+msgid "Bereiche von WM Activity Sentinel"
+msgstr "Secciones de WM Activity Sentinel"
+
+#: includes/class-sentinel-admin.php:494
+msgid "Aktivitätsprotokoll"
+msgstr "Registro de actividad"
+
+#: includes/class-sentinel-admin.php:495
+msgid "WM Activity Sentinel — Aktivitäts-Stream"
+msgstr "WM Activity Sentinel — Flujo de actividad"
+
+#: includes/class-sentinel-admin.php:496
+msgid ""
+"Protokollierte Ereignisse, neueste zuerst. Jeder Eintrag ist über eine HMAC-"
+"SHA256-Kette mit seinem Vorgänger verbunden."
+msgstr ""
+"Eventos registrados, los más recientes primero. Cada entrada está enlazada "
+"con la anterior mediante una cadena HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:503
+msgid "Auf dieser Seite"
+msgstr "En esta página"
+
+#: includes/class-sentinel-admin.php:504
+msgid "Springen zu:"
+msgstr "Ir a:"
+
+#: includes/class-sentinel-admin.php:505
+msgid "Kurzanleitung"
+msgstr "Guía rápida"
+
+#: includes/class-sentinel-admin.php:506
+msgid "Kennzahlen 24 h"
+msgstr "Métricas 24 h"
+
+#: includes/class-sentinel-admin.php:507
+msgid "Filter und Suche"
+msgstr "Filtro y búsqueda"
+
+#: includes/class-sentinel-admin.php:515
+msgid "Was dieses Protokoll leistet"
+msgstr "Qué aporta este registro"
+
+#: includes/class-sentinel-admin.php:518
+msgid ""
+"WM Activity Sentinel schreibt ausgewählte Ereignisse (Anmeldungen, Benutzer "
+"und Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-"
+"Routen, Seitenaufrufe und Klicks angemeldeter Benutzer) in eine Tabelle, "
+"deren Einträge über eine HMAC-SHA256-Kette verbunden sind. Wer Einträge "
+"ändert, löscht oder einschleust, fällt bei der Prüfung auf, solange er den "
+"Schlüssel aus der wp-config.php nicht kennt. Verhindern kann das Protokoll "
+"solche Eingriffe nicht."
+msgstr ""
+"WM Activity Sentinel escribe eventos seleccionados (inicios de sesión, "
+"usuarios y roles, plugins y temas, exportaciones, editor de archivos, rutas "
+"REST seleccionadas, vistas de página y clics de usuarios conectados) en una "
+"tabla cuyas entradas están unidas por una cadena HMAC-SHA256. Quien altere, "
+"borre o inserte entradas es detectado en la verificación mientras desconozca "
+"la clave de wp-config.php. El registro no impide tales acciones."
+
+#: includes/class-sentinel-admin.php:521
+msgid "Schnellzugriff:"
+msgstr "Acceso rápido:"
+
+#: includes/class-sentinel-admin.php:524
+msgid "Kette prüfen"
+msgstr "Verificar cadena"
+
+#: includes/class-sentinel-admin.php:528
+msgid "Protokoll exportieren"
+msgstr "Exportar registro"
+
+#: includes/class-sentinel-admin.php:532
+msgid "Protokollierung einstellen"
+msgstr "Configurar registro"
+
+#: includes/class-sentinel-admin.php:542 includes/class-sentinel-core.php:177
+msgid "Gesamt-Einträge"
+msgstr "Total de entradas"
+
+#: includes/class-sentinel-admin.php:550
+msgid "Kritische Alarme (24h)"
+msgstr "Alertas críticas (24h)"
+
+#: includes/class-sentinel-admin.php:566
+msgid "Aktive Benutzer"
+msgstr "Usuarios activos"
+
+#: includes/class-sentinel-admin.php:577
+msgid "Alle Schweregrade"
+msgstr "Todas las severidades"
+
+#: includes/class-sentinel-admin.php:578
+msgid "Kritisch (Critical)"
+msgstr "Crítico (Critical)"
+
+#: includes/class-sentinel-admin.php:579
+msgid "Warnung (Warning)"
+msgstr "Advertencia (Warning)"
+
+#: includes/class-sentinel-admin.php:580
+msgid "Hinweis (Notice)"
+msgstr "Aviso (Notice)"
+
+#: includes/class-sentinel-admin.php:581
+msgid "Info"
+msgstr "Información"
+
+#: includes/class-sentinel-admin.php:584
+msgid "Ereignis, Benutzer oder Kontext durchsuchen..."
+msgstr "Buscar evento, usuario o contexto..."
+
+#: includes/class-sentinel-admin.php:585
+msgid "Filtern"
+msgstr "Filtrar"
+
+#: includes/class-sentinel-admin.php:588
+msgid "Zurücksetzen"
+msgstr "Restablecer"
+
+#: includes/class-sentinel-admin.php:596
+msgid "Log-ID"
+msgstr "ID de registro"
+
+#: includes/class-sentinel-admin.php:597
+#: includes/class-sentinel-exporter.php:204
+msgid "Zeitpunkt (UTC)"
+msgstr "Fecha y hora (UTC)"
+
+#: includes/class-sentinel-admin.php:598 includes/class-sentinel-admin.php:1567
+#: includes/class-sentinel-exporter.php:212
+msgid "Schweregrad"
+msgstr "Severidad"
+
+#: includes/class-sentinel-admin.php:599
+#: includes/class-sentinel-exporter.php:208
+msgid "Ereignis"
+msgstr "Evento"
+
+#: includes/class-sentinel-admin.php:600
+msgid "Objekt"
+msgstr "Objeto"
+
+#: includes/class-sentinel-admin.php:601
+msgid "Akteur / Benutzer"
+msgstr "Actor / Usuario"
+
+#: includes/class-sentinel-admin.php:602
+msgid "IP-Hash"
+msgstr "Hash de IP"
+
+#: includes/class-sentinel-admin.php:603
+msgid "Kontext"
+msgstr "Contexto"
+
+#. translators: %d: log entry id
+#: includes/class-sentinel-admin.php:622
+#, php-format
+msgid "Kontext von Eintrag #%d anzeigen"
+msgstr "Ver contexto de la entrada #%d"
+
+#: includes/class-sentinel-admin.php:630
+msgid "Keine Aktivitäten gefunden."
+msgstr "No se encontraron actividades."
+
+#. translators: %d: total number of log entries
+#: includes/class-sentinel-admin.php:643
+#, php-format
+msgid "%d Einträge"
+msgstr "%d entradas"
+
+#: includes/class-sentinel-admin.php:670
+msgid "Ereignis-Kontext Inspektor"
+msgstr "Inspector de contexto del evento"
+
+#: includes/class-sentinel-admin.php:671
+msgid "Inspektor schließen"
+msgstr "Cerrar inspector"
+
+#: includes/class-sentinel-admin.php:692
+msgid "Kettenprüfung"
+msgstr "Verificación de cadena"
+
+#: includes/class-sentinel-admin.php:693
+msgid "Kryptografisches Integritäts-Audit (Hash-Chaining)"
+msgstr "Auditoría de integridad criptográfica (encadenamiento hash)"
+
+#: includes/class-sentinel-admin.php:696
+msgid ""
+"Jeder Eintrag wird mit HMAC-SHA256 gegen seinen Vorgänger geprüft, und das "
+"Ende der Kette gegen den außerhalb der Protokolltabelle verzeichneten "
+"Kettenstand."
+msgstr ""
+"Cada entrada se verifica con HMAC-SHA256 frente a su predecesora, y el final "
+"de la cadena frente al estado de la cadena registrado fuera de la tabla del "
+"registro."
+
+#: includes/class-sentinel-admin.php:703
+msgid "Status der Prüfsummen-Kette"
+msgstr "Estado de la cadena de sumas"
+
+#: includes/class-sentinel-admin.php:709
+msgid "KETTE INTAKT"
+msgstr "CADENA INTACTA"
+
+#. translators: %d: number of verified log entries
+#: includes/class-sentinel-admin.php:713
+#, php-format
+msgid ""
+"%d Log-Einträge vom ersten Eintrag bis zum verzeichneten Kettenstand "
+"geprüft. Keine nachträgliche Änderung, Lücke oder Kürzung erkennbar."
+msgstr ""
+"%d entradas del registro verificadas desde la primera entrada hasta el "
+"estado de la cadena registrado. No se detecta ningún cambio posterior, hueco "
+"ni recorte."
+
+#. translators: %d: number of pseudonymised log entries
+#: includes/class-sentinel-admin.php:721
+#, php-format
+msgid ""
+"%d davon wurden auf eine Löschanfrage hin pseudonymisiert und über den "
+"jeweiligen Löschnachweis in der Kette anerkannt."
+msgstr ""
+"%d de ellas fueron seudonimizadas tras una solicitud de supresión y "
+"aceptadas mediante su registro de borrado encadenado."
+
+#: includes/class-sentinel-admin.php:726
+msgid "Hash des letzten Eintrags:"
+msgstr "Hash de la última entrada:"
+
+#: includes/class-sentinel-admin.php:734
+msgid "MANIPULATION ODER KETTENBRUCH ERKANNT"
+msgstr "MANIPULACIÓN O ROTURA DE CADENA DETECTADA"
+
+#: includes/class-sentinel-admin.php:735
+msgid "Fehlerdiagnose:"
+msgstr "Diagnóstico del error:"
+
+#: includes/class-sentinel-admin.php:742
+msgid "AUTH_KEY ist noch der Platzhalter aus wp-config-sample.php."
+msgstr "AUTH_KEY sigue siendo el valor de ejemplo de wp-config-sample.php."
+
+#: includes/class-sentinel-admin.php:743
+msgid ""
+"Die Kette ist mit einem öffentlich bekannten Schlüssel signiert: Jeder mit "
+"Datenbankzugriff kann Einträge ändern und die Kette neu signieren. Ein neuer "
+"AUTH_KEY in der wp-config.php schützt künftige Einträge; bestehende Einträge "
+"bestehen die Prüfung dann nicht mehr."
+msgstr ""
+"La cadena está firmada con una clave pública conocida: cualquiera con acceso "
+"a la base de datos puede alterar entradas y volver a firmar la cadena. Una "
+"nueva AUTH_KEY en wp-config.php protege las entradas futuras; las existentes "
+"dejarán de pasar la verificación."
+
+#: includes/class-sentinel-admin.php:747
+msgid "Der Kettenschlüssel liegt in der Datenbank, nicht in der wp-config.php."
+msgstr "La clave de la cadena reside en la base de datos, no en wp-config.php."
+
+#: includes/class-sentinel-admin.php:748
+msgid ""
+"In dieser Installation ist AUTH_KEY nicht definiert, daher greift WordPress "
+"auf automatisch erzeugte Salts zurück und legt sie in wp_options ab — also "
+"in derselben Datenbank, in die ein Angreifer ohnehin schreiben würde. Der "
+"Manipulationsnachweis hält hier nur gegen Unfälle, nicht gegen einen "
+"Angreifer. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"En esta instalación AUTH_KEY no está definida, por lo que WordPress recurre "
+"a sales generadas automáticamente en wp_options, en la misma base de datos "
+"donde escribiría un atacante. La detección aquí solo protege frente a "
+"accidentes, no frente a un atacante. Defina AUTH_KEY en wp-config.php."
+
+#: includes/class-sentinel-admin.php:754
+msgid "Integritätsprüfung erneut ausführen"
+msgstr "Ejecutar verificación de nuevo"
+
+#: includes/class-sentinel-admin.php:782
+msgid "Abgleich gegen den offiziellen Prüfsummen-Katalog"
+msgstr "Comparación con el catálogo oficial de sumas de verificación"
+
+#: includes/class-sentinel-admin.php:783
+msgid ""
+"Die Kerndateien werden gegen api.wordpress.org geprüft, die WM-Suite-Plugins "
+"gegen eine Basislinie, deren Fingerabdruck in der Hash-Kette versiegelt ist."
+msgstr ""
+"Los archivos del núcleo se comparan con api.wordpress.org y los plugins de "
+"WM Suite con una línea base cuya huella está sellada en la cadena hash."
+
+#. translators: %d: number of files in the baseline
+#: includes/class-sentinel-admin.php:793
+#, php-format
+msgid "Basislinie über %d Dateien erfasst und in der Kette versiegelt."
+msgstr "Línea base de %d archivos capturada y sellada en la cadena."
+
+#. translators: 1: number of files found, 2: configured maximum
+#: includes/class-sentinel-admin.php:802 includes/class-sentinel-fim.php:517
+#, php-format
+msgid ""
+"Die Basislinie wurde nicht gespeichert: %1$d Dateien überschreiten das "
+"Maximum von %2$d. Eine Basislinie dieser Größe wird bei jeder Prüfung "
+"gelesen und neu geschrieben. Prüfen Sie, ob in einem Plugin-Verzeichnis "
+"Entwicklungsdateien liegen, die dort nicht hingehören."
+msgstr ""
+"No se guardó la línea base: %1$d archivos superan el máximo de %2$d. Una "
+"línea base de este tamaño se lee y reescribe en cada comprobación. Compruebe "
+"si hay archivos de desarrollo en algún directorio de plugins."
+
+#: includes/class-sentinel-admin.php:808
+msgid "Letzte Prüfung"
+msgstr "Última comprobación"
+
+#: includes/class-sentinel-admin.php:814
+msgid "NOCH NICHT GEPRÜFT"
+msgstr "AÚN NO COMPROBADO"
+
+#: includes/class-sentinel-admin.php:815
+msgid ""
+"Es liegt kein Prüfbericht vor. Starten Sie die Prüfung unten oder warten Sie "
+"den täglichen Lauf ab. Ein ungeprüfter Dateibaum ist kein unauffälliger "
+"Dateibaum."
+msgstr ""
+"No existe informe de comprobación. Inicie la revisión abajo o espere la "
+"ejecución diaria. Un árbol sin comprobar no equivale a un árbol limpio."
+
+#: includes/class-sentinel-admin.php:822
+msgid "VERÄNDERTE ODER UNERWARTETE DATEIEN GEFUNDEN"
+msgstr "ARCHIVOS MODIFICADOS O INESPERADOS DETECTADOS"
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:826
+#, php-format
+msgid "%1$d Abweichungen, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d discrepancias, última comprobación el %2$s UTC."
+
+#: includes/class-sentinel-admin.php:835
+msgid "KEINE ABWEICHUNG"
+msgstr "SIN DISCREPANCIAS"
+
+#. translators: 1: number of core files checked, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:839
+#, php-format
+msgid ""
+"%1$d Kerndateien stimmen mit dem offiziellen Katalog überein (geprüft am "
+"%2$s UTC)."
+msgstr ""
+"%1$d archivos del núcleo coinciden con el catálogo oficial (comprobado el "
+"%2$s UTC)."
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:849
+#, php-format
+msgid "%1$d Auffälligkeiten, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d hallazgos, última comprobación el %2$s UTC."
+
+#: includes/class-sentinel-admin.php:861
+msgid "Verändert (Kerndateien)"
+msgstr "Modificados (archivos del núcleo)"
+
+#: includes/class-sentinel-admin.php:862
+msgid "Fehlend (Kerndateien)"
+msgstr "Faltantes (archivos del núcleo)"
+
+#: includes/class-sentinel-admin.php:863
+msgid "Unerwartet in wp-admin / wp-includes"
+msgstr "Inesperados en wp-admin / wp-includes"
+
+#: includes/class-sentinel-admin.php:864
+msgid "Verändert (WM-Suite-Plugins)"
+msgstr "Modificados (plugins de WM Suite)"
+
+#: includes/class-sentinel-admin.php:865
+msgid "Fehlend (WM-Suite-Plugins)"
+msgstr "Faltantes (plugins de WM Suite)"
+
+#: includes/class-sentinel-admin.php:866
+msgid "Neu gegenüber der Basislinie"
+msgstr "Nuevos respecto a la línea base"
+
+#. translators: %s: comma-separated file names
+#: includes/class-sentinel-admin.php:884
+#, php-format
+msgid "Nicht als Fund gewertet, weil ihr Entfernen gängige Härtung ist: %s."
+msgstr ""
+"No se cuenta como hallazgo porque su eliminación es endurecimiento habitual: "
+"%s."
+
+#: includes/class-sentinel-admin.php:892
+msgid "Basislinie der WM-Suite-Plugins"
+msgstr "Línea base de los plugins de WM Suite"
+
+#: includes/class-sentinel-admin.php:897
+msgid "Die gespeicherte Basislinie wurde nachträglich verändert."
+msgstr "La línea base almacenada fue modificada posteriormente."
+
+#: includes/class-sentinel-admin.php:898
+msgid ""
+"Ihr Fingerabdruck stimmt nicht mehr mit dem Wert überein, der beim Erfassen "
+"in die Hash-Kette geschrieben wurde. Wer eine Plugin-Datei ändert und "
+"anschließend die Basislinie anpasst, hinterlässt genau diese Abweichung."
+msgstr ""
+"Su huella ya no coincide con el valor sellado en la cadena hash al "
+"capturarla. Quien edita un archivo de plugin y luego ajusta la línea base "
+"deja exactamente esta discrepancia."
+
+#: includes/class-sentinel-admin.php:901
+msgid ""
+"Es ist noch keine Basislinie erfasst. Ohne sie werden nur die Kerndateien "
+"geprüft: für die Plugins gibt es keinen offiziellen Katalog, gegen den sich "
+"vergleichen ließe."
+msgstr ""
+"Aún no se ha capturado ninguna línea base. Sin ella solo se comprueban los "
+"archivos del núcleo: no existe catálogo oficial para los plugins."
+
+#. translators: %d: number of files covered by the baseline
+#: includes/class-sentinel-admin.php:906
+#, php-format
+msgid "Basislinie über %d Dateien, Fingerabdruck in der Kette versiegelt."
+msgstr "Línea base de %d archivos, huella sellada en la cadena."
+
+#: includes/class-sentinel-admin.php:911
+msgid ""
+"Nach jeder Aktualisierung eines WM-Suite-Plugins meldet die Prüfung dessen "
+"Dateien als verändert, weil sie es sind. Erfassen Sie die Basislinie dann "
+"neu."
+msgstr ""
+"Tras actualizar cualquier plugin de WM Suite, la comprobación marcará sus "
+"archivos como modificados. Vuelva a capturar entonces la línea base."
+
+#: includes/class-sentinel-admin.php:917
+msgid "Prüfung jetzt ausführen"
+msgstr "Ejecutar comprobación ahora"
+
+#: includes/class-sentinel-admin.php:920
+msgid "Basislinie erfassen und versiegeln"
+msgstr "Capturar y sellar línea base"
+
+#: includes/class-sentinel-admin.php:927
+msgid ""
+"Die geplante Prüfung ist ausgeschaltet; es läuft nur, was Sie hier von Hand "
+"starten."
+msgstr ""
+"La comprobación programada está desactivada; solo se ejecuta lo que inicie "
+"manualmente aquí."
+
+#. translators: %s: timestamp in UTC
+#: includes/class-sentinel-admin.php:931
+#, php-format
+msgid "Nächster geplanter Lauf: %s UTC."
+msgstr "Próxima ejecución programada: %s UTC."
+
+#: includes/class-sentinel-admin.php:934
+msgid ""
+"Die Prüfung ist eingeschaltet, aber es ist kein Lauf geplant. Speichern Sie "
+"die Einstellungen einmal, damit der tägliche Termin angelegt wird."
+msgstr ""
+"La comprobación está activada, pero no hay tarea programada. Guarde los "
+"ajustes una vez para crear la cita diaria."
+
+#: includes/class-sentinel-admin.php:952
+msgid "Export des Protokolls"
+msgstr "Exportar el registro"
+
+#: includes/class-sentinel-admin.php:953
+msgid "CSV- oder JSON-Datei mit bis zu 10.000 Einträgen, neueste zuerst."
+msgstr ""
+"Archivo CSV o JSON con hasta 10.000 entradas, las más recientes primero."
+
+#: includes/class-sentinel-admin.php:961
+msgid "CSV-Datei"
+msgstr "Archivo CSV"
+
+#: includes/class-sentinel-admin.php:962
+msgid ""
+"Semikolon-getrennt, UTF-8 mit BOM. Zellen, die mit =, +, -, @, Tabulator "
+"oder Wagenrücklauf beginnen, erhalten ein vorangestelltes Apostroph, damit "
+"Tabellenprogramme sie nicht als Formel ausführen."
+msgstr ""
+"Separado por punto y coma, UTF-8 con BOM. Las celdas que comienzan con =, +, "
+"-, @, tabulador o retorno de carro reciben un apóstrofo inicial para evitar "
+"la ejecución de fórmulas en hojas de cálculo."
+
+#: includes/class-sentinel-admin.php:964
+msgid "CSV-Datei herunterladen"
+msgstr "Descargar archivo CSV"
+
+#: includes/class-sentinel-admin.php:969
+msgid "JSON-Paket"
+msgstr "Paquete JSON"
+
+#: includes/class-sentinel-admin.php:970
+msgid ""
+"Einträge mit ihren Hashes, das Ergebnis der Kettenprüfung zum Zeitpunkt des "
+"Exports und eine SHA-256-Prüfsumme über das Dokument ohne das "
+"Prüfsummenfeld. Die Datei ist nicht signiert: Wer sie ändert, kann die "
+"Prüfsumme neu berechnen."
+msgstr ""
+"Entradas con sus hashes, el resultado de la verificación de la cadena al "
+"exportar y una suma SHA-256 del documento sin el campo de suma. El archivo "
+"no está firmado: quien lo edite puede recalcular la suma."
+
+#: includes/class-sentinel-admin.php:972
+msgid "JSON-Paket herunterladen"
+msgstr "Descargar paquete JSON"
+
+#: includes/class-sentinel-admin.php:1019
+msgid "Einstellungen & Protokollierungsstufe"
+msgstr "Ajustes y nivel de registro"
+
+#: includes/class-sentinel-admin.php:1020
+msgid ""
+"Protokollierungsstufe, überwachte Bereiche, Klick-Erfassung, Alarme per E-"
+"Mail und Webhook sowie Aufbewahrung."
+msgstr ""
+"Nivel de registro, áreas supervisadas, captura de clics, alertas por correo "
+"y webhook, y conservación."
+
+#: includes/class-sentinel-admin.php:1028
+msgid ""
+"Einstellungen und Protokollierungsfilter wurden erfolgreich gespeichert."
+msgstr "Los ajustes y filtros de registro se guardaron correctamente."
+
+#. translators: %d: number of demo log entries generated
+#: includes/class-sentinel-admin.php:1037
+#, php-format
+msgid ""
+"%d von 15 Demo-Einträgen wurden an die Kette angehängt (ohne Alarm-Mails und "
+"Webhooks). Einträge, die Protokollierungsstufe oder Schalter nicht zulassen, "
+"werden nicht geschrieben."
+msgstr ""
+"Se añadieron %d de 15 entradas de demostración a la cadena (sin correos de "
+"alerta ni webhooks). Las entradas excluidas por el nivel o los interruptores "
+"no se escriben."
+
+#: includes/class-sentinel-admin.php:1053
+msgid "Keine Demodaten gefunden; das Protokoll ist unverändert."
+msgstr "No se encontraron datos de demostración; el registro no ha cambiado."
+
+#. translators: %d: number of demo log entries deleted
+#: includes/class-sentinel-admin.php:1056
+#, php-format
+msgid ""
+"%d Demodaten-Logs wurden gelöscht. Das Protokoll wurde dabei vollständig "
+"zurückgesetzt und die Kette beginnt wieder beim Genesis-Block."
+msgstr ""
+"Se eliminaron %d registros de demostración. El registro se restableció por "
+"completo y la cadena vuelve a empezar en el bloque génesis."
+
+#: includes/class-sentinel-admin.php:1066
+msgid ""
+"Die Demodaten wurden nicht gelöscht: es liegen bereits echte "
+"Protokolleinträge vor. Eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren, ohne dass die Prüfung bricht — und sie nachträglich neu zu "
+"signieren würde genau die Manipulationserkennung aufheben, für die dieses "
+"Plugin da ist."
+msgstr ""
+"Los datos de demostración no se borraron porque ya existen entradas reales. "
+"Una cadena continua no puede perder entradas intermedias sin romper la "
+"verificación, y volver a firmarla anularía la detección de manipulación."
+
+#: includes/class-sentinel-admin.php:1067
+msgid ""
+"Die Demodaten bleiben als solche gekennzeichnet stehen. Wer sie zwingend "
+"loswerden muss, setzt das gesamte Protokoll über den Werksreset zurück und "
+"verliert dabei auch die echten Einträge."
+msgstr ""
+"Las entradas de demostración permanecen marcadas como tales. Si necesita "
+"eliminarlas, utilice el restablecimiento de fábrica, lo que también borrará "
+"las entradas reales."
+
+#: includes/class-sentinel-admin.php:1073
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Ajustes de fábrica restaurados:"
+
+#: includes/class-sentinel-admin.php:1073
+msgid ""
+"Alle Logs und Alarme wurden bereinigt, der Genesis-Block wurde neu "
+"initialisiert und alle Einstellungen auf Standardwerte zurückgesetzt."
+msgstr ""
+"Todos los registros y alertas fueron vaciados, se inicializó un nuevo bloque "
+"génesis y todos los ajustes volvieron a sus valores por defecto."
+
+#: includes/class-sentinel-admin.php:1084
+msgid "1. Protokollierungsstufe & Klick-Erfassung"
+msgstr "1. Nivel de registro y captura de clics"
+
+#: includes/class-sentinel-admin.php:1087
+msgid ""
+"Steuert, ab welchem Schweregrad Ereignisse in die Kette geschrieben werden. "
+"Einträge zu Löschanfragen und der Genesis-Block werden immer geschrieben."
+msgstr ""
+"Controla a partir de qué severidad se escriben eventos en la cadena. Los "
+"registros de supresión y el bloque génesis se escriben siempre."
+
+#: includes/class-sentinel-admin.php:1094
+msgid "Protokollierungsstufe"
+msgstr "Nivel de registro"
+
+#: includes/class-sentinel-admin.php:1100
+msgid "Vollständig (Info, Notice, Warning, Critical)"
+msgstr "Completa (Info, Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1103
+msgid "Standard (Notice, Warning, Critical)"
+msgstr "Estándar (Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1106
+msgid "Nur Warnungen (Warning, Critical)"
+msgstr "Solo advertencias (Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1109
+msgid "Nur kritische Ereignisse (Critical)"
+msgstr "Solo eventos críticos (Critical)"
+
+#: includes/class-sentinel-admin.php:1113
+msgid "Stufenübersicht:"
+msgstr "Resumen de niveles:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid "Vollständig:"
+msgstr "Completa:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid ""
+"Schreibt jedes Ereignis der Sensoren, auch Info-Einträge wie Anmeldungen, "
+"Seitenaufrufe und Klicks."
+msgstr ""
+"Escribe cada evento de los sensores, también las entradas Info como inicios "
+"de sesión, páginas vistas y clics."
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Standard:"
+msgstr "Estándar:"
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Lässt Info-Einträge weg, also Anmeldungen, Seitenaufrufe und Klicks."
+msgstr ""
+"Omite las entradas Info, es decir, inicios de sesión, páginas vistas y clics."
+
+#: includes/class-sentinel-admin.php:1116
+msgid "Nur Warnungen:"
+msgstr "Solo advertencias:"
+
+#: includes/class-sentinel-admin.php:1116
+msgid ""
+"Nur Ereignisse mit Schweregrad Warning oder Critical, zum Beispiel "
+"fehlgeschlagene Anmeldungen, Dateieditor, Deaktivieren von Plugins und "
+"Beförderung zum Administrator."
+msgstr ""
+"Solo eventos Warning o Critical, como inicios de sesión fallidos, editor de "
+"archivos, desactivación de plugins y asignación del rol de administrador."
+
+#: includes/class-sentinel-admin.php:1117
+msgid "Nur kritische Ereignisse:"
+msgstr "Solo eventos críticos:"
+
+#: includes/class-sentinel-admin.php:1117
+msgid ""
+"Nur Schweregrad Critical, zum Beispiel ein Export der Website, ein "
+"gestartetes Backup oder die Beförderung zum Administrator."
+msgstr ""
+"Solo la severidad Critical, por ejemplo una exportación del sitio, una copia "
+"de seguridad iniciada o el ascenso a administrador."
+
+#: includes/class-sentinel-admin.php:1125
+msgid "Klick- & Interaktions-Tiefe"
+msgstr "Profundidad de clics e interacciones"
+
+#: includes/class-sentinel-admin.php:1131
+msgid ""
+"Alle Interaktionen erfassen (Menüs, Buttons, Links, Tabs, Modals, Downloads)"
+msgstr ""
+"Registrar todas las interacciones (menús, botones, enlaces, pestañas, "
+"modales, descargas)"
+
+#: includes/class-sentinel-admin.php:1134
+msgid ""
+"Nur operative Aktionen & Menü-Navigation (Menüs, Buttons, Speichern, Löschen)"
+msgstr ""
+"Solo acciones operativas y navegación de menús (menús, botones, guardar, "
+"borrar)"
+
+#: includes/class-sentinel-admin.php:1137
+msgid ""
+"Nur destruktive Aktionen & Downloads (Lösch-Aktionen, Exporte, Archiv-"
+"Downloads)"
+msgstr ""
+"Solo acciones destructivas y descargas (borrados, exportaciones, descargas "
+"de archivos)"
+
+#: includes/class-sentinel-admin.php:1141
+msgid ""
+"Filtert, welche Klicks angemeldeter Benutzer das Skript im Backend und im "
+"Frontend meldet."
+msgstr ""
+"Filtra qué clics de usuarios conectados reporta el script en el panel y en "
+"el frontend."
+
+#: includes/class-sentinel-admin.php:1152
+msgid "2. Überwachte Systembereiche & Module"
+msgstr "2. Áreas y módulos supervisados"
+
+#: includes/class-sentinel-admin.php:1155
+msgid ""
+"Schaltet einzelne Bereiche ab. Ein abgeschalteter Bereich schreibt keine "
+"Einträge."
+msgstr "Desactiva áreas individuales. Un área desactivada no escribe entradas."
+
+#: includes/class-sentinel-admin.php:1160
+msgid "Sicherheitsmodule"
+msgstr "Módulos de seguridad"
+
+#: includes/class-sentinel-admin.php:1165
+msgid "Authentifizierung & Sessions"
+msgstr "Autenticación y sesiones"
+
+#: includes/class-sentinel-admin.php:1166
+msgid ""
+"Erfolgreiche und fehlgeschlagene Anmeldungen, neue Anwendungspasswörter. "
+"Abmeldungen und Passwort-Resets werden nicht erfasst."
+msgstr ""
+"Inicios de sesión correctos y fallidos, nuevas contraseñas de aplicación. No "
+"registra cierres de sesión ni restablecimientos de contraseña."
+
+#: includes/class-sentinel-admin.php:1171
+msgid "Benutzerverwaltung & Berechtigungsrollen"
+msgstr "Gestión de usuarios y roles"
+
+#: includes/class-sentinel-admin.php:1172
+msgid ""
+"Rollenänderungen (Administrator als Critical), angelegte und gelöschte "
+"Benutzer."
+msgstr ""
+"Cambios de rol (administrador como Critical), usuarios creados y eliminados."
+
+#: includes/class-sentinel-admin.php:1177
+msgid "Plugins, Themes & Core-Integrität"
+msgstr "Plugins, temas e integridad del núcleo"
+
+#: includes/class-sentinel-admin.php:1178
+msgid ""
+"Plugin-Aktivierung, -Deaktivierung und -Löschung, Theme-Wechsel, Updates, "
+"ausgewählte Optionen, Aufrufe und Speicheranfragen des Dateieditors."
+msgstr ""
+"Activación, desactivación y borrado de plugins, cambio de tema, "
+"actualizaciones, opciones seleccionadas y accesos o guardados en el editor "
+"de archivos."
+
+#: includes/class-sentinel-admin.php:1183
+msgid "Exporte & Backups"
+msgstr "Exportaciones y copias de seguridad"
+
+#: includes/class-sentinel-admin.php:1184
+msgid ""
+"Native XML-Exporte, Aufrufe der Exportseite, Backup-Start von UpdraftPlus "
+"und Duplicator. Klicks auf Download-Links fallen unter „UI-Interaktionen“. "
+"Beitragsänderungen und Uploads werden nicht erfasst."
+msgstr ""
+"Exportaciones XML nativas, visitas a la página de exportación, inicio de "
+"copias de UpdraftPlus y Duplicator. Los clics en descargas entran en "
+"«Interacciones de interfaz». No registra edición de entradas ni subidas."
+
+#: includes/class-sentinel-admin.php:1189
+msgid "REST-API"
+msgstr "API REST"
+
+#: includes/class-sentinel-admin.php:1190
+msgid ""
+"Aufrufe von /wp/v2/plugins und nicht angemeldete Aufrufe von /wp/v2/users."
+msgstr ""
+"Peticiones a /wp/v2/plugins y consultas no autenticadas a /wp/v2/users."
+
+#: includes/class-sentinel-admin.php:1197
+msgid "Navigation & UI-Telemetrie"
+msgstr "Navegación y telemetría de interfaz"
+
+#: includes/class-sentinel-admin.php:1202
+msgid "Admin-Seitennavigation (current_screen)"
+msgstr "Navegación por pantallas del panel (current_screen)"
+
+#: includes/class-sentinel-admin.php:1203
+msgid "Erfasst jeden Backend-Seitenaufruf mit übersetztem Klartextnamen."
+msgstr "Registra cada pantalla del panel abierta con nombre legible."
+
+#: includes/class-sentinel-admin.php:1208
+msgid "Klick- & Interaktions-Telemetrie (Client-Side)"
+msgstr "Telemetría de clics e interacciones (cliente)"
+
+#: includes/class-sentinel-admin.php:1209
+msgid ""
+"Meldet Klicks angemeldeter Benutzer auf Menüs, Buttons, Tabs und Links mit "
+"Beschriftung, Ziel und Seitenadresse (höchstens 60 Einträge pro Benutzer und "
+"Minute)."
+msgstr ""
+"Reporta clics de usuarios conectados en menús, botones, pestañas y enlaces "
+"con etiqueta, destino y URL (máximo 60 entradas por usuario y minuto)."
+
+#: includes/class-sentinel-admin.php:1214
+msgid "Frontend-Seitenaufrufe angemeldeter Benutzer"
+msgstr "Vistas de páginas públicas de usuarios conectados"
+
+#: includes/class-sentinel-admin.php:1215
+msgid ""
+"Protokolliert jede Frontend-Seite, die ein angemeldeter Benutzer aufruft, "
+"mit Adresse und Referrer."
+msgstr ""
+"Registra cada página pública abierta por un usuario conectado con dirección "
+"y referente."
+
+#: includes/class-sentinel-admin.php:1227
+msgid "3. Echtzeit-Alarme & Benachrichtigungen"
+msgstr "3. Alertas y notificaciones en tiempo real"
+
+#: includes/class-sentinel-admin.php:1230
+msgid ""
+"E-Mail und Webhook, sobald ein Eintrag mit mindestens dem gewählten "
+"Schweregrad geschrieben wird. Ein Kettenbruch löst keinen Alarm aus; er "
+"zeigt sich erst bei der nächsten Prüfung."
+msgstr ""
+"Correo y webhook en cuanto se escribe una entrada con al menos la severidad "
+"elegida. Una rotura de cadena no dispara alerta; se detecta en la siguiente "
+"verificación."
+
+#: includes/class-sentinel-admin.php:1237
+msgid "Alarm-Empfänger E-Mail"
+msgstr "Correo destinatario de alertas"
+
+#: includes/class-sentinel-admin.php:1242
+msgid ""
+"Erhält die Alarm-Mails; ab welchem Schweregrad, legt das nächste Feld fest."
+msgstr ""
+"Recibe los correos de alerta; el campo siguiente fija a partir de qué "
+"severidad."
+
+#: includes/class-sentinel-admin.php:1249
+msgid "Min. Schweregrad für Alarme"
+msgstr "Severidad mínima de alertas"
+
+#: includes/class-sentinel-admin.php:1254
+msgid "Nur Kritische Vorfälle (Critical)"
+msgstr "Solo incidentes críticos (Critical)"
+
+#: includes/class-sentinel-admin.php:1255
+msgid "Warnungen & Kritisch (Warning+)"
+msgstr "Advertencias y críticos (Warning+)"
+
+#: includes/class-sentinel-admin.php:1256
+msgid "Notice und höher (Notice-Einträge selbst lösen keinen Alarm aus)"
+msgstr "Notice y superior (las entradas Notice en sí no disparan alertas)"
+
+#: includes/class-sentinel-admin.php:1264
+msgid "Webhook-URL"
+msgstr "URL del webhook"
+
+#: includes/class-sentinel-admin.php:1269
+msgid ""
+"Erhält einen JSON-POST mit text, log_id, event_type, severity, user, site "
+"und timestamp. Ob ein Chat-Dienst dieses Format annimmt, prüft das Plugin "
+"nicht."
+msgstr ""
+"Recibe un POST JSON con text, log_id, event_type, severity, user, site y "
+"timestamp. El plugin no verifica si el servicio de chat acepta ese formato."
+
+#: includes/class-sentinel-admin.php:1279
+msgid "4. Aufbewahrung & Dashboard"
+msgstr "4. Conservación y escritorio"
+
+#: includes/class-sentinel-admin.php:1286
+msgid "Aufbewahrungsfrist"
+msgstr "Plazo de conservación"
+
+#: includes/class-sentinel-admin.php:1290
+msgid "Tage"
+msgstr "días"
+
+#: includes/class-sentinel-admin.php:1291
+msgid ""
+"Täglich angewendet: Einträge, die älter als diese Frist sind, verlieren "
+"Name, E-Mail-Adresse und IP-Kennung. Gelöscht wird nichts — jede gelöschte "
+"Zeile würde die Kette unterbrechen und die Prüfung würde Ihre eigene "
+"Aufbewahrungsregel als Manipulation melden. Ereignisart, Zeitpunkt, "
+"Schweregrad und Kontext bleiben stehen. Unter 30 Tagen bedeutet: alles "
+"behalten."
+msgstr ""
+"Se aplica a diario: las entradas más antiguas pierden nombre, correo e "
+"identificador IP. No se borra ninguna fila, pues ello rompería la cadena y "
+"la verificación señalaría su propia regla de conservación como manipulación. "
+"Tipo de evento, fecha, severidad y contexto permanecen. Menos de 30 días "
+"significa conservar todo."
+
+#: includes/class-sentinel-admin.php:1296
+msgid "Dashboard-Widget"
+msgstr "Widget del escritorio"
+
+#: includes/class-sentinel-admin.php:1300
+msgid "Widget auf dem WordPress-Dashboard anzeigen"
+msgstr "Mostrar widget en el escritorio de WordPress"
+
+#: includes/class-sentinel-admin.php:1302
+msgid ""
+"Zeigt den aktuellen Prüfsummen-Status (Hash-Chain), KPI-Kennzahlen und die "
+"letzten Vorfälle direkt auf der Hauptseite des WordPress-Backends an."
+msgstr ""
+"Muestra el estado actual de la cadena hash, indicadores clave y los últimos "
+"eventos en la portada del escritorio."
+
+#: includes/class-sentinel-admin.php:1307
+msgid "Deinstallation"
+msgstr "Desinstalación"
+
+#: includes/class-sentinel-admin.php:1311
+msgid ""
+"Protokolltabellen und versiegelte Basislinie beim Löschen des Plugins "
+"endgültig entfernen"
+msgstr ""
+"Eliminar definitivamente las tablas de registro y la línea base sellada al "
+"borrar el plugin"
+
+#: includes/class-sentinel-admin.php:1313
+msgid ""
+"Standardmäßig bleiben die Tabellen wp_wm_activity_logs und "
+"wp_wm_activity_alerts sowie der gespiegelte Kettenendpunkt und die "
+"versiegelte Datei-Basislinie bei einer Deinstallation erhalten. Aktivieren "
+"Sie diese Option nur, wenn beim Entfernen des Plugins auch die gesamte Audit-"
+"Kette gelöscht werden soll."
+msgstr ""
+"Por defecto, wp_wm_activity_logs, wp_wm_activity_alerts, el extremo "
+"reflejado y la línea base sellada se conservan al desinstalar. Active esta "
+"opción solo si desea borrar también toda la cadena de auditoría al eliminar "
+"el plugin."
+
+#: includes/class-sentinel-admin.php:1323
+msgid "5. Weiterleitung an ein SIEM"
+msgstr "5. Reenvío a un SIEM"
+
+#: includes/class-sentinel-admin.php:1325
+msgid ""
+"Jeder protokollierte Eintrag ab dem gewählten Schweregrad wird zusätzlich an "
+"einen Collector geschickt — als Syslog nach RFC 5424, als CEF:0 oder als "
+"LEEF:2.0. Splunk, Microsoft Sentinel, Datadog und Elastic lesen mindestens "
+"eines dieser Formate. Der Eintrag im Protokoll bleibt davon unberührt: die "
+"Weiterleitung ist eine Kopie, und ein nicht erreichbarer Collector hält "
+"WordPress nicht auf."
+msgstr ""
+"Cada entrada registrada a partir de la severidad elegida se envía también a "
+"un colector en Syslog RFC 5424, CEF:0 o LEEF:2.0. Splunk, Microsoft "
+"Sentinel, Datadog y Elastic leen al menos uno de estos formatos. La entrada "
+"local no se ve afectada: el reenvío es una copia y un colector caído no "
+"bloquea WordPress."
+
+#: includes/class-sentinel-admin.php:1329
+msgid "Weiterleitung"
+msgstr "Reenvío"
+
+#: includes/class-sentinel-admin.php:1333
+msgid "Einträge an den konfigurierten Collector senden"
+msgstr "Enviar entradas al colector configurado"
+
+#: includes/class-sentinel-admin.php:1339
+msgid "Format"
+msgstr "Formato"
+
+#: includes/class-sentinel-admin.php:1342
+msgid "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+msgstr "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+
+#: includes/class-sentinel-admin.php:1343
+msgid "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+msgstr "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+
+#: includes/class-sentinel-admin.php:1344
+msgid "LEEF:2.0 (IBM QRadar)"
+msgstr "LEEF:2.0 (IBM QRadar)"
+
+#: includes/class-sentinel-admin.php:1350
+msgid "Transport"
+msgstr "Transporte"
+
+#: includes/class-sentinel-admin.php:1353
+msgid "HTTPS (HEC-/HTTP-Endpunkt)"
+msgstr "HTTPS (punto final HEC / HTTP)"
+
+#: includes/class-sentinel-admin.php:1354
+msgid "TCP"
+msgstr "TCP"
+
+#: includes/class-sentinel-admin.php:1355
+msgid "UDP (ohne Empfangsbestätigung)"
+msgstr "UDP (sin confirmación de recepción)"
+
+#: includes/class-sentinel-admin.php:1361
+msgid "Collector-URL (HTTPS)"
+msgstr "URL del colector (HTTPS)"
+
+#: includes/class-sentinel-admin.php:1368
+msgid "Collector-Host und Port (TCP/UDP)"
+msgstr "Host y puerto del colector (TCP/UDP)"
+
+#: includes/class-sentinel-admin.php:1376
+msgid "Min. Schweregrad für die Weiterleitung"
+msgstr "Severidad mínima de reenvío"
+
+#: includes/class-sentinel-admin.php:1379
+msgid "Alles (Info+)"
+msgstr "Todo (Info+)"
+
+#: includes/class-sentinel-admin.php:1380
+msgid "Notice und höher"
+msgstr "Notice y superior"
+
+#: includes/class-sentinel-admin.php:1381
+msgid "Warnungen und höher"
+msgstr "Advertencias y superior"
+
+#: includes/class-sentinel-admin.php:1382
+msgid "Nur kritische Vorfälle"
+msgstr "Solo incidentes críticos"
+
+#: includes/class-sentinel-admin.php:1393
+msgid "6. Dateiintegrität"
+msgstr "6. Integridad de archivos"
+
+#: includes/class-sentinel-admin.php:1395
+msgid ""
+"Ein täglicher Abgleich der Kerndateien gegen den offiziellen Prüfsummen-"
+"Katalog von api.wordpress.org. Dabei verlassen nur die WordPress-Version und "
+"die Sprache die Website — dieselben Angaben, die WordPress ohnehin bei jeder "
+"Update-Prüfung sendet. Das Ergebnis wird als Eintrag in die Hash-Kette "
+"geschrieben und damit, sofern eingeschaltet, auch an das SIEM weitergeleitet."
+msgstr ""
+"Comparación diaria de los archivos del núcleo frente al catálogo oficial de "
+"api.wordpress.org. Solo salen del sitio la versión de WordPress y el idioma, "
+"los mismos datos que WordPress envía al buscar actualizaciones. El resultado "
+"queda registrado en la cadena hash y se reenvía al SIEM si está activo."
+
+#: includes/class-sentinel-admin.php:1399
+msgid "Tägliche Prüfung"
+msgstr "Comprobación diaria"
+
+#: includes/class-sentinel-admin.php:1403
+msgid "Kerndateien täglich gegen api.wordpress.org prüfen"
+msgstr "Comprobar a diario los archivos del núcleo frente a api.wordpress.org"
+
+#: includes/class-sentinel-admin.php:1409
+msgid "WM-Suite-Plugins"
+msgstr "Plugins de WM Suite"
+
+#: includes/class-sentinel-admin.php:1413
+msgid "Zusätzlich gegen die versiegelte Basislinie prüfen"
+msgstr "Comprobar también frente a la línea base sellada"
+
+#: includes/class-sentinel-admin.php:1415
+msgid ""
+"Für Plugins gibt es keinen offiziellen Katalog. Stattdessen wird eine "
+"Basislinie erfasst, deren Fingerabdruck in der Hash-Kette versiegelt wird: "
+"Wer eine Plugin-Datei ändert und anschließend die Basislinie anpasst, bricht "
+"damit den Ketteneintrag. Die Basislinie wird auf der Seite "
+"\"Dateiintegrität\" erfasst."
+msgstr ""
+"No hay catálogo oficial para plugins. En su lugar se captura una línea base "
+"cuya huella se sella en la cadena hash: modificar un archivo de plugin y "
+"reescribir la línea base rompe ese registro. La línea base se captura en "
+"«Integridad de archivos»."
+
+#: includes/class-sentinel-admin.php:1424
+msgid "Einstellungen & Filter speichern"
+msgstr "Guardar ajustes y filtros"
+
+#: includes/class-sentinel-admin.php:1433
+msgid "7. Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "7. Datos de demostración y valores de fábrica (Reset)"
+
+#: includes/class-sentinel-admin.php:1436
+msgid ""
+"Beispieleinträge anhängen oder entfernen, oder das Protokoll leeren und alle "
+"Einstellungen zurücksetzen."
+msgstr ""
+"Añadir o quitar entradas de ejemplo, o vaciar el registro y restablecer "
+"todos los ajustes."
+
+#: includes/class-sentinel-admin.php:1445
+msgid "Demodaten anhängen (15 Einträge)"
+msgstr "Añadir datos de demostración (15 entradas)"
+
+#: includes/class-sentinel-admin.php:1450
+msgid ""
+"Demodaten lassen sich nur entfernen, solange noch keine echten Ereignisse "
+"protokolliert wurden — eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren. Trifft das zu, wird das gesamte Protokoll zurückgesetzt und "
+"die Kette startet neu beim Genesis-Block."
+msgstr ""
+"Los datos de demostración solo pueden quitarse mientras no existan eventos "
+"reales registrados; una cadena continua no puede perder filas intermedias. "
+"Si procede, el registro entero se reinicia en el bloque génesis."
+
+#: includes/class-sentinel-admin.php:1454
+msgid "Demodaten bereinigen (Nur Testdaten)"
+msgstr "Limpiar datos de demostración (solo pruebas)"
+
+#: includes/class-sentinel-admin.php:1465
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Zona de peligro: restablecer valores de fábrica"
+
+#: includes/class-sentinel-admin.php:1468
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Logs und Alarme aus der Datenbank, "
+"initialisiert einen neuen Genesis-Block und setzt alle Einstellungen auf die "
+"Standardwerte zurück."
+msgstr ""
+"Esta operación borra de forma irreversible TODOS los registros y alertas de "
+"la base de datos, inicializa un nuevo bloque génesis y devuelve todos los "
+"ajustes a sus valores por defecto."
+
+#: includes/class-sentinel-admin.php:1470
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Aktivitätsprotokolle und setzt "
+"Sentinel vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"ADVERTENCIA: ¿Está seguro? ¡Esto borrará TODOS los registros de actividad y "
+"restablecerá Sentinel por completo a sus valores de fábrica!"
+
+#: includes/class-sentinel-admin.php:1474
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Restablecer valores de fábrica (Factory Reset)"
+
+#: includes/class-sentinel-admin.php:1494
+msgid "Überblick & Hash-Kette"
+msgstr "Resumen y cadena hash"
+
+#: includes/class-sentinel-admin.php:1495
+msgid ""
+"ist ein Aktivitätsprotokoll für WordPress. Jeder Logeintrag wird über HMAC-"
+"SHA256 mit seinem Vorgänger verknüpft, und das Kettenende zusätzlich "
+"außerhalb der Log-Tabelle verzeichnet. Wer nur Schreibzugriff auf die "
+"Datenbank hat, kann Einträge daher nicht ändern, löschen oder einschleusen, "
+"ohne dass die Prüfung darauf hinweist. Der Schlüssel liegt in der wp-"
+"config.php: wer diese Datei liest, kann die Kette neu signieren — das "
+"Verfahren weist Manipulation nach, es verhindert sie nicht."
+msgstr ""
+"es un registro de actividad para WordPress. Cada entrada se enlaza mediante "
+"HMAC-SHA256 con la anterior y el extremo de la cadena se refleja fuera de la "
+"tabla. Quien solo tenga escritura en la base de datos no puede editar, "
+"borrar ni insertar filas sin que la verificación lo advierta. La clave "
+"reside en wp-config.php: quien lea ese archivo puede volver a firmar la "
+"cadena; el mecanismo evidencia la manipulación, no la impide."
+
+#: includes/class-sentinel-admin.php:1500
+msgid "Protokollierungsstufen"
+msgstr "Niveles de registro"
+
+#: includes/class-sentinel-admin.php:1501
+msgid ""
+"Die Protokollierungsstufe wird unter Einstellungen gewählt: \"Vollständig\" "
+"schreibt auch Info-Einträge wie Anmeldungen, Seitenaufrufe und Klicks; "
+"\"Standard\" lässt Info-Einträge weg; \"Nur Warnungen\" schreibt Warning und "
+"Critical; \"Nur kritische Ereignisse\" nur Critical. Der Genesis-Eintrag "
+"sowie Lösch- und Aufbewahrungsnachweise werden auf jeder Stufe geschrieben."
+msgstr ""
+"El nivel de registro se elige en Ajustes: «Completa» escribe también "
+"entradas Info como inicios de sesión, páginas vistas y clics; «Estándar» "
+"omite las entradas Info; «Solo advertencias» escribe Warning y Critical; "
+"«Solo eventos críticos», solo Critical. La entrada génesis y los registros "
+"de borrado y de conservación se escriben en todos los niveles."
+
+#: includes/class-sentinel-admin.php:1506
+msgid "Personenbezogene Daten"
+msgstr "Datos personales"
+
+#: includes/class-sentinel-admin.php:1507
+msgid ""
+"IP-Adressen werden nicht im Klartext gespeichert, sondern als HMAC mit "
+"täglich wechselndem Schlüssel. Name und E-Mail-Adresse des handelnden "
+"Benutzers, besuchte Adressen und Klick-Beschriftungen stehen im Klartext im "
+"Protokoll. Die Datenschutz-Werkzeuge von WordPress können Einträge zu einer "
+"Adresse exportieren und pseudonymisieren."
+msgstr ""
+"Las direcciones IP no se guardan en claro, sino como HMAC con clave diaria. "
+"El nombre y correo del usuario activo, las direcciones visitadas y las "
+"etiquetas de clic sí constan en claro. Las herramientas de privacidad de "
+"WordPress permiten exportar y seudonimizar entradas por correo."
+
+#: includes/class-sentinel-admin.php:1511
+msgid "Support & Handbuch:"
+msgstr "Soporte y manual:"
+
+#: includes/class-sentinel-admin.php:1512
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Abrir manual completo"
+
+#: includes/class-sentinel-admin.php:1513
+msgid "Entwickelt von WM Suite."
+msgstr "Desarrollado por WM Suite."
+
+#: includes/class-sentinel-admin.php:1522
+#: includes/class-sentinel-exporter.php:35
+#: includes/class-sentinel-exporter.php:94
+msgid "Unzureichende Berechtigungen."
+msgstr "Permisos insuficientes."
+
+#: includes/class-sentinel-admin.php:1530
+msgid "WM Activity Sentinel — Handbuch"
+msgstr "WM Activity Sentinel — Manual"
+
+#: includes/class-sentinel-admin.php:1531
+msgid "Hash-Kette, Sensoren, Entwickler-API und Hinweise zum Betrieb."
+msgstr "Cadena hash, sensores, API para desarrolladores y notas operativas."
+
+#: includes/class-sentinel-admin.php:1542
+msgid "1. Kryptografische Hash-Kette (Integrität)"
+msgstr "1. Cadena hash criptográfica (integridad)"
+
+#: includes/class-sentinel-admin.php:1544
+msgid ""
+"Jeder Datensatz enthält den kryptografischen Fingerabdruck seines direkten "
+"Vorgängers (prev_hash). Die Prüfsumme wird wie folgt berechnet:"
+msgstr ""
+"Cada registro contiene la huella criptográfica de su predecesor inmediato "
+"(prev_hash). La suma se calcula así:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid "Änderung erkennbar:"
+msgstr "Edición detectable:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid ""
+"Wird eine Zeile ohne den Schlüssel geändert, schlägt die Prüfsumme bei der "
+"nächsten Prüfung fehl. Wer den Schlüssel hat, kann die Kette neu signieren."
+msgstr ""
+"Si se altera una fila sin la clave, la suma falla en la siguiente "
+"verificación. Quien posea la clave puede volver a firmar la cadena."
+
+#: includes/class-sentinel-admin.php:1550
+msgid "Löschungsnachweis:"
+msgstr "Evidencia de borrado:"
+
+#: includes/class-sentinel-admin.php:1550
+msgid ""
+"Wird eine Zeile in der Mitte gelöscht, passt der Verweis der Folgezeile "
+"nicht mehr; fehlen die neuesten Zeilen, weicht das in wp_options gespiegelte "
+"Kettenende ab."
+msgstr ""
+"Si se elimina una fila intermedia, el enlace siguiente deja de coincidir; si "
+"faltan las filas más recientes, diverge el extremo reflejado en wp_options."
+
+#: includes/class-sentinel-admin.php:1551
+msgid "Concurrency-Locking:"
+msgstr "Bloqueo de concurrencia:"
+
+#: includes/class-sentinel-admin.php:1551
+msgid ""
+"InnoDB \"SELECT ... FOR UPDATE\" verhindert Ketten-Bifurkationen bei "
+"parallelen Schreibzugriffen."
+msgstr ""
+"InnoDB \"SELECT ... FOR UPDATE\" evita bifurcaciones de la cadena en "
+"escrituras simultáneas."
+
+#: includes/class-sentinel-admin.php:1559
+msgid "2. Sensoren"
+msgstr "2. Sensores"
+
+#: includes/class-sentinel-admin.php:1561
+msgid ""
+"Diese WordPress-Hooks schreiben Einträge; alles andere erfasst das Plugin "
+"nicht:"
+msgstr ""
+"Estos hooks de WordPress escriben entradas; el plugin no registra nada más:"
+
+#: includes/class-sentinel-admin.php:1565
+msgid "Bereich"
+msgstr "Área"
+
+#: includes/class-sentinel-admin.php:1566
+msgid "Sensoren & Hooks"
+msgstr "Sensores y hooks"
+
+#: includes/class-sentinel-admin.php:1572
+msgid "Authentifizierung"
+msgstr "Autenticación"
+
+#: includes/class-sentinel-admin.php:1573
+msgid ""
+"wp_login (Info), wp_login_failed und wp_create_application_password (Warning)"
+msgstr ""
+"wp_login (Info), wp_login_failed y wp_create_application_password (Warning)"
+
+#: includes/class-sentinel-admin.php:1574
+#: includes/class-sentinel-admin.php:1594
+msgid "Info / Warning"
+msgstr "Info / Warning"
+
+#: includes/class-sentinel-admin.php:1577
+msgid "Benutzer & Rollen"
+msgstr "Usuarios y roles"
+
+#: includes/class-sentinel-admin.php:1578
+msgid ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical bei der Rolle Administrator)"
+msgstr ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical para el rol Administrador)"
+
+#: includes/class-sentinel-admin.php:1579
+msgid "Notice / Warning / Critical"
+msgstr "Notice / Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1582
+msgid "Core & Plugins"
+msgstr "Núcleo y plugins"
+
+#: includes/class-sentinel-admin.php:1583
+msgid ""
+"activated_plugin, upgrader_process_complete und updated_option für "
+"ausgewählte Optionen (Notice); deactivated_plugin, delete_plugin und "
+"after_switch_theme (Warning)"
+msgstr ""
+"activated_plugin, upgrader_process_complete y updated_option para opciones "
+"seleccionadas (Notice); deactivated_plugin, delete_plugin y "
+"after_switch_theme (Warning)"
+
+#: includes/class-sentinel-admin.php:1584
+msgid "Notice / Warning"
+msgstr "Notice / Warning"
+
+#: includes/class-sentinel-admin.php:1587
+msgid "Exporte & Dateieditor"
+msgstr "Exportaciones y editor de archivos"
+
+#: includes/class-sentinel-admin.php:1588
+msgid ""
+"Aufruf von export.php, load-plugin-editor.php und load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"und duplicator_backup_started (Critical)"
+msgstr ""
+"Visitas a export.php, load-plugin-editor.php y load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"y duplicator_backup_started (Critical)"
+
+#: includes/class-sentinel-admin.php:1589
+msgid "Warning / Critical"
+msgstr "Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1592
+msgid "Admin & Telemetrie"
+msgstr "Panel y telemetría"
+
+#: includes/class-sentinel-admin.php:1593
+msgid ""
+"current_screen, template_redirect und Klicks über POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch für /wp/v2/plugins und anonyme Abfragen "
+"von /wp/v2/users (Warning)"
+msgstr ""
+"current_screen, template_redirect y clics mediante POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch para /wp/v2/plugins y consultas anónimas "
+"a /wp/v2/users (Warning)"
+
+#: includes/class-sentinel-admin.php:1605
+msgid "3. Entwickler-API & Eigene Sensoren registrieren"
+msgstr "3. API para desarrolladores y sensores propios"
+
+#: includes/class-sentinel-admin.php:1607
+msgid ""
+"Eigene Ereignisse lassen sich über die statische Logger-Klasse an die Kette "
+"anhängen:"
+msgstr ""
+"Se pueden añadir eventos propios a la cadena mediante la clase estática del "
+"registrador:"
+
+#: includes/class-sentinel-admin.php:1632
+msgid "4. Wichtige Hinweise, Gotchas & Troubleshooting"
+msgstr "4. Notas importantes y resolución de problemas"
+
+#: includes/class-sentinel-admin.php:1635
+msgid "IP-Hashes:"
+msgstr "Hashes de IP:"
+
+#: includes/class-sentinel-admin.php:1635
+msgid ""
+"IP-Adressen werden als HMAC mit täglich wechselndem Schlüssel gespeichert; "
+"Hashes derselben Adresse stimmen nur innerhalb eines Tages (UTC) überein. "
+"Name und E-Mail des Benutzers stehen im Klartext."
+msgstr ""
+"Las direcciones IP se guardan como HMAC con clave diaria; los hashes de una "
+"misma dirección coinciden solo dentro de un día UTC. Nombre y correo del "
+"usuario se guardan en claro."
+
+#: includes/class-sentinel-admin.php:1636
+msgid "CSV-Export:"
+msgstr "Exportación CSV:"
+
+#: includes/class-sentinel-admin.php:1636
+msgid ""
+"Werte, die mit =, +, -, @, Tabulator oder Wagenrücklauf beginnen, erhalten "
+"ein vorangestelltes Apostroph, damit Tabellenprogramme sie nicht als Formel "
+"ausführen."
+msgstr ""
+"Los valores que empiezan con =, +, -, @, tabulador o retorno de carro llevan "
+"un apóstrofo inicial para que las hojas de cálculo no los ejecuten como "
+"fórmulas."
+
+#: includes/class-sentinel-admin.php:1637
+msgid "WP-CLI Testausführung:"
+msgstr "Ejecución de pruebas en WP-CLI:"
+
+#: includes/class-sentinel-admin.php:1637
+msgid ""
+"In WP-CLI Tests liefert is_admin() immer true. Frontend-Tests setzen daher "
+"die Konstante WM_SENTINEL_TESTING_MODE."
+msgstr ""
+"En pruebas con WP-CLI, is_admin() siempre devuelve true. Por ello las "
+"pruebas de frontend definen la constante WM_SENTINEL_TESTING_MODE."
+
+#: includes/class-sentinel-core.php:122
+msgid "WM Activity Sentinel Kennzahlen"
+msgstr "Métricas de WM Activity Sentinel"
+
+#: includes/class-sentinel-core.php:157
+msgid "WM Sentinel Kennzahl"
+msgstr "Métrica de WM Sentinel"
+
+#: includes/class-sentinel-core.php:161
+msgid ""
+"Gibt nicht-sensible Prüfstatus- und Protokollzähler von WM Activity Sentinel "
+"aus."
+msgstr ""
+"Muestra el estado de verificación y contadores no sensibles de WM Activity "
+"Sentinel."
+
+#: includes/class-sentinel-core.php:165
+msgid "Kennzahl"
+msgstr "Métrica"
+
+#: includes/class-sentinel-core.php:169
+msgid "Kettenstatus (INTACT / BROKEN)"
+msgstr "Estado de la cadena (INTACT / BROKEN)"
+
+#: includes/class-sentinel-core.php:173
+msgid "Geprüfte Einträge"
+msgstr "Entradas verificadas"
+
+#: includes/class-sentinel-core.php:181
+msgid "Plugin-Version"
+msgstr "Versión del plugin"
+
+#: includes/class-sentinel-exporter.php:157
+#: includes/class-sentinel-exporter.php:168
+msgid "WM Activity Sentinel Audit-Logs"
+msgstr "Registros de auditoría de WM Activity Sentinel"
+
+#: includes/class-sentinel-exporter.php:216
+msgid "Objekttyp"
+msgstr "Tipo de objeto"
+
+#: includes/class-sentinel-exporter.php:220
+msgid "Benutzername"
+msgstr "Nombre de usuario"
+
+#: includes/class-sentinel-exporter.php:224
+msgid "Benutzer-E-Mail"
+msgstr "Correo del usuario"
+
+#: includes/class-sentinel-exporter.php:228
+msgid "Eintrags-Hash"
+msgstr "Hash de la entrada"
+
+#: includes/class-sentinel-exporter.php:235
+msgid "Sicherheits- und Audit-Protokolle"
+msgstr "Registros de seguridad y auditoría"
+
+#: includes/class-sentinel-exporter.php:316
+msgid ""
+"Der Löschnachweis konnte nicht in die Kette geschrieben werden; es wurde "
+"nichts geändert."
+msgstr ""
+"No se pudo escribir el justificante de borrado en la cadena; no se modificó "
+"nada."
+
+#. translators: 1: number of pseudonymised log entries, 2: id of the erasure record
+#: includes/class-sentinel-exporter.php:335
+#, php-format
+msgid ""
+"%1$d Protokolleinträge pseudonymisiert (Name, Adresse, IP-Hash, Adresse im "
+"Kontext). Die Prüfung erkennt sie über den Löschnachweis #%2$d an; "
+"Ereignisart, Zeitpunkt und übriger Kontext bleiben stehen."
+msgstr ""
+"%1$d entradas de registro seudonimizadas (nombre, correo, hash IP, correo en "
+"contexto). La verificación las acepta mediante el justificante #%2$d; tipo "
+"de evento, fecha y resto del contexto se mantienen."
+
+#: includes/class-sentinel-fim.php:136
+msgid ""
+"api.wordpress.org war nicht erreichbar; die Dateien konnten nicht gegen den "
+"offiziellen Katalog geprüft werden."
+msgstr ""
+"No se pudo contactar con api.wordpress.org; no fue posible comprobar los "
+"archivos frente al catálogo oficial."
+
+#. translators: %d: HTTP status code
+#: includes/class-sentinel-fim.php:147
+#, php-format
+msgid ""
+"api.wordpress.org antwortete mit HTTP %d; es wurde kein Katalog geladen."
+msgstr "api.wordpress.org respondió con HTTP %d; no se cargó ningún catálogo."
+
+#: includes/class-sentinel-fim.php:174
+msgid "Die Antwort von api.wordpress.org enthielt keinen Prüfsummen-Katalog."
+msgstr ""
+"La respuesta de api.wordpress.org no contenía un catálogo de sumas de "
+"verificación."
+
+#. translators: %s: WordPress version
+#: includes/class-sentinel-fim.php:188
+#, php-format
+msgid ""
+"Für WordPress %s liegt bei api.wordpress.org kein Prüfsummen-Katalog vor "
+"(etwa bei einer Entwicklungs- oder Nightly-Version). Die Kerndateien wurden "
+"nicht geprüft."
+msgstr ""
+"No hay catálogo de sumas en api.wordpress.org para WordPress %s (por "
+"ejemplo, una versión en desarrollo o nightly). No se comprobaron los "
+"archivos del núcleo."
+
+#: includes/class-sentinel-fim.php:214
+msgid "Der geladene Katalog enthielt keine verwertbaren Prüfsummen."
+msgstr "El catálogo cargado no contenía sumas de verificación utilizables."
+
+#. translators: %d: number of entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:40
+#, php-format
+msgid ""
+"Die Log-Tabelle ist leer, obwohl zuletzt %d Einträge verzeichnet waren. Das "
+"Protokoll wurde gelöscht."
+msgstr ""
+"La tabla de registros está vacía aunque figuraban %d entradas registradas. "
+"El registro fue eliminado."
+
+#. translators: 1: log id, 2: stored prev_hash prefix, 3: expected hash prefix
+#: includes/class-sentinel-integrity.php:82
+#, php-format
+msgid ""
+"Kettenbruch bei Log-ID #%1$d: prev_hash \"%2$s\" stimmt nicht mit dem "
+"erwarteten Hash \"%3$s\" überein (Hinweis auf gelöschte oder eingeschleuste "
+"Zeilen)."
+msgstr ""
+"Rotura de cadena en el ID #%1$d: prev_hash \"%2$s\" no coincide con el hash "
+"esperado \"%3$s\" (indicio de filas borradas o insertadas)."
+
+#. translators: 1: log id, 2: recomputed hash prefix, 3: stored hash prefix
+#: includes/class-sentinel-integrity.php:123
+#, php-format
+msgid ""
+"Manipulationsnachweis bei Log-ID #%1$d: Der berechnete Prüfsummen-Hash "
+"\"%2$s\" weicht vom gespeicherten Hash \"%3$s\" ab. Entweder wurden die "
+"Daten nachträglich in der Datenbank verändert, oder das Protokoll wurde mit "
+"einem anderen AUTH_KEY geschrieben (etwa vor einem Umzug der Website)."
+msgstr ""
+"Evidencia de manipulación en el ID #%1$d: el hash calculado \"%2$s\" difiere "
+"del almacenado \"%3$s\". O bien se alteraron los datos en la base de datos, "
+"o el registro se escribió con otra AUTH_KEY (por ejemplo, antes de migrar el "
+"sitio)."
+
+#. translators: 1: entries present, 2: entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:149
+#, php-format
+msgid ""
+"Das Ende der Kette stimmt nicht mit dem verzeichneten Kettenstand überein "
+"(%1$d von %2$d Einträgen vorhanden): Die neuesten Protokolleinträge wurden "
+"entfernt oder ersetzt."
+msgstr ""
+"El final de la cadena no coincide con el estado de la cadena registrado "
+"(%1$d de %2$d entradas presentes): las entradas más recientes del registro "
+"se eliminaron o se reemplazaron."
+
+#: includes/class-sentinel-sensors.php:546
+msgid "Zugriff auf Sentinel Telemetrie erfordert eine aktive Sitzung."
+msgstr "El acceso a la telemetría de Sentinel requiere una sesión activa."

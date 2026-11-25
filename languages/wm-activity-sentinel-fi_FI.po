@@ -1,0 +1,1739 @@
+# Translation of wm-activity-sentinel in fi_FI
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-activity-sentinel 1.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-activity-"
+"sentinel\n"
+"POT-Creation-Date: 2026-11-21T12:27:41+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:27+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-activity-sentinel\n"
+
+#. Plugin Name of the plugin
+#: wm-activity-sentinel.php includes/class-sentinel-admin.php:228
+#: includes/class-sentinel-admin.php:1495
+msgid "WM Activity Sentinel"
+msgstr "WM Activity Sentinel"
+
+#. Plugin URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+
+#. Description of the plugin
+#: wm-activity-sentinel.php
+msgid ""
+"Aktivitätsprotokoll mit HMAC-SHA256-Hashkette: Anmeldungen, Benutzer und "
+"Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-Routen, "
+"Seitenaufrufe und Klicks angemeldeter Benutzer; Prüfung der Kette, E-Mail- "
+"und Webhook-Alarme, CSV- und JSON-Export. Manipulation wird nachweisbar, "
+"nicht verhindert."
+msgstr ""
+"Tapahtumaloki HMAC-SHA256-tiivisteketjulla: kirjautumiset, käyttäjät ja "
+"roolit, lisäosat ja teemat, viennit, tiedostoeditori, valitut REST-reitit "
+"sekä kirjautuneiden käyttäjien sivunäytöt ja napsautukset; ketjun tarkistus, "
+"sähköposti- ja webhook-hälytykset sekä CSV- ja JSON-vienti. Peukalointi "
+"tulee havaittavaksi, mutta sitä ei estetä."
+
+#. Author of the plugin
+#: wm-activity-sentinel.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-sentinel-admin.php:126
+msgid "Part of the WM Suite plugin family"
+msgstr "Osa WM Suiten lisäosaperhettä"
+
+#: includes/class-sentinel-admin.php:128
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Hub"
+msgstr "Hub-tila"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Standalone"
+msgstr "Itsenäinen"
+
+#: includes/class-sentinel-admin.php:146 includes/class-sentinel-admin.php:147
+msgid "WM Sentinel"
+msgstr "WM Sentinel"
+
+#: includes/class-sentinel-admin.php:157 includes/class-sentinel-admin.php:158
+#: includes/class-sentinel-admin.php:448
+msgid "Aktivitäts-Stream"
+msgstr "Tapahtumavirta"
+
+#: includes/class-sentinel-admin.php:166 includes/class-sentinel-admin.php:449
+msgid "Integritäts-Audit (Hash-Kette)"
+msgstr "Eheystarkastus (tiivisteketju)"
+
+#: includes/class-sentinel-admin.php:167 includes/class-sentinel-admin.php:308
+#: wm-activity-sentinel.php:138
+msgid "Integritäts-Audit"
+msgstr "Eheystarkastus"
+
+#: includes/class-sentinel-admin.php:175
+msgid "Dateiintegrität (Kern & Plugins)"
+msgstr "Tiedostojen eheys (ydin ja lisäosat)"
+
+#: includes/class-sentinel-admin.php:176 includes/class-sentinel-admin.php:450
+#: includes/class-sentinel-admin.php:781
+msgid "Dateiintegrität"
+msgstr "Tiedostojen eheys"
+
+#: includes/class-sentinel-admin.php:184 includes/class-sentinel-admin.php:185
+#: includes/class-sentinel-admin.php:451 includes/class-sentinel-admin.php:951
+#: wm-activity-sentinel.php:156
+msgid "Export"
+msgstr "Vienti"
+
+#: includes/class-sentinel-admin.php:193 includes/class-sentinel-admin.php:194
+#: includes/class-sentinel-admin.php:1018 wm-activity-sentinel.php:128
+msgid "Einstellungen"
+msgstr "Asetukset"
+
+#: includes/class-sentinel-admin.php:202
+msgid "Handbuch & Dokumentation"
+msgstr "Käyttöopas ja dokumentaatio"
+
+#: includes/class-sentinel-admin.php:203 includes/class-sentinel-admin.php:453
+#: includes/class-sentinel-admin.php:1529 wm-activity-sentinel.php:133
+#: wm-activity-sentinel.php:151
+msgid "Handbuch"
+msgstr "Käsikirja"
+
+#. translators: %d: number of verified chain entries
+#: includes/class-sentinel-admin.php:252
+#, php-format
+msgid "Kette intakt: %d Einträge geprüft"
+msgstr "Ketju ehjä: %d merkintää tarkistettu"
+
+#: includes/class-sentinel-admin.php:255
+msgid "Kettenprüfung fehlgeschlagen"
+msgstr "Ketjun tarkistus epäonnistui"
+
+#: includes/class-sentinel-admin.php:259
+msgid "Jeder Eintrag ist mit HMAC-SHA256 an den vorherigen gebunden."
+msgstr "Jokainen merkintä on sidottu edelliseen HMAC-SHA256:lla."
+
+#: includes/class-sentinel-admin.php:268 includes/class-sentinel-admin.php:508
+msgid "Einträge"
+msgstr "Merkinnät"
+
+#: includes/class-sentinel-admin.php:272
+msgid "Kritisch (24h)"
+msgstr "Kriittiset (24 h)"
+
+#: includes/class-sentinel-admin.php:276 includes/class-sentinel-admin.php:558
+msgid "Warnungen (24h)"
+msgstr "Varoitukset (24 h)"
+
+#: includes/class-sentinel-admin.php:281
+msgid "Letzte Systemereignisse"
+msgstr "Viimeisimmät järjestelmätapahtumat"
+
+#: includes/class-sentinel-admin.php:298
+msgid "Noch keine Ereignisse erfasst."
+msgstr "Tapahtumia ei ole vielä tallennettu."
+
+#: includes/class-sentinel-admin.php:305
+msgid "Aktivitäts-Stream öffnen"
+msgstr "Avaa tapahtumavirta"
+
+#: includes/class-sentinel-admin.php:452
+msgid "Einstellungen & Alarme"
+msgstr "Asetukset ja hälytykset"
+
+#: includes/class-sentinel-admin.php:456
+msgid "Bereiche von WM Activity Sentinel"
+msgstr "WM Activity Sentinelin osiot"
+
+#: includes/class-sentinel-admin.php:494
+msgid "Aktivitätsprotokoll"
+msgstr "Tapahtumaloki"
+
+#: includes/class-sentinel-admin.php:495
+msgid "WM Activity Sentinel — Aktivitäts-Stream"
+msgstr "WM Activity Sentinel — Tapahtumavirta"
+
+#: includes/class-sentinel-admin.php:496
+msgid ""
+"Protokollierte Ereignisse, neueste zuerst. Jeder Eintrag ist über eine HMAC-"
+"SHA256-Kette mit seinem Vorgänger verbunden."
+msgstr ""
+"Kirjatut tapahtumat, uusimmat ensin. Jokainen merkintä on linkitetty "
+"edeltäjäänsä HMAC-SHA256-ketjulla."
+
+#: includes/class-sentinel-admin.php:503
+msgid "Auf dieser Seite"
+msgstr "Tällä sivulla"
+
+#: includes/class-sentinel-admin.php:504
+msgid "Springen zu:"
+msgstr "Siirry kohtaan:"
+
+#: includes/class-sentinel-admin.php:505
+msgid "Kurzanleitung"
+msgstr "Pikaopas"
+
+#: includes/class-sentinel-admin.php:506
+msgid "Kennzahlen 24 h"
+msgstr "24 tunnin mittarit"
+
+#: includes/class-sentinel-admin.php:507
+msgid "Filter und Suche"
+msgstr "Suodatus ja haku"
+
+#: includes/class-sentinel-admin.php:515
+msgid "Was dieses Protokoll leistet"
+msgstr "Mitä tämä loki tarjoaa"
+
+#: includes/class-sentinel-admin.php:518
+msgid ""
+"WM Activity Sentinel schreibt ausgewählte Ereignisse (Anmeldungen, Benutzer "
+"und Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-"
+"Routen, Seitenaufrufe und Klicks angemeldeter Benutzer) in eine Tabelle, "
+"deren Einträge über eine HMAC-SHA256-Kette verbunden sind. Wer Einträge "
+"ändert, löscht oder einschleust, fällt bei der Prüfung auf, solange er den "
+"Schlüssel aus der wp-config.php nicht kennt. Verhindern kann das Protokoll "
+"solche Eingriffe nicht."
+msgstr ""
+"WM Activity Sentinel kirjoittaa valitut tapahtumat (kirjautumiset, käyttäjät "
+"ja roolit, lisäosat ja teemat, viennit, tiedostoeditorin, valitut REST-"
+"reitit sekä kirjautuneiden käyttäjien sivunäytöt ja napsautukset) tauluun, "
+"jonka merkinnät on ketjutettu HMAC-SHA256-tiivisteillä. Merkintöjen "
+"muuttaminen, poistaminen tai lisääminen paljastuu tarkistuksessa, kunhan "
+"tekijällä ei ole wp-config.php-tiedoston avainta. Loki ei voi estää "
+"tällaisia toimia."
+
+#: includes/class-sentinel-admin.php:521
+msgid "Schnellzugriff:"
+msgstr "Pikavalinnat:"
+
+#: includes/class-sentinel-admin.php:524
+msgid "Kette prüfen"
+msgstr "Tarkista ketju"
+
+#: includes/class-sentinel-admin.php:528
+msgid "Protokoll exportieren"
+msgstr "Vie loki"
+
+#: includes/class-sentinel-admin.php:532
+msgid "Protokollierung einstellen"
+msgstr "Määritä lokitus"
+
+#: includes/class-sentinel-admin.php:542 includes/class-sentinel-core.php:177
+msgid "Gesamt-Einträge"
+msgstr "Merkintöjä yhteensä"
+
+#: includes/class-sentinel-admin.php:550
+msgid "Kritische Alarme (24h)"
+msgstr "Kriittiset hälytykset (24 h)"
+
+#: includes/class-sentinel-admin.php:566
+msgid "Aktive Benutzer"
+msgstr "Aktiiviset käyttäjät"
+
+#: includes/class-sentinel-admin.php:577
+msgid "Alle Schweregrade"
+msgstr "Kaikki vakavuustasot"
+
+#: includes/class-sentinel-admin.php:578
+msgid "Kritisch (Critical)"
+msgstr "Kriittinen"
+
+#: includes/class-sentinel-admin.php:579
+msgid "Warnung (Warning)"
+msgstr "Varoitus"
+
+#: includes/class-sentinel-admin.php:580
+msgid "Hinweis (Notice)"
+msgstr "Huomautus"
+
+#: includes/class-sentinel-admin.php:581
+msgid "Info"
+msgstr "Tiedote"
+
+#: includes/class-sentinel-admin.php:584
+msgid "Ereignis, Benutzer oder Kontext durchsuchen..."
+msgstr "Hae tapahtumaa, käyttäjää tai kontekstia..."
+
+#: includes/class-sentinel-admin.php:585
+msgid "Filtern"
+msgstr "Suodata"
+
+#: includes/class-sentinel-admin.php:588
+msgid "Zurücksetzen"
+msgstr "Nollaa"
+
+#: includes/class-sentinel-admin.php:596
+msgid "Log-ID"
+msgstr "Loki-ID"
+
+#: includes/class-sentinel-admin.php:597
+#: includes/class-sentinel-exporter.php:204
+msgid "Zeitpunkt (UTC)"
+msgstr "Aikaleima (UTC)"
+
+#: includes/class-sentinel-admin.php:598 includes/class-sentinel-admin.php:1567
+#: includes/class-sentinel-exporter.php:212
+msgid "Schweregrad"
+msgstr "Vakavuus"
+
+#: includes/class-sentinel-admin.php:599
+#: includes/class-sentinel-exporter.php:208
+msgid "Ereignis"
+msgstr "Tapahtuma"
+
+#: includes/class-sentinel-admin.php:600
+msgid "Objekt"
+msgstr "Kohde"
+
+#: includes/class-sentinel-admin.php:601
+msgid "Akteur / Benutzer"
+msgstr "Toimija / Käyttäjä"
+
+#: includes/class-sentinel-admin.php:602
+msgid "IP-Hash"
+msgstr "IP-tiiviste"
+
+#: includes/class-sentinel-admin.php:603
+msgid "Kontext"
+msgstr "Konteksti"
+
+#. translators: %d: log entry id
+#: includes/class-sentinel-admin.php:622
+#, php-format
+msgid "Kontext von Eintrag #%d anzeigen"
+msgstr "Näytä merkinnän #%d konteksti"
+
+#: includes/class-sentinel-admin.php:630
+msgid "Keine Aktivitäten gefunden."
+msgstr "Toimintaa ei löytynyt."
+
+#. translators: %d: total number of log entries
+#: includes/class-sentinel-admin.php:643
+#, php-format
+msgid "%d Einträge"
+msgstr "%d merkintää"
+
+#: includes/class-sentinel-admin.php:670
+msgid "Ereignis-Kontext Inspektor"
+msgstr "Tapahtumakontekstin tarkastin"
+
+#: includes/class-sentinel-admin.php:671
+msgid "Inspektor schließen"
+msgstr "Sulje tarkastin"
+
+#: includes/class-sentinel-admin.php:692
+msgid "Kettenprüfung"
+msgstr "Ketjun tarkistus"
+
+#: includes/class-sentinel-admin.php:693
+msgid "Kryptografisches Integritäts-Audit (Hash-Chaining)"
+msgstr "Kryptografinen eheystarkastus (tiivisteketjutus)"
+
+#: includes/class-sentinel-admin.php:696
+msgid ""
+"Jeder Eintrag wird mit HMAC-SHA256 gegen seinen Vorgänger geprüft, und das "
+"Ende der Kette gegen den außerhalb der Protokolltabelle verzeichneten "
+"Kettenstand."
+msgstr ""
+"Jokainen merkintä tarkistetaan HMAC-SHA256:lla edeltäjäänsä vasten ja ketjun "
+"loppu lokitaulun ulkopuolelle tallennettua ketjun tilaa vasten."
+
+#: includes/class-sentinel-admin.php:703
+msgid "Status der Prüfsummen-Kette"
+msgstr "Tarkistussummaketjun tila"
+
+#: includes/class-sentinel-admin.php:709
+msgid "KETTE INTAKT"
+msgstr "KETJU EHJÄ"
+
+#. translators: %d: number of verified log entries
+#: includes/class-sentinel-admin.php:713
+#, php-format
+msgid ""
+"%d Log-Einträge vom ersten Eintrag bis zum verzeichneten Kettenstand "
+"geprüft. Keine nachträgliche Änderung, Lücke oder Kürzung erkennbar."
+msgstr ""
+"%d lokimerkintää tarkistettu ensimmäisestä merkinnästä tallennettuun ketjun "
+"tilaan asti. Myöhempää muutosta, aukkoa tai lyhennystä ei havaittu."
+
+#. translators: %d: number of pseudonymised log entries
+#: includes/class-sentinel-admin.php:721
+#, php-format
+msgid ""
+"%d davon wurden auf eine Löschanfrage hin pseudonymisiert und über den "
+"jeweiligen Löschnachweis in der Kette anerkannt."
+msgstr ""
+"Niistä %d on pseudonymisoitu poistopyynnön perusteella ja hyväksytty "
+"ketjutetun poistotietueen kautta."
+
+#: includes/class-sentinel-admin.php:726
+msgid "Hash des letzten Eintrags:"
+msgstr "Viimeisimmän merkinnän tiiviste:"
+
+#: includes/class-sentinel-admin.php:734
+msgid "MANIPULATION ODER KETTENBRUCH ERKANNT"
+msgstr "PEUKALOINTI TAI KATKENNUT KETJU HAVAITTU"
+
+#: includes/class-sentinel-admin.php:735
+msgid "Fehlerdiagnose:"
+msgstr "Diagnostiikkatiedot:"
+
+#: includes/class-sentinel-admin.php:742
+msgid "AUTH_KEY ist noch der Platzhalter aus wp-config-sample.php."
+msgstr "AUTH_KEY on yhä wp-config-sample.php-tiedoston oletusarvossa."
+
+#: includes/class-sentinel-admin.php:743
+msgid ""
+"Die Kette ist mit einem öffentlich bekannten Schlüssel signiert: Jeder mit "
+"Datenbankzugriff kann Einträge ändern und die Kette neu signieren. Ein neuer "
+"AUTH_KEY in der wp-config.php schützt künftige Einträge; bestehende Einträge "
+"bestehen die Prüfung dann nicht mehr."
+msgstr ""
+"Ketju allekirjoitetaan julkisesti tunnetulla avaimella: kuka tahansa "
+"tietokantaan pääsevä voi muuttaa merkintöjä ja allekirjoittaa ketjun "
+"uudelleen. Uuden AUTH_KEY-arvon asettaminen wp-config.php-tiedostoon suojaa "
+"tulevat merkinnät; aiemmat merkinnät eivät enää läpäise tarkistusta."
+
+#: includes/class-sentinel-admin.php:747
+msgid "Der Kettenschlüssel liegt in der Datenbank, nicht in der wp-config.php."
+msgstr ""
+"Ketjun avain on tallennettu tietokantaan eikä wp-config.php-tiedostoon."
+
+#: includes/class-sentinel-admin.php:748
+msgid ""
+"In dieser Installation ist AUTH_KEY nicht definiert, daher greift WordPress "
+"auf automatisch erzeugte Salts zurück und legt sie in wp_options ab — also "
+"in derselben Datenbank, in die ein Angreifer ohnehin schreiben würde. Der "
+"Manipulationsnachweis hält hier nur gegen Unfälle, nicht gegen einen "
+"Angreifer. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"AUTH_KEY-vakiota ei ole määritetty tässä asennuksessa, joten WordPress "
+"käyttää wp_options-tauluun tallennettuja automaattisia suoloja — samassa "
+"tietokannassa, johon hyökkääjä kirjoittaisi. Peukaloinnin tunnistus suojaa "
+"tällöin vain vahingoilta, ei hyökkääjältä. Määritä AUTH_KEY wp-config.php-"
+"tiedostoon."
+
+#: includes/class-sentinel-admin.php:754
+msgid "Integritätsprüfung erneut ausführen"
+msgstr "Suorita eheystarkistus uudelleen"
+
+#: includes/class-sentinel-admin.php:782
+msgid "Abgleich gegen den offiziellen Prüfsummen-Katalog"
+msgstr "Vertailu viralliseen tarkistussummaluetteloon"
+
+#: includes/class-sentinel-admin.php:783
+msgid ""
+"Die Kerndateien werden gegen api.wordpress.org geprüft, die WM-Suite-Plugins "
+"gegen eine Basislinie, deren Fingerabdruck in der Hash-Kette versiegelt ist."
+msgstr ""
+"Ydintiedostot tarkistetaan api.wordpress.org-palvelua vasten ja WM Suite "
+"-lisäosat perustasoa vasten, jonka sormenjälki on sinetöity tiivisteketjuun."
+
+#. translators: %d: number of files in the baseline
+#: includes/class-sentinel-admin.php:793
+#, php-format
+msgid "Basislinie über %d Dateien erfasst und in der Kette versiegelt."
+msgstr "%d tiedoston perustaso tallennettu ja sinetöity ketjuun."
+
+#. translators: 1: number of files found, 2: configured maximum
+#: includes/class-sentinel-admin.php:802 includes/class-sentinel-fim.php:517
+#, php-format
+msgid ""
+"Die Basislinie wurde nicht gespeichert: %1$d Dateien überschreiten das "
+"Maximum von %2$d. Eine Basislinie dieser Größe wird bei jeder Prüfung "
+"gelesen und neu geschrieben. Prüfen Sie, ob in einem Plugin-Verzeichnis "
+"Entwicklungsdateien liegen, die dort nicht hingehören."
+msgstr ""
+"Perustasoa ei tallennettu: %1$d tiedostoa ylittää enimmäismäärän %2$d. Tämän "
+"kokoinen perustaso luetaan ja kirjoitetaan joka tarkistuksella. Tarkista, "
+"onko lisäosakansiossa kehitysaikaisia tiedostoja."
+
+#: includes/class-sentinel-admin.php:808
+msgid "Letzte Prüfung"
+msgstr "Viimeisin tarkistus"
+
+#: includes/class-sentinel-admin.php:814
+msgid "NOCH NICHT GEPRÜFT"
+msgstr "EI VIELÄ TARKISTETTU"
+
+#: includes/class-sentinel-admin.php:815
+msgid ""
+"Es liegt kein Prüfbericht vor. Starten Sie die Prüfung unten oder warten Sie "
+"den täglichen Lauf ab. Ein ungeprüfter Dateibaum ist kein unauffälliger "
+"Dateibaum."
+msgstr ""
+"Tarkistusraporttia ei ole vielä saatavilla. Käynnistä tarkistus alta tai "
+"odota päivittäistä ajastettua ajoa. Tarkistamaton tiedostopuu ei ole puhdas "
+"tiedostopuu."
+
+#: includes/class-sentinel-admin.php:822
+msgid "VERÄNDERTE ODER UNERWARTETE DATEIEN GEFUNDEN"
+msgstr "MUUTETTUJA TAI ODOTTAMATTOMIA TIEDOSTOJA LÖYTYI"
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:826
+#, php-format
+msgid "%1$d Abweichungen, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d poikkeamaa, tarkistettu viimeksi %2$s UTC."
+
+#: includes/class-sentinel-admin.php:835
+msgid "KEINE ABWEICHUNG"
+msgstr "EI POIKKEAMIA"
+
+#. translators: 1: number of core files checked, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:839
+#, php-format
+msgid ""
+"%1$d Kerndateien stimmen mit dem offiziellen Katalog überein (geprüft am "
+"%2$s UTC)."
+msgstr ""
+"%1$d ydintiedostoa täsmää viralliseen luetteloon (tarkistettu %2$s UTC)."
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:849
+#, php-format
+msgid "%1$d Auffälligkeiten, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d havaintoa, tarkistettu viimeksi %2$s UTC."
+
+#: includes/class-sentinel-admin.php:861
+msgid "Verändert (Kerndateien)"
+msgstr "Muutetut (ydintiedostot)"
+
+#: includes/class-sentinel-admin.php:862
+msgid "Fehlend (Kerndateien)"
+msgstr "Puuttuvat (ydintiedostot)"
+
+#: includes/class-sentinel-admin.php:863
+msgid "Unerwartet in wp-admin / wp-includes"
+msgstr "Odottamattomat kansioissa wp-admin / wp-includes"
+
+#: includes/class-sentinel-admin.php:864
+msgid "Verändert (WM-Suite-Plugins)"
+msgstr "Muutetut (WM Suiten lisäosat)"
+
+#: includes/class-sentinel-admin.php:865
+msgid "Fehlend (WM-Suite-Plugins)"
+msgstr "Puuttuvat (WM Suiten lisäosat)"
+
+#: includes/class-sentinel-admin.php:866
+msgid "Neu gegenüber der Basislinie"
+msgstr "Lisätyt perustason jälkeen"
+
+#. translators: %s: comma-separated file names
+#: includes/class-sentinel-admin.php:884
+#, php-format
+msgid "Nicht als Fund gewertet, weil ihr Entfernen gängige Härtung ist: %s."
+msgstr ""
+"Ei lasketa havainnoksi, koska niiden poistaminen on tavanomaista kovennusta: "
+"%s."
+
+#: includes/class-sentinel-admin.php:892
+msgid "Basislinie der WM-Suite-Plugins"
+msgstr "WM Suiten lisäosien perustaso"
+
+#: includes/class-sentinel-admin.php:897
+msgid "Die gespeicherte Basislinie wurde nachträglich verändert."
+msgstr "Tallennettua perustasoa on muutettu sinetöinnin jälkeen."
+
+#: includes/class-sentinel-admin.php:898
+msgid ""
+"Ihr Fingerabdruck stimmt nicht mehr mit dem Wert überein, der beim Erfassen "
+"in die Hash-Kette geschrieben wurde. Wer eine Plugin-Datei ändert und "
+"anschließend die Basislinie anpasst, hinterlässt genau diese Abweichung."
+msgstr ""
+"Sen sormenjälki ei enää vastaa tallennushetkellä tiivisteketjuun "
+"kirjoitettua arvoa. Lisäosatiedoston muokkaaminen ja perustason "
+"päivittäminen jälkikäteen jättää juuri tämän poikkeaman."
+
+#: includes/class-sentinel-admin.php:901
+msgid ""
+"Es ist noch keine Basislinie erfasst. Ohne sie werden nur die Kerndateien "
+"geprüft: für die Plugins gibt es keinen offiziellen Katalog, gegen den sich "
+"vergleichen ließe."
+msgstr ""
+"Perustasoa ei ole vielä tallennettu. Ilman sitä tarkistetaan vain "
+"ydintiedostot: lisäosille ei ole virallista luetteloa."
+
+#. translators: %d: number of files covered by the baseline
+#: includes/class-sentinel-admin.php:906
+#, php-format
+msgid "Basislinie über %d Dateien, Fingerabdruck in der Kette versiegelt."
+msgstr "%d tiedostoa kattava perustaso, sormenjälki sinetöity ketjuun."
+
+#: includes/class-sentinel-admin.php:911
+msgid ""
+"Nach jeder Aktualisierung eines WM-Suite-Plugins meldet die Prüfung dessen "
+"Dateien als verändert, weil sie es sind. Erfassen Sie die Basislinie dann "
+"neu."
+msgstr ""
+"Kun päivität minkä tahansa WM Suiten lisäosan, tarkistus ilmoittaa sen "
+"muuttuneet tiedostot muokatuiksi. Tallenna perustaso sen jälkeen uudelleen."
+
+#: includes/class-sentinel-admin.php:917
+msgid "Prüfung jetzt ausführen"
+msgstr "Suorita tarkistus nyt"
+
+#: includes/class-sentinel-admin.php:920
+msgid "Basislinie erfassen und versiegeln"
+msgstr "Tallenna ja sinetöi perustaso"
+
+#: includes/class-sentinel-admin.php:927
+msgid ""
+"Die geplante Prüfung ist ausgeschaltet; es läuft nur, was Sie hier von Hand "
+"starten."
+msgstr ""
+"Ajastettu tarkistus on poissa käytöstä; vain täältä käsin käynnistetyt ajot "
+"suoritetaan."
+
+#. translators: %s: timestamp in UTC
+#: includes/class-sentinel-admin.php:931
+#, php-format
+msgid "Nächster geplanter Lauf: %s UTC."
+msgstr "Seuraava ajastettu ajo: %s UTC."
+
+#: includes/class-sentinel-admin.php:934
+msgid ""
+"Die Prüfung ist eingeschaltet, aber es ist kein Lauf geplant. Speichern Sie "
+"die Einstellungen einmal, damit der tägliche Termin angelegt wird."
+msgstr ""
+"Tarkistus on käytössä, mutta ajoa ei ole vielä ajastettu. Tallenna asetukset "
+"kerran päivittäisen tapahtuman ajastamiseksi."
+
+#: includes/class-sentinel-admin.php:952
+msgid "Export des Protokolls"
+msgstr "Vie tapahtumaloki"
+
+#: includes/class-sentinel-admin.php:953
+msgid "CSV- oder JSON-Datei mit bis zu 10.000 Einträgen, neueste zuerst."
+msgstr ""
+"Enintään 10 000 merkintää sisältävä CSV- tai JSON-tiedosto, uusimmat ensin."
+
+#: includes/class-sentinel-admin.php:961
+msgid "CSV-Datei"
+msgstr "CSV-tiedosto"
+
+#: includes/class-sentinel-admin.php:962
+msgid ""
+"Semikolon-getrennt, UTF-8 mit BOM. Zellen, die mit =, +, -, @, Tabulator "
+"oder Wagenrücklauf beginnen, erhalten ein vorangestelltes Apostroph, damit "
+"Tabellenprogramme sie nicht als Formel ausführen."
+msgstr ""
+"Puolipisteellä eroteltu, UTF-8 ja BOM. Solut, jotka alkavat merkillä =, +, "
+"-, @, sarkain tai rivinpalautus, saavat alkuun heittomerkin, jotta "
+"taulukkolaskentaohjelmat eivät suorita niitä kaavoina."
+
+#: includes/class-sentinel-admin.php:964
+msgid "CSV-Datei herunterladen"
+msgstr "Lataa CSV-tiedosto"
+
+#: includes/class-sentinel-admin.php:969
+msgid "JSON-Paket"
+msgstr "JSON-paketti"
+
+#: includes/class-sentinel-admin.php:970
+msgid ""
+"Einträge mit ihren Hashes, das Ergebnis der Kettenprüfung zum Zeitpunkt des "
+"Exports und eine SHA-256-Prüfsumme über das Dokument ohne das "
+"Prüfsummenfeld. Die Datei ist nicht signiert: Wer sie ändert, kann die "
+"Prüfsumme neu berechnen."
+msgstr ""
+"Merkinnät tiivisteineen, ketjun tarkistustulos vientihetkellä sekä SHA-256-"
+"tarkistussumma dokumentista ilman tarkistussummakenttää. Tiedostoa ei ole "
+"allekirjoitettu: muokkaaja voi laskea summan uudelleen."
+
+#: includes/class-sentinel-admin.php:972
+msgid "JSON-Paket herunterladen"
+msgstr "Lataa JSON-paketti"
+
+#: includes/class-sentinel-admin.php:1019
+msgid "Einstellungen & Protokollierungsstufe"
+msgstr "Asetukset ja lokitaso"
+
+#: includes/class-sentinel-admin.php:1020
+msgid ""
+"Protokollierungsstufe, überwachte Bereiche, Klick-Erfassung, Alarme per E-"
+"Mail und Webhook sowie Aufbewahrung."
+msgstr ""
+"Lokitaso, valvotut alueet, napsautusten tallennus, hälytykset sähköpostilla "
+"ja webhookilla sekä säilytys."
+
+#: includes/class-sentinel-admin.php:1028
+msgid ""
+"Einstellungen und Protokollierungsfilter wurden erfolgreich gespeichert."
+msgstr "Asetukset ja lokitussuodattimet on tallennettu."
+
+#. translators: %d: number of demo log entries generated
+#: includes/class-sentinel-admin.php:1037
+#, php-format
+msgid ""
+"%d von 15 Demo-Einträgen wurden an die Kette angehängt (ohne Alarm-Mails und "
+"Webhooks). Einträge, die Protokollierungsstufe oder Schalter nicht zulassen, "
+"werden nicht geschrieben."
+msgstr ""
+"%d / 15 esimerkkimerkintää lisättiin ketjuun (ilman hälytyssähköposteja tai "
+"webhookeja). Lokitustason tai moduulikytkinten suodattamia merkintöjä ei "
+"kirjoiteta."
+
+#: includes/class-sentinel-admin.php:1053
+msgid "Keine Demodaten gefunden; das Protokoll ist unverändert."
+msgstr "Esimerkkitietoja ei löytynyt; loki säilyy ennallaan."
+
+#. translators: %d: number of demo log entries deleted
+#: includes/class-sentinel-admin.php:1056
+#, php-format
+msgid ""
+"%d Demodaten-Logs wurden gelöscht. Das Protokoll wurde dabei vollständig "
+"zurückgesetzt und die Kette beginnt wieder beim Genesis-Block."
+msgstr ""
+"%d esimerkkimerkintää poistettiin. Loki nollattiin kokonaan ja ketju "
+"käynnistettiin uudelleen alkulohkosta."
+
+#: includes/class-sentinel-admin.php:1066
+msgid ""
+"Die Demodaten wurden nicht gelöscht: es liegen bereits echte "
+"Protokolleinträge vor. Eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren, ohne dass die Prüfung bricht — und sie nachträglich neu zu "
+"signieren würde genau die Manipulationserkennung aufheben, für die dieses "
+"Plugin da ist."
+msgstr ""
+"Esimerkkitietoja ei poistettu, koska oikeita lokimerkintöjä on jo olemassa. "
+"Jatkuvasta ketjusta ei voi poistaa merkintöjä keskeltä rikkomatta "
+"tarkistusta — ja ketjun uudelleenallekirjoitus mitätöisi lisäosan "
+"peukaloinnin tunnistuksen."
+
+#: includes/class-sentinel-admin.php:1067
+msgid ""
+"Die Demodaten bleiben als solche gekennzeichnet stehen. Wer sie zwingend "
+"loswerden muss, setzt das gesamte Protokoll über den Werksreset zurück und "
+"verliert dabei auch die echten Einträge."
+msgstr ""
+"Esimerkkimerkinnät pysyvät merkittyinä. Jos ne on poistettava, tyhjennä koko "
+"loki tehdasasetusten palautuksella, mikä poistaa myös oikeat merkinnät."
+
+#: includes/class-sentinel-admin.php:1073
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Tehdasasetukset palautettu:"
+
+#: includes/class-sentinel-admin.php:1073
+msgid ""
+"Alle Logs und Alarme wurden bereinigt, der Genesis-Block wurde neu "
+"initialisiert und alle Einstellungen auf Standardwerte zurückgesetzt."
+msgstr ""
+"Kaikki lokit ja hälytykset tyhjennettiin, uusi alkulohko alustettiin ja "
+"kaikki asetukset palautettiin oletusarvoihin."
+
+#: includes/class-sentinel-admin.php:1084
+msgid "1. Protokollierungsstufe & Klick-Erfassung"
+msgstr "1. Lokitaso ja napsautusten tallennus"
+
+#: includes/class-sentinel-admin.php:1087
+msgid ""
+"Steuert, ab welchem Schweregrad Ereignisse in die Kette geschrieben werden. "
+"Einträge zu Löschanfragen und der Genesis-Block werden immer geschrieben."
+msgstr ""
+"Ohjaa ketjuun kirjattavaa vähimmäisvakavuutta. Tietosuojan poistotietueet ja "
+"alkulohko kirjoitetaan aina."
+
+#: includes/class-sentinel-admin.php:1094
+msgid "Protokollierungsstufe"
+msgstr "Lokitaso"
+
+#: includes/class-sentinel-admin.php:1100
+msgid "Vollständig (Info, Notice, Warning, Critical)"
+msgstr "Täydellinen (Info, Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1103
+msgid "Standard (Notice, Warning, Critical)"
+msgstr "Vakio (Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1106
+msgid "Nur Warnungen (Warning, Critical)"
+msgstr "Vain varoitukset (Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1109
+msgid "Nur kritische Ereignisse (Critical)"
+msgstr "Vain kriittiset tapahtumat (Critical)"
+
+#: includes/class-sentinel-admin.php:1113
+msgid "Stufenübersicht:"
+msgstr "Tasojen yleiskuvaus:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid "Vollständig:"
+msgstr "Täydellinen:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid ""
+"Schreibt jedes Ereignis der Sensoren, auch Info-Einträge wie Anmeldungen, "
+"Seitenaufrufe und Klicks."
+msgstr ""
+"Kirjoittaa jokaisen anturien tapahtuman, myös Info-merkinnät kuten "
+"kirjautumiset, sivunkatselut ja napsautukset."
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Standard:"
+msgstr "Vakio:"
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Lässt Info-Einträge weg, also Anmeldungen, Seitenaufrufe und Klicks."
+msgstr ""
+"Jättää pois Info-merkinnät eli kirjautumiset, sivunkatselut ja napsautukset."
+
+#: includes/class-sentinel-admin.php:1116
+msgid "Nur Warnungen:"
+msgstr "Vain varoitukset:"
+
+#: includes/class-sentinel-admin.php:1116
+msgid ""
+"Nur Ereignisse mit Schweregrad Warning oder Critical, zum Beispiel "
+"fehlgeschlagene Anmeldungen, Dateieditor, Deaktivieren von Plugins und "
+"Beförderung zum Administrator."
+msgstr ""
+"Vain Warning- tai Critical-tapahtumat, kuten epäonnistuneet kirjautumiset, "
+"tiedostoeditorin käyttö, lisäosan poistaminen käytöstä ja pääkäyttäjäroolin "
+"myöntäminen."
+
+#: includes/class-sentinel-admin.php:1117
+msgid "Nur kritische Ereignisse:"
+msgstr "Vain kriittiset tapahtumat:"
+
+#: includes/class-sentinel-admin.php:1117
+msgid ""
+"Nur Schweregrad Critical, zum Beispiel ein Export der Website, ein "
+"gestartetes Backup oder die Beförderung zum Administrator."
+msgstr ""
+"Vain vakavuus Critical, esimerkiksi sivuston vienti, käynnistetty "
+"varmuuskopiointi tai ylennys järjestelmänvalvojaksi."
+
+#: includes/class-sentinel-admin.php:1125
+msgid "Klick- & Interaktions-Tiefe"
+msgstr "Napsautusten ja vuorovaikutuksen syvyys"
+
+#: includes/class-sentinel-admin.php:1131
+msgid ""
+"Alle Interaktionen erfassen (Menüs, Buttons, Links, Tabs, Modals, Downloads)"
+msgstr ""
+"Tallenna kaikki vuorovaikutus (valikot, painikkeet, linkit, välilehdet, "
+"modaalit, lataukset)"
+
+#: includes/class-sentinel-admin.php:1134
+msgid ""
+"Nur operative Aktionen & Menü-Navigation (Menüs, Buttons, Speichern, Löschen)"
+msgstr ""
+"Vain operatiiviset toiminnot ja valikkonavigointi (valikot, painikkeet, "
+"tallennus, poisto)"
+
+#: includes/class-sentinel-admin.php:1137
+msgid ""
+"Nur destruktive Aktionen & Downloads (Lösch-Aktionen, Exporte, Archiv-"
+"Downloads)"
+msgstr ""
+"Vain tuhoavat toiminnot ja lataukset (poistot, viennit, arkistolataukset)"
+
+#: includes/class-sentinel-admin.php:1141
+msgid ""
+"Filtert, welche Klicks angemeldeter Benutzer das Skript im Backend und im "
+"Frontend meldet."
+msgstr ""
+"Suodattaa, mitkä kirjautuneiden käyttäjien napsautukset komentosarja "
+"raportoi ylläpidossa ja julkisella puolella."
+
+#: includes/class-sentinel-admin.php:1152
+msgid "2. Überwachte Systembereiche & Module"
+msgstr "2. Valvottavat järjestelmäalueet ja moduulit"
+
+#: includes/class-sentinel-admin.php:1155
+msgid ""
+"Schaltet einzelne Bereiche ab. Ein abgeschalteter Bereich schreibt keine "
+"Einträge."
+msgstr ""
+"Poistaa yksittäisiä alueita käytöstä. Pois käytöstä oleva alue ei kirjoita "
+"merkintöjä."
+
+#: includes/class-sentinel-admin.php:1160
+msgid "Sicherheitsmodule"
+msgstr "Tietoturvamoduulit"
+
+#: includes/class-sentinel-admin.php:1165
+msgid "Authentifizierung & Sessions"
+msgstr "Todennus ja istunnot"
+
+#: includes/class-sentinel-admin.php:1166
+msgid ""
+"Erfolgreiche und fehlgeschlagene Anmeldungen, neue Anwendungspasswörter. "
+"Abmeldungen und Passwort-Resets werden nicht erfasst."
+msgstr ""
+"Onnistuneet ja epäonnistuneet kirjautumiset sekä uudet sovellussalasanat. "
+"Uloskirjautumisia ja salasanan nollauksia ei tallenneta."
+
+#: includes/class-sentinel-admin.php:1171
+msgid "Benutzerverwaltung & Berechtigungsrollen"
+msgstr "Käyttäjähallinta ja roolit"
+
+#: includes/class-sentinel-admin.php:1172
+msgid ""
+"Rollenänderungen (Administrator als Critical), angelegte und gelöschte "
+"Benutzer."
+msgstr ""
+"Roolimuutokset (pääkäyttäjä Critical-tasolla), luodut ja poistetut käyttäjät."
+
+#: includes/class-sentinel-admin.php:1177
+msgid "Plugins, Themes & Core-Integrität"
+msgstr "Lisäosat, teemat ja ytimen eheys"
+
+#: includes/class-sentinel-admin.php:1178
+msgid ""
+"Plugin-Aktivierung, -Deaktivierung und -Löschung, Theme-Wechsel, Updates, "
+"ausgewählte Optionen, Aufrufe und Speicheranfragen des Dateieditors."
+msgstr ""
+"Lisäosien käyttöönotto, käytöstäpoisto ja poisto, teeman vaihdot, "
+"päivitykset, valitut asetukset sekä tiedostoeditorin avaukset ja "
+"tallennukset."
+
+#: includes/class-sentinel-admin.php:1183
+msgid "Exporte & Backups"
+msgstr "Viennit ja varmuuskopiot"
+
+#: includes/class-sentinel-admin.php:1184
+msgid ""
+"Native XML-Exporte, Aufrufe der Exportseite, Backup-Start von UpdraftPlus "
+"und Duplicator. Klicks auf Download-Links fallen unter „UI-Interaktionen“. "
+"Beitragsänderungen und Uploads werden nicht erfasst."
+msgstr ""
+"Natiivit XML-viennit, vientinäkymän avaukset sekä UpdraftPlus- ja Duplicator-"
+"varmuuskopioiden käynnistykset. Latauslinkkien napsautukset kuuluvat kohtaan "
+"”Käyttöliittymävuorovaikutus”. Artikkelimuokkauksia ja median latauksia ei "
+"tallenneta."
+
+#: includes/class-sentinel-admin.php:1189
+msgid "REST-API"
+msgstr "REST API"
+
+#: includes/class-sentinel-admin.php:1190
+msgid ""
+"Aufrufe von /wp/v2/plugins und nicht angemeldete Aufrufe von /wp/v2/users."
+msgstr ""
+"Pyynnöt reittiin /wp/v2/plugins ja todentamattomat pyynnöt reittiin /wp/v2/"
+"users."
+
+#: includes/class-sentinel-admin.php:1197
+msgid "Navigation & UI-Telemetrie"
+msgstr "Navigointi ja käyttöliittymätelemetria"
+
+#: includes/class-sentinel-admin.php:1202
+msgid "Admin-Seitennavigation (current_screen)"
+msgstr "Ylläpitonäkymien navigointi (current_screen)"
+
+#: includes/class-sentinel-admin.php:1203
+msgid "Erfasst jeden Backend-Seitenaufruf mit übersetztem Klartextnamen."
+msgstr "Tallentaa jokaisen ylläpitonäkymän avauksen luettavalla otsikolla."
+
+#: includes/class-sentinel-admin.php:1208
+msgid "Klick- & Interaktions-Telemetrie (Client-Side)"
+msgstr "Napsautus- ja vuorovaikutustelemetria (selainpuoli)"
+
+#: includes/class-sentinel-admin.php:1209
+msgid ""
+"Meldet Klicks angemeldeter Benutzer auf Menüs, Buttons, Tabs und Links mit "
+"Beschriftung, Ziel und Seitenadresse (höchstens 60 Einträge pro Benutzer und "
+"Minute)."
+msgstr ""
+"Raportoi kirjautuneiden käyttäjien napsautukset valikoissa, painikkeissa, "
+"välilehdissä ja linkeissä nimikkeellä, kohteella ja sivun URL-osoitteella "
+"(enintään 60 merkintää käyttäjää kohti minuutissa)."
+
+#: includes/class-sentinel-admin.php:1214
+msgid "Frontend-Seitenaufrufe angemeldeter Benutzer"
+msgstr "Kirjautuneiden käyttäjien julkiset sivunäytöt"
+
+#: includes/class-sentinel-admin.php:1215
+msgid ""
+"Protokolliert jede Frontend-Seite, die ein angemeldeter Benutzer aufruft, "
+"mit Adresse und Referrer."
+msgstr ""
+"Kirjaa jokaisen kirjautuneen käyttäjän avaaman julkisen sivun URL-"
+"osoitteineen ja viittaajineen."
+
+#: includes/class-sentinel-admin.php:1227
+msgid "3. Echtzeit-Alarme & Benachrichtigungen"
+msgstr "3. Reaaliaikaiset hälytykset ja ilmoitukset"
+
+#: includes/class-sentinel-admin.php:1230
+msgid ""
+"E-Mail und Webhook, sobald ein Eintrag mit mindestens dem gewählten "
+"Schweregrad geschrieben wird. Ein Kettenbruch löst keinen Alarm aus; er "
+"zeigt sich erst bei der nächsten Prüfung."
+msgstr ""
+"Sähköposti- ja webhook-ilmoitukset aina, kun valitun tai korkeamman "
+"vakavuustason merkintä kirjoitetaan. Katkennut ketju ei laukaise hälytystä; "
+"se näkyy seuraavassa tarkistuksessa."
+
+#: includes/class-sentinel-admin.php:1237
+msgid "Alarm-Empfänger E-Mail"
+msgstr "Hälytysten vastaanottajan sähköposti"
+
+#: includes/class-sentinel-admin.php:1242
+msgid ""
+"Erhält die Alarm-Mails; ab welchem Schweregrad, legt das nächste Feld fest."
+msgstr ""
+"Vastaanottaa hälytysviestit; seuraava kenttä määrää, mistä vakavuudesta "
+"alkaen."
+
+#: includes/class-sentinel-admin.php:1249
+msgid "Min. Schweregrad für Alarme"
+msgstr "Hälytyksen vähimmäisvakavuus"
+
+#: includes/class-sentinel-admin.php:1254
+msgid "Nur Kritische Vorfälle (Critical)"
+msgstr "Vain kriittiset poikkeamat (Critical)"
+
+#: includes/class-sentinel-admin.php:1255
+msgid "Warnungen & Kritisch (Warning+)"
+msgstr "Varoitukset ja kriittiset (Warning+)"
+
+#: includes/class-sentinel-admin.php:1256
+msgid "Notice und höher (Notice-Einträge selbst lösen keinen Alarm aus)"
+msgstr ""
+"Huomautukset ja ylemmät (Notice-merkinnät itsessään eivät laukaise hälytystä)"
+
+#: includes/class-sentinel-admin.php:1264
+msgid "Webhook-URL"
+msgstr "Webhook-URL"
+
+#: includes/class-sentinel-admin.php:1269
+msgid ""
+"Erhält einen JSON-POST mit text, log_id, event_type, severity, user, site "
+"und timestamp. Ob ein Chat-Dienst dieses Format annimmt, prüft das Plugin "
+"nicht."
+msgstr ""
+"Vastaanottaa JSON POST -pyynnön kentillä text, log_id, event_type, severity, "
+"user, site ja timestamp. Lisäosa ei tarkista, hyväksyykö viestipalvelu tämän "
+"muodon."
+
+#: includes/class-sentinel-admin.php:1279
+msgid "4. Aufbewahrung & Dashboard"
+msgstr "4. Säilytysaika ja ohjausnäkymä"
+
+#: includes/class-sentinel-admin.php:1286
+msgid "Aufbewahrungsfrist"
+msgstr "Säilytysaika"
+
+#: includes/class-sentinel-admin.php:1290
+msgid "Tage"
+msgstr "päivää"
+
+#: includes/class-sentinel-admin.php:1291
+msgid ""
+"Täglich angewendet: Einträge, die älter als diese Frist sind, verlieren "
+"Name, E-Mail-Adresse und IP-Kennung. Gelöscht wird nichts — jede gelöschte "
+"Zeile würde die Kette unterbrechen und die Prüfung würde Ihre eigene "
+"Aufbewahrungsregel als Manipulation melden. Ereignisart, Zeitpunkt, "
+"Schweregrad und Kontext bleiben stehen. Unter 30 Tagen bedeutet: alles "
+"behalten."
+msgstr ""
+"Suoritetaan päivittäin: tätä vanhemmista merkinnöistä poistetaan nimi, "
+"sähköpostiosoite ja IP-tunniste. Mitään ei poisteta — rivin poistaminen "
+"rikkoisi ketjun, ja tarkistus tulkitsisi oman säilytyskäytäntösi "
+"peukaloinniksi. Tapahtumatyyppi, aikaleima, vakavuus ja konteksti säilyvät. "
+"Alle 30 päivää säilyttää kaiken."
+
+#: includes/class-sentinel-admin.php:1296
+msgid "Dashboard-Widget"
+msgstr "Ohjausnäkymän vimpain"
+
+#: includes/class-sentinel-admin.php:1300
+msgid "Widget auf dem WordPress-Dashboard anzeigen"
+msgstr "Näytä vimpain WordPressin ohjausnäkymässä"
+
+#: includes/class-sentinel-admin.php:1302
+msgid ""
+"Zeigt den aktuellen Prüfsummen-Status (Hash-Chain), KPI-Kennzahlen und die "
+"letzten Vorfälle direkt auf der Hauptseite des WordPress-Backends an."
+msgstr ""
+"Näyttää tiivisteketjun tilan, avainlaskurit ja viimeisimmät tapahtumat "
+"WordPressin pääohjausnäkymässä."
+
+#: includes/class-sentinel-admin.php:1307
+msgid "Deinstallation"
+msgstr "Poistaminen"
+
+#: includes/class-sentinel-admin.php:1311
+msgid ""
+"Protokolltabellen und versiegelte Basislinie beim Löschen des Plugins "
+"endgültig entfernen"
+msgstr ""
+"Poista lokitaulut ja sinetöity perustaso pysyvästi, kun lisäosa poistetaan"
+
+#: includes/class-sentinel-admin.php:1313
+msgid ""
+"Standardmäßig bleiben die Tabellen wp_wm_activity_logs und "
+"wp_wm_activity_alerts sowie der gespiegelte Kettenendpunkt und die "
+"versiegelte Datei-Basislinie bei einer Deinstallation erhalten. Aktivieren "
+"Sie diese Option nur, wenn beim Entfernen des Plugins auch die gesamte Audit-"
+"Kette gelöscht werden soll."
+msgstr ""
+"Oletuksena wp_wm_activity_logs, wp_wm_activity_alerts, peilattu ketjun kärki "
+"ja sinetöity tiedostoperustaso säilytetään poistettaessa. Ota tämä käyttöön "
+"vain, jos lisäosan poistamisen tulee pyyhkiä myös koko tarkastusketju."
+
+#: includes/class-sentinel-admin.php:1323
+msgid "5. Weiterleitung an ein SIEM"
+msgstr "5. SIEM-edelleenlähetys"
+
+#: includes/class-sentinel-admin.php:1325
+msgid ""
+"Jeder protokollierte Eintrag ab dem gewählten Schweregrad wird zusätzlich an "
+"einen Collector geschickt — als Syslog nach RFC 5424, als CEF:0 oder als "
+"LEEF:2.0. Splunk, Microsoft Sentinel, Datadog und Elastic lesen mindestens "
+"eines dieser Formate. Der Eintrag im Protokoll bleibt davon unberührt: die "
+"Weiterleitung ist eine Kopie, und ein nicht erreichbarer Collector hält "
+"WordPress nicht auf."
+msgstr ""
+"Jokainen valitun tai korkeamman vakavuuden merkintä lähetetään myös "
+"keräimelle — muodossa Syslog RFC 5424, CEF:0 tai LEEF:2.0. Splunk, Microsoft "
+"Sentinel, Datadog ja Elastic lukevat vähintään yhtä näistä muodoista. "
+"Tallennettu merkintä ei muutu: lähetys on kopio, eikä tavoittamaton keräin "
+"hidasta WordPressiä."
+
+#: includes/class-sentinel-admin.php:1329
+msgid "Weiterleitung"
+msgstr "Edelleenlähetys"
+
+#: includes/class-sentinel-admin.php:1333
+msgid "Einträge an den konfigurierten Collector senden"
+msgstr "Lähetä merkinnät määritetylle keräimelle"
+
+#: includes/class-sentinel-admin.php:1339
+msgid "Format"
+msgstr "Muoto"
+
+#: includes/class-sentinel-admin.php:1342
+msgid "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+msgstr "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+
+#: includes/class-sentinel-admin.php:1343
+msgid "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+msgstr "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+
+#: includes/class-sentinel-admin.php:1344
+msgid "LEEF:2.0 (IBM QRadar)"
+msgstr "LEEF:2.0 (IBM QRadar)"
+
+#: includes/class-sentinel-admin.php:1350
+msgid "Transport"
+msgstr "Siirtotapa"
+
+#: includes/class-sentinel-admin.php:1353
+msgid "HTTPS (HEC-/HTTP-Endpunkt)"
+msgstr "HTTPS (HEC / HTTP-päätepiste)"
+
+#: includes/class-sentinel-admin.php:1354
+msgid "TCP"
+msgstr "TCP"
+
+#: includes/class-sentinel-admin.php:1355
+msgid "UDP (ohne Empfangsbestätigung)"
+msgstr "UDP (kuittaamaton)"
+
+#: includes/class-sentinel-admin.php:1361
+msgid "Collector-URL (HTTPS)"
+msgstr "Keräimen URL-osoite (HTTPS)"
+
+#: includes/class-sentinel-admin.php:1368
+msgid "Collector-Host und Port (TCP/UDP)"
+msgstr "Keräimen palvelin ja portti (TCP/UDP)"
+
+#: includes/class-sentinel-admin.php:1376
+msgid "Min. Schweregrad für die Weiterleitung"
+msgstr "Edelleenlähetyksen vähimmäisvakavuus"
+
+#: includes/class-sentinel-admin.php:1379
+msgid "Alles (Info+)"
+msgstr "Kaikki (Info+)"
+
+#: includes/class-sentinel-admin.php:1380
+msgid "Notice und höher"
+msgstr "Huomautukset ja ylemmät"
+
+#: includes/class-sentinel-admin.php:1381
+msgid "Warnungen und höher"
+msgstr "Varoitukset ja ylemmät"
+
+#: includes/class-sentinel-admin.php:1382
+msgid "Nur kritische Vorfälle"
+msgstr "Vain kriittiset poikkeamat"
+
+#: includes/class-sentinel-admin.php:1393
+msgid "6. Dateiintegrität"
+msgstr "6. Tiedostojen eheys"
+
+#: includes/class-sentinel-admin.php:1395
+msgid ""
+"Ein täglicher Abgleich der Kerndateien gegen den offiziellen Prüfsummen-"
+"Katalog von api.wordpress.org. Dabei verlassen nur die WordPress-Version und "
+"die Sprache die Website — dieselben Angaben, die WordPress ohnehin bei jeder "
+"Update-Prüfung sendet. Das Ergebnis wird als Eintrag in die Hash-Kette "
+"geschrieben und damit, sofern eingeschaltet, auch an das SIEM weitergeleitet."
+msgstr ""
+"Ydintiedostojen päivittäinen vertailu api.wordpress.orgin viralliseen "
+"tarkistussummaluetteloon. Sivustolta lähtee vain WordPressin versio ja "
+"kieliasetus — samat arvot kuin tavallisissa päivitystarkistuksissa. Tulos "
+"kirjataan tiivisteketjuun ja välitetään SIEMiin, jos käytössä."
+
+#: includes/class-sentinel-admin.php:1399
+msgid "Tägliche Prüfung"
+msgstr "Päivittäinen tarkistus"
+
+#: includes/class-sentinel-admin.php:1403
+msgid "Kerndateien täglich gegen api.wordpress.org prüfen"
+msgstr "Tarkista ydintiedostot päivittäin api.wordpress.orgia vasten"
+
+#: includes/class-sentinel-admin.php:1409
+msgid "WM-Suite-Plugins"
+msgstr "WM Suiten lisäosat"
+
+#: includes/class-sentinel-admin.php:1413
+msgid "Zusätzlich gegen die versiegelte Basislinie prüfen"
+msgstr "Tarkista myös sinetöityä perustasoa vasten"
+
+#: includes/class-sentinel-admin.php:1415
+msgid ""
+"Für Plugins gibt es keinen offiziellen Katalog. Stattdessen wird eine "
+"Basislinie erfasst, deren Fingerabdruck in der Hash-Kette versiegelt wird: "
+"Wer eine Plugin-Datei ändert und anschließend die Basislinie anpasst, bricht "
+"damit den Ketteneintrag. Die Basislinie wird auf der Seite "
+"\"Dateiintegrität\" erfasst."
+msgstr ""
+"Lisäosille ei ole virallista luetteloa. Sen sijaan tallennetaan perustaso, "
+"jonka sormenjälki sinetöidään tiivisteketjuun: lisäosatiedoston muokkaaminen "
+"ja perustason ylikirjoittaminen rikkoo ketjumerkinnän. Tallenna perustaso "
+"”Tiedostojen eheys” -näkymässä."
+
+#: includes/class-sentinel-admin.php:1424
+msgid "Einstellungen & Filter speichern"
+msgstr "Tallenna asetukset ja suodattimet"
+
+#: includes/class-sentinel-admin.php:1433
+msgid "7. Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "7. Esimerkkitietojen hallinta ja tehdasasetusten palautus"
+
+#: includes/class-sentinel-admin.php:1436
+msgid ""
+"Beispieleinträge anhängen oder entfernen, oder das Protokoll leeren und alle "
+"Einstellungen zurücksetzen."
+msgstr ""
+"Lisää tai poista esimerkkimerkintöjä tai tyhjennä loki ja palauta kaikki "
+"asetukset."
+
+#: includes/class-sentinel-admin.php:1445
+msgid "Demodaten anhängen (15 Einträge)"
+msgstr "Lisää esimerkkitiedot (15 merkintää)"
+
+#: includes/class-sentinel-admin.php:1450
+msgid ""
+"Demodaten lassen sich nur entfernen, solange noch keine echten Ereignisse "
+"protokolliert wurden — eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren. Trifft das zu, wird das gesamte Protokoll zurückgesetzt und "
+"die Kette startet neu beim Genesis-Block."
+msgstr ""
+"Esimerkkitiedot voidaan poistaa vain, kun oikeita tapahtumia ei ole vielä "
+"kirjattu — jatkuva ketju ei voi menettää merkintöjä keskeltä. Sallittaessa "
+"koko loki nollataan ja käynnistyy alkulohkosta."
+
+#: includes/class-sentinel-admin.php:1454
+msgid "Demodaten bereinigen (Nur Testdaten)"
+msgstr "Poista esimerkkitiedot (vain testitiedot)"
+
+#: includes/class-sentinel-admin.php:1465
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Vaara-alue: palauta tehdasasetukset"
+
+#: includes/class-sentinel-admin.php:1468
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Logs und Alarme aus der Datenbank, "
+"initialisiert einen neuen Genesis-Block und setzt alle Einstellungen auf die "
+"Standardwerte zurück."
+msgstr ""
+"Tämä toiminto poistaa pysyvästi KAIKKI lokit ja hälytykset tietokannasta, "
+"alustaa uuden alkulohkon ja palauttaa kaikki asetukset oletuksiin."
+
+#: includes/class-sentinel-admin.php:1470
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Aktivitätsprotokolle und setzt "
+"Sentinel vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"VAROITUS: Oletko varma? Tämä poistaa KAIKKI tapahtumalokit ja palauttaa "
+"Sentinelin kokonaan tehdasasetuksiin!"
+
+#: includes/class-sentinel-admin.php:1474
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Palauta tehdasasetukset (Factory Reset)"
+
+#: includes/class-sentinel-admin.php:1494
+msgid "Überblick & Hash-Kette"
+msgstr "Yleiskuvaus ja tiivisteketju"
+
+#: includes/class-sentinel-admin.php:1495
+msgid ""
+"ist ein Aktivitätsprotokoll für WordPress. Jeder Logeintrag wird über HMAC-"
+"SHA256 mit seinem Vorgänger verknüpft, und das Kettenende zusätzlich "
+"außerhalb der Log-Tabelle verzeichnet. Wer nur Schreibzugriff auf die "
+"Datenbank hat, kann Einträge daher nicht ändern, löschen oder einschleusen, "
+"ohne dass die Prüfung darauf hinweist. Der Schlüssel liegt in der wp-"
+"config.php: wer diese Datei liest, kann die Kette neu signieren — das "
+"Verfahren weist Manipulation nach, es verhindert sie nicht."
+msgstr ""
+"on WordPressin tapahtumaloki. Jokainen merkintä on linkitetty edeltäjäänsä "
+"HMAC-SHA256-tiivisteellä, ja ketjun kärki peilataan myös lokitaulun "
+"ulkopuolelle. Pelkällä tietokannan kirjoitusoikeudella ei voi muokata, "
+"poistaa tai lisätä merkintöjä tarkistuksen huomaamatta. Avain sijaitsee wp-"
+"config.php-tiedostossa: sen lukija voi allekirjoittaa ketjun uudelleen — "
+"mekanismi havaitsee peukaloinnin, ei estä sitä."
+
+#: includes/class-sentinel-admin.php:1500
+msgid "Protokollierungsstufen"
+msgstr "Lokitasot"
+
+#: includes/class-sentinel-admin.php:1501
+msgid ""
+"Die Protokollierungsstufe wird unter Einstellungen gewählt: \"Vollständig\" "
+"schreibt auch Info-Einträge wie Anmeldungen, Seitenaufrufe und Klicks; "
+"\"Standard\" lässt Info-Einträge weg; \"Nur Warnungen\" schreibt Warning und "
+"Critical; \"Nur kritische Ereignisse\" nur Critical. Der Genesis-Eintrag "
+"sowie Lösch- und Aufbewahrungsnachweise werden auf jeder Stufe geschrieben."
+msgstr ""
+"Lokitaso valitaan asetuksissa: ”Täydellinen” kirjoittaa myös Info-merkinnät "
+"kuten kirjautumiset, sivunkatselut ja napsautukset; ”Vakio” jättää Info-"
+"merkinnät pois; ”Vain varoitukset” kirjoittaa Warning- ja Critical-"
+"merkinnät; ”Vain kriittiset tapahtumat” vain Critical-merkinnät. Genesis-"
+"merkintä sekä poisto- ja säilytystodisteet kirjoitetaan jokaisella tasolla."
+
+#: includes/class-sentinel-admin.php:1506
+msgid "Personenbezogene Daten"
+msgstr "Henkilötiedot"
+
+#: includes/class-sentinel-admin.php:1507
+msgid ""
+"IP-Adressen werden nicht im Klartext gespeichert, sondern als HMAC mit "
+"täglich wechselndem Schlüssel. Name und E-Mail-Adresse des handelnden "
+"Benutzers, besuchte Adressen und Klick-Beschriftungen stehen im Klartext im "
+"Protokoll. Die Datenschutz-Werkzeuge von WordPress können Einträge zu einer "
+"Adresse exportieren und pseudonymisieren."
+msgstr ""
+"IP-osoitteita ei tallenneta selväkielisinä, vaan päivittäin vaihtuvalla "
+"suolalla muodostettuna HMAC-tiivisteenä. Toimivan käyttäjän nimi ja "
+"sähköpostiosoite, avatut URL-osoitteet ja napsautustekstit tallennetaan "
+"selväkielisinä. WordPressin tietosuojatyökalut voivat viedä ja "
+"pseudonymisoida sähköpostiosoitteen merkinnät."
+
+#: includes/class-sentinel-admin.php:1511
+msgid "Support & Handbuch:"
+msgstr "Tuki ja käyttöopas:"
+
+#: includes/class-sentinel-admin.php:1512
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Avaa koko käyttöopas"
+
+#: includes/class-sentinel-admin.php:1513
+msgid "Entwickelt von WM Suite."
+msgstr "Kehittänyt WM Suite."
+
+#: includes/class-sentinel-admin.php:1522
+#: includes/class-sentinel-exporter.php:35
+#: includes/class-sentinel-exporter.php:94
+msgid "Unzureichende Berechtigungen."
+msgstr "Riittämättömät käyttöoikeudet."
+
+#: includes/class-sentinel-admin.php:1530
+msgid "WM Activity Sentinel — Handbuch"
+msgstr "WM Activity Sentinel — Käyttöopas"
+
+#: includes/class-sentinel-admin.php:1531
+msgid "Hash-Kette, Sensoren, Entwickler-API und Hinweise zum Betrieb."
+msgstr "Tiivisteketju, anturit, kehittäjärajapinta ja käyttövinkit."
+
+#: includes/class-sentinel-admin.php:1542
+msgid "1. Kryptografische Hash-Kette (Integrität)"
+msgstr "1. Kryptografinen tiivisteketju (eheys)"
+
+#: includes/class-sentinel-admin.php:1544
+msgid ""
+"Jeder Datensatz enthält den kryptografischen Fingerabdruck seines direkten "
+"Vorgängers (prev_hash). Die Prüfsumme wird wie folgt berechnet:"
+msgstr ""
+"Jokainen tietue sisältää välittömän edeltäjänsä kryptografisen sormenjäljen "
+"(prev_hash). Tiiviste lasketaan seuraavasti:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid "Änderung erkennbar:"
+msgstr "Muutosten havaitseminen:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid ""
+"Wird eine Zeile ohne den Schlüssel geändert, schlägt die Prüfsumme bei der "
+"nächsten Prüfung fehl. Wer den Schlüssel hat, kann die Kette neu signieren."
+msgstr ""
+"Jos riviä muutetaan ilman avainta, sen tarkistussumma epäonnistuu "
+"seuraavassa tarkistuksessa. Avaimen haltija voi allekirjoittaa ketjun "
+"uudelleen."
+
+#: includes/class-sentinel-admin.php:1550
+msgid "Löschungsnachweis:"
+msgstr "Poistojen havaitseminen:"
+
+#: includes/class-sentinel-admin.php:1550
+msgid ""
+"Wird eine Zeile in der Mitte gelöscht, passt der Verweis der Folgezeile "
+"nicht mehr; fehlen die neuesten Zeilen, weicht das in wp_options gespiegelte "
+"Kettenende ab."
+msgstr ""
+"Jos keskimmäinen rivi poistetaan, seuraavan rivin osoitin rikkoutuu; jos "
+"uusimmat rivit poistetaan, wp_options-tauluun peilattu ketjun kärki poikkeaa."
+
+#: includes/class-sentinel-admin.php:1551
+msgid "Concurrency-Locking:"
+msgstr "Rinnakkaisuuslukitus:"
+
+#: includes/class-sentinel-admin.php:1551
+msgid ""
+"InnoDB \"SELECT ... FOR UPDATE\" verhindert Ketten-Bifurkationen bei "
+"parallelen Schreibzugriffen."
+msgstr ""
+"InnoDB:n ”SELECT ... FOR UPDATE” estää ketjun haarautumisen rinnakkaisissa "
+"kirjoituksissa."
+
+#: includes/class-sentinel-admin.php:1559
+msgid "2. Sensoren"
+msgstr "2. Anturit"
+
+#: includes/class-sentinel-admin.php:1561
+msgid ""
+"Diese WordPress-Hooks schreiben Einträge; alles andere erfasst das Plugin "
+"nicht:"
+msgstr ""
+"Nämä WordPress-koukut kirjoittavat merkintöjä; lisäosa ei tallenna mitään "
+"muuta:"
+
+#: includes/class-sentinel-admin.php:1565
+msgid "Bereich"
+msgstr "Alue"
+
+#: includes/class-sentinel-admin.php:1566
+msgid "Sensoren & Hooks"
+msgstr "Anturit ja koukut"
+
+#: includes/class-sentinel-admin.php:1572
+msgid "Authentifizierung"
+msgstr "Todennus"
+
+#: includes/class-sentinel-admin.php:1573
+msgid ""
+"wp_login (Info), wp_login_failed und wp_create_application_password (Warning)"
+msgstr ""
+"wp_login (Info), wp_login_failed ja wp_create_application_password (Warning)"
+
+#: includes/class-sentinel-admin.php:1574
+#: includes/class-sentinel-admin.php:1594
+msgid "Info / Warning"
+msgstr "Info / Warning"
+
+#: includes/class-sentinel-admin.php:1577
+msgid "Benutzer & Rollen"
+msgstr "Käyttäjät ja roolit"
+
+#: includes/class-sentinel-admin.php:1578
+msgid ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical bei der Rolle Administrator)"
+msgstr ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical kun rooli on Administrator)"
+
+#: includes/class-sentinel-admin.php:1579
+msgid "Notice / Warning / Critical"
+msgstr "Notice / Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1582
+msgid "Core & Plugins"
+msgstr "Ydin ja lisäosat"
+
+#: includes/class-sentinel-admin.php:1583
+msgid ""
+"activated_plugin, upgrader_process_complete und updated_option für "
+"ausgewählte Optionen (Notice); deactivated_plugin, delete_plugin und "
+"after_switch_theme (Warning)"
+msgstr ""
+"activated_plugin, upgrader_process_complete ja updated_option valituille "
+"asetuksille (Notice); deactivated_plugin, delete_plugin ja "
+"after_switch_theme (Warning)"
+
+#: includes/class-sentinel-admin.php:1584
+msgid "Notice / Warning"
+msgstr "Notice / Warning"
+
+#: includes/class-sentinel-admin.php:1587
+msgid "Exporte & Dateieditor"
+msgstr "Viennit ja tiedostoeditori"
+
+#: includes/class-sentinel-admin.php:1588
+msgid ""
+"Aufruf von export.php, load-plugin-editor.php und load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"und duplicator_backup_started (Critical)"
+msgstr ""
+"Käynnit sivuilla export.php, load-plugin-editor.php ja load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"ja duplicator_backup_started (Critical)"
+
+#: includes/class-sentinel-admin.php:1589
+msgid "Warning / Critical"
+msgstr "Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1592
+msgid "Admin & Telemetrie"
+msgstr "Ylläpito ja telemetria"
+
+#: includes/class-sentinel-admin.php:1593
+msgid ""
+"current_screen, template_redirect und Klicks über POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch für /wp/v2/plugins und anonyme Abfragen "
+"von /wp/v2/users (Warning)"
+msgstr ""
+"current_screen, template_redirect ja napsautukset reitillä POST /wm-sentinel/"
+"v1/telemetry (Info); rest_pre_dispatch reitille /wp/v2/plugins ja "
+"nimettömille /wp/v2/users-kyselyille (Warning)"
+
+#: includes/class-sentinel-admin.php:1605
+msgid "3. Entwickler-API & Eigene Sensoren registrieren"
+msgstr "3. Kehittäjärajapinta ja omat anturit"
+
+#: includes/class-sentinel-admin.php:1607
+msgid ""
+"Eigene Ereignisse lassen sich über die statische Logger-Klasse an die Kette "
+"anhängen:"
+msgstr "Omia tapahtumia voi liittää ketjuun staattisen lokitusluokan kautta:"
+
+#: includes/class-sentinel-admin.php:1632
+msgid "4. Wichtige Hinweise, Gotchas & Troubleshooting"
+msgstr "4. Tärkeät huomiot, sudenkuopat ja vianmääritys"
+
+#: includes/class-sentinel-admin.php:1635
+msgid "IP-Hashes:"
+msgstr "IP-tiivisteet:"
+
+#: includes/class-sentinel-admin.php:1635
+msgid ""
+"IP-Adressen werden als HMAC mit täglich wechselndem Schlüssel gespeichert; "
+"Hashes derselben Adresse stimmen nur innerhalb eines Tages (UTC) überein. "
+"Name und E-Mail des Benutzers stehen im Klartext."
+msgstr ""
+"IP-osoitteet tallennetaan päivittäisellä avaimella laskettuna HMAC-"
+"tiivisteenä; saman osoitteen tiivisteet täsmäävät vain saman UTC-vuorokauden "
+"sisällä. Käyttäjätunnus ja sähköposti tallennetaan selväkielisinä."
+
+#: includes/class-sentinel-admin.php:1636
+msgid "CSV-Export:"
+msgstr "CSV-vienti:"
+
+#: includes/class-sentinel-admin.php:1636
+msgid ""
+"Werte, die mit =, +, -, @, Tabulator oder Wagenrücklauf beginnen, erhalten "
+"ein vorangestelltes Apostroph, damit Tabellenprogramme sie nicht als Formel "
+"ausführen."
+msgstr ""
+"Arvot, jotka alkavat merkillä =, +, -, @, sarkain tai rivinpalautus, saavat "
+"alkuun heittomerkin, jotta taulukko-ohjelmat eivät suorita niitä kaavoina."
+
+#: includes/class-sentinel-admin.php:1637
+msgid "WP-CLI Testausführung:"
+msgstr "WP-CLI-testien suoritus:"
+
+#: includes/class-sentinel-admin.php:1637
+msgid ""
+"In WP-CLI Tests liefert is_admin() immer true. Frontend-Tests setzen daher "
+"die Konstante WM_SENTINEL_TESTING_MODE."
+msgstr ""
+"WP-CLI-testeissä is_admin() palauttaa aina true. Julkisen puolen testit "
+"määrittävät siksi vakion WM_SENTINEL_TESTING_MODE."
+
+#: includes/class-sentinel-core.php:122
+msgid "WM Activity Sentinel Kennzahlen"
+msgstr "WM Activity Sentinelin mittarit"
+
+#: includes/class-sentinel-core.php:157
+msgid "WM Sentinel Kennzahl"
+msgstr "WM Sentinel -mittari"
+
+#: includes/class-sentinel-core.php:161
+msgid ""
+"Gibt nicht-sensible Prüfstatus- und Protokollzähler von WM Activity Sentinel "
+"aus."
+msgstr ""
+"Tulostaa ei-arkaluonteisen tarkistustilan ja lokilaskurit WM Activity "
+"Sentinelistä."
+
+#: includes/class-sentinel-core.php:165
+msgid "Kennzahl"
+msgstr "Mittari"
+
+#: includes/class-sentinel-core.php:169
+msgid "Kettenstatus (INTACT / BROKEN)"
+msgstr "Ketjun tila (INTACT / BROKEN)"
+
+#: includes/class-sentinel-core.php:173
+msgid "Geprüfte Einträge"
+msgstr "Tarkistetut merkinnät"
+
+#: includes/class-sentinel-core.php:181
+msgid "Plugin-Version"
+msgstr "Lisäosan versio"
+
+#: includes/class-sentinel-exporter.php:157
+#: includes/class-sentinel-exporter.php:168
+msgid "WM Activity Sentinel Audit-Logs"
+msgstr "WM Activity Sentinelin tarkastuslokit"
+
+#: includes/class-sentinel-exporter.php:216
+msgid "Objekttyp"
+msgstr "Kohdetyyppi"
+
+#: includes/class-sentinel-exporter.php:220
+msgid "Benutzername"
+msgstr "Käyttäjätunnus"
+
+#: includes/class-sentinel-exporter.php:224
+msgid "Benutzer-E-Mail"
+msgstr "Käyttäjän sähköposti"
+
+#: includes/class-sentinel-exporter.php:228
+msgid "Eintrags-Hash"
+msgstr "Merkinnän tiiviste"
+
+#: includes/class-sentinel-exporter.php:235
+msgid "Sicherheits- und Audit-Protokolle"
+msgstr "Tietoturva- ja tarkastuslokit"
+
+#: includes/class-sentinel-exporter.php:316
+msgid ""
+"Der Löschnachweis konnte nicht in die Kette geschrieben werden; es wurde "
+"nichts geändert."
+msgstr "Poistotietuetta ei voitu kirjoittaa ketjuun; mitään ei muutettu."
+
+#. translators: 1: number of pseudonymised log entries, 2: id of the erasure record
+#: includes/class-sentinel-exporter.php:335
+#, php-format
+msgid ""
+"%1$d Protokolleinträge pseudonymisiert (Name, Adresse, IP-Hash, Adresse im "
+"Kontext). Die Prüfung erkennt sie über den Löschnachweis #%2$d an; "
+"Ereignisart, Zeitpunkt und übriger Kontext bleiben stehen."
+msgstr ""
+"%1$d lokimerkintää pseudonymisoitu (nimi, sähköposti, IP-tiiviste, "
+"sähköposti kontekstissa). Tarkistus hyväksyy ne poistotietueen #%2$d kautta; "
+"tapahtumatyyppi, aikaleima ja muu konteksti säilyvät ennallaan."
+
+#: includes/class-sentinel-fim.php:136
+msgid ""
+"api.wordpress.org war nicht erreichbar; die Dateien konnten nicht gegen den "
+"offiziellen Katalog geprüft werden."
+msgstr ""
+"api.wordpress.org ei ollut tavoitettavissa; tiedostoja ei voitu tarkistaa "
+"virallista luetteloa vasten."
+
+#. translators: %d: HTTP status code
+#: includes/class-sentinel-fim.php:147
+#, php-format
+msgid ""
+"api.wordpress.org antwortete mit HTTP %d; es wurde kein Katalog geladen."
+msgstr "api.wordpress.org vastasi tilakoodilla HTTP %d; luetteloa ei ladattu."
+
+#: includes/class-sentinel-fim.php:174
+msgid "Die Antwort von api.wordpress.org enthielt keinen Prüfsummen-Katalog."
+msgstr "api.wordpress.orgin vastaus ei sisältänyt tarkistussummaluetteloa."
+
+#. translators: %s: WordPress version
+#: includes/class-sentinel-fim.php:188
+#, php-format
+msgid ""
+"Für WordPress %s liegt bei api.wordpress.org kein Prüfsummen-Katalog vor "
+"(etwa bei einer Entwicklungs- oder Nightly-Version). Die Kerndateien wurden "
+"nicht geprüft."
+msgstr ""
+"Tarkistussummaluetteloa ei ole saatavilla osoitteessa api.wordpress.org "
+"WordPress-versiolle %s (esim. kehitys- tai yökoontiversio). Ydintiedostoja "
+"ei tarkistettu."
+
+#: includes/class-sentinel-fim.php:214
+msgid "Der geladene Katalog enthielt keine verwertbaren Prüfsummen."
+msgstr "Ladattu luettelo ei sisältänyt käyttökelpoisia tarkistussummia."
+
+#. translators: %d: number of entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:40
+#, php-format
+msgid ""
+"Die Log-Tabelle ist leer, obwohl zuletzt %d Einträge verzeichnet waren. Das "
+"Protokoll wurde gelöscht."
+msgstr ""
+"Lokitaulu on tyhjä, vaikka viimeksi kirjattiin %d merkintää. Loki on "
+"poistettu."
+
+#. translators: 1: log id, 2: stored prev_hash prefix, 3: expected hash prefix
+#: includes/class-sentinel-integrity.php:82
+#, php-format
+msgid ""
+"Kettenbruch bei Log-ID #%1$d: prev_hash \"%2$s\" stimmt nicht mit dem "
+"erwarteten Hash \"%3$s\" überein (Hinweis auf gelöschte oder eingeschleuste "
+"Zeilen)."
+msgstr ""
+"Katkennut ketju loki-ID:ssä #%1$d: prev_hash \"%2$s\" ei vastaa odotettua "
+"tiivistettä \"%3$s\" (viittaa poistettuihin tai lisättyihin riveihin)."
+
+#. translators: 1: log id, 2: recomputed hash prefix, 3: stored hash prefix
+#: includes/class-sentinel-integrity.php:123
+#, php-format
+msgid ""
+"Manipulationsnachweis bei Log-ID #%1$d: Der berechnete Prüfsummen-Hash "
+"\"%2$s\" weicht vom gespeicherten Hash \"%3$s\" ab. Entweder wurden die "
+"Daten nachträglich in der Datenbank verändert, oder das Protokoll wurde mit "
+"einem anderen AUTH_KEY geschrieben (etwa vor einem Umzug der Website)."
+msgstr ""
+"Peukalointijälki loki-ID:ssä #%1$d: laskettu tarkistussumma \"%2$s\" "
+"poikkeaa tallennetusta tiivisteestä \"%3$s\". Joko tietokantariviä on "
+"muutettu jälkikäteen tai loki on kirjoitettu eri AUTH_KEY-avaimella "
+"(esimerkiksi ennen sivuston siirtoa)."
+
+#. translators: 1: entries present, 2: entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:149
+#, php-format
+msgid ""
+"Das Ende der Kette stimmt nicht mit dem verzeichneten Kettenstand überein "
+"(%1$d von %2$d Einträgen vorhanden): Die neuesten Protokolleinträge wurden "
+"entfernt oder ersetzt."
+msgstr ""
+"Ketjun loppu ei vastaa tallennettua ketjun tilaa (%1$d / %2$d merkintää "
+"jäljellä): uusimmat lokimerkinnät on poistettu tai korvattu."
+
+#: includes/class-sentinel-sensors.php:546
+msgid "Zugriff auf Sentinel Telemetrie erfordert eine aktive Sitzung."
+msgstr "Sentinel-telemetrian käyttö edellyttää aktiivista käyttäjäistuntoa."

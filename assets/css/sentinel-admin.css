@@ -1,0 +1,571 @@
+/**
+ * WM Activity Sentinel — plugin layer on top of the WM Suite family sheets.
+ *
+ * Loaded after wm-admin-tokens.css and wm-admin-ui.css (byte-identical copies of the hub's
+ * canonical sheets, pinned by tests/test-ui-family.php). The family already renders the page
+ * wrapper, the command header, the navigation tabs, the quick guide, the preset pills and the
+ * jump bar; this file only carries what is specific to Sentinel: KPI tiles with an icon column,
+ * the chain status banner, severity badges, the stream filter bar, the context inspector modal,
+ * the dashboard widget list, the settings danger zone and the code sample of the handbook.
+ *
+ * No colour value in a rule: every colour is a family token. The one local token below is the
+ * modal backdrop, which the family has no use for.
+ */
+
+:root {
+	--wm-sentinel-backdrop: rgba(15, 23, 42, 0.6);
+}
+
+/* ==========================================================================
+   1. Icons next to text — dashicons sized to the line they sit in
+   ========================================================================== */
+
+.wm-sentinel-admin-wrap .wm-tab-link .dashicons,
+.wm-sentinel-admin-wrap .wm-jump-link .dashicons,
+.wm-sentinel-admin-wrap .wm-preset-pill-btn .dashicons,
+.wm-sentinel-admin-wrap .wm-quick-guide-title .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 1;
+}
+
+.wm-sentinel-admin-wrap .wm-sentinel-header-badge {
+	margin-bottom: var(--wm-space-2);
+}
+
+.wm-sentinel-admin-wrap .wm-sentinel-header-badge .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	line-height: 1;
+}
+
+/* ==========================================================================
+   2. KPI tiles — the family tile with an icon column and severity accents
+   ========================================================================== */
+
+.wm-sentinel-kpi-grid {
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-sentinel-kpi-card {
+	flex-direction: row;
+	align-items: center;
+	gap: var(--wm-space-4);
+}
+
+.wm-sentinel-kpi-icon {
+	width: 46px;
+	height: 46px;
+	border-radius: var(--wm-radius-md);
+	background: var(--wm-accent-light);
+	border: 1px solid var(--wm-accent-border);
+	color: var(--wm-accent-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.wm-sentinel-kpi-icon .dashicons {
+	font-size: 22px;
+	width: 22px;
+	height: 22px;
+}
+
+.wm-sentinel-kpi-data {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wm-space-1);
+	min-width: 0;
+}
+
+.wm-sentinel-kpi-critical .wm-sentinel-kpi-icon {
+	background: var(--wm-danger-bg);
+	border-color: var(--wm-danger-border);
+	color: var(--wm-danger);
+}
+
+.wm-sentinel-kpi-critical .wm-kpi-val {
+	color: var(--wm-danger);
+}
+
+.wm-sentinel-kpi-warning .wm-sentinel-kpi-icon {
+	background: var(--wm-warning-bg);
+	border-color: var(--wm-warning-border);
+	color: var(--wm-warning);
+}
+
+.wm-sentinel-kpi-warning .wm-kpi-val {
+	color: var(--wm-warning);
+}
+
+/* ==========================================================================
+   3. Cards, columns, lists
+   ========================================================================== */
+
+.wm-sentinel-card {
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-sentinel-card-accent {
+	border-left: 4px solid var(--wm-accent-primary);
+}
+
+.wm-sentinel-icon-accent {
+	color: var(--wm-accent-primary);
+}
+
+.wm-sentinel-columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: var(--wm-space-5);
+}
+
+.wm-sentinel-columns .wm-sentinel-card,
+.wm-sentinel-docs-grid .wm-sentinel-card {
+	margin-bottom: 0;
+}
+
+.wm-sentinel-docs-grid {
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-sentinel-list {
+	list-style: disc;
+	margin: 0 0 0 var(--wm-space-5);
+	color: var(--wm-text-secondary);
+	line-height: 1.6;
+}
+
+.wm-sentinel-table-compact {
+	font-size: var(--wm-text-sm);
+}
+
+.wm-sentinel-divider {
+	border: 0;
+	border-top: 1px solid var(--wm-border-faint);
+	margin: var(--wm-space-5) 0;
+}
+
+.wm-sentinel-actions-row {
+	display: flex;
+	gap: var(--wm-space-4);
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: var(--wm-space-5);
+}
+
+.wm-sentinel-actions-row form {
+	display: inline;
+}
+
+/* ==========================================================================
+   4. Chain status banner (integrity audit)
+   ========================================================================== */
+
+.wm-sentinel-status-banner {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--wm-space-4);
+	padding: var(--wm-space-5);
+	border-radius: var(--wm-radius-md);
+	border: 1px solid var(--wm-border-subtle);
+	background: var(--wm-bg-surface-subtle);
+	color: var(--wm-text-secondary);
+}
+
+.wm-sentinel-status-banner > .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	flex-shrink: 0;
+}
+
+.wm-sentinel-status-banner h3,
+.wm-sentinel-status-banner p {
+	margin: 0 0 var(--wm-space-2) 0;
+}
+
+.wm-sentinel-status-banner code {
+	word-break: break-all;
+}
+
+.wm-sentinel-status-banner.wm-status-pass {
+	background: var(--wm-success-bg);
+	border-color: var(--wm-success-border);
+	color: var(--wm-success);
+}
+
+.wm-sentinel-status-banner.wm-status-fail {
+	background: var(--wm-danger-bg);
+	border-color: var(--wm-danger-border);
+	color: var(--wm-danger);
+}
+
+/* ==========================================================================
+   5. Severity badges (stream table, dashboard widget, handbook) and object tags
+   ========================================================================== */
+
+.wm-sentinel-severity-badge,
+.wm-sentinel-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 9px;
+	border-radius: var(--wm-radius-pill);
+	font-size: var(--wm-text-xs);
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	line-height: 1.3;
+	white-space: nowrap;
+	background: var(--wm-bg-surface-subtle);
+	color: var(--wm-text-secondary);
+	border: 1px solid var(--wm-border-subtle);
+}
+
+.wm-sev-critical,
+.wm-sentinel-badge-critical {
+	background: var(--wm-danger-bg);
+	color: var(--wm-danger);
+	border-color: var(--wm-danger-border);
+}
+
+.wm-sev-warning,
+.wm-sentinel-badge-warning {
+	background: var(--wm-warning-bg);
+	color: var(--wm-warning);
+	border-color: var(--wm-warning-border);
+}
+
+.wm-sev-notice,
+.wm-sentinel-badge-notice {
+	background: var(--wm-accent-light);
+	color: var(--wm-accent-deep);
+	border-color: var(--wm-accent-border);
+}
+
+.wm-sentinel-object-tag {
+	font-family: var(--wm-font-mono);
+	font-size: var(--wm-text-xs);
+	padding: 2px 8px;
+	border-radius: var(--wm-radius-sm);
+	background: var(--wm-bg-surface-subtle);
+	border: 1px solid var(--wm-border-subtle);
+	color: var(--wm-text-secondary);
+}
+
+/* ==========================================================================
+   6. Stream filter bar and table
+   ========================================================================== */
+
+.wm-sentinel-filter-bar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--wm-space-3);
+	align-items: center;
+	margin-bottom: var(--wm-space-4);
+	padding: var(--wm-space-3) var(--wm-space-4);
+	background: var(--wm-bg-surface);
+	border: 1px solid var(--wm-border-subtle);
+	border-radius: var(--wm-radius-md);
+	box-shadow: var(--wm-shadow-card);
+}
+
+.wm-sentinel-filter-bar input[type="search"] {
+	flex: 1 1 260px;
+	min-height: 38px;
+}
+
+.wm-sentinel-filter-bar select {
+	min-height: 38px;
+}
+
+.wm-sentinel-table {
+	margin-top: var(--wm-space-2);
+}
+
+/* Column widths of the stream table; until 2026-09-15 inline styles on each th. */
+.wm-sentinel-col-id {
+	width: 70px;
+}
+
+.wm-sentinel-col-time {
+	width: 140px;
+}
+
+.wm-sentinel-col-severity {
+	width: 110px;
+}
+
+/* Scoped to the wrap: core's `.widefat thead th { text-align: left }` outranks a single class
+   (measured 2026-09-15, the column header lost its centring when the inline style moved here). */
+.wm-sentinel-admin-wrap th.wm-sentinel-col-context,
+.wm-sentinel-admin-wrap td.wm-sentinel-cell-center {
+	text-align: center;
+}
+
+.wm-sentinel-col-context {
+	width: 90px;
+}
+
+/* ==========================================================================
+   7. Context inspector modal — the JS toggles display: none / flex on the overlay
+   ========================================================================== */
+
+.wm-sentinel-modal-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	background: var(--wm-sentinel-backdrop);
+	align-items: center;
+	justify-content: center;
+	padding: var(--wm-space-5);
+}
+
+.wm-sentinel-modal-card {
+	background: var(--wm-bg-surface);
+	color: var(--wm-text-primary);
+	border: 1px solid var(--wm-border-subtle);
+	border-radius: var(--wm-radius-lg);
+	box-shadow: var(--wm-shadow-elevated);
+	width: min(760px, 100%);
+	max-height: 85vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.wm-sentinel-modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--wm-space-3);
+	padding: var(--wm-space-4) var(--wm-space-5);
+	border-bottom: 1px solid var(--wm-border-faint);
+}
+
+.wm-sentinel-modal-header h3 {
+	margin: 0;
+	font-size: var(--wm-text-md);
+	font-weight: 700;
+	word-break: break-word;
+}
+
+.wm-sentinel-modal-close {
+	appearance: none;
+	-webkit-appearance: none;
+	background: transparent;
+	border: 1px solid var(--wm-border-subtle);
+	border-radius: var(--wm-radius-sm);
+	width: var(--wm-target-min);
+	height: var(--wm-target-min);
+	font-size: 24px;
+	line-height: 1;
+	cursor: pointer;
+	color: var(--wm-text-secondary);
+	flex-shrink: 0;
+}
+
+.wm-sentinel-modal-close:hover {
+	color: var(--wm-danger);
+	border-color: var(--wm-danger-border);
+	background: var(--wm-danger-bg);
+}
+
+.wm-sentinel-modal-body {
+	padding: var(--wm-space-5);
+	overflow: auto;
+}
+
+.wm-sentinel-modal-body pre {
+	margin: 0;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+/* ==========================================================================
+   8. Settings — demo data card and the factory-reset danger zone
+   ========================================================================== */
+
+.wm-sentinel-danger-zone {
+	background: var(--wm-danger-bg);
+	border: 1px solid var(--wm-danger-border);
+	border-radius: var(--wm-radius-md);
+	padding: var(--wm-space-4);
+}
+
+.wm-sentinel-danger-zone h4 {
+	margin: 0 0 var(--wm-space-2) 0;
+	color: var(--wm-danger);
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	gap: var(--wm-space-2);
+}
+
+.wm-sentinel-danger-zone p {
+	color: var(--wm-text-secondary);
+	font-size: 13px;
+	margin: 0 0 14px 0;
+}
+
+.wm-sentinel-admin-wrap .button.wm-sentinel-btn-danger-text {
+	color: var(--wm-danger);
+}
+
+/* Settings form layout; until 2026-09-15 inline styles with pixel values in the markup. */
+.wm-sentinel-section-desc {
+	margin-bottom: var(--wm-space-4);
+}
+
+.wm-sentinel-notice-spaced {
+	margin-top: var(--wm-space-4);
+}
+
+/* Core sets `.form-table td fieldset label` to inline-block with `margin: .35em 0 .5em !important`;
+   the selector below outranks the display rule, the margin stays core's as it did with the inline style. */
+.wm-sentinel-admin-wrap .form-table td fieldset label.wm-sentinel-option-label {
+	display: block;
+	margin-bottom: var(--wm-space-2);
+}
+
+/* min() keeps the wide selects inside the viewport on narrow screens (a fixed 380px did not). */
+.wm-sentinel-select-wide {
+	min-width: min(380px, 100%);
+}
+
+.wm-sentinel-admin-wrap .button .wm-sentinel-btn-icon {
+	margin-top: var(--wm-space-1);
+}
+
+/* ==========================================================================
+   9. Handbook code sample — syntax roles over tokens
+   ========================================================================== */
+
+.wm-code-cm { color: var(--wm-text-muted); }
+.wm-code-kw { color: var(--wm-danger); }
+.wm-code-str { color: var(--wm-accent-primary); }
+.wm-code-fn { color: var(--wm-purple); }
+.wm-code-var { color: var(--wm-warning); }
+
+/* ==========================================================================
+   10. Dashboard widget — family .wm-dash-* plus the recent events list
+   ========================================================================== */
+
+.wm-sentinel-widget-banner .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: var(--wm-success);
+}
+
+.wm-sentinel-widget-banner.is-danger {
+	background: var(--wm-danger-bg);
+	border-color: var(--wm-danger-border);
+}
+
+.wm-sentinel-widget-banner.is-danger .dashicons {
+	color: var(--wm-danger);
+}
+
+.wm-sentinel-widget-status-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.wm-sentinel-widget-status-text small {
+	font-size: 12px;
+	color: var(--wm-text-muted);
+}
+
+.wm-kpi-has-critical .wm-dash-kpi-val {
+	color: var(--wm-danger);
+}
+
+.wm-kpi-has-warning .wm-dash-kpi-val {
+	color: var(--wm-warning);
+}
+
+.wm-sentinel-widget-subhead {
+	margin: var(--wm-space-3) 0 var(--wm-space-2) 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--wm-text-muted);
+}
+
+.wm-sentinel-widget-list {
+	margin: 0 0 var(--wm-space-3) 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wm-sentinel-widget-list-item {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--wm-space-2);
+	padding: var(--wm-space-2) 0;
+	border-bottom: 1px solid var(--wm-border-faint);
+}
+
+.wm-sentinel-widget-list-item:last-child {
+	border-bottom: 0;
+}
+
+.wm-sentinel-widget-item-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.wm-sentinel-widget-item-main code {
+	font-size: var(--wm-text-xs);
+}
+
+.wm-sentinel-widget-item-meta {
+	font-size: var(--wm-text-xs);
+	color: var(--wm-text-muted);
+}
+
+.wm-sentinel-dashboard-widget .wm-dash-actions .button .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+}
+
+/* ==========================================================================
+   11. BFSG 2025 / WCAG 2.2 AA touch targets (>= 44x44px over .wp-core-ui)
+   ========================================================================== */
+
+.wp-core-ui .wm-admin .button.button-small,
+.wp-core-ui .wm-sentinel-view-context,
+.wp-core-ui .wm-sentinel-widget-actions .button.button-small,
+.wm-sentinel-modal-close {
+	min-height: 44px;
+	min-width: 44px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	padding-inline: 12px;
+}
+
+/* ==========================================================================
+   12. Responsive
+   ========================================================================== */
+
+@media (max-width: 782px) {
+	.wm-sentinel-kpi-card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.wm-sentinel-modal-overlay {
+		padding: var(--wm-space-3);
+	}
+}

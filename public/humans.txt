@@ -1,0 +1,45 @@
+/* humanstxt.org */
+/* The humans responsible & technology colophon */
+
+# TEAM
+
+    Author: Arnold Wender
+
+    Built with: an agentic workflow (AI coding agents)
+# THANKS
+
+    To My Family -- For unconditional love, strength & continuous inspiration
+    WordPress Community & Core Contributors -- For democratizing publishing and powering the open web
+    Open Source Community -- For making software accessible to everyone
+
+# TECHNOLOGY COLOPHON
+
+    ## Architecture & Core
+    WordPress 6.4+ / 7.x
+    PHP 8.2+ (strict types, WordPress coding style)
+    MySQL InnoDB with row locking for chain writes
+    WP-CLI command and one REST route
+
+    ## Frontend
+    Click tracker and context inspector in vanilla JavaScript
+    Self-hosted assets in /assets/
+
+    ## Quality
+    Standalone test suite with a mutation check, WordPress integration tests
+    HMAC-SHA256 hash chain (tamper-evident; edits become detectable, not impossible; no legal assessment)
+
+# SITE & PROJECT
+
+    Plugin: wm-activity-sentinel
+    Stack: WordPress plugin
+    Dependencies: none beyond WordPress
+
+# CONTACT
+
+    Author Website: https://arnoldwender.com
+    Repository: https://github.com/arnoldwender/wm-wp-activity-sentinel
+    Support: Zero support — reproducible bugs on GitHub Issues only (SUPPORT.md)
+
+# DEDICATION
+
+    Dedicated to my family with eternal love and gratitude.

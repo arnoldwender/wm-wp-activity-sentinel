@@ -1,0 +1,1730 @@
+# Translation of wm-activity-sentinel in lv
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-activity-sentinel 1.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-activity-"
+"sentinel\n"
+"POT-Creation-Date: 2026-11-21T12:27:41+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:27+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-activity-sentinel\n"
+
+#. Plugin Name of the plugin
+#: wm-activity-sentinel.php includes/class-sentinel-admin.php:228
+#: includes/class-sentinel-admin.php:1495
+msgid "WM Activity Sentinel"
+msgstr "WM Activity Sentinel"
+
+#. Plugin URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+
+#. Description of the plugin
+#: wm-activity-sentinel.php
+msgid ""
+"Aktivitätsprotokoll mit HMAC-SHA256-Hashkette: Anmeldungen, Benutzer und "
+"Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-Routen, "
+"Seitenaufrufe und Klicks angemeldeter Benutzer; Prüfung der Kette, E-Mail- "
+"und Webhook-Alarme, CSV- und JSON-Export. Manipulation wird nachweisbar, "
+"nicht verhindert."
+msgstr ""
+"Darbību žurnāls ar HMAC-SHA256 jaucējkodu ķēdi: pieteikšanās, lietotāji un "
+"lomas, spraudņi un tēmas, eksporti, failu redaktors, atlasīti REST maršruti, "
+"pierakstījušos lietotāju lapu skatījumi un klikšķi; ķēdes pārbaude, e-pasta "
+"un tīmekļāķa brīdinājumi, CSV un JSON eksports. Viltošana kļūst "
+"konstatējama, bet netiek novērsta."
+
+#. Author of the plugin
+#: wm-activity-sentinel.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-sentinel-admin.php:126
+msgid "Part of the WM Suite plugin family"
+msgstr "Daļa no WM Suite spraudņu saimes"
+
+#: includes/class-sentinel-admin.php:128
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Hub"
+msgstr "Hub režīms"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Standalone"
+msgstr "Patstāvīgs"
+
+#: includes/class-sentinel-admin.php:146 includes/class-sentinel-admin.php:147
+msgid "WM Sentinel"
+msgstr "WM Sentinel"
+
+#: includes/class-sentinel-admin.php:157 includes/class-sentinel-admin.php:158
+#: includes/class-sentinel-admin.php:448
+msgid "Aktivitäts-Stream"
+msgstr "Darbību plūsma"
+
+#: includes/class-sentinel-admin.php:166 includes/class-sentinel-admin.php:449
+msgid "Integritäts-Audit (Hash-Kette)"
+msgstr "Integritātes audits (jaucējkodu ķēde)"
+
+#: includes/class-sentinel-admin.php:167 includes/class-sentinel-admin.php:308
+#: wm-activity-sentinel.php:138
+msgid "Integritäts-Audit"
+msgstr "Integritātes audits"
+
+#: includes/class-sentinel-admin.php:175
+msgid "Dateiintegrität (Kern & Plugins)"
+msgstr "Failu integritāte (kodols un spraudņi)"
+
+#: includes/class-sentinel-admin.php:176 includes/class-sentinel-admin.php:450
+#: includes/class-sentinel-admin.php:781
+msgid "Dateiintegrität"
+msgstr "Failu integritāte"
+
+#: includes/class-sentinel-admin.php:184 includes/class-sentinel-admin.php:185
+#: includes/class-sentinel-admin.php:451 includes/class-sentinel-admin.php:951
+#: wm-activity-sentinel.php:156
+msgid "Export"
+msgstr "Eksports"
+
+#: includes/class-sentinel-admin.php:193 includes/class-sentinel-admin.php:194
+#: includes/class-sentinel-admin.php:1018 wm-activity-sentinel.php:128
+msgid "Einstellungen"
+msgstr "Iestatījumi"
+
+#: includes/class-sentinel-admin.php:202
+msgid "Handbuch & Dokumentation"
+msgstr "Rokasgrāmata un dokumentācija"
+
+#: includes/class-sentinel-admin.php:203 includes/class-sentinel-admin.php:453
+#: includes/class-sentinel-admin.php:1529 wm-activity-sentinel.php:133
+#: wm-activity-sentinel.php:151
+msgid "Handbuch"
+msgstr "Rokasgrāmata"
+
+#. translators: %d: number of verified chain entries
+#: includes/class-sentinel-admin.php:252
+#, php-format
+msgid "Kette intakt: %d Einträge geprüft"
+msgstr "Ķēde nebojāta: pārbaudīti %d ieraksti"
+
+#: includes/class-sentinel-admin.php:255
+msgid "Kettenprüfung fehlgeschlagen"
+msgstr "Ķēdes pārbaude neizdevās"
+
+#: includes/class-sentinel-admin.php:259
+msgid "Jeder Eintrag ist mit HMAC-SHA256 an den vorherigen gebunden."
+msgstr "Katrs ieraksts ir saistīts ar iepriekšējo, izmantojot HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:268 includes/class-sentinel-admin.php:508
+msgid "Einträge"
+msgstr "Ieraksti"
+
+#: includes/class-sentinel-admin.php:272
+msgid "Kritisch (24h)"
+msgstr "Kritiski (24 h)"
+
+#: includes/class-sentinel-admin.php:276 includes/class-sentinel-admin.php:558
+msgid "Warnungen (24h)"
+msgstr "Brīdinājumi (24 h)"
+
+#: includes/class-sentinel-admin.php:281
+msgid "Letzte Systemereignisse"
+msgstr "Jaunākie sistēmas notikumi"
+
+#: includes/class-sentinel-admin.php:298
+msgid "Noch keine Ereignisse erfasst."
+msgstr "Vēl nav reģistrētu notikumu."
+
+#: includes/class-sentinel-admin.php:305
+msgid "Aktivitäts-Stream öffnen"
+msgstr "Atvērt darbību plūsmu"
+
+#: includes/class-sentinel-admin.php:452
+msgid "Einstellungen & Alarme"
+msgstr "Iestatījumi un brīdinājumi"
+
+#: includes/class-sentinel-admin.php:456
+msgid "Bereiche von WM Activity Sentinel"
+msgstr "WM Activity Sentinel sadaļas"
+
+#: includes/class-sentinel-admin.php:494
+msgid "Aktivitätsprotokoll"
+msgstr "Darbību žurnāls"
+
+#: includes/class-sentinel-admin.php:495
+msgid "WM Activity Sentinel — Aktivitäts-Stream"
+msgstr "WM Activity Sentinel — Darbību plūsma"
+
+#: includes/class-sentinel-admin.php:496
+msgid ""
+"Protokollierte Ereignisse, neueste zuerst. Jeder Eintrag ist über eine HMAC-"
+"SHA256-Kette mit seinem Vorgänger verbunden."
+msgstr ""
+"Reģistrētie notikumi, jaunākie vispirms. Katrs ieraksts ir saistīts ar "
+"iepriekšējo caur HMAC-SHA256 ķēdi."
+
+#: includes/class-sentinel-admin.php:503
+msgid "Auf dieser Seite"
+msgstr "Šajā lapā"
+
+#: includes/class-sentinel-admin.php:504
+msgid "Springen zu:"
+msgstr "Pāriet uz:"
+
+#: includes/class-sentinel-admin.php:505
+msgid "Kurzanleitung"
+msgstr "Īsais ceļvedis"
+
+#: includes/class-sentinel-admin.php:506
+msgid "Kennzahlen 24 h"
+msgstr "24 h rādītāji"
+
+#: includes/class-sentinel-admin.php:507
+msgid "Filter und Suche"
+msgstr "Filtrēšana un meklēšana"
+
+#: includes/class-sentinel-admin.php:515
+msgid "Was dieses Protokoll leistet"
+msgstr "Ko sniedz šis žurnāls"
+
+#: includes/class-sentinel-admin.php:518
+msgid ""
+"WM Activity Sentinel schreibt ausgewählte Ereignisse (Anmeldungen, Benutzer "
+"und Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-"
+"Routen, Seitenaufrufe und Klicks angemeldeter Benutzer) in eine Tabelle, "
+"deren Einträge über eine HMAC-SHA256-Kette verbunden sind. Wer Einträge "
+"ändert, löscht oder einschleust, fällt bei der Prüfung auf, solange er den "
+"Schlüssel aus der wp-config.php nicht kennt. Verhindern kann das Protokoll "
+"solche Eingriffe nicht."
+msgstr ""
+"WM Activity Sentinel ieraksta atlasītos notikumus (pieteikšanās, lietotājus "
+"un lomas, spraudņus un tēmas, eksportus, failu redaktoru, atlasītus REST "
+"maršrutus, pierakstījušos lietotāju lapu skatījumus un klikšķus) tabulā, "
+"kuras ierakstus saista HMAC-SHA256 ķēde. Ikviens, kurš maina, dzēš vai "
+"ievieto ierakstus, pārbaudē tiek pamanīts, kamēr vien viņam nav atslēgas no "
+"wp-config.php. Žurnāls nevar šādas darbības novērst."
+
+#: includes/class-sentinel-admin.php:521
+msgid "Schnellzugriff:"
+msgstr "Ātrā piekļuve:"
+
+#: includes/class-sentinel-admin.php:524
+msgid "Kette prüfen"
+msgstr "Pārbaudīt ķēdi"
+
+#: includes/class-sentinel-admin.php:528
+msgid "Protokoll exportieren"
+msgstr "Eksportēt žurnālu"
+
+#: includes/class-sentinel-admin.php:532
+msgid "Protokollierung einstellen"
+msgstr "Konfigurēt reģistrēšanu"
+
+#: includes/class-sentinel-admin.php:542 includes/class-sentinel-core.php:177
+msgid "Gesamt-Einträge"
+msgstr "Ieraksti kopā"
+
+#: includes/class-sentinel-admin.php:550
+msgid "Kritische Alarme (24h)"
+msgstr "Kritiski brīdinājumi (24 h)"
+
+#: includes/class-sentinel-admin.php:566
+msgid "Aktive Benutzer"
+msgstr "Aktīvie lietotāji"
+
+#: includes/class-sentinel-admin.php:577
+msgid "Alle Schweregrade"
+msgstr "Visas smaguma pakāpes"
+
+#: includes/class-sentinel-admin.php:578
+msgid "Kritisch (Critical)"
+msgstr "Kritisks"
+
+#: includes/class-sentinel-admin.php:579
+msgid "Warnung (Warning)"
+msgstr "Brīdinājums"
+
+#: includes/class-sentinel-admin.php:580
+msgid "Hinweis (Notice)"
+msgstr "Piezīme"
+
+#: includes/class-sentinel-admin.php:581
+msgid "Info"
+msgstr "Informācija"
+
+#: includes/class-sentinel-admin.php:584
+msgid "Ereignis, Benutzer oder Kontext durchsuchen..."
+msgstr "Meklēt notikumu, lietotāju vai kontekstu..."
+
+#: includes/class-sentinel-admin.php:585
+msgid "Filtern"
+msgstr "Filtrēt"
+
+#: includes/class-sentinel-admin.php:588
+msgid "Zurücksetzen"
+msgstr "Atiestatīt"
+
+#: includes/class-sentinel-admin.php:596
+msgid "Log-ID"
+msgstr "Žurnāla ID"
+
+#: includes/class-sentinel-admin.php:597
+#: includes/class-sentinel-exporter.php:204
+msgid "Zeitpunkt (UTC)"
+msgstr "Laikspiedols (UTC)"
+
+#: includes/class-sentinel-admin.php:598 includes/class-sentinel-admin.php:1567
+#: includes/class-sentinel-exporter.php:212
+msgid "Schweregrad"
+msgstr "Smagums"
+
+#: includes/class-sentinel-admin.php:599
+#: includes/class-sentinel-exporter.php:208
+msgid "Ereignis"
+msgstr "Notikums"
+
+#: includes/class-sentinel-admin.php:600
+msgid "Objekt"
+msgstr "Objekts"
+
+#: includes/class-sentinel-admin.php:601
+msgid "Akteur / Benutzer"
+msgstr "Darbības veicējs / Lietotājs"
+
+#: includes/class-sentinel-admin.php:602
+msgid "IP-Hash"
+msgstr "IP jaucējkods"
+
+#: includes/class-sentinel-admin.php:603
+msgid "Kontext"
+msgstr "Konteksts"
+
+#. translators: %d: log entry id
+#: includes/class-sentinel-admin.php:622
+#, php-format
+msgid "Kontext von Eintrag #%d anzeigen"
+msgstr "Skatīt ieraksta #%d kontekstu"
+
+#: includes/class-sentinel-admin.php:630
+msgid "Keine Aktivitäten gefunden."
+msgstr "Darbības nav atrastas."
+
+#. translators: %d: total number of log entries
+#: includes/class-sentinel-admin.php:643
+#, php-format
+msgid "%d Einträge"
+msgstr "%d ieraksti"
+
+#: includes/class-sentinel-admin.php:670
+msgid "Ereignis-Kontext Inspektor"
+msgstr "Notikuma konteksta inspektors"
+
+#: includes/class-sentinel-admin.php:671
+msgid "Inspektor schließen"
+msgstr "Aizvērt inspektoru"
+
+#: includes/class-sentinel-admin.php:692
+msgid "Kettenprüfung"
+msgstr "Ķēdes pārbaude"
+
+#: includes/class-sentinel-admin.php:693
+msgid "Kryptografisches Integritäts-Audit (Hash-Chaining)"
+msgstr "Kriptogrāfisks integritātes audits (jaucējkodu ķēdēšana)"
+
+#: includes/class-sentinel-admin.php:696
+msgid ""
+"Jeder Eintrag wird mit HMAC-SHA256 gegen seinen Vorgänger geprüft, und das "
+"Ende der Kette gegen den außerhalb der Protokolltabelle verzeichneten "
+"Kettenstand."
+msgstr ""
+"Katrs ieraksts tiek pārbaudīts ar HMAC-SHA256 pret iepriekšējo, un ķēdes "
+"beigas – pret ārpus žurnāla tabulas reģistrēto ķēdes stāvokli."
+
+#: includes/class-sentinel-admin.php:703
+msgid "Status der Prüfsummen-Kette"
+msgstr "Kontrolsummu ķēdes statuss"
+
+#: includes/class-sentinel-admin.php:709
+msgid "KETTE INTAKT"
+msgstr "ĶĒDE NESKARTA"
+
+#. translators: %d: number of verified log entries
+#: includes/class-sentinel-admin.php:713
+#, php-format
+msgid ""
+"%d Log-Einträge vom ersten Eintrag bis zum verzeichneten Kettenstand "
+"geprüft. Keine nachträgliche Änderung, Lücke oder Kürzung erkennbar."
+msgstr ""
+"Pārbaudīti %d žurnāla ieraksti no pirmā ieraksta līdz reģistrētajam ķēdes "
+"stāvoklim. Vēlākas izmaiņas, robi vai saīsinājumi nav konstatēti."
+
+#. translators: %d: number of pseudonymised log entries
+#: includes/class-sentinel-admin.php:721
+#, php-format
+msgid ""
+"%d davon wurden auf eine Löschanfrage hin pseudonymisiert und über den "
+"jeweiligen Löschnachweis in der Kette anerkannt."
+msgstr ""
+"%d no tiem tika pseidonimizēti pēc dzēšanas pieprasījuma un pieņemti, "
+"izmantojot saistīto dzēšanas ierakstu."
+
+#: includes/class-sentinel-admin.php:726
+msgid "Hash des letzten Eintrags:"
+msgstr "Pēdējā ieraksta jaucējvērtība:"
+
+#: includes/class-sentinel-admin.php:734
+msgid "MANIPULATION ODER KETTENBRUCH ERKANNT"
+msgstr "KONSTATĒTA VILTOŠANA VAI PĀRTRAUKTA ĶĒDE"
+
+#: includes/class-sentinel-admin.php:735
+msgid "Fehlerdiagnose:"
+msgstr "Diagnostikas informācija:"
+
+#: includes/class-sentinel-admin.php:742
+msgid "AUTH_KEY ist noch der Platzhalter aus wp-config-sample.php."
+msgstr ""
+"AUTH_KEY joprojām ir iestatīts uz viettura vērtību no wp-config-sample.php."
+
+#: includes/class-sentinel-admin.php:743
+msgid ""
+"Die Kette ist mit einem öffentlich bekannten Schlüssel signiert: Jeder mit "
+"Datenbankzugriff kann Einträge ändern und die Kette neu signieren. Ein neuer "
+"AUTH_KEY in der wp-config.php schützt künftige Einträge; bestehende Einträge "
+"bestehen die Prüfung dann nicht mehr."
+msgstr ""
+"Ķēde tiek parakstīta ar publiski zināmu atslēgu: ikviens ar piekļuvi "
+"datubāzei var mainīt ierakstus un parakstīt ķēdi no jauna. Jauna AUTH_KEY "
+"iestatīšana failā wp-config.php aizsargā turpmākos ierakstus; esošie "
+"pārbaudi vairs neizturēs."
+
+#: includes/class-sentinel-admin.php:747
+msgid "Der Kettenschlüssel liegt in der Datenbank, nicht in der wp-config.php."
+msgstr "Ķēdes atslēga glabājas datubāzē, nevis failā wp-config.php."
+
+#: includes/class-sentinel-admin.php:748
+msgid ""
+"In dieser Installation ist AUTH_KEY nicht definiert, daher greift WordPress "
+"auf automatisch erzeugte Salts zurück und legt sie in wp_options ab — also "
+"in derselben Datenbank, in die ein Angreifer ohnehin schreiben würde. Der "
+"Manipulationsnachweis hält hier nur gegen Unfälle, nicht gegen einen "
+"Angreifer. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"AUTH_KEY šajā instalācijā nav definēts, tāpēc WordPress izmanto automātiski "
+"ģenerētus sāļus tabulā wp_options — tajā pašā datubāzē, kurā rakstītu "
+"uzbrucējs. Viltošanas noteikšana šeit pasargā tikai no nejaušām kļūdām, "
+"nevis uzbrucēja. Definējiet AUTH_KEY failā wp-config.php."
+
+#: includes/class-sentinel-admin.php:754
+msgid "Integritätsprüfung erneut ausführen"
+msgstr "Atkārtoti palaist integritātes pārbaudi"
+
+#: includes/class-sentinel-admin.php:782
+msgid "Abgleich gegen den offiziellen Prüfsummen-Katalog"
+msgstr "Salīdzinājums ar oficiālo kontrolsummu katalogu"
+
+#: includes/class-sentinel-admin.php:783
+msgid ""
+"Die Kerndateien werden gegen api.wordpress.org geprüft, die WM-Suite-Plugins "
+"gegen eine Basislinie, deren Fingerabdruck in der Hash-Kette versiegelt ist."
+msgstr ""
+"Kodola faili tiek pārbaudīti pret api.wordpress.org, bet WM Suite spraudņi — "
+"pret bāzes uzņēmumu, kura nospiedums ir aizzīmogots jaucējkodu ķēdē."
+
+#. translators: %d: number of files in the baseline
+#: includes/class-sentinel-admin.php:793
+#, php-format
+msgid "Basislinie über %d Dateien erfasst und in der Kette versiegelt."
+msgstr "%d failu bāzes uzņēmums ir saglabāts un aizzīmogots ķēdē."
+
+#. translators: 1: number of files found, 2: configured maximum
+#: includes/class-sentinel-admin.php:802 includes/class-sentinel-fim.php:517
+#, php-format
+msgid ""
+"Die Basislinie wurde nicht gespeichert: %1$d Dateien überschreiten das "
+"Maximum von %2$d. Eine Basislinie dieser Größe wird bei jeder Prüfung "
+"gelesen und neu geschrieben. Prüfen Sie, ob in einem Plugin-Verzeichnis "
+"Entwicklungsdateien liegen, die dort nicht hingehören."
+msgstr ""
+"Bāzes uzņēmums netika saglabāts: %1$d faili pārsniedz maksimumu %2$d. Šāda "
+"apjoma uzņēmums tiek lasīts un pārrakstīts katrā skenēšanā. Pārbaudiet, vai "
+"spraudņa mapē nav izstrādes artefaktu."
+
+#: includes/class-sentinel-admin.php:808
+msgid "Letzte Prüfung"
+msgstr "Pēdējā skenēšana"
+
+#: includes/class-sentinel-admin.php:814
+msgid "NOCH NICHT GEPRÜFT"
+msgstr "VĒL NAV PĀRBAUDĪTS"
+
+#: includes/class-sentinel-admin.php:815
+msgid ""
+"Es liegt kein Prüfbericht vor. Starten Sie die Prüfung unten oder warten Sie "
+"den täglichen Lauf ab. Ein ungeprüfter Dateibaum ist kein unauffälliger "
+"Dateibaum."
+msgstr ""
+"Skenēšanas pārskats vēl nav pieejams. Sāciet skenēšanu zemāk vai sagaidiet "
+"ikdienas ieplānoto izpildi. Nepārbaudīts failu koks nav tīrs failu koks."
+
+#: includes/class-sentinel-admin.php:822
+msgid "VERÄNDERTE ODER UNERWARTETE DATEIEN GEFUNDEN"
+msgstr "ATRASTI MAINĪTI VAI NEGAIDĪTI FAILI"
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:826
+#, php-format
+msgid "%1$d Abweichungen, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d neatbilstības, pēdējoreiz pārbaudīts %2$s UTC."
+
+#: includes/class-sentinel-admin.php:835
+msgid "KEINE ABWEICHUNG"
+msgstr "NEATBILSTĪBU NAV"
+
+#. translators: 1: number of core files checked, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:839
+#, php-format
+msgid ""
+"%1$d Kerndateien stimmen mit dem offiziellen Katalog überein (geprüft am "
+"%2$s UTC)."
+msgstr "%1$d kodola faili atbilst oficiālajam katalogam (pārbaudīts %2$s UTC)."
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:849
+#, php-format
+msgid "%1$d Auffälligkeiten, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d konstatējumi, pēdējoreiz pārbaudīts %2$s UTC."
+
+#: includes/class-sentinel-admin.php:861
+msgid "Verändert (Kerndateien)"
+msgstr "Mainīti (kodola faili)"
+
+#: includes/class-sentinel-admin.php:862
+msgid "Fehlend (Kerndateien)"
+msgstr "Trūkstoši (kodola faili)"
+
+#: includes/class-sentinel-admin.php:863
+msgid "Unerwartet in wp-admin / wp-includes"
+msgstr "Negaidīti mapēs wp-admin / wp-includes"
+
+#: includes/class-sentinel-admin.php:864
+msgid "Verändert (WM-Suite-Plugins)"
+msgstr "Mainīti (WM Suite spraudņi)"
+
+#: includes/class-sentinel-admin.php:865
+msgid "Fehlend (WM-Suite-Plugins)"
+msgstr "Trūkstoši (WM Suite spraudņi)"
+
+#: includes/class-sentinel-admin.php:866
+msgid "Neu gegenüber der Basislinie"
+msgstr "Pievienoti kopš bāzes uzņēmuma"
+
+#. translators: %s: comma-separated file names
+#: includes/class-sentinel-admin.php:884
+#, php-format
+msgid "Nicht als Fund gewertet, weil ihr Entfernen gängige Härtung ist: %s."
+msgstr ""
+"Netiek skaitīts kā konstatējums, jo to noņemšana ir standarta drošības "
+"stiprināšana: %s."
+
+#: includes/class-sentinel-admin.php:892
+msgid "Basislinie der WM-Suite-Plugins"
+msgstr "WM Suite spraudņu bāzes uzņēmums"
+
+#: includes/class-sentinel-admin.php:897
+msgid "Die gespeicherte Basislinie wurde nachträglich verändert."
+msgstr "Saglabātais bāzes uzņēmums tika mainīts pēc aizzīmogošanas."
+
+#: includes/class-sentinel-admin.php:898
+msgid ""
+"Ihr Fingerabdruck stimmt nicht mehr mit dem Wert überein, der beim Erfassen "
+"in die Hash-Kette geschrieben wurde. Wer eine Plugin-Datei ändert und "
+"anschließend die Basislinie anpasst, hinterlässt genau diese Abweichung."
+msgstr ""
+"Tā nospiedums vairs neatbilst vērtībai, kas tika ierakstīta jaucējkodu ķēdē "
+"uzņemšanas brīdī. Spraudņa faila mainīšana un bāzes uzņēmuma atjaunināšana "
+"atstāj tieši šādu neatbilstību."
+
+#: includes/class-sentinel-admin.php:901
+msgid ""
+"Es ist noch keine Basislinie erfasst. Ohne sie werden nur die Kerndateien "
+"geprüft: für die Plugins gibt es keinen offiziellen Katalog, gegen den sich "
+"vergleichen ließe."
+msgstr ""
+"Bāzes uzņēmums vēl nav izveidots. Bez tā tiek pārbaudīti tikai kodola faili: "
+"spraudņiem nav oficiāla kataloga."
+
+#. translators: %d: number of files covered by the baseline
+#: includes/class-sentinel-admin.php:906
+#, php-format
+msgid "Basislinie über %d Dateien, Fingerabdruck in der Kette versiegelt."
+msgstr "Bāzes uzņēmums aptver %d failus, nospiedums aizzīmogots ķēdē."
+
+#: includes/class-sentinel-admin.php:911
+msgid ""
+"Nach jeder Aktualisierung eines WM-Suite-Plugins meldet die Prüfung dessen "
+"Dateien als verändert, weil sie es sind. Erfassen Sie die Basislinie dann "
+"neu."
+msgstr ""
+"Pēc jebkura WM Suite spraudņa atjaunināšanas skenēšana tā mainītos failus "
+"uzrādīs kā modificētus. Pēc tam izveidojiet bāzes uzņēmumu no jauna."
+
+#: includes/class-sentinel-admin.php:917
+msgid "Prüfung jetzt ausführen"
+msgstr "Palaist skenēšanu tagad"
+
+#: includes/class-sentinel-admin.php:920
+msgid "Basislinie erfassen und versiegeln"
+msgstr "Uzņemt un aizzīmogot bāzes uzņēmumu"
+
+#: includes/class-sentinel-admin.php:927
+msgid ""
+"Die geplante Prüfung ist ausgeschaltet; es läuft nur, was Sie hier von Hand "
+"starten."
+msgstr ""
+"Ieplānotā skenēšana ir atspējota; tiks izpildītas tikai šeit manuāli sāktās "
+"pārbaudes."
+
+#. translators: %s: timestamp in UTC
+#: includes/class-sentinel-admin.php:931
+#, php-format
+msgid "Nächster geplanter Lauf: %s UTC."
+msgstr "Nākamā ieplānotā izpilde: %s UTC."
+
+#: includes/class-sentinel-admin.php:934
+msgid ""
+"Die Prüfung ist eingeschaltet, aber es ist kein Lauf geplant. Speichern Sie "
+"die Einstellungen einmal, damit der tägliche Termin angelegt wird."
+msgstr ""
+"Skenēšana ir iespējota, taču izpilde vēl nav ieplānota. Vienreiz saglabājiet "
+"iestatījumus, lai ieplānotu ikdienas uzdevumu."
+
+#: includes/class-sentinel-admin.php:952
+msgid "Export des Protokolls"
+msgstr "Eksportēt darbību žurnālu"
+
+#: includes/class-sentinel-admin.php:953
+msgid "CSV- oder JSON-Datei mit bis zu 10.000 Einträgen, neueste zuerst."
+msgstr "CSV vai JSON fails ar līdz pat 10 000 ierakstiem, jaunākie vispirms."
+
+#: includes/class-sentinel-admin.php:961
+msgid "CSV-Datei"
+msgstr "CSV fails"
+
+#: includes/class-sentinel-admin.php:962
+msgid ""
+"Semikolon-getrennt, UTF-8 mit BOM. Zellen, die mit =, +, -, @, Tabulator "
+"oder Wagenrücklauf beginnen, erhalten ein vorangestelltes Apostroph, damit "
+"Tabellenprogramme sie nicht als Formel ausführen."
+msgstr ""
+"Atdalīts ar semikolu, UTF-8 ar BOM. Šūnām, kas sākas ar =, +, -, @, "
+"tabulāciju vai rindas atgriešanu, priekšā tiek pievienots apostrofs, lai "
+"izklājlapas tās neizpildītu kā formulas."
+
+#: includes/class-sentinel-admin.php:964
+msgid "CSV-Datei herunterladen"
+msgstr "Lejupielādēt CSV failu"
+
+#: includes/class-sentinel-admin.php:969
+msgid "JSON-Paket"
+msgstr "JSON pakotne"
+
+#: includes/class-sentinel-admin.php:970
+msgid ""
+"Einträge mit ihren Hashes, das Ergebnis der Kettenprüfung zum Zeitpunkt des "
+"Exports und eine SHA-256-Prüfsumme über das Dokument ohne das "
+"Prüfsummenfeld. Die Datei ist nicht signiert: Wer sie ändert, kann die "
+"Prüfsumme neu berechnen."
+msgstr ""
+"Ieraksti ar to jaucējkodiem, ķēdes pārbaudes rezultāts eksporta brīdī un "
+"dokumenta SHA-256 kontrolsumma bez kontrolsummas lauka. Fails nav "
+"parakstīts: ikviens rediģētājs var kontrolsummu pārrēķināt."
+
+#: includes/class-sentinel-admin.php:972
+msgid "JSON-Paket herunterladen"
+msgstr "Lejupielādēt JSON pakotni"
+
+#: includes/class-sentinel-admin.php:1019
+msgid "Einstellungen & Protokollierungsstufe"
+msgstr "Iestatījumi un žurnalēšanas līmenis"
+
+#: includes/class-sentinel-admin.php:1020
+msgid ""
+"Protokollierungsstufe, überwachte Bereiche, Klick-Erfassung, Alarme per E-"
+"Mail und Webhook sowie Aufbewahrung."
+msgstr ""
+"Žurnalēšanas līmenis, uzraudzītās jomas, klikšķu uztveršana, brīdinājumi pa "
+"e-pastu un webhook, kā arī glabāšana."
+
+#: includes/class-sentinel-admin.php:1028
+msgid ""
+"Einstellungen und Protokollierungsfilter wurden erfolgreich gespeichert."
+msgstr "Iestatījumi un reģistrēšanas filtri ir saglabāti."
+
+#. translators: %d: number of demo log entries generated
+#: includes/class-sentinel-admin.php:1037
+#, php-format
+msgid ""
+"%d von 15 Demo-Einträgen wurden an die Kette angehängt (ohne Alarm-Mails und "
+"Webhooks). Einträge, die Protokollierungsstufe oder Schalter nicht zulassen, "
+"werden nicht geschrieben."
+msgstr ""
+"Ķēdei pievienoti %d no 15 demonstrācijas ierakstiem (bez brīdinājuma e-"
+"pastiem vai tīmekļāķiem). Reģistrēšanas līmeņa vai moduļu slēdžu atfiltrētie "
+"ieraksti netiek saglabāti."
+
+#: includes/class-sentinel-admin.php:1053
+msgid "Keine Demodaten gefunden; das Protokoll ist unverändert."
+msgstr "Demonstrācijas dati nav atrasti; žurnāls paliek nemainīgs."
+
+#. translators: %d: number of demo log entries deleted
+#: includes/class-sentinel-admin.php:1056
+#, php-format
+msgid ""
+"%d Demodaten-Logs wurden gelöscht. Das Protokoll wurde dabei vollständig "
+"zurückgesetzt und die Kette beginnt wieder beim Genesis-Block."
+msgstr ""
+"Izdzēsti %d demonstrācijas žurnāla ieraksti. Žurnāls tika pilnībā "
+"atiestatīts, un ķēde atsākās no sākuma bloka."
+
+#: includes/class-sentinel-admin.php:1066
+msgid ""
+"Die Demodaten wurden nicht gelöscht: es liegen bereits echte "
+"Protokolleinträge vor. Eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren, ohne dass die Prüfung bricht — und sie nachträglich neu zu "
+"signieren würde genau die Manipulationserkennung aufheben, für die dieses "
+"Plugin da ist."
+msgstr ""
+"Demonstrācijas dati netika dzēsti, jo jau pastāv īsti žurnāla ieraksti. "
+"Nepārtraukta ķēde nevar zaudēt vidējos ierakstus, nesabojājot pārbaudi — bet "
+"atkārtota parakstīšana padarītu spraudņa viltošanas noteikšanu bezjēdzīgu."
+
+#: includes/class-sentinel-admin.php:1067
+msgid ""
+"Die Demodaten bleiben als solche gekennzeichnet stehen. Wer sie zwingend "
+"loswerden muss, setzt das gesamte Protokoll über den Werksreset zurück und "
+"verliert dabei auch die echten Einträge."
+msgstr ""
+"Demonstrācijas ieraksti paliek atzīmēti kā tādi. Ja tie ir jānoņem, "
+"izmantojiet rūpnīcas atiestatīšanu visa žurnāla iztukšošanai, kas izdzēš arī "
+"īstos ierakstus."
+
+#: includes/class-sentinel-admin.php:1073
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Rūpnīcas iestatījumi atjaunoti:"
+
+#: includes/class-sentinel-admin.php:1073
+msgid ""
+"Alle Logs und Alarme wurden bereinigt, der Genesis-Block wurde neu "
+"initialisiert und alle Einstellungen auf Standardwerte zurückgesetzt."
+msgstr ""
+"Visi žurnāli un brīdinājumi tika notīrīti, tika inicializēts jauns sākuma "
+"bloks un visi iestatījumi tika atiestatīti uz noklusējuma vērtībām."
+
+#: includes/class-sentinel-admin.php:1084
+msgid "1. Protokollierungsstufe & Klick-Erfassung"
+msgstr "1. Žurnalēšanas līmenis un klikšķu uztveršana"
+
+#: includes/class-sentinel-admin.php:1087
+msgid ""
+"Steuert, ab welchem Schweregrad Ereignisse in die Kette geschrieben werden. "
+"Einträge zu Löschanfragen und der Genesis-Block werden immer geschrieben."
+msgstr ""
+"Nosaka minimālo smaguma pakāpi, kas tiek ierakstīta ķēdē. Privātuma dzēšanas "
+"ieraksti un sākuma bloks tiek ierakstīti vienmēr."
+
+#: includes/class-sentinel-admin.php:1094
+msgid "Protokollierungsstufe"
+msgstr "Žurnalēšanas līmenis"
+
+#: includes/class-sentinel-admin.php:1100
+msgid "Vollständig (Info, Notice, Warning, Critical)"
+msgstr "Pilnīga (Info, Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1103
+msgid "Standard (Notice, Warning, Critical)"
+msgstr "Standarta (Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1106
+msgid "Nur Warnungen (Warning, Critical)"
+msgstr "Tikai brīdinājumi (Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1109
+msgid "Nur kritische Ereignisse (Critical)"
+msgstr "Tikai kritiski notikumi (Critical)"
+
+#: includes/class-sentinel-admin.php:1113
+msgid "Stufenübersicht:"
+msgstr "Līmeņu pārskats:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid "Vollständig:"
+msgstr "Pilnīga:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid ""
+"Schreibt jedes Ereignis der Sensoren, auch Info-Einträge wie Anmeldungen, "
+"Seitenaufrufe und Klicks."
+msgstr ""
+"Ieraksta katru sensoru notikumu, arī Info ierakstus, piemēram, pieteikšanās, "
+"lapu skatījumus un klikšķus."
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Standard:"
+msgstr "Standarta:"
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Lässt Info-Einträge weg, also Anmeldungen, Seitenaufrufe und Klicks."
+msgstr ""
+"Izlaiž Info ierakstus, t. i., pieteikšanās, lapu skatījumus un klikšķus."
+
+#: includes/class-sentinel-admin.php:1116
+msgid "Nur Warnungen:"
+msgstr "Tikai brīdinājumi:"
+
+#: includes/class-sentinel-admin.php:1116
+msgid ""
+"Nur Ereignisse mit Schweregrad Warning oder Critical, zum Beispiel "
+"fehlgeschlagene Anmeldungen, Dateieditor, Deaktivieren von Plugins und "
+"Beförderung zum Administrator."
+msgstr ""
+"Tikai Warning vai Critical notikumi, piemēram, neveiksmīgas pieteikšanās, "
+"failu redaktora izmantošana, spraudņu deaktivizēšana un administratora lomas "
+"piešķiršana."
+
+#: includes/class-sentinel-admin.php:1117
+msgid "Nur kritische Ereignisse:"
+msgstr "Tikai kritiski notikumi:"
+
+#: includes/class-sentinel-admin.php:1117
+msgid ""
+"Nur Schweregrad Critical, zum Beispiel ein Export der Website, ein "
+"gestartetes Backup oder die Beförderung zum Administrator."
+msgstr ""
+"Tikai nopietnība Critical, piemēram, vietnes eksports, sākta dublēšana vai "
+"paaugstināšana par administratoru."
+
+#: includes/class-sentinel-admin.php:1125
+msgid "Klick- & Interaktions-Tiefe"
+msgstr "Klikšķu un mijiedarbības dziļums"
+
+#: includes/class-sentinel-admin.php:1131
+msgid ""
+"Alle Interaktionen erfassen (Menüs, Buttons, Links, Tabs, Modals, Downloads)"
+msgstr ""
+"Tvert visas mijiedarbības (izvēlnes, pogas, saites, cilnes, modālos logus, "
+"lejupielādes)"
+
+#: includes/class-sentinel-admin.php:1134
+msgid ""
+"Nur operative Aktionen & Menü-Navigation (Menüs, Buttons, Speichern, Löschen)"
+msgstr ""
+"Tikai operatīvās darbības un izvēļņu navigāciju (izvēlnes, pogas, "
+"saglabāšanu, dzēšanu)"
+
+#: includes/class-sentinel-admin.php:1137
+msgid ""
+"Nur destruktive Aktionen & Downloads (Lösch-Aktionen, Exporte, Archiv-"
+"Downloads)"
+msgstr ""
+"Tikai destruktīvās darbības un lejupielādes (dzēšanas, eksportus, arhīvu "
+"lejupielādes)"
+
+#: includes/class-sentinel-admin.php:1141
+msgid ""
+"Filtert, welche Klicks angemeldeter Benutzer das Skript im Backend und im "
+"Frontend meldet."
+msgstr ""
+"Filtrē, kurus pierakstījušos lietotāju klikšķus skripts ziņo administrācijā "
+"un publiskajā daļā."
+
+#: includes/class-sentinel-admin.php:1152
+msgid "2. Überwachte Systembereiche & Module"
+msgstr "2. Uzraugāmās sistēmas jomas un moduļi"
+
+#: includes/class-sentinel-admin.php:1155
+msgid ""
+"Schaltet einzelne Bereiche ab. Ein abgeschalteter Bereich schreibt keine "
+"Einträge."
+msgstr "Atspējo atsevišķas jomas. Atspējota joma ierakstus neveic."
+
+#: includes/class-sentinel-admin.php:1160
+msgid "Sicherheitsmodule"
+msgstr "Drošības moduļi"
+
+#: includes/class-sentinel-admin.php:1165
+msgid "Authentifizierung & Sessions"
+msgstr "Autentifikācija un sesijas"
+
+#: includes/class-sentinel-admin.php:1166
+msgid ""
+"Erfolgreiche und fehlgeschlagene Anmeldungen, neue Anwendungspasswörter. "
+"Abmeldungen und Passwort-Resets werden nicht erfasst."
+msgstr ""
+"Veiksmīgas un neveiksmīgas pieteikšanās, jaunas lietotņu paroles. "
+"Izrakstīšanās un paroļu atiestatīšana netiek reģistrēta."
+
+#: includes/class-sentinel-admin.php:1171
+msgid "Benutzerverwaltung & Berechtigungsrollen"
+msgstr "Lietotāju pārvaldība un lomas"
+
+#: includes/class-sentinel-admin.php:1172
+msgid ""
+"Rollenänderungen (Administrator als Critical), angelegte und gelöschte "
+"Benutzer."
+msgstr ""
+"Lomu maiņas (administrators kā Critical), izveidotie un izdzēstie lietotāji."
+
+#: includes/class-sentinel-admin.php:1177
+msgid "Plugins, Themes & Core-Integrität"
+msgstr "Spraudņi, tēmas un kodola integritāte"
+
+#: includes/class-sentinel-admin.php:1178
+msgid ""
+"Plugin-Aktivierung, -Deaktivierung und -Löschung, Theme-Wechsel, Updates, "
+"ausgewählte Optionen, Aufrufe und Speicheranfragen des Dateieditors."
+msgstr ""
+"Spraudņu aktivizēšana, deaktivizēšana un dzēšana, tēmu maiņa, atjauninājumi, "
+"atlasītās opcijas, kā arī failu redaktora skatījumi un saglabāšanas."
+
+#: includes/class-sentinel-admin.php:1183
+msgid "Exporte & Backups"
+msgstr "Eksporti un dublējumi"
+
+#: includes/class-sentinel-admin.php:1184
+msgid ""
+"Native XML-Exporte, Aufrufe der Exportseite, Backup-Start von UpdraftPlus "
+"und Duplicator. Klicks auf Download-Links fallen unter „UI-Interaktionen“. "
+"Beitragsänderungen und Uploads werden nicht erfasst."
+msgstr ""
+"Iebūvētie XML eksporti, eksporta ekrāna apmeklējumi, UpdraftPlus un "
+"Duplicator dublējumu palaišana. Lejupielādes saišu klikšķi ietilpst sadaļā "
+"“UI mijiedarbības”. Ziņu labojumi un mediju augšupielādes netiek reģistrētas."
+
+#: includes/class-sentinel-admin.php:1189
+msgid "REST-API"
+msgstr "REST API"
+
+#: includes/class-sentinel-admin.php:1190
+msgid ""
+"Aufrufe von /wp/v2/plugins und nicht angemeldete Aufrufe von /wp/v2/users."
+msgstr ""
+"Pieprasījumi uz /wp/v2/plugins un neautentificēti pieprasījumi uz /wp/v2/"
+"users."
+
+#: includes/class-sentinel-admin.php:1197
+msgid "Navigation & UI-Telemetrie"
+msgstr "Navigācija un UI telemetrija"
+
+#: includes/class-sentinel-admin.php:1202
+msgid "Admin-Seitennavigation (current_screen)"
+msgstr "Administrācijas ekrānu navigācija (current_screen)"
+
+#: includes/class-sentinel-admin.php:1203
+msgid "Erfasst jeden Backend-Seitenaufruf mit übersetztem Klartextnamen."
+msgstr "Reģistrē katru administrācijas ekrāna atvēršanu ar lasāmu virsrakstu."
+
+#: includes/class-sentinel-admin.php:1208
+msgid "Klick- & Interaktions-Telemetrie (Client-Side)"
+msgstr "Klikšķu un mijiedarbības telemetrija (klienta pusē)"
+
+#: includes/class-sentinel-admin.php:1209
+msgid ""
+"Meldet Klicks angemeldeter Benutzer auf Menüs, Buttons, Tabs und Links mit "
+"Beschriftung, Ziel und Seitenadresse (höchstens 60 Einträge pro Benutzer und "
+"Minute)."
+msgstr ""
+"Ziņo pierakstījušos lietotāju klikšķus uz izvēlnēm, pogām, cilnēm un saitēm "
+"ar uzrakstu, mērķi un lapas URL (ne vairāk kā 60 ieraksti lietotājam minūtē)."
+
+#: includes/class-sentinel-admin.php:1214
+msgid "Frontend-Seitenaufrufe angemeldeter Benutzer"
+msgstr "Pierakstījušos lietotāju publisko lapu skatījumi"
+
+#: includes/class-sentinel-admin.php:1215
+msgid ""
+"Protokolliert jede Frontend-Seite, die ein angemeldeter Benutzer aufruft, "
+"mit Adresse und Referrer."
+msgstr ""
+"Reģistrē katru pierakstījušās personas atvērto publisko lapu ar URL un "
+"novirzītāju."
+
+#: includes/class-sentinel-admin.php:1227
+msgid "3. Echtzeit-Alarme & Benachrichtigungen"
+msgstr "3. Reāllaika brīdinājumi un paziņojumi"
+
+#: includes/class-sentinel-admin.php:1230
+msgid ""
+"E-Mail und Webhook, sobald ein Eintrag mit mindestens dem gewählten "
+"Schweregrad geschrieben wird. Ein Kettenbruch löst keinen Alarm aus; er "
+"zeigt sich erst bei der nächsten Prüfung."
+msgstr ""
+"E-pasta un tīmekļāķa paziņojumi ikreiz, kad tiek ierakstīts izvēlētās vai "
+"augstākas smaguma pakāpes ieraksts. Pārtraukta ķēde brīdinājumu neizraisa; "
+"tā parādās nākamajā pārbaudē."
+
+#: includes/class-sentinel-admin.php:1237
+msgid "Alarm-Empfänger E-Mail"
+msgstr "Brīdinājumu saņēmēja e-pasts"
+
+#: includes/class-sentinel-admin.php:1242
+msgid ""
+"Erhält die Alarm-Mails; ab welchem Schweregrad, legt das nächste Feld fest."
+msgstr ""
+"Saņem brīdinājumu e-pastus; nākamais lauks nosaka, no kuras nopietnības."
+
+#: includes/class-sentinel-admin.php:1249
+msgid "Min. Schweregrad für Alarme"
+msgstr "Minimālā brīdinājuma smaguma pakāpe"
+
+#: includes/class-sentinel-admin.php:1254
+msgid "Nur Kritische Vorfälle (Critical)"
+msgstr "Tikai kritiski incidenti (Critical)"
+
+#: includes/class-sentinel-admin.php:1255
+msgid "Warnungen & Kritisch (Warning+)"
+msgstr "Brīdinājumi un kritiski (Warning+)"
+
+#: includes/class-sentinel-admin.php:1256
+msgid "Notice und höher (Notice-Einträge selbst lösen keinen Alarm aus)"
+msgstr "Piezīmes un augstāk (paši Notice ieraksti brīdinājumus neizraisa)"
+
+#: includes/class-sentinel-admin.php:1264
+msgid "Webhook-URL"
+msgstr "Tīmekļāķa URL"
+
+#: includes/class-sentinel-admin.php:1269
+msgid ""
+"Erhält einen JSON-POST mit text, log_id, event_type, severity, user, site "
+"und timestamp. Ob ein Chat-Dienst dieses Format annimmt, prüft das Plugin "
+"nicht."
+msgstr ""
+"Saņem JSON POST ar laukiem text, log_id, event_type, severity, user, site un "
+"timestamp. Spraudnis nepārbauda, vai tērzēšanas pakalpojums pieņem šo "
+"formātu."
+
+#: includes/class-sentinel-admin.php:1279
+msgid "4. Aufbewahrung & Dashboard"
+msgstr "4. Glabāšana un informācijas panelis"
+
+#: includes/class-sentinel-admin.php:1286
+msgid "Aufbewahrungsfrist"
+msgstr "Glabāšanas periods"
+
+#: includes/class-sentinel-admin.php:1290
+msgid "Tage"
+msgstr "dienas"
+
+#: includes/class-sentinel-admin.php:1291
+msgid ""
+"Täglich angewendet: Einträge, die älter als diese Frist sind, verlieren "
+"Name, E-Mail-Adresse und IP-Kennung. Gelöscht wird nichts — jede gelöschte "
+"Zeile würde die Kette unterbrechen und die Prüfung würde Ihre eigene "
+"Aufbewahrungsregel als Manipulation melden. Ereignisart, Zeitpunkt, "
+"Schweregrad und Kontext bleiben stehen. Unter 30 Tagen bedeutet: alles "
+"behalten."
+msgstr ""
+"Tiek piemērots katru dienu: par šo periodu vecāki ieraksti zaudē vārdu, e-"
+"pasta adresi un IP identifikatoru. Nekas netiek dzēsts — rindas dzēšana "
+"pārtrauktu ķēdi, un pārbaude jūsu pašu glabāšanas politiku uzrādītu kā "
+"viltošanu. Notikuma veids, laikspiedols, smagums un konteksts saglabājas. "
+"Mazāk par 30 dienām nozīmē paturēt visu."
+
+#: includes/class-sentinel-admin.php:1296
+msgid "Dashboard-Widget"
+msgstr "Informācijas paneļa logrīks"
+
+#: includes/class-sentinel-admin.php:1300
+msgid "Widget auf dem WordPress-Dashboard anzeigen"
+msgstr "Rādīt logrīku WordPress informācijas panelī"
+
+#: includes/class-sentinel-admin.php:1302
+msgid ""
+"Zeigt den aktuellen Prüfsummen-Status (Hash-Chain), KPI-Kennzahlen und die "
+"letzten Vorfälle direkt auf der Hauptseite des WordPress-Backends an."
+msgstr ""
+"Galvenajā WordPress informācijas panelī rāda jaucējkodu ķēdes statusu, "
+"galvenos skaitītājus un jaunākos notikumus."
+
+#: includes/class-sentinel-admin.php:1307
+msgid "Deinstallation"
+msgstr "Atinstalēšana"
+
+#: includes/class-sentinel-admin.php:1311
+msgid ""
+"Protokolltabellen und versiegelte Basislinie beim Löschen des Plugins "
+"endgültig entfernen"
+msgstr ""
+"Dzēšot spraudni, neatgriezeniski noņemt žurnāla tabulas un aizzīmogoto bāzes "
+"uzņēmumu"
+
+#: includes/class-sentinel-admin.php:1313
+msgid ""
+"Standardmäßig bleiben die Tabellen wp_wm_activity_logs und "
+"wp_wm_activity_alerts sowie der gespiegelte Kettenendpunkt und die "
+"versiegelte Datei-Basislinie bei einer Deinstallation erhalten. Aktivieren "
+"Sie diese Option nur, wenn beim Entfernen des Plugins auch die gesamte Audit-"
+"Kette gelöscht werden soll."
+msgstr ""
+"Pēc noklusējuma wp_wm_activity_logs, wp_wm_activity_alerts, spoguļotais "
+"ķēdes gals un aizzīmogotais failu bāzes uzņēmums atinstalējot tiek "
+"saglabāti. Iespējojiet šo opciju tikai tad, ja spraudņa dzēšanai jānotīra "
+"arī visa audita ķēde."
+
+#: includes/class-sentinel-admin.php:1323
+msgid "5. Weiterleitung an ein SIEM"
+msgstr "5. SIEM pārsūtīšana"
+
+#: includes/class-sentinel-admin.php:1325
+msgid ""
+"Jeder protokollierte Eintrag ab dem gewählten Schweregrad wird zusätzlich an "
+"einen Collector geschickt — als Syslog nach RFC 5424, als CEF:0 oder als "
+"LEEF:2.0. Splunk, Microsoft Sentinel, Datadog und Elastic lesen mindestens "
+"eines dieser Formate. Der Eintrag im Protokoll bleibt davon unberührt: die "
+"Weiterleitung ist eine Kopie, und ein nicht erreichbarer Collector hält "
+"WordPress nicht auf."
+msgstr ""
+"Katrs izvēlētās vai augstākas smaguma pakāpes ieraksts tiek nosūtīts arī "
+"kolektoram — kā Syslog RFC 5424, CEF:0 vai LEEF:2.0. Splunk, Microsoft "
+"Sentinel, Datadog un Elastic lasa vismaz vienu no šiem formātiem. Saglabāto "
+"ierakstu tas neietekmē: pārsūtīšana ir kopija, un nesasniedzams kolektors "
+"nebloķē WordPress."
+
+#: includes/class-sentinel-admin.php:1329
+msgid "Weiterleitung"
+msgstr "Pārsūtīšana"
+
+#: includes/class-sentinel-admin.php:1333
+msgid "Einträge an den konfigurierten Collector senden"
+msgstr "Sūtīt ierakstus konfigurētajam kolektoram"
+
+#: includes/class-sentinel-admin.php:1339
+msgid "Format"
+msgstr "Formāts"
+
+#: includes/class-sentinel-admin.php:1342
+msgid "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+msgstr "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+
+#: includes/class-sentinel-admin.php:1343
+msgid "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+msgstr "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+
+#: includes/class-sentinel-admin.php:1344
+msgid "LEEF:2.0 (IBM QRadar)"
+msgstr "LEEF:2.0 (IBM QRadar)"
+
+#: includes/class-sentinel-admin.php:1350
+msgid "Transport"
+msgstr "Transports"
+
+#: includes/class-sentinel-admin.php:1353
+msgid "HTTPS (HEC-/HTTP-Endpunkt)"
+msgstr "HTTPS (HEC / HTTP galapunkts)"
+
+#: includes/class-sentinel-admin.php:1354
+msgid "TCP"
+msgstr "TCP"
+
+#: includes/class-sentinel-admin.php:1355
+msgid "UDP (ohne Empfangsbestätigung)"
+msgstr "UDP (bez apstiprinājuma)"
+
+#: includes/class-sentinel-admin.php:1361
+msgid "Collector-URL (HTTPS)"
+msgstr "Kolektora URL (HTTPS)"
+
+#: includes/class-sentinel-admin.php:1368
+msgid "Collector-Host und Port (TCP/UDP)"
+msgstr "Kolektora resursdators un ports (TCP/UDP)"
+
+#: includes/class-sentinel-admin.php:1376
+msgid "Min. Schweregrad für die Weiterleitung"
+msgstr "Minimālā pārsūtīšanas smaguma pakāpe"
+
+#: includes/class-sentinel-admin.php:1379
+msgid "Alles (Info+)"
+msgstr "Visi (Info+)"
+
+#: includes/class-sentinel-admin.php:1380
+msgid "Notice und höher"
+msgstr "Piezīmes un augstāk"
+
+#: includes/class-sentinel-admin.php:1381
+msgid "Warnungen und höher"
+msgstr "Brīdinājumi un augstāk"
+
+#: includes/class-sentinel-admin.php:1382
+msgid "Nur kritische Vorfälle"
+msgstr "Tikai kritiski incidenti"
+
+#: includes/class-sentinel-admin.php:1393
+msgid "6. Dateiintegrität"
+msgstr "6. Failu integritāte"
+
+#: includes/class-sentinel-admin.php:1395
+msgid ""
+"Ein täglicher Abgleich der Kerndateien gegen den offiziellen Prüfsummen-"
+"Katalog von api.wordpress.org. Dabei verlassen nur die WordPress-Version und "
+"die Sprache die Website — dieselben Angaben, die WordPress ohnehin bei jeder "
+"Update-Prüfung sendet. Das Ergebnis wird als Eintrag in die Hash-Kette "
+"geschrieben und damit, sofern eingeschaltet, auch an das SIEM weitergeleitet."
+msgstr ""
+"Ikdienas kodola failu salīdzinājums ar oficiālo kontrolsummu katalogu no "
+"api.wordpress.org. Vietni atstāj tikai WordPress versija un lokalizācija — "
+"tās pašas vērtības, kuras WordPress nosūta parastajās atjauninājumu "
+"pārbaudēs. Rezultāts tiek ierakstīts jaucējkodu ķēdē un pārsūtīts uz SIEM, "
+"ja tas ir iespējots."
+
+#: includes/class-sentinel-admin.php:1399
+msgid "Tägliche Prüfung"
+msgstr "Ikdienas skenēšana"
+
+#: includes/class-sentinel-admin.php:1403
+msgid "Kerndateien täglich gegen api.wordpress.org prüfen"
+msgstr "Katru dienu pārbaudīt kodola failus pret api.wordpress.org"
+
+#: includes/class-sentinel-admin.php:1409
+msgid "WM-Suite-Plugins"
+msgstr "WM Suite spraudņi"
+
+#: includes/class-sentinel-admin.php:1413
+msgid "Zusätzlich gegen die versiegelte Basislinie prüfen"
+msgstr "Pārbaudīt arī pret aizzīmogoto bāzes uzņēmumu"
+
+#: includes/class-sentinel-admin.php:1415
+msgid ""
+"Für Plugins gibt es keinen offiziellen Katalog. Stattdessen wird eine "
+"Basislinie erfasst, deren Fingerabdruck in der Hash-Kette versiegelt wird: "
+"Wer eine Plugin-Datei ändert und anschließend die Basislinie anpasst, bricht "
+"damit den Ketteneintrag. Die Basislinie wird auf der Seite "
+"\"Dateiintegrität\" erfasst."
+msgstr ""
+"Spraudņiem nav oficiāla kataloga. Tā vietā tiek izveidots bāzes uzņēmums, "
+"kura nospiedums ir aizzīmogots jaucējkodu ķēdē: spraudņa faila mainīšana un "
+"uzņēmuma pārrakstīšana sabojā šo ķēdes ierakstu. Izveidojiet bāzes uzņēmumu "
+"ekrānā “Failu integritāte”."
+
+#: includes/class-sentinel-admin.php:1424
+msgid "Einstellungen & Filter speichern"
+msgstr "Saglabāt iestatījumus un filtrus"
+
+#: includes/class-sentinel-admin.php:1433
+msgid "7. Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "7. Demonstrācijas datu pārvaldība un rūpnīcas atiestatīšana"
+
+#: includes/class-sentinel-admin.php:1436
+msgid ""
+"Beispieleinträge anhängen oder entfernen, oder das Protokoll leeren und alle "
+"Einstellungen zurücksetzen."
+msgstr ""
+"Pievienojiet vai noņemiet parauga ierakstus vai iztukšojiet žurnālu un "
+"atiestatiet visus iestatījumus."
+
+#: includes/class-sentinel-admin.php:1445
+msgid "Demodaten anhängen (15 Einträge)"
+msgstr "Pievienot demonstrācijas datus (15 ieraksti)"
+
+#: includes/class-sentinel-admin.php:1450
+msgid ""
+"Demodaten lassen sich nur entfernen, solange noch keine echten Ereignisse "
+"protokolliert wurden — eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren. Trifft das zu, wird das gesamte Protokoll zurückgesetzt und "
+"die Kette startet neu beim Genesis-Block."
+msgstr ""
+"Demonstrācijas datus var noņemt tikai tikmēr, kamēr nav reģistrēti īsti "
+"notikumi — nepārtraukta ķēde nevar zaudēt vidējos ierakstus. Kad tas ir "
+"atļauts, viss žurnāls tiek atiestatīts un atsākas no sākuma bloka."
+
+#: includes/class-sentinel-admin.php:1454
+msgid "Demodaten bereinigen (Nur Testdaten)"
+msgstr "Noņemt demonstrācijas datus (tikai testa dati)"
+
+#: includes/class-sentinel-admin.php:1465
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Bīstamā zona: atjaunot rūpnīcas iestatījumus"
+
+#: includes/class-sentinel-admin.php:1468
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Logs und Alarme aus der Datenbank, "
+"initialisiert einen neuen Genesis-Block und setzt alle Einstellungen auf die "
+"Standardwerte zurück."
+msgstr ""
+"Šī darbība neatgriezeniski izdzēš VISUS žurnālus un brīdinājumus no "
+"datubāzes, inicializē jaunu sākuma bloku un atiestata visus iestatījumus uz "
+"noklusējumiem."
+
+#: includes/class-sentinel-admin.php:1470
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Aktivitätsprotokolle und setzt "
+"Sentinel vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"BRĪDINĀJUMS: Vai esat pārliecināts? Tas izdzēš VISUS darbību žurnālus un "
+"pilnībā atiestata Sentinel uz rūpnīcas iestatījumiem!"
+
+#: includes/class-sentinel-admin.php:1474
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Atjaunot rūpnīcas iestatījumus (Factory Reset)"
+
+#: includes/class-sentinel-admin.php:1494
+msgid "Überblick & Hash-Kette"
+msgstr "Pārskats un jaucējkodu ķēde"
+
+#: includes/class-sentinel-admin.php:1495
+msgid ""
+"ist ein Aktivitätsprotokoll für WordPress. Jeder Logeintrag wird über HMAC-"
+"SHA256 mit seinem Vorgänger verknüpft, und das Kettenende zusätzlich "
+"außerhalb der Log-Tabelle verzeichnet. Wer nur Schreibzugriff auf die "
+"Datenbank hat, kann Einträge daher nicht ändern, löschen oder einschleusen, "
+"ohne dass die Prüfung darauf hinweist. Der Schlüssel liegt in der wp-"
+"config.php: wer diese Datei liest, kann die Kette neu signieren — das "
+"Verfahren weist Manipulation nach, es verhindert sie nicht."
+msgstr ""
+"ir WordPress darbību žurnāls. Katrs ieraksts ir saistīts ar priekšgājēju "
+"caur HMAC-SHA256, un ķēdes gals tiek spoguļots arī ārpus žurnāla tabulas. "
+"Persona, kurai ir tikai datubāzes rakstīšanas tiesības, nevar rediģēt, dzēst "
+"vai ievietot ierakstus tā, lai pārbaude to nepamanītu. Atslēga atrodas failā "
+"wp-config.php: ikviens, kurš var nolasīt šo failu, var ķēdi parakstīt no "
+"jauna — mehānisms konstatē viltošanu, nevis to novērš."
+
+#: includes/class-sentinel-admin.php:1500
+msgid "Protokollierungsstufen"
+msgstr "Žurnalēšanas līmeņi"
+
+#: includes/class-sentinel-admin.php:1501
+msgid ""
+"Die Protokollierungsstufe wird unter Einstellungen gewählt: \"Vollständig\" "
+"schreibt auch Info-Einträge wie Anmeldungen, Seitenaufrufe und Klicks; "
+"\"Standard\" lässt Info-Einträge weg; \"Nur Warnungen\" schreibt Warning und "
+"Critical; \"Nur kritische Ereignisse\" nur Critical. Der Genesis-Eintrag "
+"sowie Lösch- und Aufbewahrungsnachweise werden auf jeder Stufe geschrieben."
+msgstr ""
+"Žurnalēšanas līmeni izvēlas iestatījumos: “Pilns” ieraksta arī Info "
+"ierakstus, piemēram, pieteikšanās, lapu skatījumus un klikšķus; “Standarta” "
+"izlaiž Info ierakstus; “Tikai brīdinājumi” ieraksta Warning un Critical; "
+"“Tikai kritiski notikumi” tikai Critical. Ģenēzes ieraksts, kā arī dzēšanas "
+"un glabāšanas apliecinājumi tiek ierakstīti katrā līmenī."
+
+#: includes/class-sentinel-admin.php:1506
+msgid "Personenbezogene Daten"
+msgstr "Personas dati"
+
+#: includes/class-sentinel-admin.php:1507
+msgid ""
+"IP-Adressen werden nicht im Klartext gespeichert, sondern als HMAC mit "
+"täglich wechselndem Schlüssel. Name und E-Mail-Adresse des handelnden "
+"Benutzers, besuchte Adressen und Klick-Beschriftungen stehen im Klartext im "
+"Protokoll. Die Datenschutz-Werkzeuge von WordPress können Einträge zu einer "
+"Adresse exportieren und pseudonymisieren."
+msgstr ""
+"IP adreses netiek glabātas atklātā tekstā, bet kā HMAC ar ikdienas mainīgu "
+"sāli. Lietotāja vārds un e-pasta adrese, apmeklētie URL un klikšķu uzraksti "
+"tiek glabāti atklātā tekstā. WordPress privātuma rīki var eksportēt un "
+"pseidonimizēt ierakstus e-pasta adresei."
+
+#: includes/class-sentinel-admin.php:1511
+msgid "Support & Handbuch:"
+msgstr "Atbalsts un rokasgrāmata:"
+
+#: includes/class-sentinel-admin.php:1512
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Atvērt pilnu rokasgrāmatu"
+
+#: includes/class-sentinel-admin.php:1513
+msgid "Entwickelt von WM Suite."
+msgstr "Izstrādāja WM Suite."
+
+#: includes/class-sentinel-admin.php:1522
+#: includes/class-sentinel-exporter.php:35
+#: includes/class-sentinel-exporter.php:94
+msgid "Unzureichende Berechtigungen."
+msgstr "Nepietiekamas tiesības."
+
+#: includes/class-sentinel-admin.php:1530
+msgid "WM Activity Sentinel — Handbuch"
+msgstr "WM Activity Sentinel — Rokasgrāmata"
+
+#: includes/class-sentinel-admin.php:1531
+msgid "Hash-Kette, Sensoren, Entwickler-API und Hinweise zum Betrieb."
+msgstr "Jaucējkodu ķēde, sensori, izstrādātāju API un ekspluatācijas piezīmes."
+
+#: includes/class-sentinel-admin.php:1542
+msgid "1. Kryptografische Hash-Kette (Integrität)"
+msgstr "1. Kriptogrāfiskā jaucējkodu ķēde (integritāte)"
+
+#: includes/class-sentinel-admin.php:1544
+msgid ""
+"Jeder Datensatz enthält den kryptografischen Fingerabdruck seines direkten "
+"Vorgängers (prev_hash). Die Prüfsumme wird wie folgt berechnet:"
+msgstr ""
+"Katrs ieraksts ietver sava tiešā priekšgājēja kriptogrāfisko nospiedumu "
+"(prev_hash). Jaucējkods tiek aprēķināts šādi:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid "Änderung erkennbar:"
+msgstr "Konstatējami labojumi:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid ""
+"Wird eine Zeile ohne den Schlüssel geändert, schlägt die Prüfsumme bei der "
+"nächsten Prüfung fehl. Wer den Schlüssel hat, kann die Kette neu signieren."
+msgstr ""
+"Ja rinda tiek mainīta bez atslēgas, nākamajā pārbaudē tās kontrolsumma "
+"neatbildīs. Atslēgas turētājs var parakstīt ķēdi no jauna."
+
+#: includes/class-sentinel-admin.php:1550
+msgid "Löschungsnachweis:"
+msgstr "Dzēšanas pēdas:"
+
+#: includes/class-sentinel-admin.php:1550
+msgid ""
+"Wird eine Zeile in der Mitte gelöscht, passt der Verweis der Folgezeile "
+"nicht mehr; fehlen die neuesten Zeilen, weicht das in wp_options gespiegelte "
+"Kettenende ab."
+msgstr ""
+"Ja izdzēš vidējo rindu, nākamās rindas rādītājs pārtrūkst; ja izdzēš "
+"jaunākās rindas, atšķiras wp_options spoguļotais ķēdes gals."
+
+#: includes/class-sentinel-admin.php:1551
+msgid "Concurrency-Locking:"
+msgstr "Vienlaicīgas rakstīšanas bloķēšana:"
+
+#: includes/class-sentinel-admin.php:1551
+msgid ""
+"InnoDB \"SELECT ... FOR UPDATE\" verhindert Ketten-Bifurkationen bei "
+"parallelen Schreibzugriffen."
+msgstr ""
+"InnoDB “SELECT ... FOR UPDATE” novērš ķēdes sazarojumu vienlaicīgu ierakstu "
+"laikā."
+
+#: includes/class-sentinel-admin.php:1559
+msgid "2. Sensoren"
+msgstr "2. Sensori"
+
+#: includes/class-sentinel-admin.php:1561
+msgid ""
+"Diese WordPress-Hooks schreiben Einträge; alles andere erfasst das Plugin "
+"nicht:"
+msgstr "Šie WordPress āķi veic ierakstus; spraudnis nereģistrē neko citu:"
+
+#: includes/class-sentinel-admin.php:1565
+msgid "Bereich"
+msgstr "Joma"
+
+#: includes/class-sentinel-admin.php:1566
+msgid "Sensoren & Hooks"
+msgstr "Sensori un āķi"
+
+#: includes/class-sentinel-admin.php:1572
+msgid "Authentifizierung"
+msgstr "Autentifikācija"
+
+#: includes/class-sentinel-admin.php:1573
+msgid ""
+"wp_login (Info), wp_login_failed und wp_create_application_password (Warning)"
+msgstr ""
+"wp_login (Info), wp_login_failed un wp_create_application_password (Warning)"
+
+#: includes/class-sentinel-admin.php:1574
+#: includes/class-sentinel-admin.php:1594
+msgid "Info / Warning"
+msgstr "Info / Warning"
+
+#: includes/class-sentinel-admin.php:1577
+msgid "Benutzer & Rollen"
+msgstr "Lietotāji un lomas"
+
+#: includes/class-sentinel-admin.php:1578
+msgid ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical bei der Rolle Administrator)"
+msgstr ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical kad loma ir Administrator)"
+
+#: includes/class-sentinel-admin.php:1579
+msgid "Notice / Warning / Critical"
+msgstr "Notice / Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1582
+msgid "Core & Plugins"
+msgstr "Kodols un spraudņi"
+
+#: includes/class-sentinel-admin.php:1583
+msgid ""
+"activated_plugin, upgrader_process_complete und updated_option für "
+"ausgewählte Optionen (Notice); deactivated_plugin, delete_plugin und "
+"after_switch_theme (Warning)"
+msgstr ""
+"activated_plugin, upgrader_process_complete un updated_option atlasītajām "
+"opcijām (Notice); deactivated_plugin, delete_plugin un after_switch_theme "
+"(Warning)"
+
+#: includes/class-sentinel-admin.php:1584
+msgid "Notice / Warning"
+msgstr "Notice / Warning"
+
+#: includes/class-sentinel-admin.php:1587
+msgid "Exporte & Dateieditor"
+msgstr "Eksporti un failu redaktors"
+
+#: includes/class-sentinel-admin.php:1588
+msgid ""
+"Aufruf von export.php, load-plugin-editor.php und load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"und duplicator_backup_started (Critical)"
+msgstr ""
+"Apmeklējumi export.php, load-plugin-editor.php un load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"un duplicator_backup_started (Critical)"
+
+#: includes/class-sentinel-admin.php:1589
+msgid "Warning / Critical"
+msgstr "Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1592
+msgid "Admin & Telemetrie"
+msgstr "Administrācija un telemetrija"
+
+#: includes/class-sentinel-admin.php:1593
+msgid ""
+"current_screen, template_redirect und Klicks über POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch für /wp/v2/plugins und anonyme Abfragen "
+"von /wp/v2/users (Warning)"
+msgstr ""
+"current_screen, template_redirect un klikšķi caur POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch maršrutam /wp/v2/plugins un anonīmiem /"
+"wp/v2/users vaicājumiem (Warning)"
+
+#: includes/class-sentinel-admin.php:1605
+msgid "3. Entwickler-API & Eigene Sensoren registrieren"
+msgstr "3. Izstrādātāju API un pielāgoti sensori"
+
+#: includes/class-sentinel-admin.php:1607
+msgid ""
+"Eigene Ereignisse lassen sich über die statische Logger-Klasse an die Kette "
+"anhängen:"
+msgstr ""
+"Pielāgotus notikumus ķēdei var pievienot ar statisko reģistrētāja klasi:"
+
+#: includes/class-sentinel-admin.php:1632
+msgid "4. Wichtige Hinweise, Gotchas & Troubleshooting"
+msgstr "4. Svarīgas piezīmes, nianses un problēmu novēršana"
+
+#: includes/class-sentinel-admin.php:1635
+msgid "IP-Hashes:"
+msgstr "IP jaucējkodi:"
+
+#: includes/class-sentinel-admin.php:1635
+msgid ""
+"IP-Adressen werden als HMAC mit täglich wechselndem Schlüssel gespeichert; "
+"Hashes derselben Adresse stimmen nur innerhalb eines Tages (UTC) überein. "
+"Name und E-Mail des Benutzers stehen im Klartext."
+msgstr ""
+"IP adreses tiek glabātas kā HMAC ar dienas atslēgu; vienas adreses "
+"jaucējkodi sakrīt tikai vienas UTC diennakts ietvaros. Lietotājvārds un e-"
+"pasts tiek glabāti atklātā tekstā."
+
+#: includes/class-sentinel-admin.php:1636
+msgid "CSV-Export:"
+msgstr "CSV eksports:"
+
+#: includes/class-sentinel-admin.php:1636
+msgid ""
+"Werte, die mit =, +, -, @, Tabulator oder Wagenrücklauf beginnen, erhalten "
+"ein vorangestelltes Apostroph, damit Tabellenprogramme sie nicht als Formel "
+"ausführen."
+msgstr ""
+"Vērtības, kas sākas ar =, +, -, @, tabulāciju vai rindas atgriešanu, saņem "
+"ievada apostrofu, lai izklājlapu rīki tās neizpildītu kā formulas."
+
+#: includes/class-sentinel-admin.php:1637
+msgid "WP-CLI Testausführung:"
+msgstr "WP-CLI testu izpilde:"
+
+#: includes/class-sentinel-admin.php:1637
+msgid ""
+"In WP-CLI Tests liefert is_admin() immer true. Frontend-Tests setzen daher "
+"die Konstante WM_SENTINEL_TESTING_MODE."
+msgstr ""
+"WP-CLI testos is_admin() vienmēr atgriež true. Tādēļ publiskās daļas testi "
+"definē WM_SENTINEL_TESTING_MODE."
+
+#: includes/class-sentinel-core.php:122
+msgid "WM Activity Sentinel Kennzahlen"
+msgstr "WM Activity Sentinel rādītāji"
+
+#: includes/class-sentinel-core.php:157
+msgid "WM Sentinel Kennzahl"
+msgstr "WM Sentinel rādītājs"
+
+#: includes/class-sentinel-core.php:161
+msgid ""
+"Gibt nicht-sensible Prüfstatus- und Protokollzähler von WM Activity Sentinel "
+"aus."
+msgstr ""
+"Izvada nejutīgu pārbaudes statusu un žurnāla skaitītājus no WM Activity "
+"Sentinel."
+
+#: includes/class-sentinel-core.php:165
+msgid "Kennzahl"
+msgstr "Rādītājs"
+
+#: includes/class-sentinel-core.php:169
+msgid "Kettenstatus (INTACT / BROKEN)"
+msgstr "Ķēdes statuss (INTACT / BROKEN)"
+
+#: includes/class-sentinel-core.php:173
+msgid "Geprüfte Einträge"
+msgstr "Pārbaudītie ieraksti"
+
+#: includes/class-sentinel-core.php:181
+msgid "Plugin-Version"
+msgstr "Spraudņa versija"
+
+#: includes/class-sentinel-exporter.php:157
+#: includes/class-sentinel-exporter.php:168
+msgid "WM Activity Sentinel Audit-Logs"
+msgstr "WM Activity Sentinel audita žurnāli"
+
+#: includes/class-sentinel-exporter.php:216
+msgid "Objekttyp"
+msgstr "Objekta tips"
+
+#: includes/class-sentinel-exporter.php:220
+msgid "Benutzername"
+msgstr "Lietotājvārds"
+
+#: includes/class-sentinel-exporter.php:224
+msgid "Benutzer-E-Mail"
+msgstr "Lietotāja e-pasts"
+
+#: includes/class-sentinel-exporter.php:228
+msgid "Eintrags-Hash"
+msgstr "Ieraksta jaucējvērtība"
+
+#: includes/class-sentinel-exporter.php:235
+msgid "Sicherheits- und Audit-Protokolle"
+msgstr "Drošības un audita žurnāli"
+
+#: includes/class-sentinel-exporter.php:316
+msgid ""
+"Der Löschnachweis konnte nicht in die Kette geschrieben werden; es wurde "
+"nichts geändert."
+msgstr "Dzēšanas ierakstu neizdevās ierakstīt ķēdē; nekas netika mainīts."
+
+#. translators: 1: number of pseudonymised log entries, 2: id of the erasure record
+#: includes/class-sentinel-exporter.php:335
+#, php-format
+msgid ""
+"%1$d Protokolleinträge pseudonymisiert (Name, Adresse, IP-Hash, Adresse im "
+"Kontext). Die Prüfung erkennt sie über den Löschnachweis #%2$d an; "
+"Ereignisart, Zeitpunkt und übriger Kontext bleiben stehen."
+msgstr ""
+"%1$d žurnāla ieraksti pseidonimizēti (vārds, e-pasts, IP jaucējkods, e-pasts "
+"kontekstā). Pārbaude tos pieņem caur dzēšanas ierakstu #%2$d; notikuma "
+"veids, laikspiedols un pārējais konteksts paliek neskarts."
+
+#: includes/class-sentinel-fim.php:136
+msgid ""
+"api.wordpress.org war nicht erreichbar; die Dateien konnten nicht gegen den "
+"offiziellen Katalog geprüft werden."
+msgstr ""
+"api.wordpress.org nebija sasniedzams; failus nevarēja pārbaudīt pret "
+"oficiālo katalogu."
+
+#. translators: %d: HTTP status code
+#: includes/class-sentinel-fim.php:147
+#, php-format
+msgid ""
+"api.wordpress.org antwortete mit HTTP %d; es wurde kein Katalog geladen."
+msgstr "api.wordpress.org atbildēja ar HTTP %d; katalogs netika ielādēts."
+
+#: includes/class-sentinel-fim.php:174
+msgid "Die Antwort von api.wordpress.org enthielt keinen Prüfsummen-Katalog."
+msgstr "Atbilde no api.wordpress.org nesaturēja kontrolsummu katalogu."
+
+#. translators: %s: WordPress version
+#: includes/class-sentinel-fim.php:188
+#, php-format
+msgid ""
+"Für WordPress %s liegt bei api.wordpress.org kein Prüfsummen-Katalog vor "
+"(etwa bei einer Entwicklungs- oder Nightly-Version). Die Kerndateien wurden "
+"nicht geprüft."
+msgstr ""
+"Vietnē api.wordpress.org nav pieejams kontrolsummu katalogs WordPress "
+"versijai %s (piem., izstrādes vai nakts būvējumam). Kodola faili netika "
+"pārbaudīti."
+
+#: includes/class-sentinel-fim.php:214
+msgid "Der geladene Katalog enthielt keine verwertbaren Prüfsummen."
+msgstr "Ielādētais katalogs nesaturēja lietojamas kontrolsummas."
+
+#. translators: %d: number of entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:40
+#, php-format
+msgid ""
+"Die Log-Tabelle ist leer, obwohl zuletzt %d Einträge verzeichnet waren. Das "
+"Protokoll wurde gelöscht."
+msgstr ""
+"Žurnāla tabula ir tukša, lai gan pēdējoreiz bija reģistrēti %d ieraksti. "
+"Žurnāls ir izdzēsts."
+
+#. translators: 1: log id, 2: stored prev_hash prefix, 3: expected hash prefix
+#: includes/class-sentinel-integrity.php:82
+#, php-format
+msgid ""
+"Kettenbruch bei Log-ID #%1$d: prev_hash \"%2$s\" stimmt nicht mit dem "
+"erwarteten Hash \"%3$s\" überein (Hinweis auf gelöschte oder eingeschleuste "
+"Zeilen)."
+msgstr ""
+"Pārtraukta ķēde pie žurnāla ID #%1$d: prev_hash \"%2$s\" neatbilst "
+"gaidītajam jaucējkodam \"%3$s\" (norāda uz dzēstām vai ievietotām rindām)."
+
+#. translators: 1: log id, 2: recomputed hash prefix, 3: stored hash prefix
+#: includes/class-sentinel-integrity.php:123
+#, php-format
+msgid ""
+"Manipulationsnachweis bei Log-ID #%1$d: Der berechnete Prüfsummen-Hash "
+"\"%2$s\" weicht vom gespeicherten Hash \"%3$s\" ab. Entweder wurden die "
+"Daten nachträglich in der Datenbank verändert, oder das Protokoll wurde mit "
+"einem anderen AUTH_KEY geschrieben (etwa vor einem Umzug der Website)."
+msgstr ""
+"Viltošanas pazīme pie žurnāla ID #%1$d: aprēķinātā kontrolsumma \"%2$s\" "
+"atšķiras no saglabātā jaucējkoda \"%3$s\". Vai nu datubāzes rinda tika "
+"mainīta vēlāk, vai arī žurnāls tika rakstīts ar citu AUTH_KEY atslēgu "
+"(piemēram, pirms vietnes migrācijas)."
+
+#. translators: 1: entries present, 2: entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:149
+#, php-format
+msgid ""
+"Das Ende der Kette stimmt nicht mit dem verzeichneten Kettenstand überein "
+"(%1$d von %2$d Einträgen vorhanden): Die neuesten Protokolleinträge wurden "
+"entfernt oder ersetzt."
+msgstr ""
+"Ķēdes beigas neatbilst reģistrētajam ķēdes stāvoklim (ir %1$d no %2$d "
+"ierakstiem): jaunākie žurnāla ieraksti ir noņemti vai aizstāti."
+
+#: includes/class-sentinel-sensors.php:546
+msgid "Zugriff auf Sentinel Telemetrie erfordert eine aktive Sitzung."
+msgstr "Piekļuvei Sentinel telemetrijai nepieciešama aktīva lietotāja sesija."

@@ -1,0 +1,35 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-18T21:36:17Z",
+    "component": {
+      "type": "application",
+      "name": "wm-activity-sentinel",
+      "version": "1.4.3",
+      "description": "Activity log with HMAC-SHA256 hash chain, file integrity monitor, SIEM forwarding, alerts, and CSV/JSON export.",
+      "supplier": {
+        "name": "Arnold Wender",
+        "url": [
+          "https://arnoldwender.com"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:wordpress/wm-activity-sentinel@1.4.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ad79c7291ea39783c431d044994ea661fa176e00ec0e4b44ea5eabfc167413f5"
+        }
+      ]
+    }
+  },
+  "components": []
+}

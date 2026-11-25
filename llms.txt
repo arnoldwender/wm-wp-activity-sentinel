@@ -1,0 +1,27 @@
+# WM Activity Sentinel
+
+> WordPress plugin that writes an activity log whose entries are linked by an HMAC-SHA256 chain keyed with AUTH_KEY: logins, users and roles, plugins and themes, selected options, exports, the file editor, selected REST routes, and the admin screens, frontend pages and clicks of signed-in users. It verifies the chain, sends mail and webhook alerts and exports CSV or JSON. Edits, deletions and truncation become detectable for anyone without the key; they are not prevented, nothing is deleted automatically, and it makes no legal assessment.
+
+## Overview
+
+
+- Admin: menu *WM Sentinel* — Aktivitäts-Stream, Integritäts-Audit, Dateiintegrität, Export, Einstellungen, Handbuch; dashboard widget
+- REST: `wm-sentinel/v1` — `POST /telemetry` (signed-in users, tracker event types only, severity info, 60 per user per minute)
+- WP-CLI: `wp sentinel audit`, `list`, `fim [--baseline]`, `demodaten --import|--delete|--reset`, `retention [--dry-run]`
+- Storage: `wp_wm_activity_logs`, `wp_wm_activity_alerts`, option `wm_sentinel_chain_tip`, 25 `wm_sentinel_*` settings (opt-in uninstall via `wm_sentinel_delete_data_on_uninstall`)
+- WordPress privacy tools: exporter and eraser (pseudonymisation with a chained erasure record) and nightly retention pseudonymisation (`WM_Sentinel_Retention`)
+- Extensibility: `wm_sentinel_ready`, `wm_sentinel_monitored_options`, `wm_sentinel_public_metrics`, inter-plugin bridges `wm_activity_sentinel_log_event` and `wm_sentinel_security_incident`, WP 6.5+ Block Bindings source `wm-sentinel/metrics`, and GenerateBlocks 2.x Dynamic Tag `wm_sentinel_metric`
+- Documentation measured against the code: README.md, DEVELOPERS.md
+
+## Standards
+
+- Version 1.4.3.
+- PHP 8.2+ / strict types / WordPress coding style (tabs; no phpcs configuration)
+- Self-hosted assets in `/assets/`
+- Prepared SQL for request values, InnoDB row lock for chain writes, constant-time hash comparison, keyed hashes for IPs
+
+## Official Links
+
+- Plugin Page: https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/
+- GitHub Repository: https://github.com/arnoldwender/wm-wp-activity-sentinel
+- Support & Liability: Zero support — reproducible bugs on https://github.com/arnoldwender/wm-wp-activity-sentinel/issues only · no private support · AS IS / no liability (SUPPORT.md)

@@ -1,0 +1,1763 @@
+# Translation of wm-activity-sentinel in ga
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-activity-sentinel 1.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-activity-"
+"sentinel\n"
+"POT-Creation-Date: 2026-11-21T12:27:41+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:27+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-activity-sentinel\n"
+
+#. Plugin Name of the plugin
+#: wm-activity-sentinel.php includes/class-sentinel-admin.php:228
+#: includes/class-sentinel-admin.php:1495
+msgid "WM Activity Sentinel"
+msgstr "WM Activity Sentinel"
+
+#. Plugin URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+
+#. Description of the plugin
+#: wm-activity-sentinel.php
+msgid ""
+"Aktivitätsprotokoll mit HMAC-SHA256-Hashkette: Anmeldungen, Benutzer und "
+"Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-Routen, "
+"Seitenaufrufe und Klicks angemeldeter Benutzer; Prüfung der Kette, E-Mail- "
+"und Webhook-Alarme, CSV- und JSON-Export. Manipulation wird nachweisbar, "
+"nicht verhindert."
+msgstr ""
+"Loga gníomhaíochta le slabhra hais HMAC-SHA256: logálacha isteach, "
+"úsáideoirí agus róil, breiseáin agus téamaí, easpórtálacha, eagarthóir "
+"comhad, bealaí REST roghnaithe, amhairc leathanaigh agus cliceanna "
+"úsáideoirí sínithe isteach; fíorú slabhra, foláirimh ríomhphoist agus "
+"webhook, easpórtáil CSV agus JSON. Éiríonn cur isteach inbhraite, ach ní "
+"chuirtear cosc air."
+
+#. Author of the plugin
+#: wm-activity-sentinel.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-sentinel-admin.php:126
+msgid "Part of the WM Suite plugin family"
+msgstr "Cuid de theaghlach breiseán WM Suite"
+
+#: includes/class-sentinel-admin.php:128
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Hub"
+msgstr "Mód Hub"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Standalone"
+msgstr "Neamhspleách"
+
+#: includes/class-sentinel-admin.php:146 includes/class-sentinel-admin.php:147
+msgid "WM Sentinel"
+msgstr "WM Sentinel"
+
+#: includes/class-sentinel-admin.php:157 includes/class-sentinel-admin.php:158
+#: includes/class-sentinel-admin.php:448
+msgid "Aktivitäts-Stream"
+msgstr "Sruth Gníomhaíochta"
+
+#: includes/class-sentinel-admin.php:166 includes/class-sentinel-admin.php:449
+msgid "Integritäts-Audit (Hash-Kette)"
+msgstr "Iniúchadh Sláine (Slabhra Hais)"
+
+#: includes/class-sentinel-admin.php:167 includes/class-sentinel-admin.php:308
+#: wm-activity-sentinel.php:138
+msgid "Integritäts-Audit"
+msgstr "Iniúchadh Sláine"
+
+#: includes/class-sentinel-admin.php:175
+msgid "Dateiintegrität (Kern & Plugins)"
+msgstr "Sláine Comhad (Croílár agus Breiseáin)"
+
+#: includes/class-sentinel-admin.php:176 includes/class-sentinel-admin.php:450
+#: includes/class-sentinel-admin.php:781
+msgid "Dateiintegrität"
+msgstr "Sláine Comhad"
+
+#: includes/class-sentinel-admin.php:184 includes/class-sentinel-admin.php:185
+#: includes/class-sentinel-admin.php:451 includes/class-sentinel-admin.php:951
+#: wm-activity-sentinel.php:156
+msgid "Export"
+msgstr "Easpórtáil"
+
+#: includes/class-sentinel-admin.php:193 includes/class-sentinel-admin.php:194
+#: includes/class-sentinel-admin.php:1018 wm-activity-sentinel.php:128
+msgid "Einstellungen"
+msgstr "Socruithe"
+
+#: includes/class-sentinel-admin.php:202
+msgid "Handbuch & Dokumentation"
+msgstr "Lámhleabhar agus Doiciméadú"
+
+#: includes/class-sentinel-admin.php:203 includes/class-sentinel-admin.php:453
+#: includes/class-sentinel-admin.php:1529 wm-activity-sentinel.php:133
+#: wm-activity-sentinel.php:151
+msgid "Handbuch"
+msgstr "Lámhleabhar"
+
+#. translators: %d: number of verified chain entries
+#: includes/class-sentinel-admin.php:252
+#, php-format
+msgid "Kette intakt: %d Einträge geprüft"
+msgstr "Slabhra slán: %d iontráil fíoraithe"
+
+#: includes/class-sentinel-admin.php:255
+msgid "Kettenprüfung fehlgeschlagen"
+msgstr "Theip ar fhíorú an tslabhra"
+
+#: includes/class-sentinel-admin.php:259
+msgid "Jeder Eintrag ist mit HMAC-SHA256 an den vorherigen gebunden."
+msgstr "Tá gach iontráil ceangailte leis an gceann roimhe le HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:268 includes/class-sentinel-admin.php:508
+msgid "Einträge"
+msgstr "Iontrálacha"
+
+#: includes/class-sentinel-admin.php:272
+msgid "Kritisch (24h)"
+msgstr "Criticiúil (24u)"
+
+#: includes/class-sentinel-admin.php:276 includes/class-sentinel-admin.php:558
+msgid "Warnungen (24h)"
+msgstr "Rabhaidh (24u)"
+
+#: includes/class-sentinel-admin.php:281
+msgid "Letzte Systemereignisse"
+msgstr "Imeachtaí Córais le Déanaí"
+
+#: includes/class-sentinel-admin.php:298
+msgid "Noch keine Ereignisse erfasst."
+msgstr "Níl aon imeacht taifeadta fós."
+
+#: includes/class-sentinel-admin.php:305
+msgid "Aktivitäts-Stream öffnen"
+msgstr "Oscail an Sruth Gníomhaíochta"
+
+#: includes/class-sentinel-admin.php:452
+msgid "Einstellungen & Alarme"
+msgstr "Socruithe agus Foláirimh"
+
+#: includes/class-sentinel-admin.php:456
+msgid "Bereiche von WM Activity Sentinel"
+msgstr "Rannáin WM Activity Sentinel"
+
+#: includes/class-sentinel-admin.php:494
+msgid "Aktivitätsprotokoll"
+msgstr "Loga Gníomhaíochta"
+
+#: includes/class-sentinel-admin.php:495
+msgid "WM Activity Sentinel — Aktivitäts-Stream"
+msgstr "WM Activity Sentinel — Sruth Gníomhaíochta"
+
+#: includes/class-sentinel-admin.php:496
+msgid ""
+"Protokollierte Ereignisse, neueste zuerst. Jeder Eintrag ist über eine HMAC-"
+"SHA256-Kette mit seinem Vorgänger verbunden."
+msgstr ""
+"Imeachtaí logáilte, na cinn is déanaí ar dtús. Tá gach iontráil nasctha lena "
+"réamhtheachtaí trí shlabhra HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:503
+msgid "Auf dieser Seite"
+msgstr "Ar an leathanach seo"
+
+#: includes/class-sentinel-admin.php:504
+msgid "Springen zu:"
+msgstr "Léim go:"
+
+#: includes/class-sentinel-admin.php:505
+msgid "Kurzanleitung"
+msgstr "Treoir Thapa"
+
+#: includes/class-sentinel-admin.php:506
+msgid "Kennzahlen 24 h"
+msgstr "Méadrachtaí 24u"
+
+#: includes/class-sentinel-admin.php:507
+msgid "Filter und Suche"
+msgstr "Scag agus Cuardaigh"
+
+#: includes/class-sentinel-admin.php:515
+msgid "Was dieses Protokoll leistet"
+msgstr "An méid a sholáthraíonn an loga seo"
+
+#: includes/class-sentinel-admin.php:518
+msgid ""
+"WM Activity Sentinel schreibt ausgewählte Ereignisse (Anmeldungen, Benutzer "
+"und Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-"
+"Routen, Seitenaufrufe und Klicks angemeldeter Benutzer) in eine Tabelle, "
+"deren Einträge über eine HMAC-SHA256-Kette verbunden sind. Wer Einträge "
+"ändert, löscht oder einschleust, fällt bei der Prüfung auf, solange er den "
+"Schlüssel aus der wp-config.php nicht kennt. Verhindern kann das Protokoll "
+"solche Eingriffe nicht."
+msgstr ""
+"Scríobhann WM Activity Sentinel imeachtaí roghnaithe (logálacha isteach, "
+"úsáideoirí agus róil, breiseáin agus téamaí, easpórtálacha, eagarthóir "
+"comhad, bealaí REST roghnaithe, amhairc leathanaigh agus cliceanna "
+"úsáideoirí sínithe isteach) i dtábla a bhfuil a chuid iontrálacha nasctha le "
+"slabhra HMAC-SHA256. Braitear aon duine a athraíonn, a scriosann nó a "
+"chuireann iontrálacha isteach le linn fíoraithe fad nach bhfuil an eochair ó "
+"wp-config.php acu. Ní féidir leis an loga cosc a chur ar ghníomhartha den "
+"sórt sin."
+
+#: includes/class-sentinel-admin.php:521
+msgid "Schnellzugriff:"
+msgstr "Rochtain thapa:"
+
+#: includes/class-sentinel-admin.php:524
+msgid "Kette prüfen"
+msgstr "Fíoraigh an slabhra"
+
+#: includes/class-sentinel-admin.php:528
+msgid "Protokoll exportieren"
+msgstr "Easpórtáil an loga"
+
+#: includes/class-sentinel-admin.php:532
+msgid "Protokollierung einstellen"
+msgstr "Cumraigh logáil"
+
+#: includes/class-sentinel-admin.php:542 includes/class-sentinel-core.php:177
+msgid "Gesamt-Einträge"
+msgstr "Iontrálacha Iomlána"
+
+#: includes/class-sentinel-admin.php:550
+msgid "Kritische Alarme (24h)"
+msgstr "Foláirimh Chriticiúla (24u)"
+
+#: includes/class-sentinel-admin.php:566
+msgid "Aktive Benutzer"
+msgstr "Úsáideoirí Gníomhacha"
+
+#: includes/class-sentinel-admin.php:577
+msgid "Alle Schweregrade"
+msgstr "Gach Leibhéal Déine"
+
+#: includes/class-sentinel-admin.php:578
+msgid "Kritisch (Critical)"
+msgstr "Criticiúil"
+
+#: includes/class-sentinel-admin.php:579
+msgid "Warnung (Warning)"
+msgstr "Rabhadh"
+
+#: includes/class-sentinel-admin.php:580
+msgid "Hinweis (Notice)"
+msgstr "Fógra"
+
+#: includes/class-sentinel-admin.php:581
+msgid "Info"
+msgstr "Eolas"
+
+#: includes/class-sentinel-admin.php:584
+msgid "Ereignis, Benutzer oder Kontext durchsuchen..."
+msgstr "Cuardaigh imeacht, úsáideoir nó comhthéacs..."
+
+#: includes/class-sentinel-admin.php:585
+msgid "Filtern"
+msgstr "Scag"
+
+#: includes/class-sentinel-admin.php:588
+msgid "Zurücksetzen"
+msgstr "Athshocraigh"
+
+#: includes/class-sentinel-admin.php:596
+msgid "Log-ID"
+msgstr "ID Loga"
+
+#: includes/class-sentinel-admin.php:597
+#: includes/class-sentinel-exporter.php:204
+msgid "Zeitpunkt (UTC)"
+msgstr "Stampa Ama (UTC)"
+
+#: includes/class-sentinel-admin.php:598 includes/class-sentinel-admin.php:1567
+#: includes/class-sentinel-exporter.php:212
+msgid "Schweregrad"
+msgstr "Déine"
+
+#: includes/class-sentinel-admin.php:599
+#: includes/class-sentinel-exporter.php:208
+msgid "Ereignis"
+msgstr "Imeacht"
+
+#: includes/class-sentinel-admin.php:600
+msgid "Objekt"
+msgstr "Réad"
+
+#: includes/class-sentinel-admin.php:601
+msgid "Akteur / Benutzer"
+msgstr "Gníomhaí / Úsáideoir"
+
+#: includes/class-sentinel-admin.php:602
+msgid "IP-Hash"
+msgstr "Hais IP"
+
+#: includes/class-sentinel-admin.php:603
+msgid "Kontext"
+msgstr "Comhthéacs"
+
+#. translators: %d: log entry id
+#: includes/class-sentinel-admin.php:622
+#, php-format
+msgid "Kontext von Eintrag #%d anzeigen"
+msgstr "Féach ar chomhthéacs iontrála #%d"
+
+#: includes/class-sentinel-admin.php:630
+msgid "Keine Aktivitäten gefunden."
+msgstr "Níor aimsíodh aon ghníomhaíocht."
+
+#. translators: %d: total number of log entries
+#: includes/class-sentinel-admin.php:643
+#, php-format
+msgid "%d Einträge"
+msgstr "%d iontráil"
+
+#: includes/class-sentinel-admin.php:670
+msgid "Ereignis-Kontext Inspektor"
+msgstr "Cigire Comhthéacs Imeachta"
+
+#: includes/class-sentinel-admin.php:671
+msgid "Inspektor schließen"
+msgstr "Dún an cigire"
+
+#: includes/class-sentinel-admin.php:692
+msgid "Kettenprüfung"
+msgstr "Fíorú Slabhra"
+
+#: includes/class-sentinel-admin.php:693
+msgid "Kryptografisches Integritäts-Audit (Hash-Chaining)"
+msgstr "Iniúchadh Sláine Cripteagrafaí (Slabhraíocht Hais)"
+
+#: includes/class-sentinel-admin.php:696
+msgid ""
+"Jeder Eintrag wird mit HMAC-SHA256 gegen seinen Vorgänger geprüft, und das "
+"Ende der Kette gegen den außerhalb der Protokolltabelle verzeichneten "
+"Kettenstand."
+msgstr ""
+"Fíoraítear gach iontráil le HMAC-SHA256 i gcoinne na hiontrála roimpi, agus "
+"deireadh an tslabhra i gcoinne staid an tslabhra a taifeadadh lasmuigh de "
+"thábla an loga."
+
+#: includes/class-sentinel-admin.php:703
+msgid "Status der Prüfsummen-Kette"
+msgstr "Stádas an tSlabhra Suimeanna Seiceála"
+
+#: includes/class-sentinel-admin.php:709
+msgid "KETTE INTAKT"
+msgstr "SLABHRA SLÁN"
+
+#. translators: %d: number of verified log entries
+#: includes/class-sentinel-admin.php:713
+#, php-format
+msgid ""
+"%d Log-Einträge vom ersten Eintrag bis zum verzeichneten Kettenstand "
+"geprüft. Keine nachträgliche Änderung, Lücke oder Kürzung erkennbar."
+msgstr ""
+"Fíoraíodh %d iontráil loga ón gcéad iontráil go dtí staid an tslabhra a "
+"taifeadadh. Níor aimsíodh aon athrú níos déanaí, bearna ná giorrú."
+
+#. translators: %d: number of pseudonymised log entries
+#: includes/class-sentinel-admin.php:721
+#, php-format
+msgid ""
+"%d davon wurden auf eine Löschanfrage hin pseudonymisiert und über den "
+"jeweiligen Löschnachweis in der Kette anerkannt."
+msgstr ""
+"Rinneadh bréagshanmniú ar %d acu ar iarratas scriosta agus glacadh leo trína "
+"dtaifead scriosta slabhraithe."
+
+#: includes/class-sentinel-admin.php:726
+msgid "Hash des letzten Eintrags:"
+msgstr "Haiseáil na hiontrála is déanaí:"
+
+#: includes/class-sentinel-admin.php:734
+msgid "MANIPULATION ODER KETTENBRUCH ERKANNT"
+msgstr "CUR ISTEACH NÓ SLABHRA BRISTE BRAITE"
+
+#: includes/class-sentinel-admin.php:735
+msgid "Fehlerdiagnose:"
+msgstr "Sonraí diagnóiseacha:"
+
+#: includes/class-sentinel-admin.php:742
+msgid "AUTH_KEY ist noch der Platzhalter aus wp-config-sample.php."
+msgstr "Tá AUTH_KEY fós socraithe ar an luach samplach ó wp-config-sample.php."
+
+#: includes/class-sentinel-admin.php:743
+msgid ""
+"Die Kette ist mit einem öffentlich bekannten Schlüssel signiert: Jeder mit "
+"Datenbankzugriff kann Einträge ändern und die Kette neu signieren. Ein neuer "
+"AUTH_KEY in der wp-config.php schützt künftige Einträge; bestehende Einträge "
+"bestehen die Prüfung dann nicht mehr."
+msgstr ""
+"Sínítear an slabhra le heochair atá ar eolas go poiblí: is féidir le duine "
+"ar bith a bhfuil rochtain aige ar an mbunachar sonraí iontrálacha a athrú "
+"agus an slabhra a athshíniú. Cosnaíonn AUTH_KEY nua i wp-config.php "
+"iontrálacha amach anseo; ní éireoidh le hiontrálacha reatha san fhíorú a "
+"thuilleadh."
+
+#: includes/class-sentinel-admin.php:747
+msgid "Der Kettenschlüssel liegt in der Datenbank, nicht in der wp-config.php."
+msgstr ""
+"Tá eochair an tslabhra stóráilte sa bhunachar sonraí, ní i wp-config.php."
+
+#: includes/class-sentinel-admin.php:748
+msgid ""
+"In dieser Installation ist AUTH_KEY nicht definiert, daher greift WordPress "
+"auf automatisch erzeugte Salts zurück und legt sie in wp_options ab — also "
+"in derselben Datenbank, in die ein Angreifer ohnehin schreiben würde. Der "
+"Manipulationsnachweis hält hier nur gegen Unfälle, nicht gegen einen "
+"Angreifer. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"Níl AUTH_KEY sainmhínithe sa suiteáil seo, mar sin úsáideann WordPress "
+"salainn uathghinte atá stóráilte i wp_options — sa bhunachar sonraí céanna "
+"ina scríobhfadh ionsaitheoir. Ní chosnaíonn brath cur isteach anseo ach ar "
+"thimpistí, ní ar ionsaitheoir. Sainmhínigh AUTH_KEY i wp-config.php."
+
+#: includes/class-sentinel-admin.php:754
+msgid "Integritätsprüfung erneut ausführen"
+msgstr "Rith seiceáil sláine arís"
+
+#: includes/class-sentinel-admin.php:782
+msgid "Abgleich gegen den offiziellen Prüfsummen-Katalog"
+msgstr "Comparáid leis an gcatalóg oifigiúil suimeanna seiceála"
+
+#: includes/class-sentinel-admin.php:783
+msgid ""
+"Die Kerndateien werden gegen api.wordpress.org geprüft, die WM-Suite-Plugins "
+"gegen eine Basislinie, deren Fingerabdruck in der Hash-Kette versiegelt ist."
+msgstr ""
+"Fíoraítear croíchomhaid i gcoinne api.wordpress.org, agus breiseáin WM Suite "
+"i gcoinne bonnlíne a bhfuil a méarlorg séalaithe sa slabhra hais."
+
+#. translators: %d: number of files in the baseline
+#: includes/class-sentinel-admin.php:793
+#, php-format
+msgid "Basislinie über %d Dateien erfasst und in der Kette versiegelt."
+msgstr "Bonnlíne thar %d comhad gafa agus séalaithe sa slabhra."
+
+#. translators: 1: number of files found, 2: configured maximum
+#: includes/class-sentinel-admin.php:802 includes/class-sentinel-fim.php:517
+#, php-format
+msgid ""
+"Die Basislinie wurde nicht gespeichert: %1$d Dateien überschreiten das "
+"Maximum von %2$d. Eine Basislinie dieser Größe wird bei jeder Prüfung "
+"gelesen und neu geschrieben. Prüfen Sie, ob in einem Plugin-Verzeichnis "
+"Entwicklungsdateien liegen, die dort nicht hingehören."
+msgstr ""
+"Níor sábháladh an bhonnlíne: sáraíonn %1$d comhad an t-uasmhéid de %2$d. "
+"Léitear agus athscríobhtar bonnlíne den mhéid seo ar gach scanadh. Seiceáil "
+"an bhfuil comhaid fhorbartha laistigh d'fhillteán breiseáin."
+
+#: includes/class-sentinel-admin.php:808
+msgid "Letzte Prüfung"
+msgstr "An Scanadh Deireanach"
+
+#: includes/class-sentinel-admin.php:814
+msgid "NOCH NICHT GEPRÜFT"
+msgstr "GAN SEICEÁIL FÓS"
+
+#: includes/class-sentinel-admin.php:815
+msgid ""
+"Es liegt kein Prüfbericht vor. Starten Sie die Prüfung unten oder warten Sie "
+"den täglichen Lauf ab. Ein ungeprüfter Dateibaum ist kein unauffälliger "
+"Dateibaum."
+msgstr ""
+"Níl tuairisc scanta ar fáil fós. Tosaigh scanadh thíos nó fan leis an rith "
+"laethúil sceidealaithe. Ní crann comhad glan é crann comhad gan seiceáil."
+
+#: includes/class-sentinel-admin.php:822
+msgid "VERÄNDERTE ODER UNERWARTETE DATEIEN GEFUNDEN"
+msgstr "COMHAID ATHRAITHE NÓ GAN CHOINNE AIMSIÚ"
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:826
+#, php-format
+msgid "%1$d Abweichungen, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d neamhréireacht, seiceáilte go deireanach ag %2$s UTC."
+
+#: includes/class-sentinel-admin.php:835
+msgid "KEINE ABWEICHUNG"
+msgstr "GAN NEAMHRÉIREACHTAÍ"
+
+#. translators: 1: number of core files checked, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:839
+#, php-format
+msgid ""
+"%1$d Kerndateien stimmen mit dem offiziellen Katalog überein (geprüft am "
+"%2$s UTC)."
+msgstr ""
+"Meaitseálann %1$d croíchomhad an chatalóg oifigiúil (seiceáilte ag %2$s UTC)."
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:849
+#, php-format
+msgid "%1$d Auffälligkeiten, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d toradh, seiceáilte go deireanach ag %2$s UTC."
+
+#: includes/class-sentinel-admin.php:861
+msgid "Verändert (Kerndateien)"
+msgstr "Athraithe (croíchomhaid)"
+
+#: includes/class-sentinel-admin.php:862
+msgid "Fehlend (Kerndateien)"
+msgstr "Ar iarraidh (croíchomhaid)"
+
+#: includes/class-sentinel-admin.php:863
+msgid "Unerwartet in wp-admin / wp-includes"
+msgstr "Gan choinne i wp-admin / wp-includes"
+
+#: includes/class-sentinel-admin.php:864
+msgid "Verändert (WM-Suite-Plugins)"
+msgstr "Athraithe (breiseáin WM Suite)"
+
+#: includes/class-sentinel-admin.php:865
+msgid "Fehlend (WM-Suite-Plugins)"
+msgstr "Ar iarraidh (breiseáin WM Suite)"
+
+#: includes/class-sentinel-admin.php:866
+msgid "Neu gegenüber der Basislinie"
+msgstr "Curtha leis ón mbonnlíne"
+
+#. translators: %s: comma-separated file names
+#: includes/class-sentinel-admin.php:884
+#, php-format
+msgid "Nicht als Fund gewertet, weil ihr Entfernen gängige Härtung ist: %s."
+msgstr ""
+"Ní áirítear mar thoradh é toisc gur gnáthchruasú slándála é iad a bhaint: %s."
+
+#: includes/class-sentinel-admin.php:892
+msgid "Basislinie der WM-Suite-Plugins"
+msgstr "Bonnlíne Bhreiseán WM Suite"
+
+#: includes/class-sentinel-admin.php:897
+msgid "Die gespeicherte Basislinie wurde nachträglich verändert."
+msgstr "Athraíodh an bhonnlíne stóráilte tar éis a séalaithe."
+
+#: includes/class-sentinel-admin.php:898
+msgid ""
+"Ihr Fingerabdruck stimmt nicht mehr mit dem Wert überein, der beim Erfassen "
+"in die Hash-Kette geschrieben wurde. Wer eine Plugin-Datei ändert und "
+"anschließend die Basislinie anpasst, hinterlässt genau diese Abweichung."
+msgstr ""
+"Ní mheaitseálann a méarlorg an luach a scríobhadh isteach sa slabhra hais "
+"nuair a gabhadh í. Fágann athrú comhaid breiseáin agus nuashonrú na bonnlíne "
+"ina dhiaidh sin an neamhréireacht seo go díreach."
+
+#: includes/class-sentinel-admin.php:901
+msgid ""
+"Es ist noch keine Basislinie erfasst. Ohne sie werden nur die Kerndateien "
+"geprüft: für die Plugins gibt es keinen offiziellen Katalog, gegen den sich "
+"vergleichen ließe."
+msgstr ""
+"Níor gabhadh bonnlíne fós. Gan í, ní sheiceáiltear ach croíchomhaid: níl "
+"catalóg oifigiúil ann do bhreiseáin."
+
+#. translators: %d: number of files covered by the baseline
+#: includes/class-sentinel-admin.php:906
+#, php-format
+msgid "Basislinie über %d Dateien, Fingerabdruck in der Kette versiegelt."
+msgstr "Bonnlíne a chlúdaíonn %d comhad, méarlorg séalaithe sa slabhra."
+
+#: includes/class-sentinel-admin.php:911
+msgid ""
+"Nach jeder Aktualisierung eines WM-Suite-Plugins meldet die Prüfung dessen "
+"Dateien als verändert, weil sie es sind. Erfassen Sie die Basislinie dann "
+"neu."
+msgstr ""
+"Tar éis breiseán WM Suite a nuashonrú, tuairisceoidh an scanadh a chomhaid "
+"athraithe mar athraithe. Gabh an bhonnlíne arís ina dhiaidh sin."
+
+#: includes/class-sentinel-admin.php:917
+msgid "Prüfung jetzt ausführen"
+msgstr "Rith scanadh anois"
+
+#: includes/class-sentinel-admin.php:920
+msgid "Basislinie erfassen und versiegeln"
+msgstr "Gabh agus séalaigh bonnlíne"
+
+#: includes/class-sentinel-admin.php:927
+msgid ""
+"Die geplante Prüfung ist ausgeschaltet; es läuft nur, was Sie hier von Hand "
+"starten."
+msgstr ""
+"Tá scanadh sceidealaithe díchumasaithe; ní rithfear ach ritheanna láimhe a "
+"thosaítear anseo."
+
+#. translators: %s: timestamp in UTC
+#: includes/class-sentinel-admin.php:931
+#, php-format
+msgid "Nächster geplanter Lauf: %s UTC."
+msgstr "An chéad rith sceidealaithe eile: %s UTC."
+
+#: includes/class-sentinel-admin.php:934
+msgid ""
+"Die Prüfung ist eingeschaltet, aber es ist kein Lauf geplant. Speichern Sie "
+"die Einstellungen einmal, damit der tägliche Termin angelegt wird."
+msgstr ""
+"Tá scanadh cumasaithe, ach níl aon rith sceidealaithe fós. Sábháil na "
+"socruithe uair amháin chun an t-imeacht laethúil a sceidealú."
+
+#: includes/class-sentinel-admin.php:952
+msgid "Export des Protokolls"
+msgstr "Easpórtáil Loga Gníomhaíochta"
+
+#: includes/class-sentinel-admin.php:953
+msgid "CSV- oder JSON-Datei mit bis zu 10.000 Einträgen, neueste zuerst."
+msgstr ""
+"Comhad CSV nó JSON ina bhfuil suas le 10,000 iontráil, na cinn is déanaí ar "
+"dtús."
+
+#: includes/class-sentinel-admin.php:961
+msgid "CSV-Datei"
+msgstr "Comhad CSV"
+
+#: includes/class-sentinel-admin.php:962
+msgid ""
+"Semikolon-getrennt, UTF-8 mit BOM. Zellen, die mit =, +, -, @, Tabulator "
+"oder Wagenrücklauf beginnen, erhalten ein vorangestelltes Apostroph, damit "
+"Tabellenprogramme sie nicht als Formel ausführen."
+msgstr ""
+"Scartha le leathstad, UTF-8 le BOM. Cuirtear uaschamóg roimh chealla a "
+"thosaíonn le =, +, -, @, táb nó aisfhilleadh carráiste ionas nach rithfidh "
+"scarbhileoga mar fhoirmlí iad."
+
+#: includes/class-sentinel-admin.php:964
+msgid "CSV-Datei herunterladen"
+msgstr "Íoslódáil comhad CSV"
+
+#: includes/class-sentinel-admin.php:969
+msgid "JSON-Paket"
+msgstr "Pacáiste JSON"
+
+#: includes/class-sentinel-admin.php:970
+msgid ""
+"Einträge mit ihren Hashes, das Ergebnis der Kettenprüfung zum Zeitpunkt des "
+"Exports und eine SHA-256-Prüfsumme über das Dokument ohne das "
+"Prüfsummenfeld. Die Datei ist nicht signiert: Wer sie ändert, kann die "
+"Prüfsumme neu berechnen."
+msgstr ""
+"Iontrálacha lena gcuid haiseanna, toradh fhíorú an tslabhra ag am na "
+"heaspórtála, agus suim sheiceála SHA-256 ar an gcáipéis gan réimse na suime "
+"seiceála. Níl an comhad sínithe: is féidir le haon duine a chuireann in "
+"eagar é an tsuim a athríomh."
+
+#: includes/class-sentinel-admin.php:972
+msgid "JSON-Paket herunterladen"
+msgstr "Íoslódáil pacáiste JSON"
+
+#: includes/class-sentinel-admin.php:1019
+msgid "Einstellungen & Protokollierungsstufe"
+msgstr "Socruithe agus leibhéal logála"
+
+#: includes/class-sentinel-admin.php:1020
+msgid ""
+"Protokollierungsstufe, überwachte Bereiche, Klick-Erfassung, Alarme per E-"
+"Mail und Webhook sowie Aufbewahrung."
+msgstr ""
+"Leibhéal logála, réimsí faoi mhonatóireacht, gabháil cliceanna, foláirimh "
+"trí ríomhphost agus webhook, agus coinneáil."
+
+#: includes/class-sentinel-admin.php:1028
+msgid ""
+"Einstellungen und Protokollierungsfilter wurden erfolgreich gespeichert."
+msgstr "Sábháladh na socruithe agus na scagairí logála."
+
+#. translators: %d: number of demo log entries generated
+#: includes/class-sentinel-admin.php:1037
+#, php-format
+msgid ""
+"%d von 15 Demo-Einträgen wurden an die Kette angehängt (ohne Alarm-Mails und "
+"Webhooks). Einträge, die Protokollierungsstufe oder Schalter nicht zulassen, "
+"werden nicht geschrieben."
+msgstr ""
+"Cuireadh %d as 15 iontráil thaispeántais leis an slabhra (gan ríomhphoist "
+"foláirimh ná webhooks). Ní scríobhtar iontrálacha atá scagtha amach ag an "
+"leibhéal logála nó lasca modúl."
+
+#: includes/class-sentinel-admin.php:1053
+msgid "Keine Demodaten gefunden; das Protokoll ist unverändert."
+msgstr "Níor aimsíodh sonraí taispeántais; fanann an loga gan athrú."
+
+#. translators: %d: number of demo log entries deleted
+#: includes/class-sentinel-admin.php:1056
+#, php-format
+msgid ""
+"%d Demodaten-Logs wurden gelöscht. Das Protokoll wurde dabei vollständig "
+"zurückgesetzt und die Kette beginnt wieder beim Genesis-Block."
+msgstr ""
+"Scriosadh %d iontráil loga taispeántais. Athshocraíodh an loga go hiomlán "
+"agus atosú an slabhra ag an mbloc tionscnaimh."
+
+#: includes/class-sentinel-admin.php:1066
+msgid ""
+"Die Demodaten wurden nicht gelöscht: es liegen bereits echte "
+"Protokolleinträge vor. Eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren, ohne dass die Prüfung bricht — und sie nachträglich neu zu "
+"signieren würde genau die Manipulationserkennung aufheben, für die dieses "
+"Plugin da ist."
+msgstr ""
+"Níor scriosadh sonraí taispeántais toisc go bhfuil fíor-iontrálacha loga ann "
+"cheana. Ní féidir le slabhra leanúnach iontrálacha a chailleadh sa lár gan "
+"fíorú a bhriseadh — agus chuirfeadh athshíniú ina dhiaidh sin brath cur "
+"isteach an bhreiseáin ar neamhní."
+
+#: includes/class-sentinel-admin.php:1067
+msgid ""
+"Die Demodaten bleiben als solche gekennzeichnet stehen. Wer sie zwingend "
+"loswerden muss, setzt das gesamte Protokoll über den Werksreset zurück und "
+"verliert dabei auch die echten Einträge."
+msgstr ""
+"Fanann iontrálacha taispeántais marcáilte mar sin. Más gá iad a bhaint, "
+"úsáid athshocrú monarchan chun an loga iomlán a ghlanadh, rud a scriosann "
+"fíor-iontrálacha freisin."
+
+#: includes/class-sentinel-admin.php:1073
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Socruithe monarchan athchóirithe:"
+
+#: includes/class-sentinel-admin.php:1073
+msgid ""
+"Alle Logs und Alarme wurden bereinigt, der Genesis-Block wurde neu "
+"initialisiert und alle Einstellungen auf Standardwerte zurückgesetzt."
+msgstr ""
+"Glanadh gach loga agus foláireamh, túsáladh bloc tionscnaimh nua, agus "
+"athshocraíodh gach socrú go luachanna réamhshocraithe."
+
+#: includes/class-sentinel-admin.php:1084
+msgid "1. Protokollierungsstufe & Klick-Erfassung"
+msgstr "1. Leibhéal logála agus gabháil cliceanna"
+
+#: includes/class-sentinel-admin.php:1087
+msgid ""
+"Steuert, ab welchem Schweregrad Ereignisse in die Kette geschrieben werden. "
+"Einträge zu Löschanfragen und der Genesis-Block werden immer geschrieben."
+msgstr ""
+"Rialaíonn sé an déine íosta a thaifeadtar sa slabhra. Scríobhtar taifid "
+"scriosta príobháideachta agus an bloc tionscnaimh i gcónaí."
+
+#: includes/class-sentinel-admin.php:1094
+msgid "Protokollierungsstufe"
+msgstr "Leibhéal logála"
+
+#: includes/class-sentinel-admin.php:1100
+msgid "Vollständig (Info, Notice, Warning, Critical)"
+msgstr "Iomlán (Info, Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1103
+msgid "Standard (Notice, Warning, Critical)"
+msgstr "Caighdeánach (Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1106
+msgid "Nur Warnungen (Warning, Critical)"
+msgstr "Rabhaidh amháin (Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1109
+msgid "Nur kritische Ereignisse (Critical)"
+msgstr "Teagmhais chriticiúla amháin (Critical)"
+
+#: includes/class-sentinel-admin.php:1113
+msgid "Stufenübersicht:"
+msgstr "Forbhreathnú ar leibhéil:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid "Vollständig:"
+msgstr "Iomlán:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid ""
+"Schreibt jedes Ereignis der Sensoren, auch Info-Einträge wie Anmeldungen, "
+"Seitenaufrufe und Klicks."
+msgstr ""
+"Scríobhann sé gach teagmhas de chuid na mbraiteoirí, iontrálacha Info san "
+"áireamh, mar logálacha isteach, amhairc leathanaigh agus cliceanna."
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Standard:"
+msgstr "Caighdeánach:"
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Lässt Info-Einträge weg, also Anmeldungen, Seitenaufrufe und Klicks."
+msgstr ""
+"Fágann sé iontrálacha Info ar lár, is é sin logálacha isteach, amhairc "
+"leathanaigh agus cliceanna."
+
+#: includes/class-sentinel-admin.php:1116
+msgid "Nur Warnungen:"
+msgstr "Rabhaidh amháin:"
+
+#: includes/class-sentinel-admin.php:1116
+msgid ""
+"Nur Ereignisse mit Schweregrad Warning oder Critical, zum Beispiel "
+"fehlgeschlagene Anmeldungen, Dateieditor, Deaktivieren von Plugins und "
+"Beförderung zum Administrator."
+msgstr ""
+"Imeachtaí Warning nó Critical amháin, amhail logálacha isteach teipthe, "
+"úsáid eagarthóra comhad, díghníomhachtú breiseán agus sannadh róil riarthóra."
+
+#: includes/class-sentinel-admin.php:1117
+msgid "Nur kritische Ereignisse:"
+msgstr "Teagmhais chriticiúla amháin:"
+
+#: includes/class-sentinel-admin.php:1117
+msgid ""
+"Nur Schweregrad Critical, zum Beispiel ein Export der Website, ein "
+"gestartetes Backup oder die Beförderung zum Administrator."
+msgstr ""
+"Déine Critical amháin, mar shampla easpórtáil an tsuímh, cúltaca a tosaíodh "
+"nó ardú céime go riarthóir."
+
+#: includes/class-sentinel-admin.php:1125
+msgid "Klick- & Interaktions-Tiefe"
+msgstr "Doimhneacht Chliceanna agus Idirghníomhaíochta"
+
+#: includes/class-sentinel-admin.php:1131
+msgid ""
+"Alle Interaktionen erfassen (Menüs, Buttons, Links, Tabs, Modals, Downloads)"
+msgstr ""
+"Gabh gach idirghníomhaíocht (roghchláir, cnaipí, naisc, cluaisíní, dialóga, "
+"íoslódálacha)"
+
+#: includes/class-sentinel-admin.php:1134
+msgid ""
+"Nur operative Aktionen & Menü-Navigation (Menüs, Buttons, Speichern, Löschen)"
+msgstr ""
+"Gníomhartha oibriúcháin agus nascleanúint roghchláir amháin (roghchláir, "
+"cnaipí, sábháil, scriosadh)"
+
+#: includes/class-sentinel-admin.php:1137
+msgid ""
+"Nur destruktive Aktionen & Downloads (Lösch-Aktionen, Exporte, Archiv-"
+"Downloads)"
+msgstr ""
+"Gníomhartha millteacha agus íoslódálacha amháin (scriosadh, easpórtálacha, "
+"íoslódálacha cartlainne)"
+
+#: includes/class-sentinel-admin.php:1141
+msgid ""
+"Filtert, welche Klicks angemeldeter Benutzer das Skript im Backend und im "
+"Frontend meldet."
+msgstr ""
+"Scagann sé cé na cliceanna ó úsáideoirí sínithe isteach a thuairiscíonn an "
+"script sa riarachán agus ar an gcomhéadan tosaigh."
+
+#: includes/class-sentinel-admin.php:1152
+msgid "2. Überwachte Systembereiche & Module"
+msgstr "2. Réimsí Córais agus Modúil faoi Mhonatóireacht"
+
+#: includes/class-sentinel-admin.php:1155
+msgid ""
+"Schaltet einzelne Bereiche ab. Ein abgeschalteter Bereich schreibt keine "
+"Einträge."
+msgstr ""
+"Díchumasaíonn sé réimsí aonair. Ní scríobhann réimse díchumasaithe aon "
+"iontráil."
+
+#: includes/class-sentinel-admin.php:1160
+msgid "Sicherheitsmodule"
+msgstr "Modúil Slándála"
+
+#: includes/class-sentinel-admin.php:1165
+msgid "Authentifizierung & Sessions"
+msgstr "Fíordheimhniú agus Seisiúin"
+
+#: includes/class-sentinel-admin.php:1166
+msgid ""
+"Erfolgreiche und fehlgeschlagene Anmeldungen, neue Anwendungspasswörter. "
+"Abmeldungen und Passwort-Resets werden nicht erfasst."
+msgstr ""
+"Logálacha isteach rathúla agus teipthe, pasfhocail nua feidhmchláir. Ní "
+"thaifeadtar logálacha amach ná athshocruithe pasfhocail."
+
+#: includes/class-sentinel-admin.php:1171
+msgid "Benutzerverwaltung & Berechtigungsrollen"
+msgstr "Bainistíocht Úsáideoirí agus Róil"
+
+#: includes/class-sentinel-admin.php:1172
+msgid ""
+"Rollenänderungen (Administrator als Critical), angelegte und gelöschte "
+"Benutzer."
+msgstr ""
+"Athruithe róil (riarthóir mar Critical), úsáideoirí cruthaithe agus scriosta."
+
+#: includes/class-sentinel-admin.php:1177
+msgid "Plugins, Themes & Core-Integrität"
+msgstr "Breiseáin, Téamaí agus Sláine Croíláir"
+
+#: includes/class-sentinel-admin.php:1178
+msgid ""
+"Plugin-Aktivierung, -Deaktivierung und -Löschung, Theme-Wechsel, Updates, "
+"ausgewählte Optionen, Aufrufe und Speicheranfragen des Dateieditors."
+msgstr ""
+"Gníomhachtú, díghníomhachtú agus scriosadh breiseán, athruithe téama, "
+"nuashonruithe, roghanna roghnaithe, agus amhairc is sábhálacha san "
+"eagarthóir comhad."
+
+#: includes/class-sentinel-admin.php:1183
+msgid "Exporte & Backups"
+msgstr "Easpórtálacha agus Cúltacaí"
+
+#: includes/class-sentinel-admin.php:1184
+msgid ""
+"Native XML-Exporte, Aufrufe der Exportseite, Backup-Start von UpdraftPlus "
+"und Duplicator. Klicks auf Download-Links fallen unter „UI-Interaktionen“. "
+"Beitragsänderungen und Uploads werden nicht erfasst."
+msgstr ""
+"Easpórtálacha dúchasacha XML, cuairteanna ar scáileán easpórtála, tosú "
+"cúltacaí UpdraftPlus agus Duplicator. Titeann cliceanna ar naisc íoslódála "
+"faoi \"Idirghníomhaíochtaí UI\". Ní thaifeadtar eagarthóireacht alt ná "
+"uaslódálacha meán."
+
+#: includes/class-sentinel-admin.php:1189
+msgid "REST-API"
+msgstr "REST API"
+
+#: includes/class-sentinel-admin.php:1190
+msgid ""
+"Aufrufe von /wp/v2/plugins und nicht angemeldete Aufrufe von /wp/v2/users."
+msgstr ""
+"Iarratais chuig /wp/v2/plugins agus iarratais neamhfhíordheimhnithe chuig /"
+"wp/v2/users."
+
+#: includes/class-sentinel-admin.php:1197
+msgid "Navigation & UI-Telemetrie"
+msgstr "Nascleanúint agus Teiliméadracht UI"
+
+#: includes/class-sentinel-admin.php:1202
+msgid "Admin-Seitennavigation (current_screen)"
+msgstr "Nascleanúint Scáileáin Riaracháin (current_screen)"
+
+#: includes/class-sentinel-admin.php:1203
+msgid "Erfasst jeden Backend-Seitenaufruf mit übersetztem Klartextnamen."
+msgstr "Taifeadann sé gach amharc ar scáileán riaracháin le teideal inléite."
+
+#: includes/class-sentinel-admin.php:1208
+msgid "Klick- & Interaktions-Telemetrie (Client-Side)"
+msgstr "Teiliméadracht Chliceanna agus Idirghníomhaíochta (Taobh an Chliaint)"
+
+#: includes/class-sentinel-admin.php:1209
+msgid ""
+"Meldet Klicks angemeldeter Benutzer auf Menüs, Buttons, Tabs und Links mit "
+"Beschriftung, Ziel und Seitenadresse (höchstens 60 Einträge pro Benutzer und "
+"Minute)."
+msgstr ""
+"Tuairiscíonn sé cliceanna úsáideoirí sínithe isteach ar roghchláir, cnaipí, "
+"cluaisíní agus naisc le lipéad, sprioc agus URL leathanaigh (60 iontráil ar "
+"a mhéad in aghaidh an úsáideora sa nóiméad)."
+
+#: includes/class-sentinel-admin.php:1214
+msgid "Frontend-Seitenaufrufe angemeldeter Benutzer"
+msgstr "Amhairc Leathanach Tosaigh Úsáideoirí Sínithe Isteach"
+
+#: includes/class-sentinel-admin.php:1215
+msgid ""
+"Protokolliert jede Frontend-Seite, die ein angemeldeter Benutzer aufruft, "
+"mit Adresse und Referrer."
+msgstr ""
+"Logálann sé gach leathanach poiblí a osclaíonn úsáideoir sínithe isteach le "
+"URL agus tagairt."
+
+#: includes/class-sentinel-admin.php:1227
+msgid "3. Echtzeit-Alarme & Benachrichtigungen"
+msgstr "3. Foláirimh agus Fógraí Fíor-Ama"
+
+#: includes/class-sentinel-admin.php:1230
+msgid ""
+"E-Mail und Webhook, sobald ein Eintrag mit mindestens dem gewählten "
+"Schweregrad geschrieben wird. Ein Kettenbruch löst keinen Alarm aus; er "
+"zeigt sich erst bei der nächsten Prüfung."
+msgstr ""
+"Fógraí ríomhphoist agus webhook aon uair a scríobhtar iontráil ag an déine "
+"roghnaithe nó os a cionn. Ní spreagann slabhra briste foláireamh; feictear é "
+"sa chéad fhíorú eile."
+
+#: includes/class-sentinel-admin.php:1237
+msgid "Alarm-Empfänger E-Mail"
+msgstr "Ríomhphost Faighteora Foláirimh"
+
+#: includes/class-sentinel-admin.php:1242
+msgid ""
+"Erhält die Alarm-Mails; ab welchem Schweregrad, legt das nächste Feld fest."
+msgstr ""
+"Faigheann sé na ríomhphoist foláirimh; socraíonn an chéad réimse eile ó cén "
+"déine."
+
+#: includes/class-sentinel-admin.php:1249
+msgid "Min. Schweregrad für Alarme"
+msgstr "Déine Íosta Foláirimh"
+
+#: includes/class-sentinel-admin.php:1254
+msgid "Nur Kritische Vorfälle (Critical)"
+msgstr "Teagmhais Chriticiúla Amháin (Critical)"
+
+#: includes/class-sentinel-admin.php:1255
+msgid "Warnungen & Kritisch (Warning+)"
+msgstr "Rabhaidh agus Criticiúil (Warning+)"
+
+#: includes/class-sentinel-admin.php:1256
+msgid "Notice und höher (Notice-Einträge selbst lösen keinen Alarm aus)"
+msgstr ""
+"Fógraí agus os a chionn (ní spreagann iontrálacha Notice féin foláirimh)"
+
+#: includes/class-sentinel-admin.php:1264
+msgid "Webhook-URL"
+msgstr "URL an webhook"
+
+#: includes/class-sentinel-admin.php:1269
+msgid ""
+"Erhält einen JSON-POST mit text, log_id, event_type, severity, user, site "
+"und timestamp. Ob ein Chat-Dienst dieses Format annimmt, prüft das Plugin "
+"nicht."
+msgstr ""
+"Faigheann sé JSON POST le text, log_id, event_type, severity, user, site "
+"agus timestamp. Ní sheiceálann an breiseán an nglacann seirbhís chomhrá leis "
+"an bhformáid seo."
+
+#: includes/class-sentinel-admin.php:1279
+msgid "4. Aufbewahrung & Dashboard"
+msgstr "4. Coinneáil agus Deais"
+
+#: includes/class-sentinel-admin.php:1286
+msgid "Aufbewahrungsfrist"
+msgstr "Tréimhse Choinneála"
+
+#: includes/class-sentinel-admin.php:1290
+msgid "Tage"
+msgstr "lá"
+
+#: includes/class-sentinel-admin.php:1291
+msgid ""
+"Täglich angewendet: Einträge, die älter als diese Frist sind, verlieren "
+"Name, E-Mail-Adresse und IP-Kennung. Gelöscht wird nichts — jede gelöschte "
+"Zeile würde die Kette unterbrechen und die Prüfung würde Ihre eigene "
+"Aufbewahrungsregel als Manipulation melden. Ereignisart, Zeitpunkt, "
+"Schweregrad und Kontext bleiben stehen. Unter 30 Tagen bedeutet: alles "
+"behalten."
+msgstr ""
+"Cuirtear i bhfeidhm go laethúil é: cailleann iontrálacha atá níos sine ná an "
+"tréimhse seo ainm, seoladh ríomhphoist agus aitheantóir IP. Ní scriostar rud "
+"ar bith — bhrisfeadh scriosadh ró an slabhra agus thuairisceodh fíorú do "
+"pholasaí coinneála féin mar chur isteach. Fanann cineál imeachta, stampa "
+"ama, déine agus comhthéacs slán. Ciallaíonn faoi bhun 30 lá gach rud a "
+"choinneáil."
+
+#: includes/class-sentinel-admin.php:1296
+msgid "Dashboard-Widget"
+msgstr "Giuirléid Deaise"
+
+#: includes/class-sentinel-admin.php:1300
+msgid "Widget auf dem WordPress-Dashboard anzeigen"
+msgstr "Taispeáin giuirléid ar Dheais WordPress"
+
+#: includes/class-sentinel-admin.php:1302
+msgid ""
+"Zeigt den aktuellen Prüfsummen-Status (Hash-Chain), KPI-Kennzahlen und die "
+"letzten Vorfälle direkt auf der Hauptseite des WordPress-Backends an."
+msgstr ""
+"Taispeánann sé stádas reatha an tslabhra hais, áiritheoirí KPI agus "
+"imeachtaí le déanaí ar phríomhdheais riaracháin WordPress."
+
+#: includes/class-sentinel-admin.php:1307
+msgid "Deinstallation"
+msgstr "Díshuiteáil"
+
+#: includes/class-sentinel-admin.php:1311
+msgid ""
+"Protokolltabellen und versiegelte Basislinie beim Löschen des Plugins "
+"endgültig entfernen"
+msgstr ""
+"Bain táblaí loga agus an bhonnlíne shéalaithe go buan agus an breiseán á "
+"scriosadh"
+
+#: includes/class-sentinel-admin.php:1313
+msgid ""
+"Standardmäßig bleiben die Tabellen wp_wm_activity_logs und "
+"wp_wm_activity_alerts sowie der gespiegelte Kettenendpunkt und die "
+"versiegelte Datei-Basislinie bei einer Deinstallation erhalten. Aktivieren "
+"Sie diese Option nur, wenn beim Entfernen des Plugins auch die gesamte Audit-"
+"Kette gelöscht werden soll."
+msgstr ""
+"De réir réamhshocraithe, caomhnaítear wp_wm_activity_logs, "
+"wp_wm_activity_alerts, barr scáthánaithe an tslabhra agus an bhonnlíne "
+"chomhad shéalaithe le linn díshuiteála. Cumasaigh an rogha seo amháin más "
+"ceart go scriosfadh scriosadh an bhreiseáin an slabhra iniúchta iomlán "
+"freisin."
+
+#: includes/class-sentinel-admin.php:1323
+msgid "5. Weiterleitung an ein SIEM"
+msgstr "5. Seoladh Ar Aghaidh SIEM"
+
+#: includes/class-sentinel-admin.php:1325
+msgid ""
+"Jeder protokollierte Eintrag ab dem gewählten Schweregrad wird zusätzlich an "
+"einen Collector geschickt — als Syslog nach RFC 5424, als CEF:0 oder als "
+"LEEF:2.0. Splunk, Microsoft Sentinel, Datadog und Elastic lesen mindestens "
+"eines dieser Formate. Der Eintrag im Protokoll bleibt davon unberührt: die "
+"Weiterleitung ist eine Kopie, und ein nicht erreichbarer Collector hält "
+"WordPress nicht auf."
+msgstr ""
+"Seoltar gach iontráil logáilte ag an déine roghnaithe nó os a cionn chuig "
+"bailitheoir freisin — mar Syslog RFC 5424, CEF:0 nó LEEF:2.0. Léann Splunk, "
+"Microsoft Sentinel, Datadog agus Elastic ceann amháin ar a laghad de na "
+"formáidí seo. Ní théann sé i bhfeidhm ar an iontráil stóráilte: cóip is ea "
+"an seoladh ar aghaidh, agus ní chuireann bailitheoir do-rochtana bac ar "
+"WordPress."
+
+#: includes/class-sentinel-admin.php:1329
+msgid "Weiterleitung"
+msgstr "Seoladh Ar Aghaidh"
+
+#: includes/class-sentinel-admin.php:1333
+msgid "Einträge an den konfigurierten Collector senden"
+msgstr "Seol iontrálacha chuig an mbailitheoir cumraithe"
+
+#: includes/class-sentinel-admin.php:1339
+msgid "Format"
+msgstr "Formáid"
+
+#: includes/class-sentinel-admin.php:1342
+msgid "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+msgstr "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+
+#: includes/class-sentinel-admin.php:1343
+msgid "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+msgstr "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+
+#: includes/class-sentinel-admin.php:1344
+msgid "LEEF:2.0 (IBM QRadar)"
+msgstr "LEEF:2.0 (IBM QRadar)"
+
+#: includes/class-sentinel-admin.php:1350
+msgid "Transport"
+msgstr "Iompar"
+
+#: includes/class-sentinel-admin.php:1353
+msgid "HTTPS (HEC-/HTTP-Endpunkt)"
+msgstr "HTTPS (HEC / críochphointe HTTP)"
+
+#: includes/class-sentinel-admin.php:1354
+msgid "TCP"
+msgstr "TCP"
+
+#: includes/class-sentinel-admin.php:1355
+msgid "UDP (ohne Empfangsbestätigung)"
+msgstr "UDP (gan admháil)"
+
+#: includes/class-sentinel-admin.php:1361
+msgid "Collector-URL (HTTPS)"
+msgstr "URL an Bhailitheora (HTTPS)"
+
+#: includes/class-sentinel-admin.php:1368
+msgid "Collector-Host und Port (TCP/UDP)"
+msgstr "Óstach agus Port an Bhailitheora (TCP/UDP)"
+
+#: includes/class-sentinel-admin.php:1376
+msgid "Min. Schweregrad für die Weiterleitung"
+msgstr "Déine Íosta Seolta Ar Aghaidh"
+
+#: includes/class-sentinel-admin.php:1379
+msgid "Alles (Info+)"
+msgstr "Gach ceann (Info+)"
+
+#: includes/class-sentinel-admin.php:1380
+msgid "Notice und höher"
+msgstr "Fógraí agus os a chionn"
+
+#: includes/class-sentinel-admin.php:1381
+msgid "Warnungen und höher"
+msgstr "Rabhaidh agus os a chionn"
+
+#: includes/class-sentinel-admin.php:1382
+msgid "Nur kritische Vorfälle"
+msgstr "Teagmhais chriticiúla amháin"
+
+#: includes/class-sentinel-admin.php:1393
+msgid "6. Dateiintegrität"
+msgstr "6. Sláine Comhad"
+
+#: includes/class-sentinel-admin.php:1395
+msgid ""
+"Ein täglicher Abgleich der Kerndateien gegen den offiziellen Prüfsummen-"
+"Katalog von api.wordpress.org. Dabei verlassen nur die WordPress-Version und "
+"die Sprache die Website — dieselben Angaben, die WordPress ohnehin bei jeder "
+"Update-Prüfung sendet. Das Ergebnis wird als Eintrag in die Hash-Kette "
+"geschrieben und damit, sofern eingeschaltet, auch an das SIEM weitergeleitet."
+msgstr ""
+"Comparáid laethúil ar chroíchomhaid i gcoinne na catalóige oifigiúla "
+"suimeanna seiceála ó api.wordpress.org. Ní fhágann ach leagan agus "
+"logchaighdeán WordPress an suíomh — na luachanna céanna a sheolann WordPress "
+"le linn gnáthsheiceálacha nuashonraithe. Scríobhtar an toradh mar iontráil "
+"sa slabhra hais agus seoltar ar aghaidh chuig SIEM é má tá sé cumasaithe."
+
+#: includes/class-sentinel-admin.php:1399
+msgid "Tägliche Prüfung"
+msgstr "Scanadh Laethúil"
+
+#: includes/class-sentinel-admin.php:1403
+msgid "Kerndateien täglich gegen api.wordpress.org prüfen"
+msgstr "Seiceáil croíchomhaid go laethúil i gcoinne api.wordpress.org"
+
+#: includes/class-sentinel-admin.php:1409
+msgid "WM-Suite-Plugins"
+msgstr "Breiseáin WM Suite"
+
+#: includes/class-sentinel-admin.php:1413
+msgid "Zusätzlich gegen die versiegelte Basislinie prüfen"
+msgstr "Seiceáil freisin i gcoinne na bonnlíne séalaithe"
+
+#: includes/class-sentinel-admin.php:1415
+msgid ""
+"Für Plugins gibt es keinen offiziellen Katalog. Stattdessen wird eine "
+"Basislinie erfasst, deren Fingerabdruck in der Hash-Kette versiegelt wird: "
+"Wer eine Plugin-Datei ändert und anschließend die Basislinie anpasst, bricht "
+"damit den Ketteneintrag. Die Basislinie wird auf der Seite "
+"\"Dateiintegrität\" erfasst."
+msgstr ""
+"Níl aon chatalóg oifigiúil ann do bhreiseáin. Ina áit sin, gabhtar bonnlíne "
+"a bhfuil a méarlorg séalaithe sa slabhra hais: briseann athrú comhaid "
+"breiseáin agus athscríobh na bonnlíne an iontráil slabhra sin. Gabh an "
+"bhonnlíne ar scáileán \"Sláine Comhad\"."
+
+#: includes/class-sentinel-admin.php:1424
+msgid "Einstellungen & Filter speichern"
+msgstr "Sábháil Socruithe agus Scagairí"
+
+#: includes/class-sentinel-admin.php:1433
+msgid "7. Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "7. Bainistíocht Sonraí Taispeántais agus Athshocrú Monarchan"
+
+#: includes/class-sentinel-admin.php:1436
+msgid ""
+"Beispieleinträge anhängen oder entfernen, oder das Protokoll leeren und alle "
+"Einstellungen zurücksetzen."
+msgstr ""
+"Cuir iontrálacha samplacha leis nó bain iad, nó folmhaigh an loga agus "
+"athshocraigh gach socrú."
+
+#: includes/class-sentinel-admin.php:1445
+msgid "Demodaten anhängen (15 Einträge)"
+msgstr "Cuir Sonraí Taispeántais Leis (15 iontráil)"
+
+#: includes/class-sentinel-admin.php:1450
+msgid ""
+"Demodaten lassen sich nur entfernen, solange noch keine echten Ereignisse "
+"protokolliert wurden — eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren. Trifft das zu, wird das gesamte Protokoll zurückgesetzt und "
+"die Kette startet neu beim Genesis-Block."
+msgstr ""
+"Ní féidir sonraí taispeántais a bhaint ach fad nár logáladh aon fhíor-"
+"imeachtaí — ní féidir le slabhra leanúnach iontrálacha a chailleadh sa lár. "
+"Nuair a cheadaítear é, athshocraítear an loga iomlán agus tosaíonn sé arís "
+"ag an mbloc tionscnaimh."
+
+#: includes/class-sentinel-admin.php:1454
+msgid "Demodaten bereinigen (Nur Testdaten)"
+msgstr "Bain Sonraí Taispeántais (Sonraí Tástála Amháin)"
+
+#: includes/class-sentinel-admin.php:1465
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Crios Contúirte: Athshocraigh go Socruithe Monarchan"
+
+#: includes/class-sentinel-admin.php:1468
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Logs und Alarme aus der Datenbank, "
+"initialisiert einen neuen Genesis-Block und setzt alle Einstellungen auf die "
+"Standardwerte zurück."
+msgstr ""
+"Scriosann an oibríocht seo GACH loga agus foláireamh go buan ón mbunachar "
+"sonraí, túsálann sí bloc tionscnaimh nua, agus athshocraíonn sí gach socrú "
+"go réamhshocruithe."
+
+#: includes/class-sentinel-admin.php:1470
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Aktivitätsprotokolle und setzt "
+"Sentinel vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"RABHADH: An bhfuil tú cinnte? Scriosann sé seo GACH loga gníomhaíochta agus "
+"athshocraíonn sé Sentinel go hiomlán go réamhshocruithe monarchan!"
+
+#: includes/class-sentinel-admin.php:1474
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Athchóirigh Socruithe Monarchan (Factory Reset)"
+
+#: includes/class-sentinel-admin.php:1494
+msgid "Überblick & Hash-Kette"
+msgstr "Forbhreathnú agus Slabhra Hais"
+
+#: includes/class-sentinel-admin.php:1495
+msgid ""
+"ist ein Aktivitätsprotokoll für WordPress. Jeder Logeintrag wird über HMAC-"
+"SHA256 mit seinem Vorgänger verknüpft, und das Kettenende zusätzlich "
+"außerhalb der Log-Tabelle verzeichnet. Wer nur Schreibzugriff auf die "
+"Datenbank hat, kann Einträge daher nicht ändern, löschen oder einschleusen, "
+"ohne dass die Prüfung darauf hinweist. Der Schlüssel liegt in der wp-"
+"config.php: wer diese Datei liest, kann die Kette neu signieren — das "
+"Verfahren weist Manipulation nach, es verhindert sie nicht."
+msgstr ""
+"is loga gníomhaíochta do WordPress é. Tá gach iontráil nasctha lena "
+"réamhtheachtaí trí HMAC-SHA256, agus scáthánaítear barr an tslabhra lasmuigh "
+"den tábla loga freisin. Ní féidir le duine a bhfuil rochtain scríofa ar an "
+"mbunachar sonraí amháin iontrálacha a chur in eagar, a scriosadh ná a chur "
+"isteach gan an fíorú á bhrath. Tá an eochair i wp-config.php: is féidir le "
+"duine ar bith a léann an comhad sin an slabhra a athshíniú — braiteann an "
+"mheicníocht cur isteach, ní chuireann sí cosc air."
+
+#: includes/class-sentinel-admin.php:1500
+msgid "Protokollierungsstufen"
+msgstr "Leibhéil logála"
+
+#: includes/class-sentinel-admin.php:1501
+msgid ""
+"Die Protokollierungsstufe wird unter Einstellungen gewählt: \"Vollständig\" "
+"schreibt auch Info-Einträge wie Anmeldungen, Seitenaufrufe und Klicks; "
+"\"Standard\" lässt Info-Einträge weg; \"Nur Warnungen\" schreibt Warning und "
+"Critical; \"Nur kritische Ereignisse\" nur Critical. Der Genesis-Eintrag "
+"sowie Lösch- und Aufbewahrungsnachweise werden auf jeder Stufe geschrieben."
+msgstr ""
+"Roghnaítear an leibhéal logála faoi Shocruithe: scríobhann “Iomlán” "
+"iontrálacha Info freisin mar logálacha isteach, amhairc leathanaigh agus "
+"cliceanna; fágann “Caighdeánach” iontrálacha Info ar lár; scríobhann "
+"“Rabhaidh amháin” Warning agus Critical; “Teagmhais chriticiúla amháin” "
+"Critical amháin. Scríobhtar an iontráil genesis agus na fianaisí scriosta "
+"agus coinneála ar gach leibhéal."
+
+#: includes/class-sentinel-admin.php:1506
+msgid "Personenbezogene Daten"
+msgstr "Sonraí Phearsanta"
+
+#: includes/class-sentinel-admin.php:1507
+msgid ""
+"IP-Adressen werden nicht im Klartext gespeichert, sondern als HMAC mit "
+"täglich wechselndem Schlüssel. Name und E-Mail-Adresse des handelnden "
+"Benutzers, besuchte Adressen und Klick-Beschriftungen stehen im Klartext im "
+"Protokoll. Die Datenschutz-Werkzeuge von WordPress können Einträge zu einer "
+"Adresse exportieren und pseudonymisieren."
+msgstr ""
+"Ní stóráiltear seoltaí IP i ngnáth-théacs, ach mar HMAC le salann a "
+"rothlaíonn go laethúil. Stóráiltear ainm agus ríomhphost an úsáideora, "
+"URLanna ar tugadh cuairt orthu agus lipéid chliceanna i ngnáth-théacs. Is "
+"féidir le huirlisí príobháideachta WordPress iontrálacha do sheoladh "
+"ríomhphoist a easpórtáil agus a bhréagshanmniú."
+
+#: includes/class-sentinel-admin.php:1511
+msgid "Support & Handbuch:"
+msgstr "Tacaíocht agus Lámhleabhar:"
+
+#: includes/class-sentinel-admin.php:1512
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Oscail an Lámhleabhar Iomlán"
+
+#: includes/class-sentinel-admin.php:1513
+msgid "Entwickelt von WM Suite."
+msgstr "Forbartha ag WM Suite."
+
+#: includes/class-sentinel-admin.php:1522
+#: includes/class-sentinel-exporter.php:35
+#: includes/class-sentinel-exporter.php:94
+msgid "Unzureichende Berechtigungen."
+msgstr "Ceadanna neamhleora."
+
+#: includes/class-sentinel-admin.php:1530
+msgid "WM Activity Sentinel — Handbuch"
+msgstr "WM Activity Sentinel — Lámhleabhar"
+
+#: includes/class-sentinel-admin.php:1531
+msgid "Hash-Kette, Sensoren, Entwickler-API und Hinweise zum Betrieb."
+msgstr "Slabhra hais, braiteoirí, API forbróirí agus nótaí oibriúcháin."
+
+#: includes/class-sentinel-admin.php:1542
+msgid "1. Kryptografische Hash-Kette (Integrität)"
+msgstr "1. Slabhra Hais Cripteagrafach (Sláine)"
+
+#: includes/class-sentinel-admin.php:1544
+msgid ""
+"Jeder Datensatz enthält den kryptografischen Fingerabdruck seines direkten "
+"Vorgängers (prev_hash). Die Prüfsumme wird wie folgt berechnet:"
+msgstr ""
+"Áirítear i ngach taifead méarlorg cripteagrafach a réamhtheachtaí dhírigh "
+"(prev_hash). Ríomhtar an hais mar seo a leanas:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid "Änderung erkennbar:"
+msgstr "Athruithe inbhraite:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid ""
+"Wird eine Zeile ohne den Schlüssel geändert, schlägt die Prüfsumme bei der "
+"nächsten Prüfung fehl. Wer den Schlüssel hat, kann die Kette neu signieren."
+msgstr ""
+"Má athraítear ró gan an eochair, teipeann ar a shuim sheiceála sa chéad "
+"fhíorú eile. Is féidir leis an té a shealbhaíonn an eochair an slabhra a "
+"athshíniú."
+
+#: includes/class-sentinel-admin.php:1550
+msgid "Löschungsnachweis:"
+msgstr "Fianaise scriosta:"
+
+#: includes/class-sentinel-admin.php:1550
+msgid ""
+"Wird eine Zeile in der Mitte gelöscht, passt der Verweis der Folgezeile "
+"nicht mehr; fehlen die neuesten Zeilen, weicht das in wp_options gespiegelte "
+"Kettenende ab."
+msgstr ""
+"Má scriostar ró sa lár, briseann pointeoir an chéad ró eile; má scriostar na "
+"rónna is déanaí, imíonn barr scáthánaithe an tslabhra i wp_options óna "
+"chéile."
+
+#: includes/class-sentinel-admin.php:1551
+msgid "Concurrency-Locking:"
+msgstr "Glasáil chomhuaineach:"
+
+#: includes/class-sentinel-admin.php:1551
+msgid ""
+"InnoDB \"SELECT ... FOR UPDATE\" verhindert Ketten-Bifurkationen bei "
+"parallelen Schreibzugriffen."
+msgstr ""
+"Cuireann InnoDB \"SELECT ... FOR UPDATE\" cosc ar ghabhalú slabhra faoi "
+"scríbhinní comhuaineacha."
+
+#: includes/class-sentinel-admin.php:1559
+msgid "2. Sensoren"
+msgstr "2. Braiteoirí"
+
+#: includes/class-sentinel-admin.php:1561
+msgid ""
+"Diese WordPress-Hooks schreiben Einträge; alles andere erfasst das Plugin "
+"nicht:"
+msgstr ""
+"Scríobhann na crúcaí WordPress seo iontrálacha; ní thaifeadann an breiseán "
+"aon rud eile:"
+
+#: includes/class-sentinel-admin.php:1565
+msgid "Bereich"
+msgstr "Réimse"
+
+#: includes/class-sentinel-admin.php:1566
+msgid "Sensoren & Hooks"
+msgstr "Braiteoirí agus Crúcaí"
+
+#: includes/class-sentinel-admin.php:1572
+msgid "Authentifizierung"
+msgstr "Fíordheimhniú"
+
+#: includes/class-sentinel-admin.php:1573
+msgid ""
+"wp_login (Info), wp_login_failed und wp_create_application_password (Warning)"
+msgstr ""
+"wp_login (Info), wp_login_failed agus wp_create_application_password "
+"(Warning)"
+
+#: includes/class-sentinel-admin.php:1574
+#: includes/class-sentinel-admin.php:1594
+msgid "Info / Warning"
+msgstr "Info / Warning"
+
+#: includes/class-sentinel-admin.php:1577
+msgid "Benutzer & Rollen"
+msgstr "Úsáideoirí agus Róil"
+
+#: includes/class-sentinel-admin.php:1578
+msgid ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical bei der Rolle Administrator)"
+msgstr ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical nuair is Administrator an ról)"
+
+#: includes/class-sentinel-admin.php:1579
+msgid "Notice / Warning / Critical"
+msgstr "Notice / Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1582
+msgid "Core & Plugins"
+msgstr "Croílár agus Breiseáin"
+
+#: includes/class-sentinel-admin.php:1583
+msgid ""
+"activated_plugin, upgrader_process_complete und updated_option für "
+"ausgewählte Optionen (Notice); deactivated_plugin, delete_plugin und "
+"after_switch_theme (Warning)"
+msgstr ""
+"activated_plugin, upgrader_process_complete agus updated_option do roghanna "
+"roghnaithe (Notice); deactivated_plugin, delete_plugin agus "
+"after_switch_theme (Warning)"
+
+#: includes/class-sentinel-admin.php:1584
+msgid "Notice / Warning"
+msgstr "Notice / Warning"
+
+#: includes/class-sentinel-admin.php:1587
+msgid "Exporte & Dateieditor"
+msgstr "Easpórtálacha agus Eagarthóir Comhad"
+
+#: includes/class-sentinel-admin.php:1588
+msgid ""
+"Aufruf von export.php, load-plugin-editor.php und load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"und duplicator_backup_started (Critical)"
+msgstr ""
+"Cuairteanna ar export.php, load-plugin-editor.php agus load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"agus duplicator_backup_started (Critical)"
+
+#: includes/class-sentinel-admin.php:1589
+msgid "Warning / Critical"
+msgstr "Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1592
+msgid "Admin & Telemetrie"
+msgstr "Riarachán agus Teiliméadracht"
+
+#: includes/class-sentinel-admin.php:1593
+msgid ""
+"current_screen, template_redirect und Klicks über POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch für /wp/v2/plugins und anonyme Abfragen "
+"von /wp/v2/users (Warning)"
+msgstr ""
+"current_screen, template_redirect agus cliceanna trí POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch do /wp/v2/plugins agus fiosrúcháin gan "
+"ainm chuig /wp/v2/users (Warning)"
+
+#: includes/class-sentinel-admin.php:1605
+msgid "3. Entwickler-API & Eigene Sensoren registrieren"
+msgstr "3. API Forbróirí agus Braiteoirí Saincheaptha"
+
+#: includes/class-sentinel-admin.php:1607
+msgid ""
+"Eigene Ereignisse lassen sich über die statische Logger-Klasse an die Kette "
+"anhängen:"
+msgstr ""
+"Is féidir imeachtaí saincheaptha a chur leis an slabhra tríd an aicme logála "
+"statach:"
+
+#: includes/class-sentinel-admin.php:1632
+msgid "4. Wichtige Hinweise, Gotchas & Troubleshooting"
+msgstr "4. Nótaí Tábhachtacha, Gaistí agus Fabhtcheartú"
+
+#: includes/class-sentinel-admin.php:1635
+msgid "IP-Hashes:"
+msgstr "Haiseanna IP:"
+
+#: includes/class-sentinel-admin.php:1635
+msgid ""
+"IP-Adressen werden als HMAC mit täglich wechselndem Schlüssel gespeichert; "
+"Hashes derselben Adresse stimmen nur innerhalb eines Tages (UTC) überein. "
+"Name und E-Mail des Benutzers stehen im Klartext."
+msgstr ""
+"Stóráiltear seoltaí IP mar HMAC le heochair laethúil; ní mheaitseálann "
+"haiseanna an tseolta chéanna ach laistigh d'aon lá UTC amháin. Stóráiltear "
+"ainm úsáideora agus ríomhphost i ngnáth-théacs."
+
+#: includes/class-sentinel-admin.php:1636
+msgid "CSV-Export:"
+msgstr "Easpórtáil CSV:"
+
+#: includes/class-sentinel-admin.php:1636
+msgid ""
+"Werte, die mit =, +, -, @, Tabulator oder Wagenrücklauf beginnen, erhalten "
+"ein vorangestelltes Apostroph, damit Tabellenprogramme sie nicht als Formel "
+"ausführen."
+msgstr ""
+"Faigheann luachanna a thosaíonn le =, +, -, @, táb nó aisfhilleadh carráiste "
+"uaschamóg tosaigh ionas nach rithfidh uirlisí scarbhileoge mar fhoirmlí iad."
+
+#: includes/class-sentinel-admin.php:1637
+msgid "WP-CLI Testausführung:"
+msgstr "Rith tástálacha WP-CLI:"
+
+#: includes/class-sentinel-admin.php:1637
+msgid ""
+"In WP-CLI Tests liefert is_admin() immer true. Frontend-Tests setzen daher "
+"die Konstante WM_SENTINEL_TESTING_MODE."
+msgstr ""
+"Laistigh de thástálacha WP-CLI, filleann is_admin() true i gcónaí. "
+"Sainmhíníonn tástálacha tosaigh WM_SENTINEL_TESTING_MODE dá bhrí sin."
+
+#: includes/class-sentinel-core.php:122
+msgid "WM Activity Sentinel Kennzahlen"
+msgstr "Méadrachtaí WM Activity Sentinel"
+
+#: includes/class-sentinel-core.php:157
+msgid "WM Sentinel Kennzahl"
+msgstr "Méadracht WM Sentinel"
+
+#: includes/class-sentinel-core.php:161
+msgid ""
+"Gibt nicht-sensible Prüfstatus- und Protokollzähler von WM Activity Sentinel "
+"aus."
+msgstr ""
+"Aschuireann sé stádas fíoraithe neamhíogair agus áiritheoirí loga ó WM "
+"Activity Sentinel."
+
+#: includes/class-sentinel-core.php:165
+msgid "Kennzahl"
+msgstr "Táscaire"
+
+#: includes/class-sentinel-core.php:169
+msgid "Kettenstatus (INTACT / BROKEN)"
+msgstr "Stádas slabhra (INTACT / BROKEN)"
+
+#: includes/class-sentinel-core.php:173
+msgid "Geprüfte Einträge"
+msgstr "Iontrálacha Fíoraithe"
+
+#: includes/class-sentinel-core.php:181
+msgid "Plugin-Version"
+msgstr "Leagan an bhreiseáin"
+
+#: includes/class-sentinel-exporter.php:157
+#: includes/class-sentinel-exporter.php:168
+msgid "WM Activity Sentinel Audit-Logs"
+msgstr "Logaí Iniúchta WM Activity Sentinel"
+
+#: includes/class-sentinel-exporter.php:216
+msgid "Objekttyp"
+msgstr "Cineál Réada"
+
+#: includes/class-sentinel-exporter.php:220
+msgid "Benutzername"
+msgstr "Ainm Úsáideora"
+
+#: includes/class-sentinel-exporter.php:224
+msgid "Benutzer-E-Mail"
+msgstr "Ríomhphost Úsáideora"
+
+#: includes/class-sentinel-exporter.php:228
+msgid "Eintrags-Hash"
+msgstr "Haiseáil Iontrála"
+
+#: includes/class-sentinel-exporter.php:235
+msgid "Sicherheits- und Audit-Protokolle"
+msgstr "Logaí Slándála agus Iniúchta"
+
+#: includes/class-sentinel-exporter.php:316
+msgid ""
+"Der Löschnachweis konnte nicht in die Kette geschrieben werden; es wurde "
+"nichts geändert."
+msgstr ""
+"Níorbh fhéidir an taifead scriosta a scríobh chuig an slabhra; níor "
+"athraíodh aon rud."
+
+#. translators: 1: number of pseudonymised log entries, 2: id of the erasure record
+#: includes/class-sentinel-exporter.php:335
+#, php-format
+msgid ""
+"%1$d Protokolleinträge pseudonymisiert (Name, Adresse, IP-Hash, Adresse im "
+"Kontext). Die Prüfung erkennt sie über den Löschnachweis #%2$d an; "
+"Ereignisart, Zeitpunkt und übriger Kontext bleiben stehen."
+msgstr ""
+"Rinneadh bréagshanmniú ar %1$d iontráil loga (ainm, ríomhphost, hais IP, "
+"ríomhphost sa chomhthéacs). Glacann an fíorú leo trí thaifead scriosta "
+"#%2$d; fanann cineál imeachta, stampa ama agus an comhthéacs eile slán."
+
+#: includes/class-sentinel-fim.php:136
+msgid ""
+"api.wordpress.org war nicht erreichbar; die Dateien konnten nicht gegen den "
+"offiziellen Katalog geprüft werden."
+msgstr ""
+"Ní raibh teacht ar api.wordpress.org; níorbh fhéidir comhaid a fhíorú i "
+"gcoinne na catalóige oifigiúla."
+
+#. translators: %d: HTTP status code
+#: includes/class-sentinel-fim.php:147
+#, php-format
+msgid ""
+"api.wordpress.org antwortete mit HTTP %d; es wurde kein Katalog geladen."
+msgstr "D'fhreagair api.wordpress.org le HTTP %d; níor lódáladh aon chatalóg."
+
+#: includes/class-sentinel-fim.php:174
+msgid "Die Antwort von api.wordpress.org enthielt keinen Prüfsummen-Katalog."
+msgstr "Ní raibh catalóg suimeanna seiceála sa fhreagra ó api.wordpress.org."
+
+#. translators: %s: WordPress version
+#: includes/class-sentinel-fim.php:188
+#, php-format
+msgid ""
+"Für WordPress %s liegt bei api.wordpress.org kein Prüfsummen-Katalog vor "
+"(etwa bei einer Entwicklungs- oder Nightly-Version). Die Kerndateien wurden "
+"nicht geprüft."
+msgstr ""
+"Níl catalóg suimeanna seiceála ar fáil ag api.wordpress.org do WordPress %s "
+"(m.sh. tógáil forbartha nó oíche). Níor seiceáladh croíchomhaid."
+
+#: includes/class-sentinel-fim.php:214
+msgid "Der geladene Katalog enthielt keine verwertbaren Prüfsummen."
+msgstr "Ní raibh aon suimeanna seiceála inúsáidte sa chatalóg lódáilte."
+
+#. translators: %d: number of entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:40
+#, php-format
+msgid ""
+"Die Log-Tabelle ist leer, obwohl zuletzt %d Einträge verzeichnet waren. Das "
+"Protokoll wurde gelöscht."
+msgstr ""
+"Tá an tábla loga folamh cé gur taifeadadh %d iontráil go deireanach. "
+"Scriosadh an loga."
+
+#. translators: 1: log id, 2: stored prev_hash prefix, 3: expected hash prefix
+#: includes/class-sentinel-integrity.php:82
+#, php-format
+msgid ""
+"Kettenbruch bei Log-ID #%1$d: prev_hash \"%2$s\" stimmt nicht mit dem "
+"erwarteten Hash \"%3$s\" überein (Hinweis auf gelöschte oder eingeschleuste "
+"Zeilen)."
+msgstr ""
+"Slabhra briste ag ID loga #%1$d: ní mheaitseálann prev_hash \"%2$s\" an hais "
+"ionchais \"%3$s\" (léiríonn sé rónna scriosta nó curtha isteach)."
+
+#. translators: 1: log id, 2: recomputed hash prefix, 3: stored hash prefix
+#: includes/class-sentinel-integrity.php:123
+#, php-format
+msgid ""
+"Manipulationsnachweis bei Log-ID #%1$d: Der berechnete Prüfsummen-Hash "
+"\"%2$s\" weicht vom gespeicherten Hash \"%3$s\" ab. Entweder wurden die "
+"Daten nachträglich in der Datenbank verändert, oder das Protokoll wurde mit "
+"einem anderen AUTH_KEY geschrieben (etwa vor einem Umzug der Website)."
+msgstr ""
+"Fianaise ar chur isteach ag ID loga #%1$d: tá an tsuim sheiceála ríofa "
+"\"%2$s\" difriúil ón hais stóráilte \"%3$s\". Athraíodh ró an bhunachair "
+"sonraí ina dhiaidh sin, nó scríobhadh an loga le AUTH_KEY difriúil (mar "
+"shampla roimh aistriú suímh)."
+
+#. translators: 1: entries present, 2: entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:149
+#, php-format
+msgid ""
+"Das Ende der Kette stimmt nicht mit dem verzeichneten Kettenstand überein "
+"(%1$d von %2$d Einträgen vorhanden): Die neuesten Protokolleinträge wurden "
+"entfernt oder ersetzt."
+msgstr ""
+"Ní mheaitseálann deireadh an tslabhra staid an tslabhra a taifeadadh (%1$d "
+"as %2$d iontráil i láthair): baineadh nó athsholáthraíodh na hiontrálacha "
+"loga is déanaí."
+
+#: includes/class-sentinel-sensors.php:546
+msgid "Zugriff auf Sentinel Telemetrie erfordert eine aktive Sitzung."
+msgstr ""
+"Teastaíonn seisiún úsáideora gníomhach chun rochtain a fháil ar "
+"theiliméadracht Sentinel."

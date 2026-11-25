@@ -1,0 +1,1767 @@
+# Translation of wm-activity-sentinel in el
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-activity-sentinel 1.4.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-activity-"
+"sentinel\n"
+"POT-Creation-Date: 2026-11-21T12:27:41+00:00\n"
+"PO-Revision-Date: 2026-11-21 13:27+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-activity-"
+"sentinel/issues>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-activity-sentinel\n"
+
+#. Plugin Name of the plugin
+#: wm-activity-sentinel.php includes/class-sentinel-admin.php:228
+#: includes/class-sentinel-admin.php:1495
+msgid "WM Activity Sentinel"
+msgstr "WM Activity Sentinel"
+
+#. Plugin URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-activity-sentinel/"
+
+#. Description of the plugin
+#: wm-activity-sentinel.php
+msgid ""
+"Aktivitätsprotokoll mit HMAC-SHA256-Hashkette: Anmeldungen, Benutzer und "
+"Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-Routen, "
+"Seitenaufrufe und Klicks angemeldeter Benutzer; Prüfung der Kette, E-Mail- "
+"und Webhook-Alarme, CSV- und JSON-Export. Manipulation wird nachweisbar, "
+"nicht verhindert."
+msgstr ""
+"Αρχείο καταγραφής δραστηριότητας με αλυσίδα κατακερματισμού HMAC-SHA256: "
+"συνδέσεις, χρήστες και ρόλοι, πρόσθετα και θέματα, εξαγωγές, επεξεργαστής "
+"αρχείων, επιλεγμένες διαδρομές REST, προβολές σελίδων και κλικ συνδεδεμένων "
+"χρηστών· επαλήθευση αλυσίδας, ειδοποιήσεις email και webhook, εξαγωγή CSV "
+"και JSON. Οι αλλοιώσεις γίνονται ανιχνεύσιμες, αλλά δεν αποτρέπονται."
+
+#. Author of the plugin
+#: wm-activity-sentinel.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-activity-sentinel.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-sentinel-admin.php:126
+msgid "Part of the WM Suite plugin family"
+msgstr "Μέλος της οικογένειας προσθέτων WM Suite"
+
+#: includes/class-sentinel-admin.php:128
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Hub"
+msgstr "Λειτουργία Hub"
+
+#: includes/class-sentinel-admin.php:129
+msgid "Standalone"
+msgstr "Αυτόνομο"
+
+#: includes/class-sentinel-admin.php:146 includes/class-sentinel-admin.php:147
+msgid "WM Sentinel"
+msgstr "WM Sentinel"
+
+#: includes/class-sentinel-admin.php:157 includes/class-sentinel-admin.php:158
+#: includes/class-sentinel-admin.php:448
+msgid "Aktivitäts-Stream"
+msgstr "Ροή δραστηριότητας"
+
+#: includes/class-sentinel-admin.php:166 includes/class-sentinel-admin.php:449
+msgid "Integritäts-Audit (Hash-Kette)"
+msgstr "Έλεγχος ακεραιότητας (αλυσίδα κατακερματισμού)"
+
+#: includes/class-sentinel-admin.php:167 includes/class-sentinel-admin.php:308
+#: wm-activity-sentinel.php:138
+msgid "Integritäts-Audit"
+msgstr "Έλεγχος ακεραιότητας"
+
+#: includes/class-sentinel-admin.php:175
+msgid "Dateiintegrität (Kern & Plugins)"
+msgstr "Ακεραιότητα αρχείων (πυρήνας και πρόσθετα)"
+
+#: includes/class-sentinel-admin.php:176 includes/class-sentinel-admin.php:450
+#: includes/class-sentinel-admin.php:781
+msgid "Dateiintegrität"
+msgstr "Ακεραιότητα αρχείων"
+
+#: includes/class-sentinel-admin.php:184 includes/class-sentinel-admin.php:185
+#: includes/class-sentinel-admin.php:451 includes/class-sentinel-admin.php:951
+#: wm-activity-sentinel.php:156
+msgid "Export"
+msgstr "Εξαγωγή"
+
+#: includes/class-sentinel-admin.php:193 includes/class-sentinel-admin.php:194
+#: includes/class-sentinel-admin.php:1018 wm-activity-sentinel.php:128
+msgid "Einstellungen"
+msgstr "Ρυθμίσεις"
+
+#: includes/class-sentinel-admin.php:202
+msgid "Handbuch & Dokumentation"
+msgstr "Εγχειρίδιο και τεκμηρίωση"
+
+#: includes/class-sentinel-admin.php:203 includes/class-sentinel-admin.php:453
+#: includes/class-sentinel-admin.php:1529 wm-activity-sentinel.php:133
+#: wm-activity-sentinel.php:151
+msgid "Handbuch"
+msgstr "Εγχειρίδιο"
+
+#. translators: %d: number of verified chain entries
+#: includes/class-sentinel-admin.php:252
+#, php-format
+msgid "Kette intakt: %d Einträge geprüft"
+msgstr "Η αλυσίδα είναι ακέραιη: επαληθεύτηκαν %d εγγραφές"
+
+#: includes/class-sentinel-admin.php:255
+msgid "Kettenprüfung fehlgeschlagen"
+msgstr "Η επαλήθευση της αλυσίδας απέτυχε"
+
+#: includes/class-sentinel-admin.php:259
+msgid "Jeder Eintrag ist mit HMAC-SHA256 an den vorherigen gebunden."
+msgstr "Κάθε εγγραφή συνδέεται με την προηγούμενη μέσω HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:268 includes/class-sentinel-admin.php:508
+msgid "Einträge"
+msgstr "Εγγραφές"
+
+#: includes/class-sentinel-admin.php:272
+msgid "Kritisch (24h)"
+msgstr "Κρίσιμα (24ώ)"
+
+#: includes/class-sentinel-admin.php:276 includes/class-sentinel-admin.php:558
+msgid "Warnungen (24h)"
+msgstr "Προειδοποιήσεις (24ώ)"
+
+#: includes/class-sentinel-admin.php:281
+msgid "Letzte Systemereignisse"
+msgstr "Πρόσφατα συμβάντα συστήματος"
+
+#: includes/class-sentinel-admin.php:298
+msgid "Noch keine Ereignisse erfasst."
+msgstr "Δεν έχουν καταγραφεί ακόμη συμβάντα."
+
+#: includes/class-sentinel-admin.php:305
+msgid "Aktivitäts-Stream öffnen"
+msgstr "Άνοιγμα ροής δραστηριότητας"
+
+#: includes/class-sentinel-admin.php:452
+msgid "Einstellungen & Alarme"
+msgstr "Ρυθμίσεις και ειδοποιήσεις"
+
+#: includes/class-sentinel-admin.php:456
+msgid "Bereiche von WM Activity Sentinel"
+msgstr "Ενότητες WM Activity Sentinel"
+
+#: includes/class-sentinel-admin.php:494
+msgid "Aktivitätsprotokoll"
+msgstr "Καταγραφή δραστηριότητας"
+
+#: includes/class-sentinel-admin.php:495
+msgid "WM Activity Sentinel — Aktivitäts-Stream"
+msgstr "WM Activity Sentinel — Ροή δραστηριότητας"
+
+#: includes/class-sentinel-admin.php:496
+msgid ""
+"Protokollierte Ereignisse, neueste zuerst. Jeder Eintrag ist über eine HMAC-"
+"SHA256-Kette mit seinem Vorgänger verbunden."
+msgstr ""
+"Καταγεγραμμένα συμβάντα, πρώτα τα νεότερα. Κάθε εγγραφή συνδέεται με την "
+"προηγούμενη μέσω αλυσίδας HMAC-SHA256."
+
+#: includes/class-sentinel-admin.php:503
+msgid "Auf dieser Seite"
+msgstr "Σε αυτή τη σελίδα"
+
+#: includes/class-sentinel-admin.php:504
+msgid "Springen zu:"
+msgstr "Μετάβαση σε:"
+
+#: includes/class-sentinel-admin.php:505
+msgid "Kurzanleitung"
+msgstr "Σύντομος οδηγός"
+
+#: includes/class-sentinel-admin.php:506
+msgid "Kennzahlen 24 h"
+msgstr "Μετρήσεις 24ώρου"
+
+#: includes/class-sentinel-admin.php:507
+msgid "Filter und Suche"
+msgstr "Φιλτράρισμα και αναζήτηση"
+
+#: includes/class-sentinel-admin.php:515
+msgid "Was dieses Protokoll leistet"
+msgstr "Τι προσφέρει αυτό το αρχείο καταγραφής"
+
+#: includes/class-sentinel-admin.php:518
+msgid ""
+"WM Activity Sentinel schreibt ausgewählte Ereignisse (Anmeldungen, Benutzer "
+"und Rollen, Plugins und Themes, Exporte, Dateieditor, ausgewählte REST-"
+"Routen, Seitenaufrufe und Klicks angemeldeter Benutzer) in eine Tabelle, "
+"deren Einträge über eine HMAC-SHA256-Kette verbunden sind. Wer Einträge "
+"ändert, löscht oder einschleust, fällt bei der Prüfung auf, solange er den "
+"Schlüssel aus der wp-config.php nicht kennt. Verhindern kann das Protokoll "
+"solche Eingriffe nicht."
+msgstr ""
+"Το WM Activity Sentinel καταγράφει επιλεγμένα συμβάντα (συνδέσεις, χρήστες "
+"και ρόλους, πρόσθετα και θέματα, εξαγωγές, επεξεργαστή αρχείων, επιλεγμένες "
+"διαδρομές REST, προβολές σελίδων και κλικ συνδεδεμένων χρηστών) σε πίνακα "
+"του οποίου οι εγγραφές συνδέονται με αλυσίδα HMAC-SHA256. Όποιος "
+"τροποποιήσει, διαγράψει ή εισαγάγει εγγραφές εντοπίζεται κατά την "
+"επαλήθευση, εφόσον δεν διαθέτει το κλειδί από το wp-config.php. Το αρχείο "
+"καταγραφής δεν μπορεί να αποτρέψει τέτοιες ενέργειες."
+
+#: includes/class-sentinel-admin.php:521
+msgid "Schnellzugriff:"
+msgstr "Γρήγορη πρόσβαση:"
+
+#: includes/class-sentinel-admin.php:524
+msgid "Kette prüfen"
+msgstr "Επαλήθευση αλυσίδας"
+
+#: includes/class-sentinel-admin.php:528
+msgid "Protokoll exportieren"
+msgstr "Εξαγωγή καταγραφής"
+
+#: includes/class-sentinel-admin.php:532
+msgid "Protokollierung einstellen"
+msgstr "Ρύθμιση καταγραφής"
+
+#: includes/class-sentinel-admin.php:542 includes/class-sentinel-core.php:177
+msgid "Gesamt-Einträge"
+msgstr "Σύνολο εγγραφών"
+
+#: includes/class-sentinel-admin.php:550
+msgid "Kritische Alarme (24h)"
+msgstr "Κρίσιμες ειδοποιήσεις (24ώ)"
+
+#: includes/class-sentinel-admin.php:566
+msgid "Aktive Benutzer"
+msgstr "Ενεργοί χρήστες"
+
+#: includes/class-sentinel-admin.php:577
+msgid "Alle Schweregrade"
+msgstr "Όλα τα επίπεδα σοβαρότητας"
+
+#: includes/class-sentinel-admin.php:578
+msgid "Kritisch (Critical)"
+msgstr "Κρίσιμο"
+
+#: includes/class-sentinel-admin.php:579
+msgid "Warnung (Warning)"
+msgstr "Προειδοποίηση"
+
+#: includes/class-sentinel-admin.php:580
+msgid "Hinweis (Notice)"
+msgstr "Επισήμανση"
+
+#: includes/class-sentinel-admin.php:581
+msgid "Info"
+msgstr "Πληροφορία"
+
+#: includes/class-sentinel-admin.php:584
+msgid "Ereignis, Benutzer oder Kontext durchsuchen..."
+msgstr "Αναζήτηση συμβάντος, χρήστη ή πλαισίου..."
+
+#: includes/class-sentinel-admin.php:585
+msgid "Filtern"
+msgstr "Φιλτράρισμα"
+
+#: includes/class-sentinel-admin.php:588
+msgid "Zurücksetzen"
+msgstr "Επαναφορά"
+
+#: includes/class-sentinel-admin.php:596
+msgid "Log-ID"
+msgstr "ID εγγραφής"
+
+#: includes/class-sentinel-admin.php:597
+#: includes/class-sentinel-exporter.php:204
+msgid "Zeitpunkt (UTC)"
+msgstr "Χρονοσφραγίδα (UTC)"
+
+#: includes/class-sentinel-admin.php:598 includes/class-sentinel-admin.php:1567
+#: includes/class-sentinel-exporter.php:212
+msgid "Schweregrad"
+msgstr "Σοβαρότητα"
+
+#: includes/class-sentinel-admin.php:599
+#: includes/class-sentinel-exporter.php:208
+msgid "Ereignis"
+msgstr "Συμβάν"
+
+#: includes/class-sentinel-admin.php:600
+msgid "Objekt"
+msgstr "Αντικείμενο"
+
+#: includes/class-sentinel-admin.php:601
+msgid "Akteur / Benutzer"
+msgstr "Δράστης / Χρήστης"
+
+#: includes/class-sentinel-admin.php:602
+msgid "IP-Hash"
+msgstr "Σύνοψη IP"
+
+#: includes/class-sentinel-admin.php:603
+msgid "Kontext"
+msgstr "Πλαίσιο"
+
+#. translators: %d: log entry id
+#: includes/class-sentinel-admin.php:622
+#, php-format
+msgid "Kontext von Eintrag #%d anzeigen"
+msgstr "Προβολή πλαισίου εγγραφής #%d"
+
+#: includes/class-sentinel-admin.php:630
+msgid "Keine Aktivitäten gefunden."
+msgstr "Δεν βρέθηκε δραστηριότητα."
+
+#. translators: %d: total number of log entries
+#: includes/class-sentinel-admin.php:643
+#, php-format
+msgid "%d Einträge"
+msgstr "%d εγγραφές"
+
+#: includes/class-sentinel-admin.php:670
+msgid "Ereignis-Kontext Inspektor"
+msgstr "Επιθεωρητής πλαισίου συμβάντος"
+
+#: includes/class-sentinel-admin.php:671
+msgid "Inspektor schließen"
+msgstr "Κλείσιμο επιθεωρητή"
+
+#: includes/class-sentinel-admin.php:692
+msgid "Kettenprüfung"
+msgstr "Επαλήθευση αλυσίδας"
+
+#: includes/class-sentinel-admin.php:693
+msgid "Kryptografisches Integritäts-Audit (Hash-Chaining)"
+msgstr "Κρυπτογραφικός έλεγχος ακεραιότητας (αλυσίδα κατακερματισμού)"
+
+#: includes/class-sentinel-admin.php:696
+msgid ""
+"Jeder Eintrag wird mit HMAC-SHA256 gegen seinen Vorgänger geprüft, und das "
+"Ende der Kette gegen den außerhalb der Protokolltabelle verzeichneten "
+"Kettenstand."
+msgstr ""
+"Κάθε εγγραφή επαληθεύεται με HMAC-SHA256 έναντι της προηγούμενης και το "
+"τέλος της αλυσίδας έναντι της κατάστασης αλυσίδας που καταγράφεται εκτός του "
+"πίνακα του αρχείου καταγραφής."
+
+#: includes/class-sentinel-admin.php:703
+msgid "Status der Prüfsummen-Kette"
+msgstr "Κατάσταση αλυσίδας αθροισμάτων ελέγχου"
+
+#: includes/class-sentinel-admin.php:709
+msgid "KETTE INTAKT"
+msgstr "ΑΛΥΣΙΔΑ ΑΚΕΡΑΙΗ"
+
+#. translators: %d: number of verified log entries
+#: includes/class-sentinel-admin.php:713
+#, php-format
+msgid ""
+"%d Log-Einträge vom ersten Eintrag bis zum verzeichneten Kettenstand "
+"geprüft. Keine nachträgliche Änderung, Lücke oder Kürzung erkennbar."
+msgstr ""
+"Επαληθεύτηκαν %d εγγραφές του αρχείου καταγραφής από την πρώτη εγγραφή έως "
+"την καταγεγραμμένη κατάσταση της αλυσίδας. Δεν εντοπίστηκε μεταγενέστερη "
+"αλλαγή, κενό ή περικοπή."
+
+#. translators: %d: number of pseudonymised log entries
+#: includes/class-sentinel-admin.php:721
+#, php-format
+msgid ""
+"%d davon wurden auf eine Löschanfrage hin pseudonymisiert und über den "
+"jeweiligen Löschnachweis in der Kette anerkannt."
+msgstr ""
+"%d από αυτές ψευδωνυμοποιήθηκαν κατόπιν αιτήματος διαγραφής και έγιναν "
+"δεκτές μέσω της συνδεδεμένης εγγραφής διαγραφής."
+
+#: includes/class-sentinel-admin.php:726
+msgid "Hash des letzten Eintrags:"
+msgstr "Hash της τελευταίας εγγραφής:"
+
+#: includes/class-sentinel-admin.php:734
+msgid "MANIPULATION ODER KETTENBRUCH ERKANNT"
+msgstr "ΕΝΤΟΠΙΣΤΗΚΕ ΑΛΛΟΙΩΣΗ Ή ΣΠΑΣΜΕΝΗ ΑΛΥΣΙΔΑ"
+
+#: includes/class-sentinel-admin.php:735
+msgid "Fehlerdiagnose:"
+msgstr "Διαγνωστικές λεπτομέρειες:"
+
+#: includes/class-sentinel-admin.php:742
+msgid "AUTH_KEY ist noch der Platzhalter aus wp-config-sample.php."
+msgstr ""
+"Το AUTH_KEY έχει ακόμη την προεπιλεγμένη τιμή του wp-config-sample.php."
+
+#: includes/class-sentinel-admin.php:743
+msgid ""
+"Die Kette ist mit einem öffentlich bekannten Schlüssel signiert: Jeder mit "
+"Datenbankzugriff kann Einträge ändern und die Kette neu signieren. Ein neuer "
+"AUTH_KEY in der wp-config.php schützt künftige Einträge; bestehende Einträge "
+"bestehen die Prüfung dann nicht mehr."
+msgstr ""
+"Η αλυσίδα υπογράφεται με δημόσια γνωστό κλειδί: οποιοσδήποτε με πρόσβαση στη "
+"βάση δεδομένων μπορεί να τροποποιήσει εγγραφές και να υπογράψει ξανά την "
+"αλυσίδα. Ο ορισμός νέου AUTH_KEY στο wp-config.php προστατεύει τις "
+"μελλοντικές εγγραφές· οι υπάρχουσες δεν θα περνούν πλέον την επαλήθευση."
+
+#: includes/class-sentinel-admin.php:747
+msgid "Der Kettenschlüssel liegt in der Datenbank, nicht in der wp-config.php."
+msgstr ""
+"Το κλειδί της αλυσίδας αποθηκεύεται στη βάση δεδομένων, όχι στο wp-"
+"config.php."
+
+#: includes/class-sentinel-admin.php:748
+msgid ""
+"In dieser Installation ist AUTH_KEY nicht definiert, daher greift WordPress "
+"auf automatisch erzeugte Salts zurück und legt sie in wp_options ab — also "
+"in derselben Datenbank, in die ein Angreifer ohnehin schreiben würde. Der "
+"Manipulationsnachweis hält hier nur gegen Unfälle, nicht gegen einen "
+"Angreifer. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"Το AUTH_KEY δεν έχει οριστεί σε αυτή την εγκατάσταση, οπότε το WordPress "
+"χρησιμοποιεί αυτόματα άλατα στον πίνακα wp_options — στην ίδια βάση όπου θα "
+"έγραφε ένας εισβολέας. Η ανίχνευση αλλοιώσεων εδώ προστατεύει μόνο από "
+"ατυχήματα, όχι από εισβολέα. Ορίστε το AUTH_KEY στο wp-config.php."
+
+#: includes/class-sentinel-admin.php:754
+msgid "Integritätsprüfung erneut ausführen"
+msgstr "Επανεκτέλεση ελέγχου ακεραιότητας"
+
+#: includes/class-sentinel-admin.php:782
+msgid "Abgleich gegen den offiziellen Prüfsummen-Katalog"
+msgstr "Σύγκριση με τον επίσημο κατάλογο αθροισμάτων ελέγχου"
+
+#: includes/class-sentinel-admin.php:783
+msgid ""
+"Die Kerndateien werden gegen api.wordpress.org geprüft, die WM-Suite-Plugins "
+"gegen eine Basislinie, deren Fingerabdruck in der Hash-Kette versiegelt ist."
+msgstr ""
+"Τα αρχεία πυρήνα ελέγχονται έναντι του api.wordpress.org και τα πρόσθετα WM "
+"Suite έναντι γραμμής βάσης της οποίας το αποτύπωμα είναι σφραγισμένο στην "
+"αλυσίδα κατακερματισμού."
+
+#. translators: %d: number of files in the baseline
+#: includes/class-sentinel-admin.php:793
+#, php-format
+msgid "Basislinie über %d Dateien erfasst und in der Kette versiegelt."
+msgstr "Η γραμμή βάσης για %d αρχεία καταγράφηκε και σφραγίστηκε στην αλυσίδα."
+
+#. translators: 1: number of files found, 2: configured maximum
+#: includes/class-sentinel-admin.php:802 includes/class-sentinel-fim.php:517
+#, php-format
+msgid ""
+"Die Basislinie wurde nicht gespeichert: %1$d Dateien überschreiten das "
+"Maximum von %2$d. Eine Basislinie dieser Größe wird bei jeder Prüfung "
+"gelesen und neu geschrieben. Prüfen Sie, ob in einem Plugin-Verzeichnis "
+"Entwicklungsdateien liegen, die dort nicht hingehören."
+msgstr ""
+"Η γραμμή βάσης δεν αποθηκεύτηκε: %1$d αρχεία υπερβαίνουν το μέγιστο όριο των "
+"%2$d. Μια τέτοια γραμμή βάσης διαβάζεται και επανεγγράφεται σε κάθε σάρωση. "
+"Ελέγξτε αν υπάρχουν αρχεία ανάπτυξης σε κάποιον φάκελο προσθέτου."
+
+#: includes/class-sentinel-admin.php:808
+msgid "Letzte Prüfung"
+msgstr "Τελευταία σάρωση"
+
+#: includes/class-sentinel-admin.php:814
+msgid "NOCH NICHT GEPRÜFT"
+msgstr "ΔΕΝ ΕΧΕΙ ΕΛΕΓΧΘΕΙ ΑΚΟΜΗ"
+
+#: includes/class-sentinel-admin.php:815
+msgid ""
+"Es liegt kein Prüfbericht vor. Starten Sie die Prüfung unten oder warten Sie "
+"den täglichen Lauf ab. Ein ungeprüfter Dateibaum ist kein unauffälliger "
+"Dateibaum."
+msgstr ""
+"Δεν υπάρχει ακόμη αναφορά σάρωσης. Ξεκινήστε σάρωση παρακάτω ή περιμένετε "
+"την καθημερινή προγραμματισμένη εκτέλεση. Ένα μη ελεγμένο δέντρο αρχείων δεν "
+"είναι καθαρό δέντρο αρχείων."
+
+#: includes/class-sentinel-admin.php:822
+msgid "VERÄNDERTE ODER UNERWARTETE DATEIEN GEFUNDEN"
+msgstr "ΒΡΕΘΗΚΑΝ ΤΡΟΠΟΠΟΙΗΜΕΝΑ Ή ΜΗ ΑΝΑΜΕΝΟΜΕΝΑ ΑΡΧΕΙΑ"
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:826
+#, php-format
+msgid "%1$d Abweichungen, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d αποκλίσεις, τελευταίος έλεγχος στις %2$s UTC."
+
+#: includes/class-sentinel-admin.php:835
+msgid "KEINE ABWEICHUNG"
+msgstr "ΧΩΡΙΣ ΑΠΟΚΛΙΣΕΙΣ"
+
+#. translators: 1: number of core files checked, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:839
+#, php-format
+msgid ""
+"%1$d Kerndateien stimmen mit dem offiziellen Katalog überein (geprüft am "
+"%2$s UTC)."
+msgstr ""
+"%1$d αρχεία πυρήνα ταιριάζουν με τον επίσημο κατάλογο (έλεγχος στις %2$s "
+"UTC)."
+
+#. translators: 1: number of findings, 2: timestamp in UTC
+#: includes/class-sentinel-admin.php:849
+#, php-format
+msgid "%1$d Auffälligkeiten, zuletzt geprüft am %2$s UTC."
+msgstr "%1$d ευρήματα, τελευταίος έλεγχος στις %2$s UTC."
+
+#: includes/class-sentinel-admin.php:861
+msgid "Verändert (Kerndateien)"
+msgstr "Τροποποιημένα (αρχεία πυρήνα)"
+
+#: includes/class-sentinel-admin.php:862
+msgid "Fehlend (Kerndateien)"
+msgstr "Ελλείποντα (αρχεία πυρήνα)"
+
+#: includes/class-sentinel-admin.php:863
+msgid "Unerwartet in wp-admin / wp-includes"
+msgstr "Μη αναμενόμενα σε wp-admin / wp-includes"
+
+#: includes/class-sentinel-admin.php:864
+msgid "Verändert (WM-Suite-Plugins)"
+msgstr "Τροποποιημένα (πρόσθετα WM Suite)"
+
+#: includes/class-sentinel-admin.php:865
+msgid "Fehlend (WM-Suite-Plugins)"
+msgstr "Ελλείποντα (πρόσθετα WM Suite)"
+
+#: includes/class-sentinel-admin.php:866
+msgid "Neu gegenüber der Basislinie"
+msgstr "Προστέθηκαν μετά τη γραμμή βάσης"
+
+#. translators: %s: comma-separated file names
+#: includes/class-sentinel-admin.php:884
+#, php-format
+msgid "Nicht als Fund gewertet, weil ihr Entfernen gängige Härtung ist: %s."
+msgstr ""
+"Δεν προσμετράται ως εύρημα επειδή η αφαίρεσή τους αποτελεί τυπική σκλήρυνση "
+"ασφαλείας: %s."
+
+#: includes/class-sentinel-admin.php:892
+msgid "Basislinie der WM-Suite-Plugins"
+msgstr "Γραμμή βάσης προσθέτων WM Suite"
+
+#: includes/class-sentinel-admin.php:897
+msgid "Die gespeicherte Basislinie wurde nachträglich verändert."
+msgstr "Η αποθηκευμένη γραμμή βάσης τροποποιήθηκε μετά τη σφράγιση."
+
+#: includes/class-sentinel-admin.php:898
+msgid ""
+"Ihr Fingerabdruck stimmt nicht mehr mit dem Wert überein, der beim Erfassen "
+"in die Hash-Kette geschrieben wurde. Wer eine Plugin-Datei ändert und "
+"anschließend die Basislinie anpasst, hinterlässt genau diese Abweichung."
+msgstr ""
+"Το αποτύπωμά της δεν ταιριάζει πλέον με την τιμή που γράφτηκε στην αλυσίδα "
+"κατακερματισμού κατά τη λήψη. Η τροποποίηση αρχείου προσθέτου και η "
+"ενημέρωση της γραμμής βάσης αφήνει ακριβώς αυτή την απόκλιση."
+
+#: includes/class-sentinel-admin.php:901
+msgid ""
+"Es ist noch keine Basislinie erfasst. Ohne sie werden nur die Kerndateien "
+"geprüft: für die Plugins gibt es keinen offiziellen Katalog, gegen den sich "
+"vergleichen ließe."
+msgstr ""
+"Δεν έχει ληφθεί ακόμη γραμμή βάσης. Χωρίς αυτήν ελέγχονται μόνο τα αρχεία "
+"πυρήνα: δεν υπάρχει επίσημος κατάλογος για πρόσθετα."
+
+#. translators: %d: number of files covered by the baseline
+#: includes/class-sentinel-admin.php:906
+#, php-format
+msgid "Basislinie über %d Dateien, Fingerabdruck in der Kette versiegelt."
+msgstr ""
+"Γραμμή βάσης που καλύπτει %d αρχεία, αποτύπωμα σφραγισμένο στην αλυσίδα."
+
+#: includes/class-sentinel-admin.php:911
+msgid ""
+"Nach jeder Aktualisierung eines WM-Suite-Plugins meldet die Prüfung dessen "
+"Dateien als verändert, weil sie es sind. Erfassen Sie die Basislinie dann "
+"neu."
+msgstr ""
+"Μετά την ενημέρωση οποιουδήποτε προσθέτου WM Suite, η σάρωση θα αναφέρει τα "
+"αλλαγμένα αρχεία ως τροποποιημένα. Καταγράψτε ξανά τη γραμμή βάσης στη "
+"συνέχεια."
+
+#: includes/class-sentinel-admin.php:917
+msgid "Prüfung jetzt ausführen"
+msgstr "Εκτέλεση σάρωσης τώρα"
+
+#: includes/class-sentinel-admin.php:920
+msgid "Basislinie erfassen und versiegeln"
+msgstr "Λήψη και σφράγιση γραμμής βάσης"
+
+#: includes/class-sentinel-admin.php:927
+msgid ""
+"Die geplante Prüfung ist ausgeschaltet; es läuft nur, was Sie hier von Hand "
+"starten."
+msgstr ""
+"Η προγραμματισμένη σάρωση είναι απενεργοποιημένη· εκτελούνται μόνο "
+"χειροκίνητοι έλεγχοι που ξεκινούν από εδώ."
+
+#. translators: %s: timestamp in UTC
+#: includes/class-sentinel-admin.php:931
+#, php-format
+msgid "Nächster geplanter Lauf: %s UTC."
+msgstr "Επόμενη προγραμματισμένη εκτέλεση: %s UTC."
+
+#: includes/class-sentinel-admin.php:934
+msgid ""
+"Die Prüfung ist eingeschaltet, aber es ist kein Lauf geplant. Speichern Sie "
+"die Einstellungen einmal, damit der tägliche Termin angelegt wird."
+msgstr ""
+"Η σάρωση είναι ενεργή, αλλά δεν έχει προγραμματιστεί ακόμη εκτέλεση. "
+"Αποθηκεύστε τις ρυθμίσεις μία φορά για να προγραμματιστεί η ημερήσια εργασία."
+
+#: includes/class-sentinel-admin.php:952
+msgid "Export des Protokolls"
+msgstr "Εξαγωγή καταγραφής δραστηριότητας"
+
+#: includes/class-sentinel-admin.php:953
+msgid "CSV- oder JSON-Datei mit bis zu 10.000 Einträgen, neueste zuerst."
+msgstr "Αρχείο CSV ή JSON με έως 10.000 εγγραφές, πρώτα οι νεότερες."
+
+#: includes/class-sentinel-admin.php:961
+msgid "CSV-Datei"
+msgstr "Αρχείο CSV"
+
+#: includes/class-sentinel-admin.php:962
+msgid ""
+"Semikolon-getrennt, UTF-8 mit BOM. Zellen, die mit =, +, -, @, Tabulator "
+"oder Wagenrücklauf beginnen, erhalten ein vorangestelltes Apostroph, damit "
+"Tabellenprogramme sie nicht als Formel ausführen."
+msgstr ""
+"Διαχωρισμένο με ελληνικό ερωτηματικό (;), UTF-8 με BOM. Κελιά που ξεκινούν "
+"με =, +, -, @, στηλοθέτη ή επαναφορά φορέα λαμβάνουν απόστροφο στην αρχή "
+"ώστε τα υπολογιστικά φύλλα να μην τα εκτελούν ως τύπους."
+
+#: includes/class-sentinel-admin.php:964
+msgid "CSV-Datei herunterladen"
+msgstr "Λήψη αρχείου CSV"
+
+#: includes/class-sentinel-admin.php:969
+msgid "JSON-Paket"
+msgstr "Πακέτο JSON"
+
+#: includes/class-sentinel-admin.php:970
+msgid ""
+"Einträge mit ihren Hashes, das Ergebnis der Kettenprüfung zum Zeitpunkt des "
+"Exports und eine SHA-256-Prüfsumme über das Dokument ohne das "
+"Prüfsummenfeld. Die Datei ist nicht signiert: Wer sie ändert, kann die "
+"Prüfsumme neu berechnen."
+msgstr ""
+"Εγγραφές με τους κατακερματισμούς τους, το αποτέλεσμα επαλήθευσης αλυσίδας "
+"κατά την εξαγωγή και άθροισμα ελέγχου SHA-256 του εγγράφου χωρίς το πεδίο "
+"αθροίσματος. Το αρχείο δεν είναι υπογεγραμμένο: όποιος το επεξεργαστεί "
+"μπορεί να επανυπολογίσει το άθροισμα."
+
+#: includes/class-sentinel-admin.php:972
+msgid "JSON-Paket herunterladen"
+msgstr "Λήψη πακέτου JSON"
+
+#: includes/class-sentinel-admin.php:1019
+msgid "Einstellungen & Protokollierungsstufe"
+msgstr "Ρυθμίσεις και επίπεδο καταγραφής"
+
+#: includes/class-sentinel-admin.php:1020
+msgid ""
+"Protokollierungsstufe, überwachte Bereiche, Klick-Erfassung, Alarme per E-"
+"Mail und Webhook sowie Aufbewahrung."
+msgstr ""
+"Επίπεδο καταγραφής, παρακολουθούμενες περιοχές, καταγραφή κλικ, ειδοποιήσεις "
+"μέσω email και webhook και διατήρηση."
+
+#: includes/class-sentinel-admin.php:1028
+msgid ""
+"Einstellungen und Protokollierungsfilter wurden erfolgreich gespeichert."
+msgstr "Οι ρυθμίσεις και τα φίλτρα καταγραφής αποθηκεύτηκαν."
+
+#. translators: %d: number of demo log entries generated
+#: includes/class-sentinel-admin.php:1037
+#, php-format
+msgid ""
+"%d von 15 Demo-Einträgen wurden an die Kette angehängt (ohne Alarm-Mails und "
+"Webhooks). Einträge, die Protokollierungsstufe oder Schalter nicht zulassen, "
+"werden nicht geschrieben."
+msgstr ""
+"%d από τις 15 ενδεικτικές εγγραφές προστέθηκαν στην αλυσίδα (χωρίς email "
+"ειδοποίησης ή webhooks). Εγγραφές που φιλτράρονται από το επίπεδο καταγραφής "
+"ή τους διακόπτες ενοτήτων δεν εγγράφονται."
+
+#: includes/class-sentinel-admin.php:1053
+msgid "Keine Demodaten gefunden; das Protokoll ist unverändert."
+msgstr ""
+"Δεν βρέθηκαν ενδεικτικά δεδομένα· το αρχείο καταγραφής παραμένει αμετάβλητο."
+
+#. translators: %d: number of demo log entries deleted
+#: includes/class-sentinel-admin.php:1056
+#, php-format
+msgid ""
+"%d Demodaten-Logs wurden gelöscht. Das Protokoll wurde dabei vollständig "
+"zurückgesetzt und die Kette beginnt wieder beim Genesis-Block."
+msgstr ""
+"Διαγράφηκαν %d ενδεικτικές εγγραφές. Το αρχείο καταγραφής μηδενίστηκε πλήρως "
+"και η αλυσίδα επανεκκινήθηκε από το αρχικό μπλοκ."
+
+#: includes/class-sentinel-admin.php:1066
+msgid ""
+"Die Demodaten wurden nicht gelöscht: es liegen bereits echte "
+"Protokolleinträge vor. Eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren, ohne dass die Prüfung bricht — und sie nachträglich neu zu "
+"signieren würde genau die Manipulationserkennung aufheben, für die dieses "
+"Plugin da ist."
+msgstr ""
+"Τα ενδεικτικά δεδομένα δεν διαγράφηκαν επειδή υπάρχουν ήδη πραγματικές "
+"εγγραφές. Μια συνεχής αλυσίδα δεν μπορεί να χάσει ενδιάμεσες εγγραφές χωρίς "
+"να σπάσει η επαλήθευση — και η εκ των υστέρων υπογραφή θα ακύρωνε την "
+"ανίχνευση αλλοιώσεων του προσθέτου."
+
+#: includes/class-sentinel-admin.php:1067
+msgid ""
+"Die Demodaten bleiben als solche gekennzeichnet stehen. Wer sie zwingend "
+"loswerden muss, setzt das gesamte Protokoll über den Werksreset zurück und "
+"verliert dabei auch die echten Einträge."
+msgstr ""
+"Οι ενδεικτικές εγγραφές παραμένουν επισημασμένες. Αν πρέπει να τις "
+"αφαιρέσετε, χρησιμοποιήστε την επαναφορά εργοστασιακών ρυθμίσεων για "
+"εκκαθάριση όλου του αρχείου, διαγράφοντας και τις πραγματικές εγγραφές."
+
+#: includes/class-sentinel-admin.php:1073
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Επαναφορά εργοστασιακών ρυθμίσεων:"
+
+#: includes/class-sentinel-admin.php:1073
+msgid ""
+"Alle Logs und Alarme wurden bereinigt, der Genesis-Block wurde neu "
+"initialisiert und alle Einstellungen auf Standardwerte zurückgesetzt."
+msgstr ""
+"Όλες οι καταγραφές και οι ειδοποιήσεις εκκαθαρίστηκαν, αρχικοποιήθηκε νέο "
+"αρχικό μπλοκ και όλες οι ρυθμίσεις επανήλθαν στις προεπιλογές."
+
+#: includes/class-sentinel-admin.php:1084
+msgid "1. Protokollierungsstufe & Klick-Erfassung"
+msgstr "1. Επίπεδο καταγραφής και καταγραφή κλικ"
+
+#: includes/class-sentinel-admin.php:1087
+msgid ""
+"Steuert, ab welchem Schweregrad Ereignisse in die Kette geschrieben werden. "
+"Einträge zu Löschanfragen und der Genesis-Block werden immer geschrieben."
+msgstr ""
+"Ελέγχει την ελάχιστη σοβαρότητα που καταγράφεται στην αλυσίδα. Οι εγγραφές "
+"διαγραφής απορρήτου και το αρχικό μπλοκ καταγράφονται πάντα."
+
+#: includes/class-sentinel-admin.php:1094
+msgid "Protokollierungsstufe"
+msgstr "Επίπεδο καταγραφής"
+
+#: includes/class-sentinel-admin.php:1100
+msgid "Vollständig (Info, Notice, Warning, Critical)"
+msgstr "Πλήρης (Info, Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1103
+msgid "Standard (Notice, Warning, Critical)"
+msgstr "Τυπικό (Notice, Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1106
+msgid "Nur Warnungen (Warning, Critical)"
+msgstr "Μόνο προειδοποιήσεις (Warning, Critical)"
+
+#: includes/class-sentinel-admin.php:1109
+msgid "Nur kritische Ereignisse (Critical)"
+msgstr "Μόνο κρίσιμα συμβάντα (Critical)"
+
+#: includes/class-sentinel-admin.php:1113
+msgid "Stufenübersicht:"
+msgstr "Επισκόπηση επιπέδων:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid "Vollständig:"
+msgstr "Πλήρης:"
+
+#: includes/class-sentinel-admin.php:1114
+msgid ""
+"Schreibt jedes Ereignis der Sensoren, auch Info-Einträge wie Anmeldungen, "
+"Seitenaufrufe und Klicks."
+msgstr ""
+"Γράφει κάθε συμβάν των αισθητήρων, και καταχωρίσεις Info όπως συνδέσεις, "
+"προβολές σελίδων και κλικ."
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Standard:"
+msgstr "Τυπική:"
+
+#: includes/class-sentinel-admin.php:1115
+msgid "Lässt Info-Einträge weg, also Anmeldungen, Seitenaufrufe und Klicks."
+msgstr ""
+"Παραλείπει τις καταχωρίσεις Info, δηλαδή συνδέσεις, προβολές σελίδων και "
+"κλικ."
+
+#: includes/class-sentinel-admin.php:1116
+msgid "Nur Warnungen:"
+msgstr "Μόνο προειδοποιήσεις:"
+
+#: includes/class-sentinel-admin.php:1116
+msgid ""
+"Nur Ereignisse mit Schweregrad Warning oder Critical, zum Beispiel "
+"fehlgeschlagene Anmeldungen, Dateieditor, Deaktivieren von Plugins und "
+"Beförderung zum Administrator."
+msgstr ""
+"Μόνο συμβάντα Warning ή Critical, όπως αποτυχημένες συνδέσεις, χρήση "
+"επεξεργαστή αρχείων, απενεργοποίηση προσθέτων και ανάθεση ρόλου διαχειριστή."
+
+#: includes/class-sentinel-admin.php:1117
+msgid "Nur kritische Ereignisse:"
+msgstr "Μόνο κρίσιμα συμβάντα:"
+
+#: includes/class-sentinel-admin.php:1117
+msgid ""
+"Nur Schweregrad Critical, zum Beispiel ein Export der Website, ein "
+"gestartetes Backup oder die Beförderung zum Administrator."
+msgstr ""
+"Μόνο σοβαρότητα Critical, για παράδειγμα εξαγωγή του ιστότοπου, ένα "
+"αντίγραφο ασφαλείας που ξεκίνησε ή προαγωγή σε διαχειριστή."
+
+#: includes/class-sentinel-admin.php:1125
+msgid "Klick- & Interaktions-Tiefe"
+msgstr "Βάθος κλικ και αλληλεπιδράσεων"
+
+#: includes/class-sentinel-admin.php:1131
+msgid ""
+"Alle Interaktionen erfassen (Menüs, Buttons, Links, Tabs, Modals, Downloads)"
+msgstr ""
+"Καταγραφή όλων των αλληλεπιδράσεων (μενού, κουμπιά, σύνδεσμοι, καρτέλες, "
+"παράθυρα, λήψεις)"
+
+#: includes/class-sentinel-admin.php:1134
+msgid ""
+"Nur operative Aktionen & Menü-Navigation (Menüs, Buttons, Speichern, Löschen)"
+msgstr ""
+"Μόνο λειτουργικές ενέργειες και πλοήγηση μενού (μενού, κουμπιά, αποθήκευση, "
+"διαγραφή)"
+
+#: includes/class-sentinel-admin.php:1137
+msgid ""
+"Nur destruktive Aktionen & Downloads (Lösch-Aktionen, Exporte, Archiv-"
+"Downloads)"
+msgstr ""
+"Μόνο καταστροφικές ενέργειες και λήψεις (διαγραφές, εξαγωγές, λήψεις αρχείων)"
+
+#: includes/class-sentinel-admin.php:1141
+msgid ""
+"Filtert, welche Klicks angemeldeter Benutzer das Skript im Backend und im "
+"Frontend meldet."
+msgstr ""
+"Φιλτράρει ποια κλικ συνδεδεμένων χρηστών αναφέρονται από τη δέσμη ενεργειών "
+"στη διαχείριση και στο δημόσιο τμήμα."
+
+#: includes/class-sentinel-admin.php:1152
+msgid "2. Überwachte Systembereiche & Module"
+msgstr "2. Παρακολουθούμενες περιοχές συστήματος και ενότητες"
+
+#: includes/class-sentinel-admin.php:1155
+msgid ""
+"Schaltet einzelne Bereiche ab. Ein abgeschalteter Bereich schreibt keine "
+"Einträge."
+msgstr ""
+"Απενεργοποιεί μεμονωμένες περιοχές. Μια ανενεργή περιοχή δεν γράφει εγγραφές."
+
+#: includes/class-sentinel-admin.php:1160
+msgid "Sicherheitsmodule"
+msgstr "Ενότητες ασφαλείας"
+
+#: includes/class-sentinel-admin.php:1165
+msgid "Authentifizierung & Sessions"
+msgstr "Ταυτοποίηση και συνεδρίες"
+
+#: includes/class-sentinel-admin.php:1166
+msgid ""
+"Erfolgreiche und fehlgeschlagene Anmeldungen, neue Anwendungspasswörter. "
+"Abmeldungen und Passwort-Resets werden nicht erfasst."
+msgstr ""
+"Επιτυχημένες και αποτυχημένες συνδέσεις, νέοι κωδικοί εφαρμογών. Οι "
+"αποσυνδέσεις και οι επαναφορές κωδικού δεν καταγράφονται."
+
+#: includes/class-sentinel-admin.php:1171
+msgid "Benutzerverwaltung & Berechtigungsrollen"
+msgstr "Διαχείριση χρηστών και ρόλων"
+
+#: includes/class-sentinel-admin.php:1172
+msgid ""
+"Rollenänderungen (Administrator als Critical), angelegte und gelöschte "
+"Benutzer."
+msgstr ""
+"Αλλαγές ρόλων (διαχειριστής ως Critical), δημιουργία και διαγραφή χρηστών."
+
+#: includes/class-sentinel-admin.php:1177
+msgid "Plugins, Themes & Core-Integrität"
+msgstr "Πρόσθετα, θέματα και ακεραιότητα πυρήνα"
+
+#: includes/class-sentinel-admin.php:1178
+msgid ""
+"Plugin-Aktivierung, -Deaktivierung und -Löschung, Theme-Wechsel, Updates, "
+"ausgewählte Optionen, Aufrufe und Speicheranfragen des Dateieditors."
+msgstr ""
+"Ενεργοποίηση, απενεργοποίηση και διαγραφή προσθέτων, αλλαγές θεμάτων, "
+"ενημερώσεις, επιλεγμένες επιλογές καθώς και προβολές και αποθηκεύσεις στον "
+"επεξεργαστή αρχείων."
+
+#: includes/class-sentinel-admin.php:1183
+msgid "Exporte & Backups"
+msgstr "Εξαγωγές και αντίγραφα ασφαλείας"
+
+#: includes/class-sentinel-admin.php:1184
+msgid ""
+"Native XML-Exporte, Aufrufe der Exportseite, Backup-Start von UpdraftPlus "
+"und Duplicator. Klicks auf Download-Links fallen unter „UI-Interaktionen“. "
+"Beitragsänderungen und Uploads werden nicht erfasst."
+msgstr ""
+"Εγγενείς εξαγωγές XML, επισκέψεις στην οθόνη εξαγωγής, εκκινήσεις αντιγράφων "
+"ασφαλείας UpdraftPlus και Duplicator. Τα κλικ λήψης υπάγονται στις "
+"«Αλληλεπιδράσεις UI». Επεξεργασίες άρθρων και μεταφορτώσεις πολυμέσων δεν "
+"καταγράφονται."
+
+#: includes/class-sentinel-admin.php:1189
+msgid "REST-API"
+msgstr "REST API"
+
+#: includes/class-sentinel-admin.php:1190
+msgid ""
+"Aufrufe von /wp/v2/plugins und nicht angemeldete Aufrufe von /wp/v2/users."
+msgstr ""
+"Αιτήματα στο /wp/v2/plugins και μη ταυτοποιημένα αιτήματα στο /wp/v2/users."
+
+#: includes/class-sentinel-admin.php:1197
+msgid "Navigation & UI-Telemetrie"
+msgstr "Πλοήγηση και τηλεμετρία UI"
+
+#: includes/class-sentinel-admin.php:1202
+msgid "Admin-Seitennavigation (current_screen)"
+msgstr "Πλοήγηση οθονών διαχείρισης (current_screen)"
+
+#: includes/class-sentinel-admin.php:1203
+msgid "Erfasst jeden Backend-Seitenaufruf mit übersetztem Klartextnamen."
+msgstr "Καταγράφει κάθε προβολή οθόνης διαχείρισης με αναγνώσιμο τίτλο."
+
+#: includes/class-sentinel-admin.php:1208
+msgid "Klick- & Interaktions-Telemetrie (Client-Side)"
+msgstr "Τηλεμετρία κλικ και αλληλεπιδράσεων (πλευρά πελάτη)"
+
+#: includes/class-sentinel-admin.php:1209
+msgid ""
+"Meldet Klicks angemeldeter Benutzer auf Menüs, Buttons, Tabs und Links mit "
+"Beschriftung, Ziel und Seitenadresse (höchstens 60 Einträge pro Benutzer und "
+"Minute)."
+msgstr ""
+"Αναφέρει κλικ συνδεδεμένων χρηστών σε μενού, κουμπιά, καρτέλες και "
+"συνδέσμους με ετικέτα, προορισμό και URL σελίδας (έως 60 εγγραφές ανά χρήστη "
+"ανά λεπτό)."
+
+#: includes/class-sentinel-admin.php:1214
+msgid "Frontend-Seitenaufrufe angemeldeter Benutzer"
+msgstr "Προβολές δημόσιων σελίδων συνδεδεμένων χρηστών"
+
+#: includes/class-sentinel-admin.php:1215
+msgid ""
+"Protokolliert jede Frontend-Seite, die ein angemeldeter Benutzer aufruft, "
+"mit Adresse und Referrer."
+msgstr ""
+"Καταγράφει κάθε δημόσια σελίδα που ανοίγει συνδεδεμένος χρήστης με URL και "
+"παραπέμποντα."
+
+#: includes/class-sentinel-admin.php:1227
+msgid "3. Echtzeit-Alarme & Benachrichtigungen"
+msgstr "3. Ειδοποιήσεις και συναγερμοί πραγματικού χρόνου"
+
+#: includes/class-sentinel-admin.php:1230
+msgid ""
+"E-Mail und Webhook, sobald ein Eintrag mit mindestens dem gewählten "
+"Schweregrad geschrieben wird. Ein Kettenbruch löst keinen Alarm aus; er "
+"zeigt sich erst bei der nächsten Prüfung."
+msgstr ""
+"Ειδοποιήσεις email και webhook κάθε φορά που εγγράφεται συμβάν ίσης ή "
+"ανώτερης σοβαρότητας. Μια σπασμένη αλυσίδα δεν ενεργοποιεί ειδοποίηση· "
+"εμφανίζεται στον επόμενο έλεγχο."
+
+#: includes/class-sentinel-admin.php:1237
+msgid "Alarm-Empfänger E-Mail"
+msgstr "Email παραλήπτη ειδοποιήσεων"
+
+#: includes/class-sentinel-admin.php:1242
+msgid ""
+"Erhält die Alarm-Mails; ab welchem Schweregrad, legt das nächste Feld fest."
+msgstr ""
+"Λαμβάνει τα email ειδοποίησης· από ποια σοβαρότητα, το ορίζει το επόμενο "
+"πεδίο."
+
+#: includes/class-sentinel-admin.php:1249
+msgid "Min. Schweregrad für Alarme"
+msgstr "Ελάχιστη σοβαρότητα ειδοποίησης"
+
+#: includes/class-sentinel-admin.php:1254
+msgid "Nur Kritische Vorfälle (Critical)"
+msgstr "Μόνο κρίσιμα περιστατικά (Critical)"
+
+#: includes/class-sentinel-admin.php:1255
+msgid "Warnungen & Kritisch (Warning+)"
+msgstr "Προειδοποιήσεις και κρίσιμα (Warning+)"
+
+#: includes/class-sentinel-admin.php:1256
+msgid "Notice und höher (Notice-Einträge selbst lösen keinen Alarm aus)"
+msgstr ""
+"Επισημάνσεις και άνω (οι ίδιες οι εγγραφές Notice δεν στέλνουν ειδοποίηση)"
+
+#: includes/class-sentinel-admin.php:1264
+msgid "Webhook-URL"
+msgstr "URL webhook"
+
+#: includes/class-sentinel-admin.php:1269
+msgid ""
+"Erhält einen JSON-POST mit text, log_id, event_type, severity, user, site "
+"und timestamp. Ob ein Chat-Dienst dieses Format annimmt, prüft das Plugin "
+"nicht."
+msgstr ""
+"Λαμβάνει JSON POST με text, log_id, event_type, severity, user, site και "
+"timestamp. Το πρόσθετο δεν ελέγχει αν μια υπηρεσία συνομιλίας δέχεται αυτή "
+"τη μορφή."
+
+#: includes/class-sentinel-admin.php:1279
+msgid "4. Aufbewahrung & Dashboard"
+msgstr "4. Διατήρηση και πίνακας ελέγχου"
+
+#: includes/class-sentinel-admin.php:1286
+msgid "Aufbewahrungsfrist"
+msgstr "Περίοδος διατήρησης"
+
+#: includes/class-sentinel-admin.php:1290
+msgid "Tage"
+msgstr "ημέρες"
+
+#: includes/class-sentinel-admin.php:1291
+msgid ""
+"Täglich angewendet: Einträge, die älter als diese Frist sind, verlieren "
+"Name, E-Mail-Adresse und IP-Kennung. Gelöscht wird nichts — jede gelöschte "
+"Zeile würde die Kette unterbrechen und die Prüfung würde Ihre eigene "
+"Aufbewahrungsregel als Manipulation melden. Ereignisart, Zeitpunkt, "
+"Schweregrad und Kontext bleiben stehen. Unter 30 Tagen bedeutet: alles "
+"behalten."
+msgstr ""
+"Εφαρμόζεται καθημερινά: εγγραφές παλαιότερες από αυτή την περίοδο χάνουν "
+"όνομα, διεύθυνση email και αναγνωριστικό IP. Τίποτα δεν διαγράφεται — η "
+"διαγραφή γραμμής θα έσπαγε την αλυσίδα και η επαλήθευση θα ανέφερε την "
+"πολιτική διατήρησης ως αλλοίωση. Ο τύπος συμβάντος, η χρονοσφραγίδα, η "
+"σοβαρότητα και το πλαίσιο διατηρούνται. Κάτω από 30 ημέρες σημαίνει "
+"διατήρηση όλων."
+
+#: includes/class-sentinel-admin.php:1296
+msgid "Dashboard-Widget"
+msgstr "Μικροεφαρμογή πίνακα ελέγχου"
+
+#: includes/class-sentinel-admin.php:1300
+msgid "Widget auf dem WordPress-Dashboard anzeigen"
+msgstr "Εμφάνιση μικροεφαρμογής στον πίνακα ελέγχου του WordPress"
+
+#: includes/class-sentinel-admin.php:1302
+msgid ""
+"Zeigt den aktuellen Prüfsummen-Status (Hash-Chain), KPI-Kennzahlen und die "
+"letzten Vorfälle direkt auf der Hauptseite des WordPress-Backends an."
+msgstr ""
+"Εμφανίζει την τρέχουσα κατάσταση της αλυσίδας, μετρητές KPI και πρόσφατα "
+"συμβάντα στον κύριο πίνακα ελέγχου του WordPress."
+
+#: includes/class-sentinel-admin.php:1307
+msgid "Deinstallation"
+msgstr "Απεγκατάσταση"
+
+#: includes/class-sentinel-admin.php:1311
+msgid ""
+"Protokolltabellen und versiegelte Basislinie beim Löschen des Plugins "
+"endgültig entfernen"
+msgstr ""
+"Οριστική διαγραφή πινάκων καταγραφής και σφραγισμένης γραμμής βάσης κατά τη "
+"διαγραφή του προσθέτου"
+
+#: includes/class-sentinel-admin.php:1313
+msgid ""
+"Standardmäßig bleiben die Tabellen wp_wm_activity_logs und "
+"wp_wm_activity_alerts sowie der gespiegelte Kettenendpunkt und die "
+"versiegelte Datei-Basislinie bei einer Deinstallation erhalten. Aktivieren "
+"Sie diese Option nur, wenn beim Entfernen des Plugins auch die gesamte Audit-"
+"Kette gelöscht werden soll."
+msgstr ""
+"Από προεπιλογή, τα wp_wm_activity_logs, wp_wm_activity_alerts, η "
+"κατοπτρισμένη κορυφή αλυσίδας και η σφραγισμένη γραμμή βάσης αρχείων "
+"διατηρούνται κατά την απεγκατάσταση. Ενεργοποιήστε αυτή την επιλογή μόνο αν "
+"η διαγραφή του προσθέτου πρέπει να σβήσει και ολόκληρη την αλυσίδα ελέγχου."
+
+#: includes/class-sentinel-admin.php:1323
+msgid "5. Weiterleitung an ein SIEM"
+msgstr "5. Προώθηση SIEM"
+
+#: includes/class-sentinel-admin.php:1325
+msgid ""
+"Jeder protokollierte Eintrag ab dem gewählten Schweregrad wird zusätzlich an "
+"einen Collector geschickt — als Syslog nach RFC 5424, als CEF:0 oder als "
+"LEEF:2.0. Splunk, Microsoft Sentinel, Datadog und Elastic lesen mindestens "
+"eines dieser Formate. Der Eintrag im Protokoll bleibt davon unberührt: die "
+"Weiterleitung ist eine Kopie, und ein nicht erreichbarer Collector hält "
+"WordPress nicht auf."
+msgstr ""
+"Κάθε εγγραφή ίσης ή ανώτερης σοβαρότητας αποστέλλεται επίσης σε συλλέκτη — "
+"ως Syslog RFC 5424, CEF:0 ή LEEF:2.0. Τα Splunk, Microsoft Sentinel, Datadog "
+"και Elastic διαβάζουν τουλάχιστον μία από αυτές τις μορφές. Η αποθηκευμένη "
+"εγγραφή δεν επηρεάζεται: η προώθηση είναι αντίγραφο και ένας μη διαθέσιμος "
+"συλλέκτης δεν μπλοκάρει το WordPress."
+
+#: includes/class-sentinel-admin.php:1329
+msgid "Weiterleitung"
+msgstr "Προώθηση"
+
+#: includes/class-sentinel-admin.php:1333
+msgid "Einträge an den konfigurierten Collector senden"
+msgstr "Αποστολή εγγραφών στον ρυθμισμένο συλλέκτη"
+
+#: includes/class-sentinel-admin.php:1339
+msgid "Format"
+msgstr "Μορφή"
+
+#: includes/class-sentinel-admin.php:1342
+msgid "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+msgstr "CEF:0 (ArcSight, Microsoft Sentinel, Splunk)"
+
+#: includes/class-sentinel-admin.php:1343
+msgid "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+msgstr "Syslog RFC 5424 (Elastic, Datadog, rsyslog)"
+
+#: includes/class-sentinel-admin.php:1344
+msgid "LEEF:2.0 (IBM QRadar)"
+msgstr "LEEF:2.0 (IBM QRadar)"
+
+#: includes/class-sentinel-admin.php:1350
+msgid "Transport"
+msgstr "Μεταφορά"
+
+#: includes/class-sentinel-admin.php:1353
+msgid "HTTPS (HEC-/HTTP-Endpunkt)"
+msgstr "HTTPS (HEC / τελικό σημείο HTTP)"
+
+#: includes/class-sentinel-admin.php:1354
+msgid "TCP"
+msgstr "TCP"
+
+#: includes/class-sentinel-admin.php:1355
+msgid "UDP (ohne Empfangsbestätigung)"
+msgstr "UDP (χωρίς επιβεβαίωση)"
+
+#: includes/class-sentinel-admin.php:1361
+msgid "Collector-URL (HTTPS)"
+msgstr "URL συλλέκτη (HTTPS)"
+
+#: includes/class-sentinel-admin.php:1368
+msgid "Collector-Host und Port (TCP/UDP)"
+msgstr "Κεντρικός υπολογιστής και θύρα συλλέκτη (TCP/UDP)"
+
+#: includes/class-sentinel-admin.php:1376
+msgid "Min. Schweregrad für die Weiterleitung"
+msgstr "Ελάχιστη σοβαρότητα προώθησης"
+
+#: includes/class-sentinel-admin.php:1379
+msgid "Alles (Info+)"
+msgstr "Όλα (Info+)"
+
+#: includes/class-sentinel-admin.php:1380
+msgid "Notice und höher"
+msgstr "Επισημάνσεις και άνω"
+
+#: includes/class-sentinel-admin.php:1381
+msgid "Warnungen und höher"
+msgstr "Προειδοποιήσεις και άνω"
+
+#: includes/class-sentinel-admin.php:1382
+msgid "Nur kritische Vorfälle"
+msgstr "Μόνο κρίσιμα περιστατικά"
+
+#: includes/class-sentinel-admin.php:1393
+msgid "6. Dateiintegrität"
+msgstr "6. Ακεραιότητα αρχείων"
+
+#: includes/class-sentinel-admin.php:1395
+msgid ""
+"Ein täglicher Abgleich der Kerndateien gegen den offiziellen Prüfsummen-"
+"Katalog von api.wordpress.org. Dabei verlassen nur die WordPress-Version und "
+"die Sprache die Website — dieselben Angaben, die WordPress ohnehin bei jeder "
+"Update-Prüfung sendet. Das Ergebnis wird als Eintrag in die Hash-Kette "
+"geschrieben und damit, sofern eingeschaltet, auch an das SIEM weitergeleitet."
+msgstr ""
+"Καθημερινή σύγκριση αρχείων πυρήνα με τον επίσημο κατάλογο αθροισμάτων "
+"ελέγχου από το api.wordpress.org. Μόνο η έκδοση και η τοπική ρύθμιση του "
+"WordPress φεύγουν από τον ιστότοπο — οι ίδιες τιμές που στέλνει το WordPress "
+"στους ελέγχους ενημερώσεων. Το αποτέλεσμα γράφεται στην αλυσίδα "
+"κατακερματισμού και προωθείται στο SIEM αν είναι ενεργό."
+
+#: includes/class-sentinel-admin.php:1399
+msgid "Tägliche Prüfung"
+msgstr "Καθημερινή σάρωση"
+
+#: includes/class-sentinel-admin.php:1403
+msgid "Kerndateien täglich gegen api.wordpress.org prüfen"
+msgstr "Καθημερινός έλεγχος αρχείων πυρήνα έναντι του api.wordpress.org"
+
+#: includes/class-sentinel-admin.php:1409
+msgid "WM-Suite-Plugins"
+msgstr "Πρόσθετα WM Suite"
+
+#: includes/class-sentinel-admin.php:1413
+msgid "Zusätzlich gegen die versiegelte Basislinie prüfen"
+msgstr "Έλεγχος και έναντι της σφραγισμένης γραμμής βάσης"
+
+#: includes/class-sentinel-admin.php:1415
+msgid ""
+"Für Plugins gibt es keinen offiziellen Katalog. Stattdessen wird eine "
+"Basislinie erfasst, deren Fingerabdruck in der Hash-Kette versiegelt wird: "
+"Wer eine Plugin-Datei ändert und anschließend die Basislinie anpasst, bricht "
+"damit den Ketteneintrag. Die Basislinie wird auf der Seite "
+"\"Dateiintegrität\" erfasst."
+msgstr ""
+"Δεν υπάρχει επίσημος κατάλογος για πρόσθετα. Αντ' αυτού λαμβάνεται γραμμή "
+"βάσης της οποίας το αποτύπωμα σφραγίζεται στην αλυσίδα κατακερματισμού: η "
+"τροποποίηση αρχείου και η επανεγγραφή της γραμμής βάσης σπάει εκείνη την "
+"εγγραφή. Λάβετε τη γραμμή βάσης στην οθόνη «Ακεραιότητα αρχείων»."
+
+#: includes/class-sentinel-admin.php:1424
+msgid "Einstellungen & Filter speichern"
+msgstr "Αποθήκευση ρυθμίσεων και φίλτρων"
+
+#: includes/class-sentinel-admin.php:1433
+msgid "7. Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr ""
+"7. Διαχείριση ενδεικτικών δεδομένων και επαναφορά εργοστασιακών ρυθμίσεων"
+
+#: includes/class-sentinel-admin.php:1436
+msgid ""
+"Beispieleinträge anhängen oder entfernen, oder das Protokoll leeren und alle "
+"Einstellungen zurücksetzen."
+msgstr ""
+"Προσθέστε ή αφαιρέστε ενδεικτικές εγγραφές ή αδειάστε το αρχείο καταγραφής "
+"και επαναφέρετε όλες τις ρυθμίσεις."
+
+#: includes/class-sentinel-admin.php:1445
+msgid "Demodaten anhängen (15 Einträge)"
+msgstr "Προσθήκη ενδεικτικών δεδομένων (15 εγγραφές)"
+
+#: includes/class-sentinel-admin.php:1450
+msgid ""
+"Demodaten lassen sich nur entfernen, solange noch keine echten Ereignisse "
+"protokolliert wurden — eine fortlaufende Kette kann keinen Eintrag in der "
+"Mitte verlieren. Trifft das zu, wird das gesamte Protokoll zurückgesetzt und "
+"die Kette startet neu beim Genesis-Block."
+msgstr ""
+"Τα ενδεικτικά δεδομένα αφαιρούνται μόνο εφόσον δεν έχουν καταγραφεί "
+"πραγματικά συμβάντα — μια συνεχής αλυσίδα δεν μπορεί να χάσει ενδιάμεσες "
+"εγγραφές. Όταν επιτρέπεται, όλο το αρχείο μηδενίζεται και ξεκινά από το "
+"αρχικό μπλοκ."
+
+#: includes/class-sentinel-admin.php:1454
+msgid "Demodaten bereinigen (Nur Testdaten)"
+msgstr "Αφαίρεση ενδεικτικών δεδομένων (μόνο δεδομένα δοκιμής)"
+
+#: includes/class-sentinel-admin.php:1465
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Ζώνη κινδύνου: εργοστασιακές ρυθμίσεις"
+
+#: includes/class-sentinel-admin.php:1468
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Logs und Alarme aus der Datenbank, "
+"initialisiert einen neuen Genesis-Block und setzt alle Einstellungen auf die "
+"Standardwerte zurück."
+msgstr ""
+"Αυτή η ενέργεια διαγράφει οριστικά ΟΛΕΣ τις καταγραφές και ειδοποιήσεις από "
+"τη βάση δεδομένων, αρχικοποιεί νέο αρχικό μπλοκ και επαναφέρει όλες τις "
+"ρυθμίσεις στις προεπιλογές."
+
+#: includes/class-sentinel-admin.php:1470
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Aktivitätsprotokolle und setzt "
+"Sentinel vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Είστε βέβαιοι; Διαγράφονται ΟΛΑ τα αρχεία καταγραφής "
+"δραστηριότητας και το Sentinel επανέρχεται πλήρως στις εργοστασιακές "
+"ρυθμίσεις!"
+
+#: includes/class-sentinel-admin.php:1474
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Επαναφορά εργοστασιακών ρυθμίσεων (Factory Reset)"
+
+#: includes/class-sentinel-admin.php:1494
+msgid "Überblick & Hash-Kette"
+msgstr "Επισκόπηση και αλυσίδα κατακερματισμού"
+
+#: includes/class-sentinel-admin.php:1495
+msgid ""
+"ist ein Aktivitätsprotokoll für WordPress. Jeder Logeintrag wird über HMAC-"
+"SHA256 mit seinem Vorgänger verknüpft, und das Kettenende zusätzlich "
+"außerhalb der Log-Tabelle verzeichnet. Wer nur Schreibzugriff auf die "
+"Datenbank hat, kann Einträge daher nicht ändern, löschen oder einschleusen, "
+"ohne dass die Prüfung darauf hinweist. Der Schlüssel liegt in der wp-"
+"config.php: wer diese Datei liest, kann die Kette neu signieren — das "
+"Verfahren weist Manipulation nach, es verhindert sie nicht."
+msgstr ""
+"είναι αρχείο καταγραφής δραστηριότητας για το WordPress. Κάθε εγγραφή "
+"συνδέεται με την προηγούμενη μέσω HMAC-SHA256 και η κορυφή της αλυσίδας "
+"κατοπτρίζεται και εκτός του πίνακα καταγραφής. Κάποιος με πρόσβαση εγγραφής "
+"μόνο στη βάση δεδομένων δεν μπορεί να επεξεργαστεί, διαγράψει ή εισαγάγει "
+"εγγραφές χωρίς να το εντοπίσει ο έλεγχος. Το κλειδί βρίσκεται στο wp-"
+"config.php: όποιος διαβάζει αυτό το αρχείο μπορεί να υπογράψει ξανά την "
+"αλυσίδα — ο μηχανισμός ανιχνεύει αλλοιώσεις, δεν τις αποτρέπει."
+
+#: includes/class-sentinel-admin.php:1500
+msgid "Protokollierungsstufen"
+msgstr "Επίπεδα καταγραφής"
+
+#: includes/class-sentinel-admin.php:1501
+msgid ""
+"Die Protokollierungsstufe wird unter Einstellungen gewählt: \"Vollständig\" "
+"schreibt auch Info-Einträge wie Anmeldungen, Seitenaufrufe und Klicks; "
+"\"Standard\" lässt Info-Einträge weg; \"Nur Warnungen\" schreibt Warning und "
+"Critical; \"Nur kritische Ereignisse\" nur Critical. Der Genesis-Eintrag "
+"sowie Lösch- und Aufbewahrungsnachweise werden auf jeder Stufe geschrieben."
+msgstr ""
+"Το επίπεδο καταγραφής επιλέγεται στις ρυθμίσεις: το «Πλήρες» γράφει και "
+"καταχωρίσεις Info όπως συνδέσεις, προβολές σελίδων και κλικ· το «Τυπικό» "
+"παραλείπει τις καταχωρίσεις Info· το «Μόνο προειδοποιήσεις» γράφει Warning "
+"και Critical· το «Μόνο κρίσιμα συμβάντα» μόνο Critical. Η καταχώριση genesis "
+"και τα αποδεικτικά διαγραφής και διατήρησης γράφονται σε κάθε επίπεδο."
+
+#: includes/class-sentinel-admin.php:1506
+msgid "Personenbezogene Daten"
+msgstr "Προσωπικά δεδομένα"
+
+#: includes/class-sentinel-admin.php:1507
+msgid ""
+"IP-Adressen werden nicht im Klartext gespeichert, sondern als HMAC mit "
+"täglich wechselndem Schlüssel. Name und E-Mail-Adresse des handelnden "
+"Benutzers, besuchte Adressen und Klick-Beschriftungen stehen im Klartext im "
+"Protokoll. Die Datenschutz-Werkzeuge von WordPress können Einträge zu einer "
+"Adresse exportieren und pseudonymisieren."
+msgstr ""
+"Οι διευθύνσεις IP δεν αποθηκεύονται ως απλό κείμενο, αλλά ως HMAC με "
+"ημερησίως εναλλασσόμενο άλας. Το όνομα και το email του χρήστη, τα URL που "
+"επισκέφθηκε και οι ετικέτες κλικ αποθηκεύονται σε απλό κείμενο. Τα εργαλεία "
+"απορρήτου του WordPress μπορούν να εξαγάγουν και να ψευδωνυμοποιήσουν "
+"εγγραφές για μια διεύθυνση email."
+
+#: includes/class-sentinel-admin.php:1511
+msgid "Support & Handbuch:"
+msgstr "Υποστήριξη και εγχειρίδιο:"
+
+#: includes/class-sentinel-admin.php:1512
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Άνοιγμα πλήρους εγχειριδίου"
+
+#: includes/class-sentinel-admin.php:1513
+msgid "Entwickelt von WM Suite."
+msgstr "Αναπτύχθηκε από τη WM Suite."
+
+#: includes/class-sentinel-admin.php:1522
+#: includes/class-sentinel-exporter.php:35
+#: includes/class-sentinel-exporter.php:94
+msgid "Unzureichende Berechtigungen."
+msgstr "Ανεπαρκή δικαιώματα."
+
+#: includes/class-sentinel-admin.php:1530
+msgid "WM Activity Sentinel — Handbuch"
+msgstr "WM Activity Sentinel — Εγχειρίδιο"
+
+#: includes/class-sentinel-admin.php:1531
+msgid "Hash-Kette, Sensoren, Entwickler-API und Hinweise zum Betrieb."
+msgstr ""
+"Αλυσίδα κατακερματισμού, αισθητήρες, API προγραμματιστών και σημειώσεις "
+"λειτουργίας."
+
+#: includes/class-sentinel-admin.php:1542
+msgid "1. Kryptografische Hash-Kette (Integrität)"
+msgstr "1. Κρυπτογραφική αλυσίδα κατακερματισμού (ακεραιότητα)"
+
+#: includes/class-sentinel-admin.php:1544
+msgid ""
+"Jeder Datensatz enthält den kryptografischen Fingerabdruck seines direkten "
+"Vorgängers (prev_hash). Die Prüfsumme wird wie folgt berechnet:"
+msgstr ""
+"Κάθε εγγραφή περιλαμβάνει το κρυπτογραφικό αποτύπωμα του άμεσου προκατόχου "
+"της (prev_hash). Ο κατακερματισμός υπολογίζεται ως εξής:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid "Änderung erkennbar:"
+msgstr "Ανιχνεύσιμες τροποποιήσεις:"
+
+#: includes/class-sentinel-admin.php:1549
+msgid ""
+"Wird eine Zeile ohne den Schlüssel geändert, schlägt die Prüfsumme bei der "
+"nächsten Prüfung fehl. Wer den Schlüssel hat, kann die Kette neu signieren."
+msgstr ""
+"Αν μια γραμμή τροποποιηθεί χωρίς το κλειδί, το άθροισμα ελέγχου της "
+"αποτυγχάνει στην επόμενη επαλήθευση. Όποιος κατέχει το κλειδί μπορεί να "
+"υπογράψει ξανά την αλυσίδα."
+
+#: includes/class-sentinel-admin.php:1550
+msgid "Löschungsnachweis:"
+msgstr "Ίχνη διαγραφής:"
+
+#: includes/class-sentinel-admin.php:1550
+msgid ""
+"Wird eine Zeile in der Mitte gelöscht, passt der Verweis der Folgezeile "
+"nicht mehr; fehlen die neuesten Zeilen, weicht das in wp_options gespiegelte "
+"Kettenende ab."
+msgstr ""
+"Αν διαγραφεί ενδιάμεση γραμμή, σπάει ο δείκτης της επόμενης· αν διαγραφούν "
+"οι νεότερες γραμμές, αποκλίνει η κατοπτρισμένη κορυφή στο wp_options."
+
+#: includes/class-sentinel-admin.php:1551
+msgid "Concurrency-Locking:"
+msgstr "Κλείδωμα ταυτόχρονης εγγραφής:"
+
+#: includes/class-sentinel-admin.php:1551
+msgid ""
+"InnoDB \"SELECT ... FOR UPDATE\" verhindert Ketten-Bifurkationen bei "
+"parallelen Schreibzugriffen."
+msgstr ""
+"Το InnoDB «SELECT ... FOR UPDATE» αποτρέπει διακλαδώσεις της αλυσίδας σε "
+"ταυτόχρονες εγγραφές."
+
+#: includes/class-sentinel-admin.php:1559
+msgid "2. Sensoren"
+msgstr "2. Αισθητήρες"
+
+#: includes/class-sentinel-admin.php:1561
+msgid ""
+"Diese WordPress-Hooks schreiben Einträge; alles andere erfasst das Plugin "
+"nicht:"
+msgstr ""
+"Αυτά τα άγκιστρα του WordPress γράφουν εγγραφές· τίποτα άλλο δεν "
+"καταγράφεται από το πρόσθετο:"
+
+#: includes/class-sentinel-admin.php:1565
+msgid "Bereich"
+msgstr "Περιοχή"
+
+#: includes/class-sentinel-admin.php:1566
+msgid "Sensoren & Hooks"
+msgstr "Αισθητήρες και άγκιστρα"
+
+#: includes/class-sentinel-admin.php:1572
+msgid "Authentifizierung"
+msgstr "Ταυτοποίηση"
+
+#: includes/class-sentinel-admin.php:1573
+msgid ""
+"wp_login (Info), wp_login_failed und wp_create_application_password (Warning)"
+msgstr ""
+"wp_login (Info), wp_login_failed και wp_create_application_password (Warning)"
+
+#: includes/class-sentinel-admin.php:1574
+#: includes/class-sentinel-admin.php:1594
+msgid "Info / Warning"
+msgstr "Info / Warning"
+
+#: includes/class-sentinel-admin.php:1577
+msgid "Benutzer & Rollen"
+msgstr "Χρήστες και ρόλοι"
+
+#: includes/class-sentinel-admin.php:1578
+msgid ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical bei der Rolle Administrator)"
+msgstr ""
+"user_register (Notice), deleted_user (Warning), set_user_role (Notice, "
+"Critical όταν ο ρόλος είναι Administrator)"
+
+#: includes/class-sentinel-admin.php:1579
+msgid "Notice / Warning / Critical"
+msgstr "Notice / Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1582
+msgid "Core & Plugins"
+msgstr "Πυρήνας και πρόσθετα"
+
+#: includes/class-sentinel-admin.php:1583
+msgid ""
+"activated_plugin, upgrader_process_complete und updated_option für "
+"ausgewählte Optionen (Notice); deactivated_plugin, delete_plugin und "
+"after_switch_theme (Warning)"
+msgstr ""
+"activated_plugin, upgrader_process_complete και updated_option για "
+"επιλεγμένες επιλογές (Notice)· deactivated_plugin, delete_plugin και "
+"after_switch_theme (Warning)"
+
+#: includes/class-sentinel-admin.php:1584
+msgid "Notice / Warning"
+msgstr "Notice / Warning"
+
+#: includes/class-sentinel-admin.php:1587
+msgid "Exporte & Dateieditor"
+msgstr "Εξαγωγές και επεξεργαστής αρχείων"
+
+#: includes/class-sentinel-admin.php:1588
+msgid ""
+"Aufruf von export.php, load-plugin-editor.php und load-theme-editor.php "
+"(Warning); export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"und duplicator_backup_started (Critical)"
+msgstr ""
+"Επισκέψεις σε export.php, load-plugin-editor.php και load-theme-editor.php "
+"(Warning)· export_wp, wp_ajax_edit-theme-plugin-file, updraft_backup_started "
+"και duplicator_backup_started (Critical)"
+
+#: includes/class-sentinel-admin.php:1589
+msgid "Warning / Critical"
+msgstr "Warning / Critical"
+
+#: includes/class-sentinel-admin.php:1592
+msgid "Admin & Telemetrie"
+msgstr "Διαχείριση και τηλεμετρία"
+
+#: includes/class-sentinel-admin.php:1593
+msgid ""
+"current_screen, template_redirect und Klicks über POST /wm-sentinel/v1/"
+"telemetry (Info); rest_pre_dispatch für /wp/v2/plugins und anonyme Abfragen "
+"von /wp/v2/users (Warning)"
+msgstr ""
+"current_screen, template_redirect και κλικ μέσω POST /wm-sentinel/v1/"
+"telemetry (Info)· rest_pre_dispatch για /wp/v2/plugins και ανώνυμα ερωτήματα "
+"στο /wp/v2/users (Warning)"
+
+#: includes/class-sentinel-admin.php:1605
+msgid "3. Entwickler-API & Eigene Sensoren registrieren"
+msgstr "3. API προγραμματιστών και προσαρμοσμένοι αισθητήρες"
+
+#: includes/class-sentinel-admin.php:1607
+msgid ""
+"Eigene Ereignisse lassen sich über die statische Logger-Klasse an die Kette "
+"anhängen:"
+msgstr ""
+"Προσαρμοσμένα συμβάντα μπορούν να προστεθούν στην αλυσίδα μέσω της στατικής "
+"κλάσης καταγραφής:"
+
+#: includes/class-sentinel-admin.php:1632
+msgid "4. Wichtige Hinweise, Gotchas & Troubleshooting"
+msgstr "4. Σημαντικές σημειώσεις, ιδιαιτερότητες και αντιμετώπιση προβλημάτων"
+
+#: includes/class-sentinel-admin.php:1635
+msgid "IP-Hashes:"
+msgstr "Κατακερματισμοί IP:"
+
+#: includes/class-sentinel-admin.php:1635
+msgid ""
+"IP-Adressen werden als HMAC mit täglich wechselndem Schlüssel gespeichert; "
+"Hashes derselben Adresse stimmen nur innerhalb eines Tages (UTC) überein. "
+"Name und E-Mail des Benutzers stehen im Klartext."
+msgstr ""
+"Οι διευθύνσεις IP αποθηκεύονται ως HMAC με ημερήσιο κλειδί· οι "
+"κατακερματισμοί της ίδιας διεύθυνσης ταιριάζουν μόνο εντός μίας ημέρας UTC. "
+"Όνομα χρήστη και email αποθηκεύονται σε απλό κείμενο."
+
+#: includes/class-sentinel-admin.php:1636
+msgid "CSV-Export:"
+msgstr "Εξαγωγή CSV:"
+
+#: includes/class-sentinel-admin.php:1636
+msgid ""
+"Werte, die mit =, +, -, @, Tabulator oder Wagenrücklauf beginnen, erhalten "
+"ein vorangestelltes Apostroph, damit Tabellenprogramme sie nicht als Formel "
+"ausführen."
+msgstr ""
+"Τιμές που ξεκινούν με =, +, -, @, στηλοθέτη ή επαναφορά φορέα λαμβάνουν "
+"αρχική απόστροφο ώστε τα υπολογιστικά φύλλα να μην τις εκτελούν ως τύπους."
+
+#: includes/class-sentinel-admin.php:1637
+msgid "WP-CLI Testausführung:"
+msgstr "Εκτέλεση δοκιμών WP-CLI:"
+
+#: includes/class-sentinel-admin.php:1637
+msgid ""
+"In WP-CLI Tests liefert is_admin() immer true. Frontend-Tests setzen daher "
+"die Konstante WM_SENTINEL_TESTING_MODE."
+msgstr ""
+"Μέσα στις δοκιμές WP-CLI η is_admin() επιστρέφει πάντα true. Οι δοκιμές "
+"δημόσιου τμήματος ορίζουν επομένως το WM_SENTINEL_TESTING_MODE."
+
+#: includes/class-sentinel-core.php:122
+msgid "WM Activity Sentinel Kennzahlen"
+msgstr "Μετρήσεις WM Activity Sentinel"
+
+#: includes/class-sentinel-core.php:157
+msgid "WM Sentinel Kennzahl"
+msgstr "Μέτρηση WM Sentinel"
+
+#: includes/class-sentinel-core.php:161
+msgid ""
+"Gibt nicht-sensible Prüfstatus- und Protokollzähler von WM Activity Sentinel "
+"aus."
+msgstr ""
+"Εμφανίζει μη ευαίσθητη κατάσταση επαλήθευσης και μετρητές καταγραφής από το "
+"WM Activity Sentinel."
+
+#: includes/class-sentinel-core.php:165
+msgid "Kennzahl"
+msgstr "Δείκτης"
+
+#: includes/class-sentinel-core.php:169
+msgid "Kettenstatus (INTACT / BROKEN)"
+msgstr "Κατάσταση αλυσίδας (INTACT / BROKEN)"
+
+#: includes/class-sentinel-core.php:173
+msgid "Geprüfte Einträge"
+msgstr "Επαληθευμένες εγγραφές"
+
+#: includes/class-sentinel-core.php:181
+msgid "Plugin-Version"
+msgstr "Έκδοση προσθέτου"
+
+#: includes/class-sentinel-exporter.php:157
+#: includes/class-sentinel-exporter.php:168
+msgid "WM Activity Sentinel Audit-Logs"
+msgstr "Αρχεία ελέγχου WM Activity Sentinel"
+
+#: includes/class-sentinel-exporter.php:216
+msgid "Objekttyp"
+msgstr "Τύπος αντικειμένου"
+
+#: includes/class-sentinel-exporter.php:220
+msgid "Benutzername"
+msgstr "Όνομα χρήστη"
+
+#: includes/class-sentinel-exporter.php:224
+msgid "Benutzer-E-Mail"
+msgstr "Email χρήστη"
+
+#: includes/class-sentinel-exporter.php:228
+msgid "Eintrags-Hash"
+msgstr "Hash εγγραφής"
+
+#: includes/class-sentinel-exporter.php:235
+msgid "Sicherheits- und Audit-Protokolle"
+msgstr "Αρχεία ασφαλείας και ελέγχου"
+
+#: includes/class-sentinel-exporter.php:316
+msgid ""
+"Der Löschnachweis konnte nicht in die Kette geschrieben werden; es wurde "
+"nichts geändert."
+msgstr ""
+"Η εγγραφή διαγραφής δεν μπόρεσε να γραφτεί στην αλυσίδα· τίποτα δεν "
+"τροποποιήθηκε."
+
+#. translators: 1: number of pseudonymised log entries, 2: id of the erasure record
+#: includes/class-sentinel-exporter.php:335
+#, php-format
+msgid ""
+"%1$d Protokolleinträge pseudonymisiert (Name, Adresse, IP-Hash, Adresse im "
+"Kontext). Die Prüfung erkennt sie über den Löschnachweis #%2$d an; "
+"Ereignisart, Zeitpunkt und übriger Kontext bleiben stehen."
+msgstr ""
+"%1$d εγγραφές ψευδωνυμοποιήθηκαν (όνομα, email, κατακερματισμός IP, email "
+"στο πλαίσιο). Η επαλήθευση τις αποδέχεται μέσω της εγγραφής διαγραφής #%2$d· "
+"ο τύπος συμβάντος, η χρονοσφραγίδα και το υπόλοιπο πλαίσιο παραμένουν "
+"ανέπαφα."
+
+#: includes/class-sentinel-fim.php:136
+msgid ""
+"api.wordpress.org war nicht erreichbar; die Dateien konnten nicht gegen den "
+"offiziellen Katalog geprüft werden."
+msgstr ""
+"Το api.wordpress.org δεν ήταν προσβάσιμο· δεν ήταν δυνατός ο έλεγχος αρχείων "
+"έναντι του επίσημου καταλόγου."
+
+#. translators: %d: HTTP status code
+#: includes/class-sentinel-fim.php:147
+#, php-format
+msgid ""
+"api.wordpress.org antwortete mit HTTP %d; es wurde kein Katalog geladen."
+msgstr "Το api.wordpress.org απάντησε με HTTP %d· δεν φορτώθηκε κατάλογος."
+
+#: includes/class-sentinel-fim.php:174
+msgid "Die Antwort von api.wordpress.org enthielt keinen Prüfsummen-Katalog."
+msgstr ""
+"Η απάντηση από το api.wordpress.org δεν περιείχε κατάλογο αθροισμάτων "
+"ελέγχου."
+
+#. translators: %s: WordPress version
+#: includes/class-sentinel-fim.php:188
+#, php-format
+msgid ""
+"Für WordPress %s liegt bei api.wordpress.org kein Prüfsummen-Katalog vor "
+"(etwa bei einer Entwicklungs- oder Nightly-Version). Die Kerndateien wurden "
+"nicht geprüft."
+msgstr ""
+"Δεν υπάρχει διαθέσιμος κατάλογος αθροισμάτων ελέγχου στο api.wordpress.org "
+"για το WordPress %s (π.χ. έκδοση ανάπτυξης ή nightly). Τα αρχεία πυρήνα δεν "
+"ελέγχθηκαν."
+
+#: includes/class-sentinel-fim.php:214
+msgid "Der geladene Katalog enthielt keine verwertbaren Prüfsummen."
+msgstr "Ο φορτωμένος κατάλογος δεν περιείχε αξιοποιήσιμα αθροίσματα ελέγχου."
+
+#. translators: %d: number of entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:40
+#, php-format
+msgid ""
+"Die Log-Tabelle ist leer, obwohl zuletzt %d Einträge verzeichnet waren. Das "
+"Protokoll wurde gelöscht."
+msgstr ""
+"Ο πίνακας καταγραφής είναι κενός παρότι είχαν καταγραφεί τελευταία %d "
+"εγγραφές. Το αρχείο καταγραφής διαγράφηκε."
+
+#. translators: 1: log id, 2: stored prev_hash prefix, 3: expected hash prefix
+#: includes/class-sentinel-integrity.php:82
+#, php-format
+msgid ""
+"Kettenbruch bei Log-ID #%1$d: prev_hash \"%2$s\" stimmt nicht mit dem "
+"erwarteten Hash \"%3$s\" überein (Hinweis auf gelöschte oder eingeschleuste "
+"Zeilen)."
+msgstr ""
+"Σπασμένη αλυσίδα στο ID εγγραφής #%1$d: το prev_hash \"%2$s\" δεν ταιριάζει "
+"με τον αναμενόμενο κατακερματισμό \"%3$s\" (υποδεικνύει διαγραμμένες ή "
+"εμβόλιμες γραμμές)."
+
+#. translators: 1: log id, 2: recomputed hash prefix, 3: stored hash prefix
+#: includes/class-sentinel-integrity.php:123
+#, php-format
+msgid ""
+"Manipulationsnachweis bei Log-ID #%1$d: Der berechnete Prüfsummen-Hash "
+"\"%2$s\" weicht vom gespeicherten Hash \"%3$s\" ab. Entweder wurden die "
+"Daten nachträglich in der Datenbank verändert, oder das Protokoll wurde mit "
+"einem anderen AUTH_KEY geschrieben (etwa vor einem Umzug der Website)."
+msgstr ""
+"Ένδειξη αλλοίωσης στο ID εγγραφής #%1$d: το υπολογισμένο άθροισμα \"%2$s\" "
+"διαφέρει από τον αποθηκευμένο κατακερματισμό \"%3$s\". Είτε η γραμμή της "
+"βάσης αλλάχθηκε εκ των υστέρων είτε το αρχείο γράφτηκε με διαφορετικό "
+"AUTH_KEY (π.χ. πριν από μεταφορά ιστοτόπου)."
+
+#. translators: 1: entries present, 2: entries the recorded chain tip counted
+#: includes/class-sentinel-integrity.php:149
+#, php-format
+msgid ""
+"Das Ende der Kette stimmt nicht mit dem verzeichneten Kettenstand überein "
+"(%1$d von %2$d Einträgen vorhanden): Die neuesten Protokolleinträge wurden "
+"entfernt oder ersetzt."
+msgstr ""
+"Το τέλος της αλυσίδας δεν αντιστοιχεί στην καταγεγραμμένη κατάσταση της "
+"αλυσίδας (υπάρχουν %1$d από %2$d εγγραφές): οι πιο πρόσφατες εγγραφές του "
+"αρχείου καταγραφής αφαιρέθηκαν ή αντικαταστάθηκαν."
+
+#: includes/class-sentinel-sensors.php:546
+msgid "Zugriff auf Sentinel Telemetrie erfordert eine aktive Sitzung."
+msgstr ""
+"Η πρόσβαση στην τηλεμετρία του Sentinel απαιτεί ενεργή συνεδρία χρήστη."

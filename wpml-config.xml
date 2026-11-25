@@ -1,0 +1,8 @@
+<wpml-config>
+    <admin-texts>
+        <key name="wm_sentinel_alert_email" />
+        <key name="wm_sentinel_alert_min_severity" />
+        <key name="wm_sentinel_webhook_url" />
+        <key name="wm_sentinel_retention_days" />
+    </admin-texts>
+</wpml-config>
